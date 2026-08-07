@@ -1,0 +1,418 @@
+================================================================================
+  LIGHTRAG SETUP GUIDE
+  Ollama Embedding  |  Milvus (Docker Compose)  |  MinerU  |  LightRAG Server
+================================================================================
+clone github repository : https://github.com/HKUDS/LightRAG.git
+FIRST TIME SETUP : 
+>cd LightRAG
+>uv tool install "lightrag-hku[api]"
+>conda create -n env_lightrag
+>conda activate env_lightrag
+>cd lightrag_webui
+>bun install --frozen-lockfile
+>bun run build
+>cd ..
+>lightrag-server
+
+
+STARTUP ORDER (must follow this sequence every time)
+-----------------------------------------------------
+  [1] Ollama           → already running as tray app (port 11434)
+  [2] Milvus           → docker compose up -d  (port 19530)
+  [3] MinerU           → mineru-api --host 0.0.0.0 --port 8000  (port 8000)
+  [4] LightRAG Server  → lightrag-server  (port 9621)
+
+All three services must be UP before starting LightRAG.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1 — OLLAMA EMBEDDING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1.1  Install Ollama (if not already installed)
+         Download from: https://ollama.com/download
+         Verify: ollama --version
+
+1.2  Pull the embedding model
+         ollama pull qwen3-embedding:4b        # your current model (2560 dim)
+
+     Other options by VRAM:
+         ollama pull qwen3-embedding:0.6b      # ~1 GB  (1024 dim)
+         ollama pull nomic-embed-text          # ~0.5 GB (768 dim)
+         ollama pull bge-m3                    # ~1.5 GB (1024 dim)
+
+     IMPORTANT: Never change the embedding model after inserting documents.
+     All data must be re-embedded if the model changes.
+
+1.3  Set Ollama parallelism (run once in PowerShell — no admin needed)
+         [System.Environment]::SetEnvironmentVariable("OLLAMA_NUM_PARALLEL", "4", "User")
+         [System.Environment]::SetEnvironmentVariable("OLLAMA_MAX_QUEUE", "100", "User")
+
+     Then restart Ollama (right-click tray icon → Quit, then relaunch).
+
+1.4  Verify Ollama is running
+         ollama list        # should show qwen3-embedding:4b
+         ollama ps          # shows what is loaded in VRAM
+
+1.5  Test the embedding endpoint
+         curl http://localhost:11434/api/embed -d "{\"model\": \"qwen3-embedding:4b\", \"input\": \"test\"}"
+     Should return JSON with an "embeddings" array.
+
+     NOTE: Embedding models are served automatically by Ollama on port 11434.
+     Do NOT use "ollama run" for embedding models — it will show no prompt.
+     No separate command needed to load the embedding model.
+
+1.6  .env settings for embedding
+         EMBEDDING_BINDING=ollama
+         EMBEDDING_BINDING_HOST=http://localhost:11434
+         EMBEDDING_MODEL=qwen3-embedding:4b
+         EMBEDDING_DIM=2560
+         EMBEDDING_TOKEN_LIMIT=8192
+         OLLAMA_EMBEDDING_NUM_CTX=8192
+         EMBEDDING_FUNC_MAX_ASYNC=4
+         EMBEDDING_BATCH_NUM=32
+
+     Dimension reference:
+         qwen3-embedding:0.6b  → EMBEDDING_DIM=1024
+         qwen3-embedding:4b    → EMBEDDING_DIM=2560   ← your model
+         qwen3-embedding:8b    → EMBEDDING_DIM=4096
+         nomic-embed-text      → EMBEDDING_DIM=768
+         bge-m3                → EMBEDDING_DIM=1024
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2 — MILVUS VIA DOCKER COMPOSE (production setup)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHY DOCKER COMPOSE: Milvus v3 (latest tag) requires etcd and MinIO as
+separate dependencies. A single "docker run" will crash with:
+"panic: failed to create etcd client". Docker Compose starts all three
+services together in the correct order.
+
+2.1  Create docker-compose.yml in your LightRAG project folder
+     File location: D:\Abhiraj_Only\Projects\LightRAG\docker-compose.yml
+
+     ── docker-compose.yml ──────────────────────────────────────────────────
+
+     services:
+       etcd:
+         container_name: milvus-etcd
+         image: quay.io/coreos/etcd:v3.5.18
+         environment:
+           - ETCD_AUTO_COMPACTION_MODE=revision
+           - ETCD_AUTO_COMPACTION_RETENTION=1000
+           - ETCD_QUOTA_BACKEND_BYTES=4294967296
+           - ETCD_SNAPSHOT_COUNT=50000
+         command: etcd -advertise-client-urls=http://etcd:2379 -listen-client-urls http://0.0.0.0:2379 --data-dir /etcd
+         volumes:
+           - ./milvus_data/etcd:/etcd
+
+       minio:
+         container_name: milvus-minio
+         image: minio/minio:RELEASE.2023-03-13T19-46-17Z
+         environment:
+           MINIO_ACCESS_KEY: minioadmin
+           MINIO_SECRET_KEY: minioadmin
+         command: minio server /minio_data
+         volumes:
+           - ./milvus_data/minio:/minio_data
+
+       standalone:
+         container_name: milvus-standalone
+         image: milvusdb/milvus:v2.4.13
+         command: ["milvus", "run", "standalone"]
+         environment:
+           ETCD_ENDPOINTS: etcd:2379
+           MINIO_ADDRESS: minio:9000
+         volumes:
+           - ./milvus_data/milvus:/var/lib/milvus
+         ports:
+           - "19530:19530"
+           - "9091:9091"
+         depends_on:
+           - etcd
+           - minio
+
+     ── end of file ─────────────────────────────────────────────────────────
+
+     NOTE: Using milvusdb/milvus:v2.4.13 (not :latest).
+     Milvus v3 (latest) requires extra configuration not yet stable on Windows.
+
+2.2  Start Milvus (run from your LightRAG project folder)
+         cd D:\Abhiraj_Only\Projects\LightRAG
+         docker compose -f docker-compose.yml up -d
+
+     Wait 20-30 seconds for all three containers to initialize.
+
+2.3  Verify all three containers are running
+         docker ps
+
+     You should see:
+         milvus-etcd        → running
+         milvus-minio       → running
+         milvus-standalone  → running
+
+2.4  Verify Milvus is healthy
+         curl http://localhost:9091/healthz
+     Should return: {"status":"OK"}  (or similar healthy response)
+
+2.5  Stop Milvus (when not in use)
+         docker compose -f docker-compose.yml down
+
+     Data is persisted in ./milvus_data — safe to stop and restart anytime.
+
+2.6  If containers conflict on restart
+         docker rm milvus-standalone milvus-etcd milvus-minio
+         docker compose -f docker-compose.yml up -d
+
+2.7  .env settings for Milvus
+         LIGHTRAG_VECTOR_STORAGE=MilvusVectorDBStorage
+         MILVUS_URI=http://localhost:19530
+         MILVUS_DB_NAME=lightrag
+
+     Optional (only if you set auth on Milvus):
+         MILVUS_USER=root
+         MILVUS_PASSWORD=your_password
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3 — MINERU (Document Parser)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHY MINERU: MinerU extracts text, tables, formulas, and images from PDFs
+with much higher accuracy than basic parsers. Recommended for SOP documents
+with tables and structured content.
+
+OPTION A — MinerU Local (recommended for production / sensitive docs)
+----------------------------------------------------------------------
+
+3.1  Install MinerU in your conda environment
+         conda activate env_lightrag
+         pip install mineru-api
+
+     With GPU support (recommended — better table/formula extraction):
+         pip install mineru-api[gpu]
+
+3.2  Download MinerU models (first-time setup, downloads to cache)
+         python -c "from mineru.utils.download_models import download_models; download_models()"
+
+     This downloads ~5-8 GB of models. Run once; cached for future use.
+     If the above command doesn't exist in your version, MinerU will
+     auto-download models on first parse — just let it run.
+
+3.3  Start the MinerU local API server (separate terminal, keep it open)
+         conda activate env_lightrag
+         mineru-api --host 0.0.0.0 --port 8000
+
+3.4  Verify MinerU is running
+     Open browser: http://localhost:8000/docs
+     Should show MinerU Swagger UI.
+
+     Or via curl:
+         curl http://localhost:8000/health
+
+3.5  .env settings for MinerU (local mode)
+         LIGHTRAG_PARSER=*:native-iteP,*:mineru-iteP,*:legacy-R
+         MINERU_API_MODE=local
+         MINERU_LOCAL_ENDPOINT=http://127.0.0.1:8000
+         MINERU_LOCAL_BACKEND=hybrid-auto-engine
+         MINERU_LOCAL_PARSE_METHOD=auto
+         MINERU_LOCAL_IMAGE_ANALYSIS=false
+         MINERU_ENABLE_TABLE=true
+         MINERU_ENABLE_FORMULA=true
+         MAX_PARALLEL_PARSE_MINERU=2
+
+     Backend options:
+         hybrid-auto-engine  → GPU (best quality for tables/formulas)
+         pipeline            → CPU only (slower but works without GPU)
+
+OPTION B — MinerU Cloud API (easier, limited free tier)
+--------------------------------------------------------
+
+3.6  Sign up at: https://mineru.net
+     Get your API token from the dashboard.
+
+3.7  .env settings for MinerU (cloud mode)
+         LIGHTRAG_PARSER=*:native-iteP,*:mineru-iteP,*:legacy-R
+         MINERU_API_MODE=official
+         MINERU_API_TOKEN=your-api-key-from-mineru.net
+         MINERU_ENABLE_TABLE=true
+         MINERU_ENABLE_FORMULA=true
+
+     Limitations of cloud mode:
+         - File size and page count limits apply
+         - Not recommended for sensitive/confidential documents
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 4 — COMPLETE .env FILE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File location: D:\Abhiraj_Only\Projects\LightRAG\.env
+Copy env.example to .env first, then apply these settings.
+
+── .env ────────────────────────────────────────────────────────────────────────
+
+# ── Embedding (Ollama) ──────────────────────────────────────────────────────
+EMBEDDING_BINDING=ollama
+EMBEDDING_BINDING_HOST=http://localhost:11434
+EMBEDDING_MODEL=qwen3-embedding:4b
+EMBEDDING_DIM=2560
+EMBEDDING_TOKEN_LIMIT=8192
+OLLAMA_EMBEDDING_NUM_CTX=8192
+EMBEDDING_FUNC_MAX_ASYNC=4
+EMBEDDING_BATCH_NUM=32
+
+# ── LLM (Azure OpenAI — your current config) ────────────────────────────────
+# Keep your existing Azure OpenAI settings here — do not change these.
+
+# ── MinerU (local server) ───────────────────────────────────────────────────
+LIGHTRAG_PARSER=*:native-iteP,*:mineru-iteP,*:legacy-R
+MINERU_API_MODE=local
+MINERU_LOCAL_ENDPOINT=http://127.0.0.1:8000
+MINERU_LOCAL_BACKEND=hybrid-auto-engine
+MINERU_LOCAL_PARSE_METHOD=auto
+MINERU_LOCAL_IMAGE_ANALYSIS=false
+MINERU_ENABLE_TABLE=true
+MINERU_ENABLE_FORMULA=true
+MAX_PARALLEL_PARSE_MINERU=2
+
+# ── Milvus (Docker Compose) ─────────────────────────────────────────────────
+LIGHTRAG_VECTOR_STORAGE=MilvusVectorDBStorage
+MILVUS_URI=http://localhost:19530
+MILVUS_DB_NAME=lightrag
+
+# ── Storage backends (keep defaults) ────────────────────────────────────────
+LIGHTRAG_KV_STORAGE=JsonKVStorage
+LIGHTRAG_DOC_STATUS_STORAGE=JsonDocStatusStorage
+LIGHTRAG_GRAPH_STORAGE=NetworkXStorage
+
+# ── Concurrency ──────────────────────────────────────────────────────────────
+MAX_PARALLEL_INSERT=2
+MAX_ASYNC_LLM=8
+KEYWORD_MAX_ASYNC_LLM=4
+QUERY_MAX_ASYNC_LLM=4
+EMBEDDING_FUNC_MAX_ASYNC=4
+
+# ── Chunking ─────────────────────────────────────────────────────────────────
+CHUNK_SIZE=1500
+CHUNK_OVERLAP_SIZE=150
+SUMMARY_LANGUAGE=English
+ENTITY_EXTRACTION_USE_JSON=true
+
+── end of .env ─────────────────────────────────────────────────────────────────
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 5 — STARTING LIGHTRAG SERVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Every session — run in this order:
+
+Terminal 1 — Milvus (keep open)
+    cd D:\Abhiraj_Only\Projects\LightRAG
+    docker compose -f docker-compose.yml up -d
+    (wait 20-30 seconds)
+    docker ps   ← verify all 3 containers show "Up"
+
+Terminal 2 — MinerU (keep open)
+    conda activate env_lightrag
+    mineru-api --host 0.0.0.0 --port 8000
+    (wait for "Uvicorn running on http://0.0.0.0:8000")
+
+Terminal 3 — LightRAG (keep open)
+    conda activate env_lightrag
+    cd D:\Abhiraj_Only\Projects\LightRAG
+    lightrag-server
+
+Server URLs:
+    WebUI:  http://localhost:9621/webui
+    API:    http://localhost:9621
+    Docs:   http://localhost:9621/docs
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: Milvus "panic: failed to create etcd client"
+Fix: You ran "docker run milvusdb/milvus:latest" directly.
+     Use docker compose instead — etcd and minio must run alongside Milvus.
+     docker rm milvus-standalone
+     docker compose -f docker-compose.yml up -d
+
+Problem: Milvus "Connection refused on localhost:19530"
+Fix: Containers are not running or still initializing.
+     docker ps                           ← check status
+     docker logs milvus-standalone       ← check for errors
+     Wait 30 seconds after "docker compose up" before starting LightRAG.
+
+Problem: Container name conflict on restart
+Fix: docker rm milvus-standalone milvus-etcd milvus-minio
+     docker compose -f docker-compose.yml up -d
+
+Problem: "No module named grpc" or "No module named ollama"
+Fix: Install into the uv tool environment directly:
+     uv pip install grpcio ollama "pymilvus>=2.6.2" \
+       --python "C:\Users\Abhiraj\AppData\Roaming\uv\tools\lightrag-hku\Scripts\python.exe"
+
+Problem: "ollama run qwen3-embedding:4b" shows no prompt
+Fix: Embedding models don't support "ollama run". They are served
+     automatically. Test with the /api/embed endpoint instead.
+
+Problem: Connection refused on port 11434
+Fix: Start Ollama — launch from Start Menu or run: ollama serve
+
+Problem: MinerU not parsing tables correctly
+Fix: Set MINERU_LOCAL_BACKEND=hybrid-auto-engine (requires GPU).
+     Ensure MINERU_ENABLE_TABLE=true and MINERU_LOCAL_PARSE_METHOD=auto.
+
+Problem: Milvus "dimension mismatch" error
+Fix: EMBEDDING_DIM in .env must exactly match your model's output.
+     qwen3-embedding:4b = 2560.
+     If you changed models, delete the Milvus collections and re-embed.
+
+Problem: Slow document insertion
+Fix: Increase MAX_ASYNC_LLM first (biggest impact).
+     Also raise EMBEDDING_FUNC_MAX_ASYNC and EMBEDDING_BATCH_NUM.
+
+Problem: Docker Desktop "input/output error" on container create
+Fix: Run in PowerShell: wsl --shutdown
+     Then reopen Docker Desktop and wait for it to fully start.
+     If persistent: Docker Desktop → Settings → Troubleshoot → Reset to factory defaults.
+
+Problem: Multiple docker-compose files warning
+Fix: Delete or rename docker-compose.yaml (the old one):
+     Rename-Item docker-compose.yaml docker-compose.yaml.bak
+     Always use: docker compose -f docker-compose.yml up -d
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+QUICK REFERENCE — KEY ENV VARIABLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Variable                      | What it controls
+------------------------------|----------------------------------------------
+EMBEDDING_BINDING             | Embedding provider (ollama, openai, etc.)
+EMBEDDING_MODEL               | Model name as shown in "ollama list"
+EMBEDDING_DIM                 | Must match model output dimension exactly
+OLLAMA_EMBEDDING_NUM_CTX      | Context window for embedding model
+EMBEDDING_FUNC_MAX_ASYNC      | Parallel embedding requests
+EMBEDDING_BATCH_NUM           | Texts per embedding API call
+LIGHTRAG_PARSER               | Parsers to use (native/mineru/legacy)
+MINERU_API_MODE               | local or official (cloud)
+MINERU_LOCAL_ENDPOINT         | URL where mineru-api is running
+MINERU_LOCAL_BACKEND          | hybrid-auto-engine (GPU) or pipeline (CPU)
+LIGHTRAG_VECTOR_STORAGE       | Which vector DB to use
+MILVUS_URI                    | Milvus connection string
+MILVUS_DB_NAME                | Database name inside Milvus
+MAX_PARALLEL_INSERT           | Docs processed simultaneously (default 2)
+MAX_ASYNC_LLM                 | Global LLM concurrency (main bottleneck)
+CHUNK_SIZE                    | Tokens per chunk (1200-2000 for SOPs)
+CHUNK_OVERLAP_SIZE            | Overlap between chunks
+
+================================================================================
+  Ref: https://github.com/HKUDS/LightRAG
+  Docs: https://github.com/HKUDS/LightRAG/tree/main/docs
+  Your project: D:\Abhiraj_Only\Projects\LightRAG
+================================================================================
