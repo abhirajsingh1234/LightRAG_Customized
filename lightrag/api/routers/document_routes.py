@@ -14,6 +14,7 @@ import sqlite3
 import tempfile
 import time
 from dataclasses import dataclass
+from pymilvus import MilvusClient
 from enum import Enum
 from uuid import uuid4
 from lightrag.utils import (
@@ -1540,6 +1541,19 @@ class DocumentManager:
 
         engine = resolve_file_parser_engine(filename)
         return parser_engine_supports_suffix(engine, parser_suffix(filename))
+
+
+
+class AvailableWrokspaceResponse(BaseModel):
+    """Response model for available workspaces
+
+    Attributes:
+        workspaces: List of available workspaces
+    """
+
+    workspaces: List[str] = Field(
+        default_factory=list, description="List of available workspaces"
+    )
 
 
 def validate_file_path_security(file_path_str: str, base_dir: Path) -> Optional[Path]:
@@ -6108,6 +6122,11 @@ def create_document_routes(
             logger.error(traceback.format_exc())
             raise internal_server_error(e)
 
+
+    
+
+
+
     class DeleteDocByIdResponse(BaseModel):
         """Response model for single document deletion operation."""
 
@@ -6351,7 +6370,49 @@ def create_document_routes(
             logger.error(f"Error getting track status for {track_id}: {str(e)}")
             logger.error(traceback.format_exc())
             raise internal_server_error(e)
+        
+    @router.get(
+        "/get_available_workspaces",
+        response_model=AvailableWrokspaceResponse,
+        dependencies=[Depends(combined_auth)],
+    )
+    async def get_available_workspaces() -> AvailableWrokspaceResponse:
+        try:
+            milvus_uri = os.getenv("MILVUS_URI", "http://localhost:19530")
+            db_name = os.getenv("MILVUS_DB_NAME", "default")
+            
+            client = MilvusClient(uri=milvus_uri, db_name=db_name)
+            collections = client.list_collections()
 
+            workspaces = set()
+
+            # 1. Grab current active workspace from the factory parameter 'rag'
+            active_ws = getattr(rag, "workspace", None)
+            if active_ws:
+                workspaces.add(active_ws)
+            else:
+                workspaces.add("default")
+
+            # 2. Extract any workspace prefixes safely from existing Milvus collections
+            for collection in collections:
+                parts = collection.split('_')
+                if len(parts) >= 3 and parts[1] in ["entities", "relationships", "chunks"]:
+                    workspaces.add(parts[0])
+
+            return AvailableWrokspaceResponse(workspaces=sorted(list(workspaces)))
+
+        except Exception as e:
+            logger.error(f"Error GET /documents/get_available_workspaces: {str(e)}")
+            logger.error(traceback.format_exc())
+            # Return fallback default workspace so WebUI never breaks
+            return AvailableWrokspaceResponse(workspaces=["default"])
+
+        except Exception as e:
+            logger.error(f"Error GET /documents/get_available_workspaces: {str(e)}")
+            logger.error(traceback.format_exc())
+            # Return fallback workspace instead of crashing the UI
+            return AvailableWrokspaceResponse(workspaces=["default"])
+    
     @router.post(
         "/paginated",
         response_model=PaginatedDocsResponse,
@@ -6379,6 +6440,7 @@ def create_document_routes(
         Raises:
             HTTPException: If an error occurs while retrieving documents (500).
         """
+        # print('get_documents_paginated called with request:', request)
         trace_id = uuid4().hex[:8]
         request_start = time.perf_counter()
         status_filter_value = (

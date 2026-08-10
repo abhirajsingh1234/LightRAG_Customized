@@ -2234,6 +2234,7 @@ def create_app(args):
     }
 
     # Initialize RAG with unified configuration
+    print("ARGS THAT ARE BEING PASSED:", args)
     try:
         rag = LightRAG(
             working_dir=args.working_dir,
@@ -2300,6 +2301,7 @@ def create_app(args):
                 for spec in ROLES
             },
         )
+        print("vector store initialized successfully.")
     except Exception as e:
         logger.error(f"Failed to initialize LightRAG: {e}")
         raise
