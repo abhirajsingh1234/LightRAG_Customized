@@ -1,0 +1,386 @@
+{
+  "doc-6e9c97657e05cf315dfdf575fb8d6364": {
+    "relation_pairs": [
+      [
+        "ATM Network",
+        "Bank"
+      ],
+      [
+        "Appointee",
+        "Depositor"
+      ],
+      [
+        "Automated Clearing House (ACH)",
+        "Bank"
+      ],
+      [
+        "Bank",
+        "Basic Savings Bank Deposit Account"
+      ],
+      [
+        "Bank",
+        "Bulk Deposit"
+      ],
+      [
+        "Bank",
+        "Core Banking System"
+      ],
+      [
+        "Bank",
+        "Current Account"
+      ],
+      [
+        "Bank",
+        "Customer"
+      ],
+      [
+        "Bank",
+        "Debit Card"
+      ],
+      [
+        "Bank",
+        "Demand Deposits"
+      ],
+      [
+        "Bank",
+        "Department"
+      ],
+      [
+        "Bank",
+        "Depositor"
+      ],
+      [
+        "Bank",
+        "Differential Interest Rates"
+      ],
+      [
+        "Bank",
+        "Domestic Non-Resident Ordinary Account"
+      ],
+      [
+        "Bank",
+        "Electronic Clearing Service (ECS)"
+      ],
+      [
+        "Bank",
+        "Government Authority"
+      ],
+      [
+        "Bank",
+        "Grievance Redressal Policy"
+      ],
+      [
+        "Bank",
+        "HUF"
+      ],
+      [
+        "Bank",
+        "Illiterate Person"
+      ],
+      [
+        "Bank",
+        "Income Tax Act"
+      ],
+      [
+        "Bank",
+        "Inoperative Account"
+      ],
+      [
+        "Bank",
+        "Internet Banking"
+      ],
+      [
+        "Bank",
+        "Joint Account"
+      ],
+      [
+        "Bank",
+        "KYC"
+      ],
+      [
+        "Bank",
+        "Leap Year"
+      ],
+      [
+        "Bank",
+        "Legal Heir"
+      ],
+      [
+        "Bank",
+        "Limited Liability Partnership"
+      ],
+      [
+        "Bank",
+        "Minor Account"
+      ],
+      [
+        "Bank",
+        "Mobile Banking"
+      ],
+      [
+        "Bank",
+        "NEFT"
+      ],
+      [
+        "Bank",
+        "NRE Deposits"
+      ],
+      [
+        "Bank",
+        "Nomination"
+      ],
+      [
+        "Bank",
+        "Nominee"
+      ],
+      [
+        "Bank",
+        "Non-Resident External Account"
+      ],
+      [
+        "Bank",
+        "Non-Resident Individual"
+      ],
+      [
+        "Bank",
+        "PAN"
+      ],
+      [
+        "Bank",
+        "Power of Attorney"
+      ],
+      [
+        "Bank",
+        "Premature Closure"
+      ],
+      [
+        "Bank",
+        "Private Limited Company"
+      ],
+      [
+        "Bank",
+        "Public"
+      ],
+      [
+        "Bank",
+        "Public Limited Company"
+      ],
+      [
+        "Bank",
+        "RBI"
+      ],
+      [
+        "Bank",
+        "RTGS"
+      ],
+      [
+        "Bank",
+        "Recurring Deposits"
+      ],
+      [
+        "Bank",
+        "Reserve Bank of India"
+      ],
+      [
+        "Bank",
+        "Savings Account"
+      ],
+      [
+        "Bank",
+        "Savings Bank Account"
+      ],
+      [
+        "Bank",
+        "Savings Deposit"
+      ],
+      [
+        "Bank",
+        "Senior Citizens"
+      ],
+      [
+        "Bank",
+        "Societies"
+      ],
+      [
+        "Bank",
+        "Specified Associates"
+      ],
+      [
+        "Bank",
+        "Statement of Account"
+      ],
+      [
+        "Bank",
+        "Tax Deduction Certificate"
+      ],
+      [
+        "Bank",
+        "Term Deposit"
+      ],
+      [
+        "Bank",
+        "Time Deposits"
+      ],
+      [
+        "Bank",
+        "Trusts"
+      ],
+      [
+        "Bank",
+        "Unclaimed Deposits"
+      ],
+      [
+        "Bank",
+        "Visually Challenged Person"
+      ],
+      [
+        "Bank",
+        "WhatsApp Banking"
+      ],
+      [
+        "Bank Deposits",
+        "Banking System"
+      ],
+      [
+        "Banking Ombudsman",
+        "Customer"
+      ],
+      [
+        "Banking Ombudsman",
+        "Reserve Bank of India"
+      ],
+      [
+        "Banking Regulation Act, 1949",
+        "Banking System"
+      ],
+      [
+        "Banking System",
+        "Depositors"
+      ],
+      [
+        "Banking System",
+        "Reserve Bank of India"
+      ],
+      [
+        "Board of Directors",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Customer",
+        "Mobile Banking"
+      ],
+      [
+        "Customer",
+        "Net Banking"
+      ],
+      [
+        "Customer Account",
+        "Depositors"
+      ],
+      [
+        "Customer Information",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Customers",
+        "Unity Small Finance Bank Limited"
+      ],
+      [
+        "Deceased Depositor",
+        "Depositors"
+      ],
+      [
+        "Deposit",
+        "Overdue Term Deposit"
+      ],
+      [
+        "Deposit Accounts",
+        "Deposit Products"
+      ],
+      [
+        "Deposit Insurance and Credit Guarantee Corporation of India (DICGC)",
+        "NRE Deposits"
+      ],
+      [
+        "Deposit Products",
+        "Interest Rates"
+      ],
+      [
+        "Depositor",
+        "Form 15G"
+      ],
+      [
+        "Depositor",
+        "Form 15H"
+      ],
+      [
+        "Depositor",
+        "Nominee"
+      ],
+      [
+        "Depositor",
+        "Term Deposit"
+      ],
+      [
+        "Depositor",
+        "Term Deposit Account"
+      ],
+      [
+        "Depositor",
+        "Transgender Person"
+      ],
+      [
+        "Depositors",
+        "Joint Account Holders"
+      ],
+      [
+        "Depositors",
+        "Minor"
+      ],
+      [
+        "Depositors",
+        "Unity Small Finance Bank Limited"
+      ],
+      [
+        "Guardian",
+        "Mental Health Act, 1987"
+      ],
+      [
+        "Guardian",
+        "National Trust for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation and Multiple Disabilities Act, 1999"
+      ],
+      [
+        "Joint Account Holders",
+        "Term Deposit"
+      ],
+      [
+        "Legal Heirs",
+        "Term Deposit"
+      ],
+      [
+        "Minimum Tenor",
+        "Term Deposit"
+      ],
+      [
+        "NRE Deposits",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "NRO Deposits",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "RBI",
+        "Unclaimed Deposits"
+      ],
+      [
+        "Reserve Bank of India",
+        "Unity Small Finance Bank Limited"
+      ]
+    ],
+    "count": 94,
+    "create_time": 1786608392,
+    "update_time": 1786608392,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364"
+  }
+}

@@ -472,10 +472,17 @@ class MilvusVectorDBStorage(BaseVectorStorage):
             ),
         }
 
-        db_name = os.environ.get(
-            "MILVUS_DB_NAME",
-            config.get("milvus", "db_name", fallback=None),
+        # db_name = os.environ.get(
+        #     "MILVUS_DB_NAME",
+        #     config.get("milvus", "db_name", fallback=None),
+        # )
+
+        db_name = (
+            self.global_config.get("vector_db_storage_cls_kwargs", {}).get("db_name")
+            or os.environ.get("MILVUS_DB_NAME")
+            or config.get("milvus", "db_name", fallback=None)
         )
+
         if include_db_name and db_name:
             connection_kwargs["db_name"] = db_name
 

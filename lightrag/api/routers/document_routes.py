@@ -2,6 +2,7 @@
 This module contains all document-related routes for the LightRAG API.
 """
 
+from collections.abc import Callable
 import asyncio
 import base64
 import binascii
@@ -1544,16 +1545,7 @@ class DocumentManager:
 
 
 
-class AvailableWrokspaceResponse(BaseModel):
-    """Response model for available workspaces
 
-    Attributes:
-        workspaces: List of available workspaces
-    """
-
-    workspaces: List[str] = Field(
-        default_factory=list, description="List of available workspaces"
-    )
 
 
 def validate_file_path_security(file_path_str: str, base_dir: Path) -> Optional[Path]:
@@ -4254,14 +4246,14 @@ async def background_delete_documents(
 
 
 def create_document_routes(
-    rag: LightRAG, doc_manager: DocumentManager, api_key: Optional[str] = None
+    get_rag: Callable, get_doc_manager: Callable, api_key: Optional[str] = None
 ):
     # Fresh router per call — see the note above the temp_prefix constant.
     router = APIRouter(
         prefix="/documents",
         tags=["documents"],
     )
-
+    
     # Create combined auth dependency for document routes
     combined_auth = get_combined_auth_dependency(api_key)
 
@@ -4269,7 +4261,7 @@ def create_document_routes(
         "/scan", response_model=ScanResponse, dependencies=[Depends(combined_auth)]
     )
     async def scan_for_new_documents(
-        managed_tasks: set = Depends(get_managed_background_tasks),
+        managed_tasks: set = Depends(get_managed_background_tasks),rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)
     ):
         """
         Trigger the scanning process for new documents.
@@ -4362,13 +4354,13 @@ def create_document_routes(
         # when the caller was cancelled right after the commit.
         takeover = {"committed": False}
 
-        async def _legacy_scan_work(started):
+        async def _legacy_scan_work(started,rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
             # Mocked-rig path (no pipeline_status): started.set() first so the
             # start-barrier confirms takeover; no reservation, no ingress.
             started.set()
             await run_scanning_process(rag, doc_manager, track_id, scanning_token)
 
-        async def _scan_backstop():
+        async def _scan_backstop(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
             # Reverse compensation (LR2 §8.6), owner-checked + idempotent, and
             # only ever reached when the child did NOT take over: the job record
             # this endpoint created has nobody left to finalise it, so cancel it
@@ -4546,7 +4538,7 @@ def create_document_routes(
             # finally, owner-checked by scanning_token), the published intent AND
             # the job record (finalised in that same finally).
 
-            async def _scan_commit(state):
+            async def _scan_commit(state,rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
                 # Fence already passed — this endpoint holds the scanning
                 # reservation. The commit only publishes the intent; the
                 # committed marker is set synchronously with the publish so a
@@ -4579,7 +4571,7 @@ def create_document_routes(
                     takeover["committed"] = True
                 return None
 
-            async def _scan_run():
+            async def _scan_run(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
                 await run_scanning_process(
                     rag,
                     doc_manager,
@@ -4639,7 +4631,7 @@ def create_document_routes(
         response_model=ScanJobStatusResponse,
         dependencies=[Depends(combined_auth)],
     )
-    async def get_scan_job_status(track_id: str):
+    async def get_scan_job_status(track_id: str,rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
         """
         Report the bounded status of one scan job (LR2 §8.6).
 
@@ -4687,10 +4679,11 @@ def create_document_routes(
             ge=1,
             le=_SOURCE_CONFLICT_PAGE_MAX,
             description="Maximum conflicts to return in this page",
+            
         ),
         cursor: Optional[str] = Query(
             None, description="next_cursor from a previous page (opaque)"
-        ),
+        ),rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)
     ):
         """
         List canonical source keys claimed by more than one primary document.
@@ -4758,7 +4751,9 @@ def create_document_routes(
     )
     async def repair_source_conflict(
         payload: SourceConflictRepairRequest,
-        http_request: Request,
+        http_request: Request
+        ,rag: LightRAG = Depends(get_rag),
+        doc_manager: DocumentManager = Depends(get_doc_manager)
     ):
         """
         Settle one source conflict by naming the document that keeps the source.
@@ -4987,6 +4982,8 @@ def create_document_routes(
         managed_tasks: set = Depends(get_managed_background_tasks),
         file: UploadFile = File(...),
         http_request: Request = None,
+        rag: LightRAG = Depends(get_rag),
+        doc_manager: DocumentManager = Depends(get_doc_manager)
     ):
         """
         Upload a file to the input directory and index it.
@@ -5079,7 +5076,7 @@ def create_document_routes(
             # or at the batch boundary.
             if not admission_adopted:
                 await _reserve_enqueue_slot(rag, enqueue_token)
-
+            print(doc_manager.input_dir)
             # Sanitize filename to prevent Path Traversal attacks
             safe_filename = sanitize_filename(file.filename, doc_manager.input_dir)
 
@@ -5143,9 +5140,11 @@ def create_document_routes(
             if file_path.exists():
                 existing_input_file: Path | None = file_path
             else:
+                
                 existing_input_file = find_existing_file_by_file_path(
                     doc_manager.input_dir, canonical_filename
                 )
+            print("File Path",doc_manager.input_dir, canonical_filename)
             if existing_input_file:
                 raise HTTPException(
                     status_code=409,
@@ -5242,7 +5241,7 @@ def create_document_routes(
             # refused reservation arms the auto-rescan flag and returns,
             # so concurrent uploads/inserts cooperate via the running
             # loop's quiescence decision.
-            async def _indexing_work(started):
+            async def _indexing_work(started,):
                 # started.set() first (no await before it) so the endpoint's
                 # start-barrier confirms takeover before returning; a body-send
                 # cancellation therefore cannot strand the enqueue slot.
@@ -5257,7 +5256,7 @@ def create_document_routes(
                 finally:
                     await _release_enqueue_slot(rag, enqueue_token)
 
-            async def _enqueue_backstop():
+            async def _enqueue_backstop(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
                 await _release_enqueue_slot(rag, enqueue_token)
 
             await start_reserved_background_task(
@@ -5297,6 +5296,8 @@ def create_document_routes(
         request: InsertTextRequest,
         managed_tasks: set = Depends(get_managed_background_tasks),
         http_request: Request = None,
+        rag: LightRAG = Depends(get_rag),
+        doc_manager: DocumentManager = Depends(get_doc_manager)
     ):
         """
         Insert text into the RAG system.
@@ -5376,7 +5377,7 @@ def create_document_routes(
             # Generate track_id for text insertion
             track_id = generate_track_id("insert")
 
-            async def _indexing_work(started):
+            async def _indexing_work(started,rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
                 # started.set() first (no await before it) so the endpoint's
                 # start-barrier confirms takeover before returning; a body-send
                 # cancellation therefore cannot strand the enqueue slot.
@@ -5393,7 +5394,7 @@ def create_document_routes(
                 finally:
                     await _release_enqueue_slot(rag, enqueue_token)
 
-            async def _enqueue_backstop():
+            async def _enqueue_backstop(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
                 await _release_enqueue_slot(rag, enqueue_token)
 
             await start_reserved_background_task(
@@ -5427,6 +5428,8 @@ def create_document_routes(
         request: InsertTextsRequest,
         managed_tasks: set = Depends(get_managed_background_tasks),
         http_request: Request = None,
+        rag: LightRAG = Depends(get_rag)
+        ,doc_manager: DocumentManager = Depends(get_doc_manager)
     ):
         """
         Insert multiple texts into the RAG system.
@@ -5538,7 +5541,7 @@ def create_document_routes(
             # Generate track_id for texts insertion
             track_id = generate_track_id("insert")
 
-            async def _indexing_work(started):
+            async def _indexing_work(started,rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
                 # started.set() first (no await before it) so the endpoint's
                 # start-barrier confirms takeover before returning; a body-send
                 # cancellation therefore cannot strand the enqueue slot.
@@ -5555,7 +5558,7 @@ def create_document_routes(
                 finally:
                     await _release_enqueue_slot(rag, enqueue_token)
 
-            async def _enqueue_backstop():
+            async def _enqueue_backstop(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
                 await _release_enqueue_slot(rag, enqueue_token)
 
             await start_reserved_background_task(
@@ -5583,7 +5586,7 @@ def create_document_routes(
     @router.delete(
         "", response_model=ClearDocumentsResponse, dependencies=[Depends(combined_auth)]
     )
-    async def clear_documents():
+    async def clear_documents(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
         """
         Clear all documents from the RAG system.
 
@@ -5875,7 +5878,7 @@ def create_document_routes(
             # wedged and cannot clobber a later holder.
             from lightrag.kg.shared_storage import with_reservation_lock
 
-            def _clear_release(status):
+            def _clear_release(status,rag: LightRAG = Depends(get_rag)):
                 completion_msg = "Document clearing process completed"
                 status.update(
                     {
@@ -5901,7 +5904,7 @@ def create_document_routes(
         dependencies=[Depends(combined_auth)],
         response_model=PipelineStatusResponse,
     )
-    async def get_pipeline_status() -> PipelineStatusResponse:
+    async def get_pipeline_status(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)) -> PipelineStatusResponse:
         """
         Get the current status of the document indexing pipeline.
 
@@ -6022,7 +6025,7 @@ def create_document_routes(
     @router.get(
         "", response_model=DocsStatusesResponse, dependencies=[Depends(combined_auth)]
     )
-    async def documents() -> DocsStatusesResponse:
+    async def documents(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)) -> DocsStatusesResponse:
         """
         Get the status of all documents in the system. This endpoint is deprecated; use /documents/paginated instead.
         To prevent excessive resource consumption, a maximum of 1,000 records is returned.
@@ -6145,6 +6148,7 @@ def create_document_routes(
     async def delete_document(
         delete_request: DeleteDocRequest,
         managed_tasks: set = Depends(get_managed_background_tasks),
+        rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)
     ) -> DeleteDocByIdResponse:
         """
         Delete documents and all their associated data by their IDs using background processing.
@@ -6189,7 +6193,7 @@ def create_document_routes(
         # finally can release it by owner even if the acquire is cancelled.
         destructive_token = uuid4().hex
 
-        async def _delete_work(started):
+        async def _delete_work(started,rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
             # started.set() first (no await before it) so the endpoint's
             # start-barrier confirms takeover before returning; a body-send
             # cancellation therefore cannot strand the reservation.
@@ -6205,7 +6209,7 @@ def create_document_routes(
                 destructive_token,
             )
 
-        async def _delete_backstop():
+        async def _delete_backstop(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
             # Owner-checked + idempotent; runs only if the child never took over.
             await _release_destructive_busy(rag, destructive_token)
 
@@ -6268,7 +6272,7 @@ def create_document_routes(
         response_model=ClearCacheResponse,
         dependencies=[Depends(combined_auth)],
     )
-    async def clear_cache(request: ClearCacheRequest):
+    async def clear_cache(request: ClearCacheRequest, rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
         """
         Clear all cache data from the LLM response cache storage.
 
@@ -6302,7 +6306,7 @@ def create_document_routes(
         response_model=TrackStatusResponse,
         dependencies=[Depends(combined_auth)],
     )
-    async def get_track_status(track_id: str) -> TrackStatusResponse:
+    async def get_track_status(track_id: str,rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)) -> TrackStatusResponse:
         """
         Get the processing status of documents by tracking ID.
 
@@ -6370,48 +6374,8 @@ def create_document_routes(
             logger.error(f"Error getting track status for {track_id}: {str(e)}")
             logger.error(traceback.format_exc())
             raise internal_server_error(e)
+
         
-    @router.get(
-        "/get_available_workspaces",
-        response_model=AvailableWrokspaceResponse,
-        dependencies=[Depends(combined_auth)],
-    )
-    async def get_available_workspaces() -> AvailableWrokspaceResponse:
-        try:
-            milvus_uri = os.getenv("MILVUS_URI", "http://localhost:19530")
-            db_name = os.getenv("MILVUS_DB_NAME", "default")
-            
-            client = MilvusClient(uri=milvus_uri, db_name=db_name)
-            collections = client.list_collections()
-
-            workspaces = set()
-
-            # 1. Grab current active workspace from the factory parameter 'rag'
-            active_ws = getattr(rag, "workspace", None)
-            if active_ws:
-                workspaces.add(active_ws)
-            else:
-                workspaces.add("default")
-
-            # 2. Extract any workspace prefixes safely from existing Milvus collections
-            for collection in collections:
-                parts = collection.split('_')
-                if len(parts) >= 3 and parts[1] in ["entities", "relationships", "chunks"]:
-                    workspaces.add(parts[0])
-
-            return AvailableWrokspaceResponse(workspaces=sorted(list(workspaces)))
-
-        except Exception as e:
-            logger.error(f"Error GET /documents/get_available_workspaces: {str(e)}")
-            logger.error(traceback.format_exc())
-            # Return fallback default workspace so WebUI never breaks
-            return AvailableWrokspaceResponse(workspaces=["default"])
-
-        except Exception as e:
-            logger.error(f"Error GET /documents/get_available_workspaces: {str(e)}")
-            logger.error(traceback.format_exc())
-            # Return fallback workspace instead of crashing the UI
-            return AvailableWrokspaceResponse(workspaces=["default"])
     
     @router.post(
         "/paginated",
@@ -6420,6 +6384,7 @@ def create_document_routes(
     )
     async def get_documents_paginated(
         request: DocumentsRequest,
+        rag: LightRAG = Depends(get_rag)
     ) -> PaginatedDocsResponse:
         """
         Get documents with pagination support.
@@ -6461,7 +6426,7 @@ def create_document_routes(
 
         try:
 
-            async def _timed_call(operation_name: str, operation):
+            async def _timed_call(operation_name: str, operation,rag: LightRAG = Depends(get_rag)):
                 operation_start = time.perf_counter()
                 performance_timing_log(
                     "[documents/paginated][%s] %s started",
@@ -6600,7 +6565,7 @@ def create_document_routes(
         response_model=StatusCountsResponse,
         dependencies=[Depends(combined_auth)],
     )
-    async def get_document_status_counts() -> StatusCountsResponse:
+    async def get_document_status_counts(rag: LightRAG = Depends(get_rag)) -> StatusCountsResponse:
         """
         Get counts of documents by status.
 
@@ -6629,6 +6594,7 @@ def create_document_routes(
     )
     async def get_supported_file_types(
         response: Response,
+        rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)
     ) -> SupportedFileTypesResponse:
         """
         Get the upload allowlist and the parser capability matrix.
@@ -6661,6 +6627,7 @@ def create_document_routes(
     )
     async def reprocess_failed_documents(
         managed_tasks: set = Depends(get_managed_background_tasks),
+        rag: LightRAG = Depends(get_rag)
     ):
         """
         Reprocess existing failed, pending, or interrupted document records
@@ -6719,11 +6686,11 @@ def create_document_routes(
             # Workspace pipeline_status not bootstrapped (mocked test rigs):
             # there is no fence and no ingress to publish into — fall back to
             # a plain managed drive.
-            async def _legacy_work(started):
+            async def _legacy_work(started,rag: LightRAG = Depends(get_rag)):
                 started.set()
                 await rag.apipeline_process_enqueue_documents()
 
-            async def _noop_backstop():
+            async def _noop_backstop(rag: LightRAG = Depends(get_rag)):
                 return None
 
             try:
@@ -6754,7 +6721,7 @@ def create_document_routes(
         # the child — the published intent has an owner driving it. Reprocess
         # holds no reservation of its own (apipeline_process_enqueue_documents
         # acquires/releases busy itself), so the backstop is a no-op.
-        async def _commit(state):
+        async def _commit(state,rag: LightRAG = Depends(get_rag)):
             return await commit_manual_retry_request(
                 pipeline_status,
                 pipeline_status_lock,
@@ -6763,10 +6730,10 @@ def create_document_routes(
                 state,
             )
 
-        async def _work():
+        async def _work(rag: LightRAG = Depends(get_rag)):
             await rag.apipeline_process_enqueue_documents()
 
-        async def _noop_backstop():
+        async def _noop_backstop(rag: LightRAG = Depends(get_rag)):
             return None
 
         try:
@@ -6810,6 +6777,7 @@ def create_document_routes(
     )
     async def force_reset_recovery(
         request: ForceResetRecoveryRequest,
+        rag: LightRAG = Depends(get_rag)
     ) -> ForceResetRecoveryResponse:
         """Force-clear a ``recovery_required`` fence (UNSAFE, manual).
 
@@ -6988,7 +6956,7 @@ def create_document_routes(
         response_model=CancelPipelineResponse,
         dependencies=[Depends(combined_auth)],
     )
-    async def cancel_pipeline():
+    async def cancel_pipeline(rag: LightRAG = Depends(get_rag)):
         """
         Request cancellation of the currently running pipeline.
 

@@ -1,0 +1,39 @@
+{
+  "doc-6e9c97657e05cf315dfdf575fb8d6364": {
+    "status": "processed",
+    "content_summary": "## SECTION D\n\n## (1) COMPREHENSIVE DEPOSIT POLICY\n\n## I. Introduction\nOne of the important functions of the bank is to accept deposits from the public for the purpose of lending. In fact, depositors are the major stakeholders of the Banking System. T...",
+    "content_length": 56273,
+    "created_at": "2026-08-13T08:05:57.195126+00:00",
+    "updated_at": "2026-08-13T08:06:42.479414+00:00",
+    "file_path": "Deposit Policy.pdf",
+    "track_id": "upload_20260813_133557_cd40e680",
+    "content_hash": "0188737eac56978885fca962d3b6a670",
+    "metadata": {
+      "process_options": "iteP",
+      "source_file": "Deposit Policy.pdf",
+      "parse_start_time": 1786608357,
+      "parse_stage_skipped": true,
+      "parse_format": "lightrag",
+      "parse_engine": "mineru",
+      "analyzing_start_time": 1786608357,
+      "analyzing_end_time": 1786608357,
+      "kg_write_state": "graph_mutation_started",
+      "process_start_time": 1786608357,
+      "process_end_time": 1786608402,
+      "chunk_method": "paragraph_semantic",
+      "chunk_opts": "size=2000, overlap=100, drop_rf=True"
+    },
+    "chunks_count": 9,
+    "chunks_list": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-000",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ]
+  }
+}

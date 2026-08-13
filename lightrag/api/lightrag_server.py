@@ -1,14 +1,15 @@
 """
 LightRAG FastAPI Server
 """
-
-from fastapi import FastAPI, Depends, HTTPException, Request
+from pymilvus import MilvusClient
+from fastapi import FastAPI, Depends, HTTPException, Request,Query
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse, FileResponse, HTMLResponse, Response
 from fastapi.openapi.docs import (
     get_swagger_ui_html,
-    get_swagger_ui_oauth2_redirect_html,
+    get_swagger_ui_oauth2_redirect_html
 )
+import traceback
 import asyncio
 import json
 import os
@@ -86,7 +87,8 @@ from lightrag.utils_pipeline import describe_doc_status_capabilities
 from fastapi.security import OAuth2PasswordRequestForm
 from lightrag.api.auth import auth_handler
 from lightrag.api.login_rate_limit import LoginRateLimiter
-
+from pydantic import BaseModel,Field
+from typing import List,Optional
 # use the .env that is inside the current folder
 # allows to use different .env file for each lightrag instance
 # the OS environment variables take precedence over the .env file
@@ -533,6 +535,17 @@ def _build_docling_status() -> dict[str, Any]:
         },
     }
 
+
+class AvailableWrokspaceResponse(BaseModel):
+    """Response model for available workspaces
+
+    Attributes:
+        workspaces: List of available workspaces
+    """
+
+    workspaces: List[str] = Field(
+        default_factory=list, description="List of available workspaces"
+    )
 
 class LLMConfigCache:
     """Smart LLM and Embedding configuration cache class"""
@@ -1342,72 +1355,121 @@ def create_app(args):
     api_key = os.getenv("LIGHTRAG_API_KEY") or args.key
 
     # Initialize document manager with workspace support for data isolation
-    doc_manager = DocumentManager(args.input_dir, workspace=args.workspace)
+    # doc_manager = DocumentManager(args.input_dir, workspace=args.workspace)
+
+    
+    def list_databases(uri: str = os.getenv("MILVUS_URI")):
+        """Lists all databases and the collections (workspaces) inside each."""
+        client = MilvusClient(uri=uri)
+        
+        dbs = client.list_databases()
+        print(f"\n--- [Available Databases] ({len(dbs)} total) ---")
+        
+        return dbs
+
 
     @asynccontextmanager
     async def lifespan(app: FastAPI):
-        """Lifespan context manager for startup and shutdown events"""
-        # Store background tasks
         app.state.background_tasks = set()
-
         try:
-            # Initialize database connections
-            # Note: initialize_storages() now auto-initializes pipeline_status for rag.workspace
-            await rag.initialize_storages()
+            base = "./workspaces"
+            os.makedirs(base, exist_ok=True)
 
-            # Data migration regardless of storage implementation
-            await rag.check_and_migrate_data()
+            milvus_dbs = set(list_databases())
+            local_dirs = set(
+                name for name in os.listdir(base)
+                if os.path.isdir(os.path.join(base, name))
+            )
 
-            # Admission control needs a doc_status backend that can count
-            # strictly (LR2 §9.1). Probe once here so an unsupported backend
-            # fails at startup instead of turning every upload into a 503.
-            if getattr(rag, "max_pending_documents", 0) > 0:
-                from lightrag.utils_pipeline import count_active_documents
-
-                try:
-                    active_now = await count_active_documents(rag.doc_status)
-                except Exception as admission_probe_error:
-                    raise RuntimeError(
-                        "MAX_PENDING_DOCUMENTS is set but the configured "
-                        f"doc_status backend cannot count strictly: "
-                        f"{admission_probe_error}"
-                    ) from admission_probe_error
-                logger.info(
-                    f"Admission control enabled: capacity "
-                    f"{rag.max_pending_documents}, {active_now} document(s) "
-                    "currently active"
+            for name in local_dirs.intersection(milvus_dbs):
+                input_dir = Path(f"./workspaces/{name}/input")
+                input_dir.mkdir(parents=True, exist_ok=True)
+                rag = LightRAG( workspace=name,
+                working_dir=os.path.join(base, name),
+                llm_model_func=create_llm_model_func(args.llm_binding),
+                llm_model_name=args.llm_model,
+                    llm_model_max_async=args.max_async,
+                    summary_max_tokens=args.summary_max_tokens,
+                    summary_context_size=args.summary_context_size,
+                    chunk_token_size=int(args.chunk_size),
+                    chunk_overlap_token_size=int(args.chunk_overlap_size),
+                    embedding_chunk_overlap_token_size=int(
+                        args.embedding_chunk_overlap_token_size
+                    ),
+                    llm_model_kwargs=create_llm_model_kwargs(
+                        args.llm_binding, args, llm_timeout
+                    ),
+                    embedding_func=embedding_func,
+                    default_llm_timeout=llm_timeout,
+                    default_embedding_timeout=embedding_timeout,
+                    kv_storage=args.kv_storage,
+                    graph_storage=args.graph_storage,
+                    vector_storage=args.vector_storage,
+                    doc_status_storage=args.doc_status_storage,
+                    vector_db_storage_cls_kwargs={
+                        "cosine_better_than_threshold": args.cosine_threshold
+                    },
+                    enable_llm_cache_for_entity_extract=args.enable_llm_cache_for_extract,
+                    enable_llm_cache=args.enable_llm_cache,
+                    vlm_process_enable=args.vlm_process_enable,
+                    rerank_model_func=rerank_model_func,
+                    rerank_model_max_async=args.rerank_max_async,
+                    default_rerank_timeout=args.rerank_timeout,
+                    max_parallel_insert=args.max_parallel_insert,
+                    pipeline_scheduling_page_size=args.pipeline_scheduling_page_size,
+                    pipeline_require_strict_storage_reads=args.pipeline_require_strict_storage_reads,
+                    max_pending_documents=args.max_pending_documents,
+                    max_graph_nodes=args.max_graph_nodes,
+                    addon_params=addon_params,
+                    ollama_server_infos=ollama_server_infos,
+                    role_llm_configs={
+                        spec.name: RoleLLMConfig(
+                            func=role_llm_configs[spec.name]["func"],
+                            kwargs=role_llm_configs[spec.name]["kwargs"],
+                            max_async=role_llm_configs[spec.name]["max_async"],
+                            timeout=role_llm_configs[spec.name]["timeout"],
+                            metadata={
+                                "base_binding": args.llm_binding,
+                                "binding": role_llm_configs[spec.name]["binding"],
+                                "model": role_llm_configs[spec.name]["model"],
+                                "host": role_llm_configs[spec.name]["host"],
+                                "api_key": role_llm_configs[spec.name]["api_key"],
+                                "provider_options": role_llm_configs[spec.name][
+                                    "provider_options"
+                                ],
+                                "bedrock_aws_options": role_llm_configs[spec.name][
+                                    "bedrock_aws_options"
+                                ],
+                                "is_cross_provider": role_llm_configs[spec.name][
+                                    "is_cross_provider"
+                                ],
+                            },
+                        )
+                        for spec in ROLES
+                    },
                 )
+                await rag.initialize_storages()
+                await rag.check_and_migrate_data()
+                registry[name] = rag
+                doc_manager_registry[name] = DocumentManager(input_dir, workspace=name)
+                logger.info(f"Loaded workspace: {name}")
 
             ASCIIColors.green("\nServer is ready to accept connections! 🚀\n")
-
             yield
-
         finally:
-            # Cancel and join all reserved background tasks FIRST, so each
-            # child's finally releases its reservation while shared state is
-            # still alive. Resists repeated cancellation; a deferred shutdown
-            # cancellation is re-raised only after storage/shared-state cleanup.
             shutdown_cancel = await drain_reserved_background_tasks(
                 app.state.background_tasks
             )
-
-            # Clean up database connections
-            await rag.finalize_storages()
+            for rag in registry.values():
+                await rag.finalize_storages()
 
             if "LIGHTRAG_GUNICORN_MODE" not in os.environ:
-                # Only perform cleanup in Uvicorn single-process mode
-                logger.debug("Unvicorn Mode: finalizing shared storage...")
                 finalize_share_data()
             else:
-                # In Gunicorn mode with preload_app=True, cleanup is handled by on_exit hooks
-                logger.debug(
-                    "Gunicorn Mode: postpone shared storage finalization to master process"
-                )
+                logger.debug("Gunicorn Mode: postpone shared storage finalization to master process")
 
-            # Re-raise a shutdown cancellation only after all cleanup is done.
             if shutdown_cancel is not None:
                 raise shutdown_cancel
-
     base_description = (
         "Providing API for LightRAG core, Web UI and Ollama Model Emulation"
     )
@@ -1528,10 +1590,13 @@ def create_app(args):
     if args.max_pending_documents > 0:
         app.add_middleware(
             AdmissionMiddleware,
-            rag_getter=lambda: rag,
+            # rag_getter=lambda: rag,
+            rag_getter=lambda: registry.get(get_default_workspace()),
             api_key=api_key,
             api_prefix=api_prefix,
         )
+
+    
 
     # Raw request-body ceilings (GHSA-r8jh-295g-vv42). Added AFTER the admission
     # middleware so it ends up outside it: an oversized body is then refused
@@ -2232,13 +2297,145 @@ def create_app(args):
         }
         for spec in ROLES
     }
+# -------------------------------------------------------------------------------
+#below code is old code for initializing LightRAG
+#--------------------------------------------------------------------------------
 
     # Initialize RAG with unified configuration
-    print("ARGS THAT ARE BEING PASSED:", args)
-    try:
-        rag = LightRAG(
-            working_dir=args.working_dir,
-            workspace=args.workspace,
+    # print("ARGS THAT ARE BEING PASSED:", args)
+    # try:
+    #     rag = LightRAG(
+    #         working_dir=args.working_dir,
+    #         workspace=args.workspace,
+        #     llm_model_func=create_llm_model_func(args.llm_binding),
+        #     llm_model_name=args.llm_model,
+        #     llm_model_max_async=args.max_async,
+        #     summary_max_tokens=args.summary_max_tokens,
+        #     summary_context_size=args.summary_context_size,
+        #     chunk_token_size=int(args.chunk_size),
+        #     chunk_overlap_token_size=int(args.chunk_overlap_size),
+        #     embedding_chunk_overlap_token_size=int(
+        #         args.embedding_chunk_overlap_token_size
+        #     ),
+        #     llm_model_kwargs=create_llm_model_kwargs(
+        #         args.llm_binding, args, llm_timeout
+        #     ),
+        #     embedding_func=embedding_func,
+        #     default_llm_timeout=llm_timeout,
+        #     default_embedding_timeout=embedding_timeout,
+        #     kv_storage=args.kv_storage,
+        #     graph_storage=args.graph_storage,
+        #     vector_storage=args.vector_storage,
+        #     doc_status_storage=args.doc_status_storage,
+        #     vector_db_storage_cls_kwargs={
+        #         "cosine_better_than_threshold": args.cosine_threshold
+        #     },
+        #     enable_llm_cache_for_entity_extract=args.enable_llm_cache_for_extract,
+        #     enable_llm_cache=args.enable_llm_cache,
+        #     vlm_process_enable=args.vlm_process_enable,
+        #     rerank_model_func=rerank_model_func,
+        #     rerank_model_max_async=args.rerank_max_async,
+        #     default_rerank_timeout=args.rerank_timeout,
+        #     max_parallel_insert=args.max_parallel_insert,
+        #     pipeline_scheduling_page_size=args.pipeline_scheduling_page_size,
+        #     pipeline_require_strict_storage_reads=args.pipeline_require_strict_storage_reads,
+        #     max_pending_documents=args.max_pending_documents,
+        #     max_graph_nodes=args.max_graph_nodes,
+        #     addon_params=addon_params,
+        #     ollama_server_infos=ollama_server_infos,
+        #     role_llm_configs={
+        #         spec.name: RoleLLMConfig(
+        #             func=role_llm_configs[spec.name]["func"],
+        #             kwargs=role_llm_configs[spec.name]["kwargs"],
+        #             max_async=role_llm_configs[spec.name]["max_async"],
+        #             timeout=role_llm_configs[spec.name]["timeout"],
+        #             metadata={
+        #                 "base_binding": args.llm_binding,
+        #                 "binding": role_llm_configs[spec.name]["binding"],
+        #                 "model": role_llm_configs[spec.name]["model"],
+        #                 "host": role_llm_configs[spec.name]["host"],
+        #                 "api_key": role_llm_configs[spec.name]["api_key"],
+        #                 "provider_options": role_llm_configs[spec.name][
+        #                     "provider_options"
+        #                 ],
+        #                 "bedrock_aws_options": role_llm_configs[spec.name][
+        #                     "bedrock_aws_options"
+        #                 ],
+        #                 "is_cross_provider": role_llm_configs[spec.name][
+        #                     "is_cross_provider"
+        #                 ],
+        #             },
+        #         )
+        #         for spec in ROLES
+        #     },
+        # )
+    #     print("vector store initialized successfully.")
+    # except Exception as e:
+    #     logger.error(f"Failed to initialize LightRAG: {e}")
+    #     raise
+
+    # _log_role_provider_options(rag)
+
+    # rag.register_role_llm_builder(
+    #     lambda role, meta: (
+    #         create_role_llm_func(role, meta),
+    #         create_role_llm_model_kwargs(role, meta),
+    #     )
+    # )
+
+    registry: dict[str, LightRAG] = {}
+    doc_manager_registry: dict[str, DocumentManager] = {}
+
+    async def get_doc_manager(workspace: Optional[str] = Query(default=None)) -> DocumentManager:
+        name = workspace or next(iter(doc_manager_registry), None)
+        if name is None or name not in doc_manager_registry:
+            raise HTTPException(404, "Workspace not found")
+        return doc_manager_registry[name]   
+
+    async def get_rag(workspace: str = Query(...), request: Request = None) -> LightRAG:
+        if workspace not in registry:
+            raise HTTPException(404, f"Workspace '{workspace}' not found")
+        return registry[workspace]
+
+
+    @app.get(
+        "/get_available_workspaces",
+        response_model=AvailableWrokspaceResponse,
+    )
+    async def get_available_workspaces() -> AvailableWrokspaceResponse:
+        try:
+            workspaces = set(list_databases())
+
+            return AvailableWrokspaceResponse(workspaces=sorted(list(workspaces)))
+
+        except Exception as e:
+            logger.error(f"Error GET /documents/get_available_workspaces: {str(e)}")
+            logger.error(traceback.format_exc())
+            # Return fallback default workspace so WebUI never breaks
+            return AvailableWrokspaceResponse(workspaces=["default"])
+
+        except Exception as e:
+            logger.error(f"Error GET /documents/get_available_workspaces: {str(e)}")
+            logger.error(traceback.format_exc())
+            # Return fallback workspace instead of crashing the UI
+            return AvailableWrokspaceResponse(workspaces=["default"])
+
+    @app.post("/workspaces/{name}", status_code=201)
+    async def create_workspace(name: str):
+        input_dir = Path(f"./workspaces/{name}/input")
+        input_dir.mkdir(parents=True, exist_ok=True)
+        workspace_doc_manager = DocumentManager(input_dir, workspace="")
+        if name in registry:
+            raise HTTPException(409, "Already exists")
+        milvus_dbs = list_databases()
+        local_exists = os.path.isdir(f"./workspaces/{name}")
+        # client = MilvusClient(uri=os.getenv('MILVUS_URI'), db_name="default")
+        # if name not in milvus_dbs:
+        #     client.create_database(name)
+        if name in milvus_dbs and local_exists:
+            raise HTTPException(409, "Already exists on disk and Milvus")
+        os.makedirs(f"./workspaces/{name}", exist_ok=True)
+        rag = LightRAG(workspace=name, working_dir=f"./workspaces/{name}",
             llm_model_func=create_llm_model_func(args.llm_binding),
             llm_model_name=args.llm_model,
             llm_model_max_async=args.max_async,
@@ -2260,6 +2457,7 @@ def create_app(args):
             vector_storage=args.vector_storage,
             doc_status_storage=args.doc_status_storage,
             vector_db_storage_cls_kwargs={
+                "db_name": name, "uri": os.getenv('MILVUS_URI'),
                 "cosine_better_than_threshold": args.cosine_threshold
             },
             enable_llm_cache_for_entity_extract=args.enable_llm_cache_for_extract,
@@ -2301,29 +2499,34 @@ def create_app(args):
                 for spec in ROLES
             },
         )
-        print("vector store initialized successfully.")
-    except Exception as e:
-        logger.error(f"Failed to initialize LightRAG: {e}")
-        raise
+        await rag.initialize_storages()
+        await rag.check_and_migrate_data()
+        registry[name] = rag
+        doc_manager_registry[name] = workspace_doc_manager
+        return {"workspace": name, "status": "created"}
+#-------------------------------------------------------------------------------
+# Above is the old code for initializing LightRAG
+# ------------------------------------------------------------------------------
 
-    _log_role_provider_options(rag)
 
-    rag.register_role_llm_builder(
-        lambda role, meta: (
-            create_role_llm_func(role, meta),
-            create_role_llm_model_kwargs(role, meta),
-        )
-    )
 
     # Add routes
     # root_path is set on the app for reverse proxy support;
     # routes stay at their natural paths and are prefixed by the proxy or uvicorn --root-path
-    app.include_router(create_document_routes(rag, doc_manager, api_key))
-    app.include_router(create_query_routes(rag, api_key, args.top_k))
-    app.include_router(create_graph_routes(rag, api_key))
+    print(f"api_key value: {repr(api_key)}")
+
+    app.include_router(create_document_routes(get_rag, get_doc_manager, api_key))
+    app.include_router(create_query_routes(get_rag, api_key, args.top_k))
+    app.include_router(create_graph_routes(get_rag, api_key))
 
     # Add Ollama API routes
-    ollama_api = OllamaAPI(rag, top_k=args.top_k, api_key=api_key)
+    ollama_api = OllamaAPI(
+        get_rag,
+        ollama_server_infos=ollama_server_infos,  # ← already constructed above
+        top_k=args.top_k,
+        api_key=api_key
+    )
+    # ollama_api = OllamaAPI(get_rag, top_k=args.top_k, api_key=api_key)
     app.include_router(ollama_api.router, prefix="/api")
 
     # Custom Swagger UI endpoint for offline support
@@ -2556,6 +2759,20 @@ def create_app(args):
             pipeline_status = await get_namespace_data(
                 "pipeline_status", workspace=workspace
             )
+            rag = registry.get(workspace)
+            if rag is None:
+                raise HTTPException(404, f"Workspace '{workspace}' not found or not initialized")
+                
+
+                return {
+                    "status": "healthy",
+                    "auth_mode": auth_mode,
+                    "core_version": core_version,
+                    "api_version": api_version_display,
+                    "webui_available": webui_assets_exist,
+                    "pipeline_busy": False,
+                    "pipeline_active": False,
+                }
             # One DictProxy RPC in multi-worker mode; keep /health read-only and
             # avoid one cross-process ``get`` per field.
             pipeline_snapshot = pipeline_status.copy()
