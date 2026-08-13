@@ -6193,7 +6193,7 @@ def create_document_routes(
         # finally can release it by owner even if the acquire is cancelled.
         destructive_token = uuid4().hex
 
-        async def _delete_work(started,rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
+        async def _delete_work(started):
             # started.set() first (no await before it) so the endpoint's
             # start-barrier confirms takeover before returning; a body-send
             # cancellation therefore cannot strand the reservation.
@@ -6209,7 +6209,7 @@ def create_document_routes(
                 destructive_token,
             )
 
-        async def _delete_backstop(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
+        async def _delete_backstop():
             # Owner-checked + idempotent; runs only if the child never took over.
             await _release_destructive_busy(rag, destructive_token)
 
