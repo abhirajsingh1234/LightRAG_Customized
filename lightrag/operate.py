@@ -2,7 +2,10 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from functools import partial
 from pathlib import Path
-
+from fastapi import (
+    Depends,
+)
+# from lightrag.api.lightrag_server import get_rag
 import asyncio
 import json
 import logging
@@ -4189,6 +4192,7 @@ async def kg_query(
     system_prompt: str | None = None,
     chunks_vdb: BaseVectorStorage = None,
     progress_callback: ProgressCallback | None = None,
+    rag=None
 ) -> QueryResult | None:
     """
     Execute knowledge graph query and return unified QueryResult object.
@@ -4265,6 +4269,7 @@ async def kg_query(
         query_param,
         chunks_vdb,
         progress_callback=progress_callback,
+        rag=rag,
     )
 
     if context_result is None:
@@ -4657,33 +4662,89 @@ async def extract_keywords_only(
     return hl_keywords, ll_keywords
 
 
+# async def _get_vector_context(
+#     query: str,
+#     chunks_vdb: BaseVectorStorage,
+#     query_param: QueryParam,
+#     query_embedding: list[float] = None,
+#     rag=None
+#     # rag = Depends(get_rag)
+# ) -> list[dict]:
+#     """
+#     Retrieve text chunks from the vector database without reranking or truncation.
+
+#     This function performs vector search to find relevant text chunks for a query.
+#     Reranking and truncation will be handled later in the unified processing.
+
+#     Args:
+#         query: The query string to search for
+#         chunks_vdb: Vector database containing document chunks
+#         query_param: Query parameters including chunk_top_k and ids
+#         query_embedding: Optional pre-computed query embedding to avoid redundant embedding calls
+
+#     Returns:
+#         List of text chunks with metadata
+#     """
+#     # No broad try/except here -- mirrors _get_node_data/_get_edge_data, whose
+#     # entities_vdb/relationships_vdb queries are also left to propagate. A
+#     # backend query failure is not "zero relevant chunks": swallowing it here
+#     # let a transient vector-store error surface as a confident "no results"
+#     # answer instead of a retrieval failure (and, in mix mode, silently
+#     # dropped the vector-search branch while KG results kept flowing).
+#     search_top_k = query_param.chunk_top_k or query_param.top_k
+#     cosine_threshold = chunks_vdb.cosine_better_than_threshold
+
+#     results = await chunks_vdb.query(
+#         query, top_k=search_top_k, query_embedding=query_embedding
+#     )
+#     if not results:
+#         logger.info(
+#             f"Naive query: 0 chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})"
+#         )
+#         return []
+
+#     valid_chunks = []
+#     for result in results:
+#         if "content" in result:
+#             chunk_with_metadata = {
+#                 "content": result["content"],
+#                 "created_at": result.get("created_at", None),
+#                 "file_path": result.get("file_path", "unknown_source"),
+#                 "source_type": "vector",  # Mark the source type
+#                 "chunk_id": result.get("id"),  # Add chunk_id for deduplication
+#             }
+#             valid_chunks.append(chunk_with_metadata)
+
+#     doc_filter = getattr(query_param, "doc_filter", None)
+
+#     #document name filter for naive based search is done here 
+#     if doc_filter:
+#         import os
+#         original_count = len(valid_chunks)
+#         valid_chunks = [
+#             chunk for chunk in valid_chunks
+#             if os.path.basename(chunk["file_path"]) == doc_filter
+#             or chunk["file_path"] == doc_filter
+#         ]
+
+#     user_type = getattr(query_param, "user_type", None)
+#     documents_with_ids, _ = await rag.doc_status.get_docs_paginated()
+#     input(documents_with_ids)
+#     if user_type == "user":
+#         pass
+        
+
+#     logger.info(
+#         f"Naive query: {len(valid_chunks)} chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})"
+#     )
+#     return valid_chunks
 async def _get_vector_context(
     query: str,
     chunks_vdb: BaseVectorStorage,
     query_param: QueryParam,
     query_embedding: list[float] = None,
+    rag=None,  # LightRAG instance passed from lightrag.py
 ) -> list[dict]:
-    """
-    Retrieve text chunks from the vector database without reranking or truncation.
-
-    This function performs vector search to find relevant text chunks for a query.
-    Reranking and truncation will be handled later in the unified processing.
-
-    Args:
-        query: The query string to search for
-        chunks_vdb: Vector database containing document chunks
-        query_param: Query parameters including chunk_top_k and ids
-        query_embedding: Optional pre-computed query embedding to avoid redundant embedding calls
-
-    Returns:
-        List of text chunks with metadata
-    """
-    # No broad try/except here -- mirrors _get_node_data/_get_edge_data, whose
-    # entities_vdb/relationships_vdb queries are also left to propagate. A
-    # backend query failure is not "zero relevant chunks": swallowing it here
-    # let a transient vector-store error surface as a confident "no results"
-    # answer instead of a retrieval failure (and, in mix mode, silently
-    # dropped the vector-search branch while KG results kept flowing).
     search_top_k = query_param.chunk_top_k or query_param.top_k
     cosine_threshold = chunks_vdb.cosine_better_than_threshold
 
@@ -4703,26 +4764,60 @@ async def _get_vector_context(
                 "content": result["content"],
                 "created_at": result.get("created_at", None),
                 "file_path": result.get("file_path", "unknown_source"),
-                "source_type": "vector",  # Mark the source type
-                "chunk_id": result.get("id"),  # Add chunk_id for deduplication
+                "source_type": "vector",
+                "chunk_id": result.get("id"),
             }
             valid_chunks.append(chunk_with_metadata)
 
-    # print(valid_chunks)
     doc_filter = getattr(query_param, "doc_filter", None)
     if doc_filter:
         import os
-        original_count = len(valid_chunks)
         valid_chunks = [
             chunk for chunk in valid_chunks
             if os.path.basename(chunk["file_path"]) == doc_filter
             or chunk["file_path"] == doc_filter
         ]
+
+    user_type = getattr(query_param, "user_type", None)
+    if user_type == "user" and rag is not None:
+        import os
+        try:
+            documents_with_ids, _ = await rag.doc_status.get_docs_paginated(
+                status_filter=None,
+                status_filters=None,
+                page=1,
+                page_size=10000,
+                sort_field="created_at",
+                sort_direction="desc",
+            )
+            # Build filename -> visibility map
+            visibility_map = {}
+            for _doc_id, doc in documents_with_ids:
+                if doc.file_path:
+                    fname = os.path.basename(doc.file_path)
+                    visibility = (
+                        doc.metadata.get("visibility", "public")
+                        if doc.metadata else "public"
+                    )
+                    visibility_map[fname] = visibility
+
+        except Exception as e:
+            logger.warning(f"Could not fetch document visibility: {e}. Returning empty to avoid leaking private content.")
+            return []
+
+        before = len(valid_chunks)
+        valid_chunks = [
+            chunk for chunk in valid_chunks
+            if visibility_map.get(
+                os.path.basename(chunk["file_path"]), "public"
+            ).lower() != "private"
+        ]
+        logger.info(f"Visibility filter removed {before - len(valid_chunks)} private chunks for user_type=user")
+
     logger.info(
         f"Naive query: {len(valid_chunks)} chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})"
     )
     return valid_chunks
-
 
 async def _perform_kg_search(
     query: str,
@@ -4735,6 +4830,7 @@ async def _perform_kg_search(
     query_param: QueryParam,
     chunks_vdb: BaseVectorStorage = None,
     progress_callback: ProgressCallback | None = None,
+    rag=None
 ) -> dict[str, Any]:
     """
     Pure search logic that retrieves raw entities, relations, and vector chunks.
@@ -4863,6 +4959,7 @@ async def _perform_kg_search(
                 chunks_vdb,
                 query_param,
                 query_embedding,
+                rag=rag
             )
             # Track vector chunks with source metadata
             for i, chunk in enumerate(vector_chunks):
@@ -5458,6 +5555,7 @@ async def _build_query_context(
     query_param: QueryParam,
     chunks_vdb: BaseVectorStorage = None,
     progress_callback: ProgressCallback | None = None,
+    rag=None
 ) -> QueryContextResult | None:
     """
     Main query context building function using the new 4-stage architecture:
@@ -5482,6 +5580,7 @@ async def _build_query_context(
         query_param,
         chunks_vdb,
         progress_callback=progress_callback,
+        rag=rag
     )
 
     if not search_result["final_entities"] and not search_result["final_relations"]:
@@ -6175,6 +6274,7 @@ async def naive_query(
     system_prompt: str | None = None,
     text_chunks_db: BaseKVStorage | None = None,
     progress_callback: ProgressCallback | None = None,
+    rag=None
 ) -> QueryResult | None:
     """
     Execute naive query and return unified QueryResult object.
@@ -6213,7 +6313,7 @@ async def naive_query(
 
     if progress_callback:
         await progress_callback(QueryProgress.RETRIEVING_CHUNKS)
-    chunks = await _get_vector_context(query, chunks_vdb, query_param, None)
+    chunks = await _get_vector_context(query, chunks_vdb, query_param, None,rag)
 
     if chunks is None or len(chunks) == 0:
         logger.info(

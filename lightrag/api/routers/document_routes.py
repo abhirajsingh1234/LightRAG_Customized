@@ -49,6 +49,7 @@ from fastapi import (
     Request,
     Response,
     UploadFile,
+    Form
 )
 from pydantic import (
     BaseModel,
@@ -124,6 +125,7 @@ from lightrag.api.admission import adopt_admission_ticket
 from lightrag.api.utils_api import get_combined_auth_dependency
 from ..config import global_args
 
+_pending_metadata: dict[str, dict] = {}
 
 # Function to format datetime to ISO format string with timezone information
 def format_datetime(dt: Any) -> Optional[str]:
@@ -1022,6 +1024,8 @@ class DocStatusResponse(BaseModel):
         default=None, description="Additional metadata about the document"
     )
     file_path: str = Field(description="Path to the document file")
+
+    visibility: str = "public"
 
     @field_validator("metadata", mode="after")
     @classmethod
@@ -4981,6 +4985,7 @@ def create_document_routes(
     async def upload_to_input_dir(
         managed_tasks: set = Depends(get_managed_background_tasks),
         file: UploadFile = File(...),
+        visibility: str = Form(default="public"),
         http_request: Request = None,
         rag: LightRAG = Depends(get_rag),
         doc_manager: DocumentManager = Depends(get_doc_manager)
@@ -5060,7 +5065,7 @@ def create_document_routes(
                 flight, 413 file too large, 500 other errors.
         """
         from lightrag.kg.shared_storage import start_reserved_background_task
-
+        print("Visibility : ",visibility)
         enqueue_token, admission_adopted = _adopt_or_new_enqueue_token(http_request)
         handed_off = False
         try:
@@ -5232,7 +5237,8 @@ def create_document_routes(
                 )
 
             track_id = generate_track_id("upload")
-
+            _pending_metadata[track_id] = {"visibility": visibility}
+            print(f"file path : {file_path}\n\n, track id : {track_id}\n\n, admission token : {enqueue_token}\n\n")
             # Bg task: enqueue + trigger processing, then release the slot.
             # ``pipeline_index_file`` does both: it calls
             # ``pipeline_enqueue_file`` (writes doc_status / full_docs) and
@@ -5253,10 +5259,29 @@ def create_document_routes(
                         track_id,
                         admission_token=enqueue_token,
                     )
+                    
+                    meta = _pending_metadata.pop(track_id, {})
+                    print('metadata : ',meta)
+                    print("rag.doc_status : ",rag.doc_status)
+                    if meta:
+                        docs = await rag.doc_status.get_docs_by_track_id(track_id)
+                        for doc_id, doc in docs.items():  # ← .items()
+                            existing_meta = doc.metadata or {}
+                            await rag.doc_status.update_doc_status_fields(
+                                doc_id,
+                                fields={"metadata": {**existing_meta, **meta}}
+                            )
+                            break
+                        else:
+                            print(f"No doc found with track_id: {track_id}") 
+                    print("rag.doc_status : ",rag.doc_status)
+                    
+
+                    
                 finally:
                     await _release_enqueue_slot(rag, enqueue_token)
 
-            async def _enqueue_backstop(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
+            async def _enqueue_backstop():
                 await _release_enqueue_slot(rag, enqueue_token)
 
             await start_reserved_background_task(
@@ -5377,7 +5402,7 @@ def create_document_routes(
             # Generate track_id for text insertion
             track_id = generate_track_id("insert")
 
-            async def _indexing_work(started,rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
+            async def _indexing_work(started):
                 # started.set() first (no await before it) so the endpoint's
                 # start-barrier confirms takeover before returning; a body-send
                 # cancellation therefore cannot strand the enqueue slot.
@@ -5391,10 +5416,11 @@ def create_document_routes(
                         chunking=request.chunking,
                         admission_token=enqueue_token,
                     )
+                    
                 finally:
                     await _release_enqueue_slot(rag, enqueue_token)
 
-            async def _enqueue_backstop(rag: LightRAG = Depends(get_rag),doc_manager: DocumentManager = Depends(get_doc_manager)):
+            async def _enqueue_backstop():
                 await _release_enqueue_slot(rag, enqueue_token)
 
             await start_reserved_background_task(
@@ -5402,6 +5428,7 @@ def create_document_routes(
                 work=_indexing_work,
                 backstop_release=_enqueue_backstop,
             )
+
             handed_off = True
 
             return InsertResponse(
@@ -6426,7 +6453,7 @@ def create_document_routes(
 
         try:
 
-            async def _timed_call(operation_name: str, operation,rag: LightRAG = Depends(get_rag)):
+            async def _timed_call(operation_name: str, operation):
                 operation_start = time.perf_counter()
                 performance_timing_log(
                     "[documents/paginated][%s] %s started",
@@ -6496,6 +6523,7 @@ def create_document_routes(
             response_assembly_start = time.perf_counter()
             doc_responses = []
             for doc_id, doc in documents_with_ids:
+                print('metadata for document is : ',doc.metadata)
                 doc_responses.append(
                     DocStatusResponse(
                         id=doc_id,
@@ -6509,6 +6537,8 @@ def create_document_routes(
                         error_msg=doc.error_msg,
                         metadata=doc.metadata,
                         file_path=normalize_file_path(doc.file_path),
+                        visibility=doc.metadata.get("visibility", "") if doc.metadata else ""
+
                     )
                 )
 

@@ -1,0 +1,72 @@
+{
+  "doc-6e9c97657e05cf315dfdf575fb8d6364": {
+    "status": "processed",
+    "content_summary": "## SECTION D\n\n## (1) COMPREHENSIVE DEPOSIT POLICY\n\n## I. Introduction\nOne of the important functions of the bank is to accept deposits from the public for the purpose of lending. In fact, depositors are the major stakeholders of the Banking System. T...",
+    "content_length": 56273,
+    "created_at": "2026-08-14T09:48:04.044741+00:00",
+    "updated_at": "2026-08-14T09:48:44.617511+00:00",
+    "file_path": "Deposit Policy.pdf",
+    "track_id": "upload_20260814_151804_d14a58f0",
+    "content_hash": "0188737eac56978885fca962d3b6a670",
+    "metadata": {
+      "process_options": "iteP",
+      "source_file": "Deposit Policy.pdf",
+      "parse_start_time": 1786700884,
+      "parse_stage_skipped": true,
+      "parse_format": "lightrag",
+      "parse_engine": "mineru",
+      "analyzing_start_time": 1786700884,
+      "analyzing_end_time": 1786700884,
+      "kg_write_state": "graph_mutation_started",
+      "process_start_time": 1786700884,
+      "process_end_time": 1786700924,
+      "chunk_method": "paragraph_semantic",
+      "chunk_opts": "size=2000, overlap=100, drop_rf=True",
+      "visibility": "private"
+    },
+    "chunks_count": 9,
+    "chunks_list": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-000",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ]
+  },
+  "doc-574eef8b2a231a2171cb4eadad4c29e5": {
+    "status": "processed",
+    "content_summary": "# SECTION - G\n\n# Door-Step Banking for Senior Citizens and Differently-Abled\n\n## Introduction\nReserve Bank of India advised Banks to have a scheme for providing services on the doorstep of its customers with the approval of the Board. This document e...",
+    "content_length": 6222,
+    "created_at": "2026-08-14T09:50:38.457284+00:00",
+    "updated_at": "2026-08-14T09:50:54.564893+00:00",
+    "file_path": "Door-Step Banking for Senior Citizens and Differently-Abled.pdf",
+    "track_id": "upload_20260814_152038_4acb51f8",
+    "content_hash": "d718bdbd670ebe59830531a56105d5f5",
+    "metadata": {
+      "process_options": "iteP",
+      "source_file": "Door-Step Banking for Senior Citizens and Differently-Abled.pdf",
+      "parse_start_time": 1786701038,
+      "parse_stage_skipped": true,
+      "parse_format": "lightrag",
+      "parse_engine": "mineru",
+      "analyzing_start_time": 1786701038,
+      "analyzing_end_time": 1786701041,
+      "kg_write_state": "graph_mutation_started",
+      "process_start_time": 1786701041,
+      "process_end_time": 1786701054,
+      "chunk_method": "paragraph_semantic",
+      "chunk_opts": "size=2000, overlap=100, drop_rf=True",
+      "mm_chunks": 1,
+      "visibility": "public"
+    },
+    "chunks_count": 2,
+    "chunks_list": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000",
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ]
+  }
+}

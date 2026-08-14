@@ -54,17 +54,17 @@
     "file_path": "Door-Step Banking for Senior Citizens and Differently-Abled.pdf",
     "llm_cache_list": [
       "default:extract:0b10eb59c57ecc057591e2b5df39eb5b",
-      "default:extract:9e732aa64d00f148d8720f2142f3d5f7"
+      "default:extract:53cfcadc82371b62d2b7c28cea7f248c"
     ],
-    "create_time": 1786618347,
-    "update_time": 1786618357,
+    "create_time": 1786696460,
+    "update_time": 1786696476,
     "_id": "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
   },
   "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000": {
     "chunk_id": "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000",
     "chunk_order_index": 1,
-    "content": "[Table Name]banking_service_savings_limits\n\nThis table outlines the savings limits associated with different banking services for various customer segments. It consists of four columns: 'Type of service', 'Savings (individuals)', 'Senior Citizen / Differently Abled', and 'Current Account Customers'. The table details two types of services, 'Cash Pickup' and 'Cash Delivery', which are available to customers. For both services, the savings limit for individuals is set at 20,000 per instance. Senior citizens and differently abled individuals also have the same limit of 20,000 per instance for these services, denoting support for such groups. Interestingly, current account customers have access to a significantly higher limit of 5 lacs per instance for both service types, which illustrates a disparity in service access based on account type. There are no merged cells present, and all data points are filled without any missing or null values. The information is subject to change per the bank's policy, as noted in the footnote. The context surrounding the table indicates that these services can be offered both by the bank's own staff and through outsourcing to cash management vendors or banking correspondents, emphasizing a flexible operational approach. This table serves as a quick reference for customers to understand the limits on funds that can be accessed through these banking services.\n\n[Table Footnotes]# Subject to change from time to time as per banks policy.",
-    "tokens": 285,
+    "content": "[Table Name]bank_service_savings_per_instance\n\nThe table outlines the savings allowable per instance for various banking services specifically designed for individuals, senior citizens, and differently abled customers. It consists of four columns: 'Type of service', 'Savings (individuals)', 'Senior Citizen / Differently Abled', and 'Current Account Customers'. There are three types of services listed, namely 'Cash Pickup' and 'Cash Delivery', each with specified maximum savings that can be accessed per instance by different customer categories. For both 'Cash Pickup' and 'Cash Delivery', the maximum savings allowed for individuals and senior citizens/differently abled customers is 20,000, while current account customers can access up to 5 lacs per instance. The table suggests a straightforward structure for understanding the limits placed on different financial transactions catered to specific demographics, illustrating a potential disparity in service offerings based on customer classification. The footnote indicates that these values are subject to change based on the bank's policies, emphasizing that the information may evolve over time. Overall, this table serves as a reference point for potential customers to understand the financial boundaries associated with these banking services.\n\n[Table Footnotes]# Subject to change from time to time as per banks policy.",
+    "tokens": 250,
     "sidecar": {
       "type": "table",
       "id": "tb-574eef8b2a231a2171cb4eadad4c29e5-0001",
@@ -77,8 +77,8 @@
     },
     "llm_cache_list": [
       "default:analysis:53d4ada8a04450839110a9de86687dd7",
-      "default:extract:febd1d4aba915f7ff09439e2242a6da0",
-      "default:extract:48c70bbd5a1187b913cde89b5c9c1d2d"
+      "default:extract:0b3562c1d1865c9a60788105cd179b0f",
+      "default:extract:5f7336b131e2c34ff58ed28b870c860c"
     ],
     "heading": {
       "level": 0,
@@ -89,9 +89,355 @@
     },
     "full_doc_id": "doc-574eef8b2a231a2171cb4eadad4c29e5",
     "file_path": "Door-Step Banking for Senior Citizens and Differently-Abled.pdf",
-    "create_time": 1786618347,
-    "update_time": 1786618356,
+    "create_time": 1786696460,
+    "update_time": 1786696477,
     "_id": "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+  },
+  "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-000": {
+    "tokens": 3,
+    "content": "## SECTION D",
+    "chunk_order_index": 0,
+    "heading": {
+      "level": 2,
+      "heading": "SECTION D",
+      "parent_headings": []
+    },
+    "sidecar": {
+      "type": "block",
+      "id": "7d124e54573185603cab6095e08a288a",
+      "refs": [
+        {
+          "type": "block",
+          "id": "7d124e54573185603cab6095e08a288a"
+        }
+      ]
+    },
+    "full_doc_id": "doc-6e9c97657e05cf315dfdf575fb8d6364",
+    "file_path": "Deposit Policy.pdf",
+    "llm_cache_list": [
+      "default:extract:0fe7f56020bfa5f6254eccd58b41d1b1",
+      "default:extract:7b87b8fbc93aaa98ef09ea8773961b5a"
+    ],
+    "create_time": 1786696663,
+    "update_time": 1786696665,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-000"
+  },
+  "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001": {
+    "tokens": 303,
+    "content": "## (1) COMPREHENSIVE DEPOSIT POLICY\n\n## I. Introduction\nOne of the important functions of the bank is to accept deposits from the public for the purpose of lending. In fact, depositors are the major stakeholders of the Banking System. The depositors and their interests form the key area of the regulatory framework for banking in India, and this has been enshrined in the Banking Regulation Act, 1949. The Reserve Bank of India is empowered to issue directives / advice on interest rates on deposits and other aspects regarding conduct of deposit accounts from time to time. With liberalization in the financial system and deregulation of interest rates, banks are now free to formulate deposit products within the broad guidelines issued by RBI.\nThis policy document on deposits outlines the guiding principles in respect of formulation of various deposit products offered by Unity Small Finance Bank Limited (the Bank\") and terms and conditions governing the conduct of the account. The document recognises the rights of depositors and aims at dissemination of information with regard to various aspects of acceptance of deposits from the members of the public, conduct and operations of various deposits accounts, payment of interest on various deposit accounts, closure of deposit accounts, method of disposal of deposits of deceased depositors, etc., for the benefit of customers.\nIt is expected that this document will impart greater transparency in dealing with the individual customers and create awareness among customers of their rights. The ultimate objective is that the customer will get services they are rightfully entitled to receive without demand.",
+    "chunk_order_index": 1,
+    "heading": {
+      "level": 2,
+      "heading": "(1) COMPREHENSIVE DEPOSIT POLICY",
+      "parent_headings": [
+        "SECTION D"
+      ]
+    },
+    "sidecar": {
+      "type": "block",
+      "id": "a1ab6f563b0daae4598c349ec9bcf5ab",
+      "refs": [
+        {
+          "type": "block",
+          "id": "a1ab6f563b0daae4598c349ec9bcf5ab"
+        },
+        {
+          "type": "block",
+          "id": "d25f88891c2026e218c94e591e2eb148"
+        }
+      ]
+    },
+    "full_doc_id": "doc-6e9c97657e05cf315dfdf575fb8d6364",
+    "file_path": "Deposit Policy.pdf",
+    "llm_cache_list": [
+      "default:extract:5533ca6524f7ae829adfc27d839b6904",
+      "default:extract:6b4916ea182cd1bfad2c328b93ec5e42"
+    ],
+    "create_time": 1786696663,
+    "update_time": 1786696670,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
+  },
+  "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002": {
+    "tokens": 1713,
+    "content": "## II. Types of deposits\nWhile various deposit products offered by the Bank are assigned different names, the deposit products can be categorized broadly into Demand Deposits and Time Deposits (or Term deposits). These deposits are offered under various schemes.\nA) \"Demand Deposits\" means a deposit received by the Bank which is withdrawable on demand. The following are two broad categories of demand deposits:\n1. \"Savings Account\" means a form of Demand Deposit which is subject to restrictions as to the number of withdrawals as also the amounts of withdrawals permitted by the Bank during any specified period.\nThe Bank also offers Basic Savings Bank Deposit Account (BSBDA) as per the extant guidelines laid down by the RBI from time to time. Terms and conditions for this account are laid down in the Bank's Policy on Basic Savings Bank Deposit Account details of which are displayed on our website and available at our branches.\n2. \"Current Account\" means a form of demand deposit wherefrom withdrawals are allowed any number of times depending upon the balance in the account or up to a particular agreed amount and will also include other deposit accounts which are neither Savings Deposit nor Term Deposit.\nCurrent Accounts can be opened by individuals / partnership firms / Private and Public Limited Companies / HUFs / Specified Associates / Societies / Trusts, Departments /\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nAuthority created by Government (Central or State), Limited Liability Partnership etc.\nNeed for discipline: Opening current accounts for borrowers who have already availed credit facilities in the form of Cash Credit (CC) / Overdraft (OD) from the banking system shall be undertaken strictly in terms of RBI Circular No. RBI/2022-23/27. DOR.CRE.REC.23/21.08.008/2022-23 April 19, 2022, on Consolidated Circular on Opening of current accounts and CC/OD Accounts by Banks.\nhttps://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12293&Mode=0\nB) \"Term Deposits\" means a deposit received by the Bank for a fixed period and includes deposits such as Recurring / Short Term Deposits / Fixed Deposits.\nTerm Deposits Accounts can be opened by individuals / partnership firms / Private and Public Limited Companies / HUFs/ Specified Associates / Societies / Trusts, Departments / Authority created by Government (Central or State), Limited Liability Partnership etc.\nThe term deposit account holders at the time of placing their deposits can give instructions with regard to closure of deposit account or renewal of deposit for further period on the date of maturity. In absence of any written instructions about the disposal of the term deposit, the Bank reserves the right, at its discretion, to renew the deposit along with accrued interest thereon at prevailing rates of interest for a \\*similar tenor of the deposit which has matured. \\*rate applicable on the date of renewal/maturity.\nBulk Deposit: Single Rupee term deposits of Rupees three crore and above.\nNon-callable deposits: Single Rupee term deposits of above Rupees one crore and above. Premature withdrawal is not permitted under any circumstances.\n\n## III. Account opening and operations of deposit accounts\nA) Opening of an account: The account opening forms and other material would be provided to the prospective depositor by the Bank. The same will contain details of information to be furnished and documents to be produced for verification and/or for record, it is expected of the Bank official opening the account, to explain the procedural formalities and provide necessary clarifications sought by the prospective depositor when he approaches for opening a deposit account.\nWith the advent of technology and various policies by the regulator on KYC, accounts may be opened digitally taking into account all the checks and balances expected to open such accounts and as suggested by the regulator / statutory authorities from time to time.\nB) Know Your Customer (KYC): The Bank before opening any deposit account will carry out due diligence as required under \"Know-Your-Customer\" (KYC) guidelines issued by RBI/ PMLA/ Bank's KYC AML policy and such other norms or procedures as adopted by the Bank.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nC) Due Diligence: The due diligence process, while opening a deposit account will normally involve identifying and verifying the identity of the person, verification of address, obtaining information relating to the customers occupation, source of income etc. The Bank requires a recent photograph of the person(s) opening / operating the account as a part of the due diligence process.\nFor customers who are legal persons or entities, the Bank should\ni. verify the legal status of the legal person/ entity through proper and relevant documents; ii. verify that any person purporting to act on behalf of the legal person / entity is authorized to act on behalf of the entity and identify and verify the identity of that person;\niii. understand the ownership and control structure of the customer and identity and verify the identity of the natural persons who ultimately control the legal person. Notwithstanding the aforesaid, Bank reserves the right to conduct further due diligence as deemed appropriate by it.\nD) Risk categorization: The Bank will adhere to regulatory guidelines and solicit information from the customer for the purpose of assigning a risk category to the customer and for the purpose of transaction monitoring. Inability or unwillingness of a prospective customer to provide necessary information/details could result in the Bank not opening an account.\nE) PAN requirement: In addition to the due diligence requirements under KYC norms, the Bank is required to obtain Permanent Account Number (PAN)\\* details or alternatively declaration in Form No. 60 as specified under the Income Tax Act / Rules.\n\\*compulsory in case of non-individual customers\nF) Minimum / Average Balance requirements: For deposit products like Savings Account and Current Account, the Bank will normally stipulate certain minimum/ average balances to be maintained as part of terms and conditions governing operation of such accounts. Failure to maintain stipulated minimum/ average balance in the account will attract levy of charges as specified by the Bank from time to time and the same is notified to the customer through Short Message Service (SMS). The stipulated minimum / average balance shall be advised through Short Message Service (SMS) requesting them to maintain the stipulated balance requirement for the account to avoid penalty. The SMS shall only go to the account holders whose stipulated balance is less than the prescribed to be maintained in account. The Schedule of charges structure for recovery of charges in the various categories of Saving Bank account will be made available on Bank's website and is subject to revision from time to time\nG) Other terms and conditions: For Saving Bank Account the Bank may also place restrictions on number of transactions, cash withdrawals, etc., for given period. Similarly, the Bank may specify charges for issue of additional cheque books, additional statement of accounts, duplicate pass book etc. All such details, regarding terms and conditions for operation of the accounts and schedule of charges for various services provided will be communicated to the prospective depositor while opening the account. Savings Bank Accounts can be opened for eligible person / persons and certain organizations /agencies (as advised by Reserve Bank of India (RBI) from time to time) Account is subject to verification, and the Bank reserves the right to reject the request of the Applicant to open an Account without providing any reason. In the event where the documents submitted by the Applicants or Customers for opening an Account and/ or availing the Bank's products and services or for processing the transactions thereon are incomplete or discrepant, The (“Unity SFB\") Bank shall notify such discrepancies and/or certain additional verification/ documentation requirements within a reasonable time through emails sent to the email ID of the Customer (as provided in the AOF). In case highlighted discrepancies remain unresolved or upon nonreceipt of required documents within the stipulated time period, if any, the Bank, shall have the right to reject the AOF of the Applicant and in accordance with its policies and procedures, the Bank shall retain the application forms and documents provided therewith at the time of Account opening, including photographs and will not return the same to the Applicant in case of rejection of the said application. In such an event the Bank shall not be liable to pay interest on the amount of deposit and shall refund the money received, if any, to the source account.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL",
+    "chunk_order_index": 2,
+    "heading": {
+      "level": 2,
+      "heading": "II. Types of deposits",
+      "parent_headings": [
+        "SECTION D"
+      ]
+    },
+    "sidecar": {
+      "type": "block",
+      "id": "09c4a04d986801396b525d9dc8ab1789",
+      "refs": [
+        {
+          "type": "block",
+          "id": "09c4a04d986801396b525d9dc8ab1789"
+        },
+        {
+          "type": "block",
+          "id": "30928ef67df7bfff6c62e91fe752daf6"
+        }
+      ]
+    },
+    "full_doc_id": "doc-6e9c97657e05cf315dfdf575fb8d6364",
+    "file_path": "Deposit Policy.pdf",
+    "llm_cache_list": [
+      "default:extract:c5cd83a4fd01d217b7b2f7b8b8439323",
+      "default:extract:9f7fe7156d602edc92865fbdfdcee227"
+    ],
+    "create_time": 1786696663,
+    "update_time": 1786696679,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+  },
+  "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003": {
+    "tokens": 1507,
+    "content": "## H) Other Banking Products & Services:\nCustomer also can avail other banking product and/or services offered by Bank from time to time like:\ni. Debit card: Bank may issue Debit cards to customers having Saving Bank/Current Accounts. Bank may charge on debit card usage within stipulated benchmark as per regulatory guidelines. Debit cards are issued in accordance with the Bank's internal policy on Debit cards, as approved by Board/ any other committee. The Schedule of charges structure for Debit cards is available on Bank's website and is subject to revision from time to time\nii. Mobile, WhatsApp and Internet banking: The Bank may undertake Mobile Banking, WhatsApp Banking and Internet Banking, in accordance with the Bank's policy.\niii. Access to own and other ATM network: The bank will make available its own ATM access as well as ATMs of other banks by participating in regulated and approved network by regulators and statutory authorities.\niv. Extension of alternate delivery channels: The Bank may offer choice of electronic channels (like NEFT and RTGS) to customers for conducting their banking transactions. Wherever such electronic facilities are offered as a part of the product/services, the Bank will obtain specific consent of the customers for availing the facility.\nv. Statement of Account: A statement of account will be provided by the Bank to Savings Account as well as Current Account Holders on a monthly basis as per the terms and conditions applicable while opening the account. The statement of account maybe issued in a digital form to the customer and send to their registered email id on monthly basis. The customer may also have ability to download the statement of account by accessing the Internet Banking / Mobile Banking / WhatsApp Banking. Alternatively, the Bank may issue a Passbook to these account holders.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n\n## vi. Accounts Operations:\ni. Account in the name of a single individual: Savings accounts can be opened by an individual in his/her own name, known as account in single name wherein the mode of operation is Self.\nii. Accounts of Minors: A savings bank account and term deposit can be opened in the name of a minor by his/her natural or legally appointed guardian and the same shall be operated by the natural / legally appointed guardian only. Branches to allow minors' accounts (fixed, recurring and savings only) with mothers as guardians to be opened provided they are not overdrawn and always remain in credit.\nA minor, can also independently open and operate a Savings Bank Account/term deposit if he/she is above the age of 10 years, and is literate upto Rs. 5,00,000/-. The Bank may, at its discretion, fix limits on the amounts up to which the minor may be allowed to operate the account independently and such terms shall be duly conveyed to the account holder.\nOn attaining the age of majority, the fresh KYC documents, photograph, operating instructions and specimen signature of the account holder shall be obtained and kept on record. Moreover, if the account is operated by the guardian, the balance shall be confirmed. The bank shall take advance action, including communicating these requirements to minor account holders attaining the age of maturity, to ensure fulfilment of these requirements.\nThe banks are free to offer additional banking facilities like internet banking, ATM/debit cards, cheque book facility, etc., to the minor account basis their risk management policy, product suitability and customer appropriateness.\nThe banks shall ensure that accounts of minor, whether operated independently or through a guardian, are not allowed to be overdrawn and that these always remain in credit balance.\nThe bank shall perform customer due diligence for opening of deposit accounts of minors and undertake ongoing due diligence.\niii. Joint Accounts: An account can be opened and held by more than one individual in their own names, known as Joint Account. The joint account holders can give any of the following mandates for the operation of account and disposal of balance in the above deposit accounts:\na. Either or Survivor: If the account is in the name of two individuals say, A & B, either of them can operate the account in the normal course. The final balance along with interest, if applicable, will be paid to either of account holders i.e. A or B, on date of maturity (in case of term deposit) or to the survivor on death of any one of the account holders. However, the signatures of both the depositors may have to be obtained, in case the deposit is to be paid before maturity.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nb. Anyone or Survivor(s): If the account is in the name of two or more individuals say, A, B & C, any one of them can operate the account in the normal course. The final balance along with interest if applicable, will be paid to any of surviving account holders i.e. A or B or C, on the date of maturity (in case of term deposit). On the death of any one of account holder say A, the final balance along with interest, if applicable, will be paid to the surviving account holders i.e. B and C. On the death of any two of account holders, say A and B, the final balance along with interest, if applicable, will be paid to surviving account holder i.e. C. However, the signatures of all the depositors may have to be obtained, in case the deposit is to be paid before maturity.\nc. Former or Survivor: If the account is in the name of two individuals say, A & B, the account shall be operated by the Former i.e. A. The final balance along with interest, if applicable, will be paid to the former i.e. A on date of maturity (in case of term deposit) and to the survivor on death of anyone of the account holders.\nd. Jointly by All : If the account is in the name of two individuals say, A & B, the account shall require to be operated by A & B jointly. The final balance along with interest, if applicable, will be paid to both the applicants jointly. On the death of any one of the account holders, the final balance along with the interest if applicable will be paid jointly to the legal heirs of deceased constituent and the surviving constituent.\niv. Power of Attorney: At the request of the depositor/s, the Bank will register mandate / power of attorney given by him/her/them authorizing another person to operate the account on his/her/their behalf. Account opening and closing will not be allowed by Power of Attorney.\nv. Mandate: At the request of the depositor/s, the Bank will register mandate given by him/her/them authorizing another person to operate the account on his/her/their behalf. This is applicable for NRI customers. Account opening and closing will not be allowed by mandate\nvii. Nomination: Nomination facility is available on all deposit accounts opened by individuals. Nomination is also available to an account opened by a Sole Proprietorship concern. Nomination made can be cancelled or changed by the account holder(s) at any time. While making nomination, cancellation or change thereof, thumb impression of an illiterate will be witnessed by two Individuals. Signatures of the account holders on nomination form need not be attested by witnesses in case of literate customers. Nomination can be modified with the consent of account holder/s.\nVersion 4.0 Master Policy on Customer Service",
+    "chunk_order_index": 3,
+    "heading": {
+      "level": 2,
+      "heading": "H) Other Banking Products & Services:",
+      "parent_headings": [
+        "SECTION D"
+      ]
+    },
+    "sidecar": {
+      "type": "block",
+      "id": "acf698a6fcb7b11e775d735fae0c319a",
+      "refs": [
+        {
+          "type": "block",
+          "id": "acf698a6fcb7b11e775d735fae0c319a"
+        },
+        {
+          "type": "block",
+          "id": "98f202e8763000583eb0b66c6718d72b"
+        }
+      ]
+    },
+    "full_doc_id": "doc-6e9c97657e05cf315dfdf575fb8d6364",
+    "file_path": "Deposit Policy.pdf",
+    "llm_cache_list": [
+      "default:extract:12861dd64d82a2d2c5a4ccb61c93d950",
+      "default:extract:b37d794e49b86b5d348445ce46f5c18f"
+    ],
+    "create_time": 1786696663,
+    "update_time": 1786696680,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+  },
+  "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004": {
+    "tokens": 1129,
+    "content": "INTERNAL\nNomination can be made in favor of a minor also. In such cases at the time of making nomination, depositor has to give a name of person (called appointee) who is a major and will receive the amount of deposit on behalf of the minor nominee and give discharge to the Bank, in the event of death of the account holder during the minority of the nominee.\nThe Bank recommends that all depositors avail nomination facility. Bank would give wide publicity on the benefits of nomination. The nominee, in the event of death of the depositor(s), would receive the balance outstanding in the account as a trustee of legal heirs.\nThe detailed policy guidelines form a part of this Master Policy on Customer Service.\nviii. Account Portability: The deposit accounts may be transferred to any other branch of the Bank at the request of the depositor or in such cases where the branches are merged or relocated which necessitates the change of the branch. The bank will take adequate care to ensure that such changes do not cause unnecessary hardship while operating the account.\nix. Term Deposit of Senior Citizens: The Bank may offer Resident Indian Senior Citizens, (age over 60 years) a higher rate of interest on Fixed Deposits within the Minimum and Maximum range as stipulated by the RBI from time to time. The Bank would also be guided by all applicable Income Tax Rules pertaining to fixed deposits held by Resident Indian Senior Citizen.\nx. Account of Illiterate Person: The Bank may open deposit accounts of illiterate person/s subject to certain conditions, with a view to safeguard the interest of the customer. The account of such person may be opened provided he/she calls on the Bank personally along with a witness who is known to both the depositor and the Bank. No cheque book facility is provided to illiterate customers. At the time of withdrawal/ repayment of deposit amount and/or interest, the account holder should affix his / her thumb impression or mark in the presence of the authorized bank officer who should verify the identity of the person. The Bank will explain the need for proper care and safe keeping of the passbook etc. given to the account holder.\nxi. Accounts of Visually Challenged Persons: The Bank may open deposit accounts of visually challenged person. Such accounts will be operated by the accountholder personally. Such accountholders will have to be present before the branch official and affix thumb impression and they will be identified through their photograph to facilitate operations. Bank is also committed to introducing technology banking facilities progressively via ATM & Internet banking in keeping with the availability of supporting technology which will enable visually challenged persons to operate their own accounts. Banks will offer all the Banking facilities such as Cheque book, ATM, Net Banking, Locker, Retail Loans, Credit Cards etc., to the visually challenged persons without any discrimination. No differential treatment shall be accorded to visually challenged customers. In addition, magnifying glass is also kept in the branch for the use of persons with low vision, wherever they require for carrying out banking transactions with ease. The Bank official shall explain the terms and conditions governing the account to the visually challenged person.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nxii. Opening of Accounts under National Trust for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation and Multiple Disabilities Act, 1999: Savings bank and term deposits can also be opened in the name of persons covered under the above Act by a guardian appointed to have the care of the person and property of the disabled person, by the Local Level Committees set up under the said Act. All banking facilities will be offered to such persons without any discrimination. Debit card will not to be issued to mentally ill person. It will be issued to guardian only. Legal guardian, so appointed, will furnish an indemnity-cumundertaking bond duly stamped as per the local law in force along with Guardianship Certificate\nxiii. Opening of Accounts under The Mental Health Act, 1987: Savings bank and term deposits can also be opened in the name of persons covered under the above Act by a Guardian appointed by the District Courts / Collectors of Districts under the said Act for this purpose.\nxiv. Account of Transgender person: In case of a person claiming to be transgender and needs to open account or to do any banking transaction, the person will be recognized as “Third Gender\" and the details shall be accepted in the AOFs/ or other applicable forms as such. All transgender customers shall be treated equally to other male/ female customers without any discrimination.\nxv. Non-Resident Deposits: Accounts of Non-Resident individuals shall be opened as per the guidelines issued by the Regulator / other statutory authorities.\nxvi. Account Closure: Customer who wishes to close the account :\ni. Have to submit an account closure application signed by all Joint holders.\nii. Customer has to surrender debit card if any issued.\niii. Customer has to surrender unused cheque leaves.\nCustomer has to declare that he/she has delinked the account linked for financial credits & debits.\nAt the time of closure of account, Bank will check the surrendered cheque leaves with unused cheque leaves in CBS, obtain a declaration if it does not tally. Bank will check if the account is linked for locker rent & demat charges. Bank will recover unrecovered charges / debit balance if any. Bank can waive partly / fully unrecovered charges at its discretion.\nFor service charges related to account closure refer Schedule of charges on charges are subject to change from time to time at the discretion of the Bank.",
+    "chunk_order_index": 4,
+    "heading": {
+      "level": 2,
+      "heading": "INTERNAL [part 2]",
+      "parent_headings": [
+        "SECTION D",
+        "vi. Accounts Operations:"
+      ]
+    },
+    "sidecar": {
+      "type": "block",
+      "id": "98f202e8763000583eb0b66c6718d72b",
+      "refs": [
+        {
+          "type": "block",
+          "id": "98f202e8763000583eb0b66c6718d72b"
+        }
+      ]
+    },
+    "full_doc_id": "doc-6e9c97657e05cf315dfdf575fb8d6364",
+    "file_path": "Deposit Policy.pdf",
+    "llm_cache_list": [
+      "default:extract:b5c0a9fe6e5be49df8d03703c6d1af00",
+      "default:extract:fc69b93578ce4bac91de86e5c100c3f9"
+    ],
+    "create_time": 1786696663,
+    "update_time": 1786696682,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+  },
+  "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005": {
+    "tokens": 1262,
+    "content": "## IV. Interest Rate framework\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nBank shall pay interest on deposits of money (other than current account deposits) accepted by them or renewed by them in their Domestic, Non-Resident Ordinary (NRO) and Non-Resident (External) Accounts (NRE) on the terms and conditions specified in these directions:\na) The rates shall be uniform across all branches and for all customers and there shall be no discrimination in the matter of interest paid on the deposits, between one deposit and another of similar amount, accepted on the same date, at any of its offices.\nb) Interest rates payable on deposits shall be strictly as per the schedule of interest rates disclosed in advance. The bank shall maintain the bulk deposit interest rate card in their Core banking system to facilitate supervisory review.\nc) The rates shall not be subject to negotiation between the depositors and the bank.\nd) The interest rates offered shall be reasonable, consistent, transparent and available for supervisory review/scrutiny as and when required.\ne) All transactions, involving payment of interest on deposits shall be rounded off to the nearest rupee for rupee deposits.\nf) Deposits maturing on non-business working day\ni. If a term deposit is maturing for payment on a non-business working day, Bank shall pay interest at the originally contracted rate on the original principal deposit amount for the non-business working day, intervening between the date of the maturity of the specified term of the deposit and the date of payment of the proceeds of the deposit on the succeeding working day.\nii. In case of reinvestment deposits and recurring deposits, Bank shall pay interest for the intervening non-business working day on the maturity value.\n\n## A) Interest rate on Domestic Current Account\nNo interest shall be paid on deposits held in current accounts.\nProvided that balances in current account standing in the name of a deceased individual depositor or sole proprietorship concern shall attract interest from the date of death of the depositor till the date of repayment to the claimant/s at the rate of interest applicable to savings deposit as on the date of payment\n\n## B) Interest rate on Domestic Savings Bank Accounts:\n(i) Interest will be paid on a savings account at the rate specified by the Bank from time to time. Also, the interest on domestic rupee savings accounts is calculated on the daily product basis and credited at quarterly or shorter intervals.\n(ii) The Bank, at its discretion, may provide differential rates of interest for any end-ofday savings bank balance exceeding Rupees one lakh.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n(iii) Interest on savings bank accounts, including those frozen by the enforcement authorities, shall be credited on regular basis irrespective of the operational status of the account.\n\n## C) Interest rates on Domestic Term Deposits:\n(i) Term deposit interest rates are decided by the Bank within the general guidelines issued by the Reserve Bank of India from time to time.\nThis includes additional interest rates for Resident Indian senior citizens.\nBank shall at its discretion, allow additional interest at a rate not exceeding one per cent per annum over and above the card rate of interest on savings or a term deposits account of being bank's own staff as may be decided by the bank in terms of its internal policy.\n(ii) Interest rates on term deposits shall vary only on account of one or more of the following reasons:\n(a) Tenor of Deposits: Bank shall have the freedom to determine the maturity/tenor of the deposit subject to the condition that minimum tenor of the deposit offered shall be seven days.\n(b) Size of Deposits : Differential interest rate shall be offered only on bulk deposits.\nProvided that differential interest shall not be applicable on deposit schemes framed on the basis of the Bank Term Deposit Scheme, 2006 or the deposits received under the Capital Gains Accounts Scheme, 1988.\n(iii) In terms of RBI directives Interest is calculated at quarterly intervals on term deposits and paid at the rate decided by the bank depending upon the period of deposits.\n(iv) In case of monthly deposit scheme, interest shall be calculated at discounted value for General customers and simple interest for Senior Citizens.\n(v) Interest on deposits repayable for less than 3 months or where the terminal quarter is incomplete, interest is calculated for completed months and further for incomplete month on actual number of days reckoning the year at 365 days.\n(vi) In case, the Deposit is spread over a leap and a non-leap year, the interest is calculated reckoning the year at 365 days irrespective of a leap year.\n(vii) The rate of interest on deposits will be prominently displayed in the branch premises.\n(viii) Payment of interest on term deposit maturing on Sunday/holiday/non-business working day: In respect of a term deposit maturing for payment on a Sunday or a holiday or a non-business working day, or Saturday in case of NRE deposits, bank shall pay interest at the originally contracted rate on the original principal deposit amount for the Sunday/ holiday/ non-business working day and also Saturday in case of NRE deposits, intervening between the date of the expiry of the specified term of the deposit and the date of payment of the proceeds of the deposit on the succeeding working day.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n(ix) In case of reinvestment deposits and recurring deposits, the bank shall pay interest for the intervening Sunday/holiday/non-business working day (as also Saturday in case of NRE deposits) on the maturity value.\n(x) Interest rate payable on deposits shall be strictly as per the schedule of interest rates disclosed in advance except for Bulk Deposits i.e. Single rupee term deposits of rupees three crore and above where the bank may, at its discretion, offer differential rates of interest, within the ambit of regulatory guidelines issued by RBI from time to time.\n(xi) The bank shall maintain the deposit interest rate card in its core banking system to ensure that uniform rates are applied to all the deposits without any discrimination and modification is allowed only with the permission of authorized person.\n(xii) All transactions, involving payment of interest on deposits shall be rounded off to the nearest rupee for rupee deposits",
+    "chunk_order_index": 5,
+    "heading": {
+      "level": 2,
+      "heading": "IV. Interest Rate framework",
+      "parent_headings": [
+        "SECTION D"
+      ]
+    },
+    "sidecar": {
+      "type": "block",
+      "id": "f5c93f2b33f1fbfdb9ae22cd3087f745",
+      "refs": [
+        {
+          "type": "block",
+          "id": "f5c93f2b33f1fbfdb9ae22cd3087f745"
+        },
+        {
+          "type": "block",
+          "id": "fd7a65b008676c4c33e1a6bfa57647c9"
+        },
+        {
+          "type": "block",
+          "id": "9b403f2a30bdd2961ed0ffda37525d8c"
+        },
+        {
+          "type": "block",
+          "id": "37b3ffcf128b2fbedecaeb121465a839"
+        }
+      ]
+    },
+    "full_doc_id": "doc-6e9c97657e05cf315dfdf575fb8d6364",
+    "file_path": "Deposit Policy.pdf",
+    "llm_cache_list": [
+      "default:extract:d8381f0234ea2fad18404497535826e9",
+      "default:extract:a2ba418167c2c70a95ebf52158de9277"
+    ],
+    "create_time": 1786696663,
+    "update_time": 1786696682,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+  },
+  "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006": {
+    "tokens": 1688,
+    "content": "## D) Interest payable on term deposit in deceased account:\ni) In the event of the death of the depositor before the date of maturity of the deposit and amount of the deposit is claimed after the date of maturity, the bank shall pay interest at the contracted rate till the date of maturity. From the date of maturity to the date of payment, the bank at its discretion shall pay interest at savings account or the contracted rate of interest on the matured term deposit, whichever is lower from the date of maturity till the date of payment).\nii) If the amount of deposit is claimed before the date of maturity, interest at the rate applicable to the period for which the deposit has remained with the bank will be paid, without charging of penalty.\niii) However, in the case of death of the depositor after the date of maturity of the deposit, interest shall be paid at the contracted rate till the date of maturity and the bank shall pay interest at savings account or the contracted rate of interest on the matured term deposit, whichever is lower from the date of maturity till the date of payment.\niv) In case of splitting of the amount of term deposit at the request from the claimant/s of deceased depositors or Joint account holders, no penalty for premature withdrawal of the term deposit shall be levied if the period and aggregate amount of the deposit do not undergo any change.\nThe detailed policy guidelines form a part of this Master Policy on Customer Service.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n\n## V. Premature withdrawal of Term Deposit:\n1. The bank on request from a depositor, will allow withdrawal of term deposit before completion of the period of the deposit as per terms agreed upon at the time of placing the deposit.\n2. The deposit should, however, have run at least for the minimum tenor of seven days as prescribed by RBI, in order to be eligible for payment of interest at rate applicable for the period it has run, i.e. no interest shall be paid where premature withdrawal of deposit takes place before completion of the minimum period specified by RBI i.e. seven days.\n3. Bank levies premature penalty @ 1% p.a on the rate applicable for the period the deposit has remained with the bank or as decided from time to time. Further, the bank may, at its discretion, waive penalty for premature closure.\n4. Interest on the deposit for the period that it has remained with the bank will be paid at the rate applicable to the period for which the deposit remained with the bank and not at the contracted rate\n5. Term Deposits of below  3 Crores: For term deposits of below  3 crores, the Bank on request from the depositor shall allow withdrawal of deposit before completion of the period of the deposit agreed upon at the time of placing the deposit i.e. premature withdrawal will be allowed.\n6. Term Deposits of 3 crores and above: For term deposits of  3 crores and above, where Bank offers both, deposits with/without premature withdrawal facility, customer shall be given the option to choose between the two facilities. For term deposits without premature withdrawal facility, the Bank may offer differential rate of interest. The Bank, shall, however disclose in advance the schedule of interest rate payable on term deposits. The Bank shall declare their penal interest rates policy for premature withdrawal of term deposit. While prematurely closing the existing deposit, interest will be paid for the period the deposit has remained with the Bank. The Bank shall make depositors aware of the applicable rate along with the deposit rate.\nVI. Premature termination of Term Deposit of deceased depositor/s with Nomination: Premature termination of term deposit account as per terms of contract will be permitted at the request of the nominee on verification of his/her OVD (such as Election ID Card, Passport etc.) and proof of death of depositor.\nVII. Premature termination of Term Deposit of deceased depositor/s without Nomination: Premature termination will be permitted on joint request by all legal heirs (or any of them as mandated by all the legal heirs) as per the terms of the contract on verification of the authority of the legal heirs and proof of death of depositor.\nVIII. Premature Renewal of Term Deposit: In case the depositor desires to renew the deposit by seeking premature closure of an existing term deposit account, the bank will permit the renewal at the applicable rate on the date of renewal, provided\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\ni. The depositor approaches for premature closure before 7 days from the start date of deposit, then the deposit shall be renewed with retrospective maturity date, since no interest is paid\nii. The depositor approaches for premature closure on or after 7 days for renewing the Term deposit for a longer period than the original contract then while prematurely closing the deposit, interest on the deposit for the period it has remained with the bank will be paid at the rate applicable on the date of deposit to the period for which the deposit remained with the bank and not at the contracted rate. Further, the bank may, at its discretion, levy penalty for premature closure of an existing deposit at such rates as may be decided by the bank from time to time.\nIX. Renewal of Overdue Term Deposit: When a term deposit is renewed on maturity, on the renewed deposit, interest rate for the period specified by the depositor, as applicable on the date of maturity, would be applied.\nIf request for renewal is received after the date of maturity, such overdue deposits will be renewed with effect from the date of maturity at interest rate applicable as on the due date, provided such request is received within 14 days from the date of maturity.\nIn respect of overdue deposits renewed after 14 days from the date of maturity, interest for the overdue period will be paid at the savings account rate or the contracted rate of interest on the matured term deposit, whichever is lower. Such term deposit must have run for a minimum tenor of 7 days from the date of request for renewal by the depositor, in order to earn any interest. Premature withdrawals before this minimum tenor will result in zero interest payment to the client.\nX. Payment of Overdue Term Deposit: If a term deposit matures and the proceeds are unpaid, the amount left unclaimed would attract savings account or the contracted rate of interest on the matured term deposit, whichever is lower.\nXI. Tax Deduction at Source (TDS): The bank has statutory obligation to deduct tax at source if the total interest paid / payable on all term deposits held by a person exceeds the amount specified under the income tax act. The bank will issue a tax deduction certificate (TDS certificate) for the amount of tax deducted. The depositor, if entitled to exemption from TDS can submit applicable declaration in the prescribed format (Form 15G/ Form 15H / Tax Exemption Certificate) at the beginning of every financial year, for existing term deposits and later on for term deposits created subsequently, failing which bank shall proceed to deduct taxes as applicable. With a view to protect interest of the depositors and for rendering better customer service, branches are advised to give an acknowledgment at the time of receipt of Form 15-G/15- H. Bank will provide Form 16A to the customers well within the time-frame prescribed under the Income Tax Rules.\n\n## XII. Interest rates on Rupee Deposits-Non-Residents\nA. Interest on deposits of money accepted or renewed under NRE/NRO deposit scheme shall be on the terms and conditions specified in the ensuing paragraphs:\na. The interest rates shall be subject to the conditions laid down in these Directions.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nb. Interest rates on savings deposits under Non-Resident (External) Rupee (NRE) Deposit / Non-Resident Ordinary (NRO) Deposits shall be in accordance with Directions.\nc. Interest rates on NRE/NRO term deposits shall vary only on account of one or more of the following reasons:\n\n## (i) Tenor of Deposits:\nBanks shall have the freedom to determine the maturity/tenor of the deposit subject to the condition that minimum tenor of NRE term deposits shall be one year and that of\nNRO term deposits shall be seven days.",
+    "chunk_order_index": 6,
+    "heading": {
+      "level": 2,
+      "heading": "D) Interest payable on term deposit in deceased account:",
+      "parent_headings": [
+        "SECTION D"
+      ]
+    },
+    "sidecar": {
+      "type": "block",
+      "id": "baf1339a85b1dec464b8af7c25d87088",
+      "refs": [
+        {
+          "type": "block",
+          "id": "baf1339a85b1dec464b8af7c25d87088"
+        },
+        {
+          "type": "block",
+          "id": "2be6ff64f21be8d82aa5e6e3a3f611d6"
+        },
+        {
+          "type": "block",
+          "id": "52da931a0da85830eedc7ad411f111a1"
+        },
+        {
+          "type": "block",
+          "id": "bd537aeac1d7e930a416a673e676e6f9"
+        }
+      ]
+    },
+    "full_doc_id": "doc-6e9c97657e05cf315dfdf575fb8d6364",
+    "file_path": "Deposit Policy.pdf",
+    "llm_cache_list": [
+      "default:extract:b259756e7ffbb5e1931ddcee2770aecd",
+      "default:extract:a546a07ca516dcf27ae6642f6ad08b66"
+    ],
+    "create_time": 1786696663,
+    "update_time": 1786696694,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
+  },
+  "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007": {
+    "tokens": 1781,
+    "content": "## (ii) Size of Deposits :\nDifferential interest rate shall be offered only on bulk deposits\nd. Interest rates on NRE/ NRO deposits shall not be higher than those offered by the banks on comparable domestic rupee term deposits.\ne. The benefit of additional interest rate on deposits on account of being bank's own staff or senior citizens shall not be available to NRE and NRO deposits.\nf. Interest on savings deposits shall be credited at quarterly or shorter intervals.\nB. Prohibition on marking lien : Scheduled Commercial Banks shall not mark any type of lien, direct or indirect, against NRE saving deposits except for statutory requirement.\nC. Penalty on premature withdrawal of NRE deposits There shall be a comprehensive policy on penalties for premature withdrawal of NRE term deposits approved by the Board of Directors or any committee of the Board to which powers have been delegated, subject to the following:\na. The components of penalty shall be clearly brought to the notice of the depositors at the time of acceptance of the deposits.\nb. No penalty for premature withdrawal shall be levied, where depositors of the branch as mentioned in section of this direction desires premature withdrawal of deposit consequent to the transfer of business to another bank.\n\n## D. Interest payable on the NRE term deposit account of deceased depositor :\nIn case the claimants of an NRE term deposit account of a deceased depositor are residents, the deposit on maturity shall be treated as a domestic rupee term deposit and interest shall be paid for the subsequent period at a rate applicable to a domestic term deposit of similar maturity.\n\n## XIII. Others:\nA) Advances against Deposits: The Bank may consider request of the depositor(s) for loan / overdraft facility against term deposits maintained with the Bank and duly discharged by the depositor(s) on execution of necessary security documents. The Bank may also consider loan against deposit in the name of minor, however, a suitable declaration stating that loan is for the benefit of the minor, is to be furnished by the depositor applicant. The Bank will offer such advances at a margin as decided from time and time and ensuring the necessary margins are maintained so as to ensure that the due amount outstanding is never over the principle maintained in the bank.\nINTERNAL\nVersion 4.0 Master Policy on Customer Service\nB) Addition or Deletion of names(s) of joint account holders: The Bank may at the request of all the joint account holders allow addition or deletion of name(s) of joint account holder(s) if the circumstances so warrant or allow an individual depositor to add the name of another person as a joint account holder.\nC) Customer Information: The customer information collected from the customers may be used for cross selling of services or products by the Bank, their subsidiaries, affiliates and associates strictly with the consent of the account holder in writing, obtained at the time of account opening or subsequently.\nD) Secrecy of Customer Information: The Bank shall not disclose details / particulars of the customer's account to a third person or party without the expressed or implied consent from the customer. However, there are some exceptions, viz. disclosure of information under compulsion of law, where there is a duty to public to disclose and where interest of the Bank requires disclosure.\nE) Insurance Cover for deposits: All bank deposits are covered under the insurance scheme offered by Deposit Insurance and Credit Guarantee Corporation of India (DICGC) subject to certain limits and conditions. The details of the insurance cover in force will be made available to the depositor.\nF) Settlement of Dues in Deceased Deposit account: The Bank has framed a comprehensive policy to facilitate a simplified procedure for settlement of accounts of deceased account holders, which forms a part of this Master Policy on Customer Service. The claims in respect of deceased depositors and release of payments to survivor(s)/nominees will be made within a period not exceeding 15 days from the date of receipt of the claim subject to the production of proof of death of the depositor, suitable identificatio satisfaction and other documents to the bank's satisfaction.\nG) Dormant / Inoperative Account: Accounts which are not operated by the customer for a period of two years will be classified as Dormant / Inoperative in the interest of the depositor as well as the Bank. Activation of such dormant accounts will be done on receiving a request in writing from the customer. The depositor can request the bank to activate the account for operating it after complying with the regulatory guidelines and the internal guidelines in this regard.\nH) Inactive Account: Accounts which are not operated by the customer for a period of one year will be considered as inactive accounts in the interest of depositor as well as the Bank. An intimation letter shall be sent to the depositor on account turning inactive. Customers can activate the account by performing a financial transaction in the account.\nI) Unclaimed Deposits: These are accounts which have not been operated upon for ten years. Such accounts are transferred to RBI under the “The Depositor Education and Awareness Fund Scheme, 2014\"\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nUnclaimed Deposit Reference Number (UDRN)- It is a unique number generated through Core Banking Solution (CBS) and assigned to each unclaimed account/ deposit transferred to DEA Fund of RBI. The number shall be such that the account holder or the bank branch where account is maintained, cannot be identified by any third party.\nIn an effort to play a more pro-active role in finding the whereabouts of the account holders of unclaimed deposits, the list of such accounts which are inoperative for ten years or more , the list displayed on the website will contain the names of the account holder(s) and his/her address in respect of unclaimed deposits. For Non-Individual Customers, the list so displayed on the website will contain the names of the Entity and its address in respect of unclaimed deposits. Customers / claimants in respect of such accounts are required to contact the Bank to submit their claims with supporting documents as may be directed by the Bank.\n\n## a. Review of Accounts\ni. Bank shall undertake atleast an annual review in respect of accounts, where there is no customer induced transactions for more than a year. In cases where there is no explicit mandate to renew the term deposit, the bank should review such accounts if the customers have not withdrawn the proceeds after maturity or transferred these to their savings/current account in order to prevent such deposits from becoming unclaimed. The bank shall inform the account/deposit holders through letters or email or SMS (if the email and mobile number are registered with the bank) that there has been no operation in their accounts/deposits in the last one year, as the case may be. The alert messages shall invariably mention that the account would become inoperative’ if no operations are carried out during the next one year and the account holder would be required to submit KYC documents afresh for reactivating the account in such case.\nii. If the letters are returned undelivered or no response is received through registered email, the bank shall immediately undertake an enquiry to find out the whereabouts of account holder or his/her nominee/legal heirs in case the account holder is deceased\niii. In case any response is received from the account holder giving the reasons for not operating the account, the bank shall continue to classify the account as operative for one more year and the account holder shall be advised to operate the account within a period of one year (herein after referred to as extended period’). In case the account holder still fails to operate the account within the extended period, the bank shall classify the said account as inoperative account after the expiry of the extended period.\niv. For the purpose of classifying an account as inoperative', only customer induced transactions and not bank induced transactions shall be considered. There may be instances where the customer has given a mandate like Standing Instructions (SI)/ auto-renewal instructions and there are no other operations in the Savings /Current account or the Term Deposit. These transactions shall also be treated as customer induced transactions.\nv. The classification of an account as inoperative shall be for a particular account of the customer and not with reference to the customer. In case a customer is maintaining multiple accounts/deposits with a bank, all such accounts/deposits shall be assessed individually for the purpose of classifying them as inoperative account/ unclaimed deposit, as the case may be.\nvi. In case the account holder is not carrying out transaction and the account is - inoperative due to shifting of primary account to another bank, the account holder may be requested to provide the details of the new bank account with authorisation to enable the bank to transfer the balance from the existing bank account.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL",
+    "chunk_order_index": 7,
+    "heading": {
+      "level": 2,
+      "heading": "(ii) Size of Deposits :",
+      "parent_headings": [
+        "SECTION D"
+      ]
+    },
+    "sidecar": {
+      "type": "block",
+      "id": "5f2dbd6e6347c958a1d6d4ede6276310",
+      "refs": [
+        {
+          "type": "block",
+          "id": "5f2dbd6e6347c958a1d6d4ede6276310"
+        },
+        {
+          "type": "block",
+          "id": "846475b90a77a8fcb8905fb6b28fa669"
+        },
+        {
+          "type": "block",
+          "id": "0bd3d174da11c979f0cfe44e2e5fd828"
+        },
+        {
+          "type": "block",
+          "id": "5a0c9ab01edf2aeaeba9308cc43ba1da"
+        }
+      ]
+    },
+    "full_doc_id": "doc-6e9c97657e05cf315dfdf575fb8d6364",
+    "file_path": "Deposit Policy.pdf",
+    "llm_cache_list": [
+      "default:extract:1ce76e730fb393fdbef7438886dd9c2b",
+      "default:extract:37b9cc4f257c924c0633bfe3157c659b"
+    ],
+    "create_time": 1786696663,
+    "update_time": 1786696694,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+  },
+  "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008": {
+    "tokens": 1694,
+    "content": "## b. Customer Awareness\n1. The bank shall provide on their website as well as at their branches, the information on the process for activation of the inoperative account/ unclaimed deposits and claiming the balances therein. Necessary claim forms and documents may be made available for the benefit of customers.\n2. The bank shall conduct public awareness and financial literacy campaigns regularly to educate the members of public about the activation of inoperative accounts/unclaimed deposits and the prescribed procedure to claim amounts lying therein by a depositor or his/her nominee/ legal heir in case of deceased depositor.\nJ) Stop Payment Facility: The Bank will accept stop payment instruction from the depositors in respect of cheques issued by them, in writing or through such alternate channels as may be notified by the Bank from time to time. Charges, as specified in the schedule of charges, will be recovered.\nK) Standing instructions: Standing instructions can be given to the Bank for transfer/remittance of funds from one account to other account(s) maintained in the same branch, any other branch of the bank or any branch of any other bank. This will be done electronically using Net Banking or mobile banking facility.\nL) Direct Debit: The Bank offers Electronic Clearing Service (ECS) / Automated Clearing House (ACH) facility for effecting periodic payments by \"direct debit\" to the customer's account. This facility is mainly used for payment of utility bills/EMI of Loans/Insurance Premium/Investment in Mutual Funds, etc. Details of ECS/ACH facility are available at all the branches.\nM) Service Charges: All new accounts opened would contain a leaflet detailing various types of Services & Charges being levied by the bank for any of the services availed. Updated service & fees leaflet is also made available to all customers at the branch for reference at any point of time. Any change in service & fees will be communicated one month in advance to all customers before effecting the change. Bank also ensures, that the account balance is not turned into negative due to levy of AMB / AQB charges.\nN) Redressal of complaints and grievances: Depositors having any complaint / grievance with regard to services rendered by the Bank has a right to approach authority(ies) designated by the Bank for handling customer complaint / grievances in terms of the Grievance Redressal Policy of the Bank, which forms a part of this Master Policy on Customer Service. The details of the internal mechanism for redressal of complaints / grievances will be displayed in the branch premises and website of the Bank. The branch officials shall provide all required information regarding procedure for lodging the complaint. In case the depositor does not get response from the Bank within one month from date of complaint or he is not satisfied with the response received from the Bank, he has a right to approach Banking Ombudsman appointed by the Reserve Bank of India.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n\n## c. PROHIBITIONS AND EXEMPTIONS\n\n## A. Prohibitions\nScheduled commercial banks shall not:\n(a) Pay any remuneration or fees or commission or brokerage or incentives on deposits in any form or manner to any individual, firm, company, association, institution or any other person except:\n(i) commission paid to agents employed to collect door-to-door deposits under a special scheme.\n(ii) commission paid to Direct Selling agents/Direct Marketing Agents as part of the outsourcing arrangements.\n(iii) remuneration paid to Business facilitators or Business Correspondents.\n(b) Offer prize/lottery/free trips (in India and/or abroad), etc or any other initiative having element of chance for mobilizing deposits. However, inexpensive gifts costing not more than Rupees 250/- which ociation (IBA) as part of the Ground Rules and Code of Ethics framed by them may, at the bank's discretion, be given to depositors at the time of accepting deposits.\n(c) Resort to unethical practices of raising of resources through agents/third parties to meet the credit needs of the existing/prospective borrowers or to grant loans to the intermediaries based on the consideration of deposit mobilisation.\n(d) Issue any advertisement/literature soliciting deposits from public highlighting only the compounded yield on term deposits without indicating the actual rate of simple interest offered by the bank for the particular period. Simple rate of interest per annum for the period of deposit should be indicated invariably.\n(e) Accept interest-free deposit other than in current account or pay compensation indirectly.\n(f) Accept deposits from/at the instance of private financiers or unincorporated bodies under any arrangement which provides for either issue of deposit receipt/s favouring client/s of private financiers or giving of an authority by power of attorney, nomination or other-wise, for such clients receiving such deposits on maturity.\n(g) Grant advances against term deposits maintained with other banks.\n(h) Open a savings deposit account in the name of Government departments / bodies depending upon budgetary allocations for performance of their functions / Municipal Corporations or Municipal Committees / Panchayat Samitis / State Housing Boards / Water and Sewerage / Drainage Boards / State Text Book Publishing Corporations / Societies / Metropolitan Development Authority / State / District Level Housing Co-operative Societies, etc. or any political party or any trading/business or professional concern, whether such concern is a proprietary or a partnership firm or a company or an association and entities other than individuals, Karta of HUF and organisations/agencies listed in Schedule -I.\n\n## Explanation\nFor the purposes of this clause, ‘political party’ means an association or body of individual citizens of India, which is, or is deemed to be registered with the Election Commission of India as a political party under the Election Symbols (Reservation and Allotment) Order, 1968 as in force for the time being.\n(i) Create any fund to be utilized for charitable purposes in consultation with the depositors.\n\n## B. Exemptions\nThe provisions in the above paragraphs shall not be applicable to:\n(a) A deposit received by the bank:\n(i) from the institutions permitted to participate in the Call/Notice/Term Money Market both as lenders and borrowers.\n(ii) for which it has issued a participation certificate;\nINTERNAL\nVersion 4.0 Master Policy on Customer Service\n(iii) under the Capital Gains Accounts Scheme, 1988, framed by the Government of India in pursuance of sub-section (2) of Section 54, sub-section (2) of Section 54B, sub-section (2) of Section 54D, subsection (4) of Section 54F and sub-section (2) of Section 54G of the Income-Tax Act, 1961; and (iv)under the Certificate of Deposit Scheme.\n(b) Payment of interest on delayed collection of outstation instruments like cheques, drafts, bills, telegraphic/mail transfers, etc.\n\n## SCHEDULE- I\n(1) Primary Co-operative Credit Society which is being financed by the bank.\n(2) Khadi and Village Industries Boards.\n(3) Agriculture Produce Market Committees.\n(4) Societies registered under the Societies Registration Act, 1860 or any other corresponding law in force in a State or a Union Territory except societies registered under the State Co-operative Societies Acts and specific state enactment creating Land Mortgage Banks.\n(5) Companies licensed by the Central Government under Section 8 of Companies Act, 2013 or Section 25 of Companies Act, 1956 or under the corresponding provision in the Indian Companies Act, 1913 and permitted, not to add to their names the words Limited’ or the words Private Limited’.\n(6) Institutions other than those mentioned in Section 28(h) and whose entire income is exempt from payment of Income-tax under the Income-Tax Act, 1961.\n(7) Government departments / bodies / agencies in respect of grants/ subsidies released for implementation of various programmes / Schemes sponsored by Central Government / State Governments subject to production of an authorization from the respective Central / State Government departments to open savings bank account.\n(8) Development of Women and Children in Rural Areas (DWCRA).\n(9) Self-help Groups (SHGs), registered or unregistered, which are engaged in promoting savings habits among their members.\nVikas Volunteer Vahini VVV.\nVersion 4.0 Master Policy on Customer Service\nINTERNAL",
+    "chunk_order_index": 8,
+    "heading": {
+      "level": 2,
+      "heading": "b. Customer Awareness",
+      "parent_headings": [
+        "SECTION D"
+      ]
+    },
+    "sidecar": {
+      "type": "block",
+      "id": "bdf819c3792149e8f7dc88c329a3d28d",
+      "refs": [
+        {
+          "type": "block",
+          "id": "bdf819c3792149e8f7dc88c329a3d28d"
+        },
+        {
+          "type": "block",
+          "id": "48364e54050f6f9e2a40528a2f32752d"
+        },
+        {
+          "type": "block",
+          "id": "5c7e2e99c484c85f2b3cdbb2491fbf13"
+        },
+        {
+          "type": "block",
+          "id": "971fc47bc19eab763574c04ea55bc8e3"
+        },
+        {
+          "type": "block",
+          "id": "88d0d2966c6a6672b1241dcb5af7f50f"
+        },
+        {
+          "type": "block",
+          "id": "ef5f812024adf0ce26d0fff39c669c7d"
+        }
+      ]
+    },
+    "full_doc_id": "doc-6e9c97657e05cf315dfdf575fb8d6364",
+    "file_path": "Deposit Policy.pdf",
+    "llm_cache_list": [
+      "default:extract:e2e89ed4ea7133ee4651002f4c761ce6",
+      "default:extract:4a11872d95390bfa19941d4d325118c5"
+    ],
+    "create_time": 1786696663,
+    "update_time": 1786696706,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-000": {
     "tokens": 1627,
@@ -116,10 +462,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:4922fa7c8500cbb430d0e84556850e62",
-      "default:extract:17c2809d649c0912c31e8648d87dae00"
+      "default:extract:7cd4c94d2d1d8cbfb0bf1dc0e906db8e"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786618970,
+    "create_time": 1786704042,
+    "update_time": 1786704057,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-000"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-001": {
@@ -145,10 +491,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:c9a72c343f8d06c69dc6e8584c533a8c",
-      "default:extract:39ae8db623120e887beed085f9524d2d"
+      "default:extract:f903793d0cd104702afd15789b70390a"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786618968,
+    "create_time": 1786704042,
+    "update_time": 1786704053,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-001"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-002": {
@@ -188,10 +534,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:7a70bf0d993350f4c7e31e74278152cc",
-      "default:extract:7c2d4e0c2b9eb8f2cfd572550fe0a452"
+      "default:extract:fcf8e45a3119516818bb80fa402b7f47"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786618968,
+    "create_time": 1786704042,
+    "update_time": 1786704055,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-002"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-003": {
@@ -247,10 +593,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:e9cc60f59dafeab4b778781e7deb37e4",
-      "default:extract:42d5eb4329a099be2b912ed3397a491a"
+      "default:extract:731ce0296e4cf390994053267b5d0508"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786618972,
+    "create_time": 1786704042,
+    "update_time": 1786704056,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-003"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-004": {
@@ -306,10 +652,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:363e3493891d30bedd68165cfa9e73c4",
-      "default:extract:14fa67d724efc4ba26034f72c60867f9"
+      "default:extract:16bba9afbd6b8081f6e2f61966db035f"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786618977,
+    "create_time": 1786704042,
+    "update_time": 1786704063,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-004"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-005": {
@@ -349,10 +695,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:f8d2b77ac8e7ef53f521bfc6da035937",
-      "default:extract:c4d12cc8578c0ada68b114e08885d802"
+      "default:extract:19f9654a7557429523a97ec49dd9e984"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786618983,
+    "create_time": 1786704042,
+    "update_time": 1786704072,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-005"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-006": {
@@ -396,10 +742,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:b1ce7bd0abd2c2b5b53148488466b9ca",
-      "default:extract:b741da97ab09f33e027b13af1feab247"
+      "default:extract:c494d6ac2e122dcbdf9d3a270f741a70"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786618981,
+    "create_time": 1786704042,
+    "update_time": 1786704066,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-006"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-007": {
@@ -427,10 +773,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:7ff3c224633e190c89a5541b67386cc3",
-      "default:extract:c08679768d38fb08569a52f5a3171aca"
+      "default:extract:da5166a6a44a5b3a1d623a92a1b08a1f"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786618990,
+    "create_time": 1786704042,
+    "update_time": 1786704073,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-007"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-008": {
@@ -470,10 +816,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:e9369a044aa27d570d9b252f5660b085",
-      "default:extract:3c4bc125e2ac2acd2c713d758b3d5f93"
+      "default:extract:3080cddc9cc114c33467c1b4b8db4c68"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786618994,
+    "create_time": 1786704042,
+    "update_time": 1786704085,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-008"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-009": {
@@ -561,10 +907,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:e30f8c3af51961d01b004ce71c7ae05b",
-      "default:extract:711da921cb9ca8a778c4fa2c06a2b254"
+      "default:extract:b11e8eb9e255a770e326a3fdb1f02fde"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786619004,
+    "create_time": 1786704042,
+    "update_time": 1786704090,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-009"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-010": {
@@ -620,10 +966,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:d0774e7f537bc77b2c6d773dc3677e13",
-      "default:extract:91c4c935edb733794f8b32eeac3e6835"
+      "default:extract:6cce3fd03149ab2e4afe111986f936f8"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786618993,
+    "create_time": 1786704042,
+    "update_time": 1786704081,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-010"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-011": {
@@ -679,10 +1025,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:80a34049019e6a9cf85ef90795ed0522",
-      "default:extract:38be41bb8fa3253199478400f4082c3c"
+      "default:extract:93bbae532636588ab3f81bc85b7806b4"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786619002,
+    "create_time": 1786704042,
+    "update_time": 1786704089,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-011"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-012": {
@@ -738,10 +1084,10 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:ddb908d1a7681ced0544859625abdeb6",
-      "default:extract:f04f1cdfb98d2d2b13d8f43b2ee6d572"
+      "default:extract:ae95e9ac151ba030654df1dbedc7c09d"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786619010,
+    "create_time": 1786704042,
+    "update_time": 1786704096,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-012"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-chunk-013": {
@@ -759,17 +1105,17 @@
     "file_path": "SOP - Account opening for Retail Customers.pdf",
     "llm_cache_list": [
       "default:extract:e8f4e38669ca2ef43885b840d228f1cf",
-      "default:extract:9e4812173f9a8892d1098f7e31887a0d"
+      "default:extract:4d0644095bc7c69c1ddbd533d4b0e47b"
     ],
-    "create_time": 1786618955,
-    "update_time": 1786619009,
+    "create_time": 1786704042,
+    "update_time": 1786704093,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-chunk-013"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-000": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-000",
     "chunk_order_index": 14,
-    "content": "[Image Name]word_document_icon\n[Image Type]Icon\n\nThe image depicts an icon representing a Word document. The icon features a stylized letter 'W' inside a blue square, which is often associated with Microsoft Word. This visual is commonly used in digital interfaces to signify document files created with Word processing software. The background is absent, focusing the attention on the icon itself.",
-    "tokens": 78,
+    "content": "[Image Name]word_document_icon\n[Image Type]Icon\n\nThe image depicts an icon representing a Word document, characterized by a document shape with a stylized 'W' symbol at the top left. The icon conveys the general concept of a Microsoft Word file and is often associated with text editing software. Its visual simplicity and recognizable features make it a common representation for documents created in Word.",
+    "tokens": 79,
     "sidecar": {
       "type": "drawing",
       "id": "im-2e34273750791ef213944c7971a5e5a1-0001",
@@ -782,8 +1128,8 @@
     },
     "llm_cache_list": [
       "default:analysis:9539b3e4fdc13654f12c1a9765a2f8d1",
-      "default:extract:3aa56b8be1f25b8d9e65ceac88d619bd",
-      "default:extract:49b01e5fbeb29aafe6086ca295023be0"
+      "default:extract:d5d9cca77edeec8be5f5c844482a6bbe",
+      "default:extract:97a542001371675ce95a49adcc74ecae"
     ],
     "heading": {
       "level": 0,
@@ -794,15 +1140,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619006,
+    "create_time": 1786704042,
+    "update_time": 1786704094,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-000"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-001": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-001",
     "chunk_order_index": 15,
-    "content": "[Image Name]banking_dashboard_interface\n[Image Type]Screenshot\n\nThe image depicts a digital banking dashboard interface from a software application. The screen displays a greeting message, \"Hello SONAL JAGDISH SOGAM, Good Evening,\" followed by the last login details. The layout includes various options for banking tasks categorized under headings such as 'Customer Creation (Individual)', 'Account Master', 'Transactions', and 'Integrated Channels'. An arrow points to the 'Exception Report' feature, indicating its importance or focus. The interface is designed for ease of navigation, presenting actions like 'Loan Repayment Chart', 'Transfer', 'Customer Maintenance', and more. The context suggests this represents part of a process related to KYC/CKYC as mentioned in the leading text.",
-    "tokens": 156,
+    "content": "[Image Name]banking_application_dashboard_screenshot\n[Image Type]Screenshot\n\nThe image displays a banking application dashboard interface, identified as 'TUNING 3.0', with various sections dedicated to different banking functionalities. Prominent features include a greeting message stating 'Hello SONAL JAGDISH SOGAM, Good Evening', indicating user personalization. The dashboard is segmented into multiple categories such as 'Customer Creation (Individual)', 'Loan Repayment Chart', 'Transfer', 'Clearing Inward Local', and 'Exception Report'. An arrow points towards the 'Exception Report' section, indicating its importance. The left sidebar contains additional options including 'Admin', 'Product Master', 'Transactions', and 'Compliance and Security'. The information is supplemented by a timestamp indicating the last login and the working date at the top. Various icons representing different tasks and modules are visually organized in a grid format across the dashboard, reflecting an accessible interface for banking operations.",
+    "tokens": 192,
     "sidecar": {
       "type": "drawing",
       "id": "im-2e34273750791ef213944c7971a5e5a1-0002",
@@ -815,8 +1161,8 @@
     },
     "llm_cache_list": [
       "default:analysis:5279432392e32b22eb1c25736dc756a5",
-      "default:extract:25fe4ff8d1b5e65b66774553d4a37b9b",
-      "default:extract:1ec699f775fb92269f33ab1b7350cfb9"
+      "default:extract:f4d0e5d7f75e21cf2b49dee3a3ba971d",
+      "default:extract:7ae56f01378fcf77a6d276a2fd7b9c56"
     ],
     "heading": {
       "level": 0,
@@ -827,15 +1173,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619017,
+    "create_time": 1786704042,
+    "update_time": 1786704105,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-001"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-002": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-002",
     "chunk_order_index": 16,
-    "content": "[Image Name]unity_small_finance_bank_dashboard\n[Image Type]Screenshot\n\nThe image depicts a digital dashboard for 'Unity Small Finance Bank,' highlighting various services and tools available to users. The layout is organized into categories showing items like 'Reports,' 'Treasury,' and 'BIDMS.' Each category is represented by an icon and text. A distinct arrow points to the 'BIDMS' section, indicating it may be of particular interest. This interface is designed for navigating banking services, displaying options such as 'AML - KYC', 'NEFT/RTGS', 'Ticketing System', and 'Mobile Banking Admin Panel'. The top of the screen features 'Working Date: 08-Dec-2023' and user role details, suggesting it's used for real-time banking operations.",
-    "tokens": 161,
+    "content": "[Image Name]unity_small_finance_bank_dashboard\n[Image Type]Screenshot\n\nThe image depicts a screenshot of a software interface belonging to Unity Small Finance Bank. The interface displays various options organized in a grid layout, including sections like 'Reports', 'Treasury', 'BIDMS', 'AML-KYC', and 'Mobile Banking Admin Panel'. An arrow points to the 'BIDMS' icon, highlighting it among the other menu options. The timestamp indicates the working date as 08-Dec-2023, and the interface features a simple and professional design typical of banking software.",
+    "tokens": 119,
     "sidecar": {
       "type": "drawing",
       "id": "im-2e34273750791ef213944c7971a5e5a1-0003",
@@ -848,8 +1194,8 @@
     },
     "llm_cache_list": [
       "default:analysis:a6bdc8033a1628c228fc28419c126a65",
-      "default:extract:dd2d2bef759062d897b877d183f94ef4",
-      "default:extract:90bd6e5ad6e3a272b5c49fdc4caefeb9"
+      "default:extract:590ed6908c57e7b84960ad535bf9389f",
+      "default:extract:343170478a0058a5c8f8e9433f9ddc48"
     ],
     "heading": {
       "level": 0,
@@ -860,15 +1206,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619018,
+    "create_time": 1786704042,
+    "update_time": 1786704105,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-002"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-003": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-003",
     "chunk_order_index": 17,
-    "content": "[Image Name]document_management_system_interface\n[Image Type]Screenshot\n\nThe image displays a user interface of a Document Management System titled 'DOCZONE'. It features a navigation sidebar on the left with options like 'New Customer', 'District Master', and 'KYC REJECTED'. The main content area contains a 'Docket Listing' table which includes columns for branch selection, customer number, mobile number, and Aadhar number, among others. Below the table, there are search and export options. The table lists multiple entries, each with details such as docket number, customer/account number, customer name, branch, date of opening, PAN number, mobile number, Aadhar number, and their respective statuses. The visible information indicates this system is used to manage customer documentation, with particular focus on KYC processes. A highlighted instruction to 'Click on New Customer' directs users to add a new customer to the system.",
-    "tokens": 186,
+    "content": "[Image Name]document_management_system_interface\n[Image Type]Screenshot\n\nThe image displays a user interface for a document management system named 'DOCZONE', indicated as version 2.0. The screen shows a section for managing customer documents, featuring a docket listing table with various columns such as 'Docket No', 'Customer/Account No', 'Customer Open Date', 'Name', 'Customer Branch', and others. Currently, several records are shown with customer details, including names like 'RAJESHWARI CHARITABLE TRUST' and 'INDIRA C. BASAVARAJIDU'. The interface allows users to select a branch and filter customer information. Notably, there is a navigation option labeled 'New Customer', highlighted with an arrow, suggesting users can click it to add a new customer. Other features include search options and report export capabilities. The leading text suggests that the action to be taken is to click on 'New Customer'.",
+    "tokens": 192,
     "sidecar": {
       "type": "drawing",
       "id": "im-2e34273750791ef213944c7971a5e5a1-0004",
@@ -881,8 +1227,8 @@
     },
     "llm_cache_list": [
       "default:analysis:7535caa91957a32b260d51bfacd1919a",
-      "default:extract:ebeae8d0f60c26ab568a77bdef1bfcbe",
-      "default:extract:2db932e47743a17cf0ff02a3cca46209"
+      "default:extract:a85f23d02cb1d55d87a3c9d8a7cafa80",
+      "default:extract:a5de6544597c14041b8144d19d2e78b0"
     ],
     "heading": {
       "level": 0,
@@ -893,15 +1239,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619016,
+    "create_time": 1786704042,
+    "update_time": 1786704101,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-003"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-004": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-004",
     "chunk_order_index": 18,
-    "content": "[Image Name]document_management_system_interface\n[Image Type]Screenshot\n\nThe image displays a user interface for a document management system labeled 'DOCZONE' with a version number of 2.0. It includes sections for creating a new account, where users can select a branch, enter customer information, and manage account details. Visible elements comprise input fields for customer name, mobile number, and Aadhaar number, as well as options to search and export reports. The lower part shows a table listing customer account information, including details like customer name, branch, birth date, phone number, and status, indicating that the system is in progress. The layout is clearly structured for efficient user interaction, with labeled arrows pointing to specific functions such as 'Select branch' and 'Click on search' to guide the user through the process. This interface supports tasks related to account management within the banking sector.",
-    "tokens": 179,
+    "content": "[Image Name]document_management_system_interface\n[Image Type]Screenshot\n\nThe image displays a user interface of a Document Management System titled 'DOCZONE' with a user's login details visible on the top left. It shows a section for creating a new account with various input fields including branch selection, customer details, and options to search and export reports. Arrows and labels instruct the user to select a branch, input a CIF number, and click on the search button. Below, a table lists entries with headers like 'Docket No', 'Customer/Account No', 'Open Date', and other attributes related to customer management, with a current status of 'In Progress' for several entries.",
+    "tokens": 139,
     "sidecar": {
       "type": "drawing",
       "id": "im-2e34273750791ef213944c7971a5e5a1-0005",
@@ -914,8 +1260,8 @@
     },
     "llm_cache_list": [
       "default:analysis:1dccf70eb93d15a06d2e6cce795603df",
-      "default:extract:57883ced7fbdfb77737ed495cd7899a9",
-      "default:extract:c30aa0dc2c38be673bbb13cac433a069"
+      "default:extract:aa6ad67317977597ff930a7cd40fbeb6",
+      "default:extract:423b569a3e8e2f1fb4b0af241744a3f9"
     ],
     "heading": {
       "level": 0,
@@ -926,15 +1272,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619019,
+    "create_time": 1786704042,
+    "update_time": 1786704101,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-004"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-005": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-005",
     "chunk_order_index": 19,
-    "content": "[Image Name]new_account_kcyc_interface\n[Image Type]Screenshot\n\nThe image depicts a screenshot of a digital interface for managing new accounts at Unity Small Finance Bank. The interface shows a section titled 'New Account' with various fields such as 'Branch', 'Pending At', 'Customer', 'Mobile', 'Status', and 'Ind/Other'. Below the form fields is a table listing dashboard information about docket numbers, customer account details, and related personal information. Notably, the screenshot highlights the instruction 'Click on Docket no', pointing to a specific docket number (D0006/746) in the table. The overall design suggests a user interface focused on managing banking inquiries and processes, likely related to the KYC (Know Your Customer) process.",
-    "tokens": 156,
+    "content": "[Image Name]new_account_kyc_form_screenshot\n[Image Type]Screenshot\n\nThe image displays a screenshot of a banking interface labeled 'New Account'. The interface includes various fields such as 'Branch', 'Pending At', 'Customer', and 'Status', with specific customer details visible. The section titled 'Docket Listing' shows information related to a customer with details like 'Customer Account No', 'Customer Open Date', and 'Name'. There is a prominent arrow pointing to a section labeled 'Click on Docket no', indicating an action to be taken regarding the docket number 'D0096/746'. The interface suggests that the image is part of a KYC (Know Your Customer) process for account registration or management. The visible text contains instructions for navigating the interface effectively.",
+    "tokens": 160,
     "sidecar": {
       "type": "drawing",
       "id": "im-2e34273750791ef213944c7971a5e5a1-0006",
@@ -947,8 +1293,8 @@
     },
     "llm_cache_list": [
       "default:analysis:f7451f4f3b09efcc2ac903a395b38542",
-      "default:extract:073251fd565525eecf88418bfdc5dd2b",
-      "default:extract:1f0de08e4dab56bdb214c78e7806d7ea"
+      "default:extract:1f8a6305cb65bef38c61e5f09761c36a",
+      "default:extract:f42a015cceb4bc4f8ac27b55eff9c851"
     ],
     "heading": {
       "level": 0,
@@ -959,15 +1305,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619025,
+    "create_time": 1786704042,
+    "update_time": 1786704107,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-005"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-006": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-006",
     "chunk_order_index": 20,
-    "content": "[Image Name]account_opening_form_screenshot\n[Image Type]Screenshot\n\nThe image depicts a screenshot of an account opening form from UNITY Small Finance Bank. The form contains fields such as 'Customer Branch', 'Customer Name', 'DOB', and 'PAN No.', populated with example data. Specifically, the branch is listed as '26 - PANVEL', the customer's name is 'MANAV K PANDAV', the date of birth is '13-04-2014', and the PAN number is 'BLUEPS5409D'. Important buttons visible include 'Search & Download Kyc', 'Fill CKYC Data', 'Add Document', and 'Save'. The interface emphasizes the 'Fill CKYC Data' button with an arrow pointing to it, suggesting it should be clicked on. This contextualizes the document's role in a process related to KYC (Know Your Customer) requirements, as indicated by the surrounding leading and trailing text discussing steps within the KYC process.",
-    "tokens": 198,
+    "content": "[Image Name]account_opening_form_interface\n[Image Type]Screenshot\n\nThe image captures a screenshot of an account opening form interface from Unity Small Finance Bank. The form includes various fields for customer information such as 'Customer Branch,' 'Customer Name,' 'DOB,' and 'PAN No.' It specifically highlights a button labeled 'Fill CKYC Data' with an arrow indicating it as the target for user interaction. The form is structured with distinct sections for entering customer details and includes buttons for actions like 'Search & Download Kyc,' 'Add Document,' and 'Save.' The interface appears modern and user-friendly, facilitating the process of completing KYC requirements.",
+    "tokens": 132,
     "sidecar": {
       "type": "drawing",
       "id": "im-2e34273750791ef213944c7971a5e5a1-0007",
@@ -980,8 +1326,8 @@
     },
     "llm_cache_list": [
       "default:analysis:6d4619aaf1651ba7cbbf324a55a183e5",
-      "default:extract:dddfce87b9b82fe3465259aa95237887",
-      "default:extract:fba1bce53fc58cb8302a691cd8cf29f7"
+      "default:extract:63f57fc943bc28ce18db24286992760c",
+      "default:extract:13a074b79abb09768dbc6e8093b9859a"
     ],
     "heading": {
       "level": 0,
@@ -992,15 +1338,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619030,
+    "create_time": 1786704042,
+    "update_time": 1786704109,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-006"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-007": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-007",
     "chunk_order_index": 21,
-    "content": "[Image Name]c_kyc_related_person_data_form\n[Image Type]Screenshot\n\nThe image displays a screenshot of a web form titled 'Add Edit C-KYC Related Person Data.' The form includes fields for entering details about a related person, specifically for KYC procedures. It has a section labeled 'Details Of Related Person' with several input fields. Key visible fields include 'Relationship Type,' which specifies 'Guardian of minor,' and 'Addition/Deletion Flag' showing 'Addition of Relative.' Other fields for 'Related Person Name Prefix,' 'Father / Spouse,' and 'Date of Birth' are part of the form. Some fields have drop-down menus with placeholder texts such as 'Please Select' and default values like 'INDIAN' for nationality. The layout shows a structured format for various data entries, indicating it is used for collecting information necessary for KYC validation in a banking context. The form appears to be part of an internal system for Unity Small Finance Bank, as suggested by the trailing text. This detailed information aligns with the surrounding context of KYC processes for minors.",
-    "tokens": 220,
+    "content": "[Image Name]ckyc_related_person_data_form\n[Image Type]Screenshot\n\nThe image displays a screenshot of a web application interface labeled 'Add Edit C-KYC Related Person Data'. It features a form designed to input information related to a 'guardian of minor'. The form includes fields such as 'Relationship Type', 'Related Person Name', and details regarding the guardian's and related person's identity including first name, middle name, last name, gender, nationality, and other personal identifiers. Certain fields are marked with light red highlights, suggesting they may require user attention or are currently filled incorrectly. A button labeled 'Pull Customer Data' is visible on the right, implying a function to retrieve pre-existing information from the system. The overall context indicates this is related to the KYC process within a banking framework, specifically for minors. The leading text suggests this is part of a procedural description for completing KYC/CKYC data for minors.",
+    "tokens": 188,
     "sidecar": {
       "type": "drawing",
       "id": "im-2e34273750791ef213944c7971a5e5a1-0008",
@@ -1013,8 +1359,8 @@
     },
     "llm_cache_list": [
       "default:analysis:edbd95db4ca6415b858fa70198d5eab6",
-      "default:extract:2dc33509fcc7beeb0a9551a1a93cb5a4",
-      "default:extract:29ece5e3ec390515d36deb0e3081ddac"
+      "default:extract:3d274c6afc769b1b397a878e59a0f497",
+      "default:extract:d959ade40230ccf3866753d4db0baf74"
     ],
     "heading": {
       "level": 0,
@@ -1025,15 +1371,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619024,
+    "create_time": 1786704042,
+    "update_time": 1786704111,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-007"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-008": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-008",
     "chunk_order_index": 22,
-    "content": "[Image Name]c_kyc_data_entry_form\n[Image Type]Screenshot\n\nThe image depicts a computer screen displaying a form titled 'Add Edit C-KYC Data' for banking purposes. The form appears to be part of an online application interface, likely for updating or adding customer KYC (Know Your Customer) information. It is structured into sections such as 'For office use only' and 'Personal Details.' The 'Constitution Type' field is categorized as 'Individual,' while the 'Account Type' is given as 'Minor.' Several input fields are visible, including 'Name of Minor,' 'First Name,' 'Middle Name,' 'Last Name,' 'Mother Name,' 'Date of Birth' (specifically noted as '13-04-2014'), 'Gender' (indicated as 'Female'), and 'PAN' (Tax Identification) number. Other fields also include details about the father, proof of address fields, and an 'Aadhar Number.' The context suggests this form is crucial for maintaining accurate customer records, especially for minors. The surrounding instructions highlight the procedure for handling documents related to guardians which links the image to the broader process of customer onboarding in the bank.",
-    "tokens": 241,
+    "content": "[Image Name]c_kyc_data_input_form\n[Image Type]Screenshot\n\nThe image displays a screenshot of a C-KYC (Customer Know Your Customer) data input form intended for banking or financial use. The top section indicates that the data is for office use only, showing fields for constitution type, account type, and customer number. The personal details section includes fields for the applicant's name, the father's and mother's names, date of birth, gender, PAN (Permanent Account Number), and proof of address. The form is designed for a minor, as indicated by the 'Name/title' field labeled 'Minor' and includes other information like first, middle, and last names, with specific inputs like 'MANAWA', 'KETAN', and 'PANDAV'. Overall, it appears to be part of a customer onboarding or verification process for a banking institution. The relationship with the leading text suggests that this form is part of a process that requires updating guardians' details and managing documents related to a minor applicant.",
+    "tokens": 207,
     "sidecar": {
       "type": "drawing",
       "id": "im-2e34273750791ef213944c7971a5e5a1-0009",
@@ -1046,8 +1392,8 @@
     },
     "llm_cache_list": [
       "default:analysis:31463bc2a992dc07a8da092fc208c604",
-      "default:extract:54b991857a279ba5eb2dfc687d61ba7c",
-      "default:extract:9f6b49ab02d708c49c7d34f6aa0f0cf3"
+      "default:extract:e64744a9babc1ca3afd9c6e0a408cef9",
+      "default:extract:a3d0d9d73999decaf6321ca75ab67c77"
     ],
     "heading": {
       "level": 0,
@@ -1058,15 +1404,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619030,
+    "create_time": 1786704042,
+    "update_time": 1786704113,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-008"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-009": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-009",
     "chunk_order_index": 23,
-    "content": "[Image Name]account_opening_form_unity_bank\n[Image Type]Screenshot\n\nThe image depicts an account opening form associated with Unity Small Finance Bank Ltd. displayed on a computer screen. The form includes fields for customer details such as 'Customer Branch', 'Customer Name', 'DOB', 'PAN No.', 'Customer No.', 'Mobile No.', and 'Aadhar No.'. There is a dropdown menu labeled 'Document Type' with various options for document submission, including 'Customer Profile Form', 'Voter's Identity Card', 'Aadhar Card', and 'Related Person Photo'. The user interface provides buttons such as 'Search & Download KYC Data', 'Fill CKYC Data', and 'Add Document', with a 'Delete' option available for document management. The bottom of the form includes a 'Save' button to submit information. This interface supports the capture of personal data and documentation needed for the KYC process, aligning with the context provided in the surrounding text.",
-    "tokens": 197,
+    "content": "[Image Name]account_opening_form_unity_bank\n[Image Type]Screenshot\n\nThe image displays a screenshot of an account opening form from Unity Small Finance Bank Ltd. It contains fields for customer information, including 'Customer Branch,' 'Customer Name,' 'DOB,' 'PAN No.,' and various other relevant details. A dropdown menu lists several document types that can be selected, such as 'CUSTOMER PROFILE FORM,' 'PAN CARD,' 'AADHAAR CARD,' and 'E-KYC Authentication.' The interface features buttons for searching and downloading KYC data, filling KYC data, adding documents, and saving the form. The context indicates that this form is intended to update guardian details in conjunction with KYC compliance for a minor customer, and it is part of a broader process involving document uploads and updates.",
+    "tokens": 164,
     "sidecar": {
       "type": "drawing",
       "id": "im-2e34273750791ef213944c7971a5e5a1-0010",
@@ -1079,8 +1425,8 @@
     },
     "llm_cache_list": [
       "default:analysis:4a4ccb30534d5776f225054f378b6fa3",
-      "default:extract:fc7feaa17273573029cb0ce8c1d81063",
-      "default:extract:b088a2e2eb19d720756807d499b9338b"
+      "default:extract:24ec1129f68514276bc5943063942ab9",
+      "default:extract:5b8c192d5db93364f1c444cc7718301a"
     ],
     "heading": {
       "level": 0,
@@ -1091,15 +1437,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619032,
+    "create_time": 1786704042,
+    "update_time": 1786704116,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-009"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-010": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-010",
     "chunk_order_index": 24,
-    "content": "[Image Name]customer_information_form_interface\n[Image Type]Screenshot\n\nThe image displays a computer screen showing a customer information form in 'create' mode for Unity Small Finance Bank. The interface includes fields for entering customer details such as customer ID, full name, date of birth, gender, mobile number, and other relevant information. There are dropdown menus for selections labeled 'Select' for options like gender and relationship manager ID. The screen also includes visual buttons for 'SEARCH', 'RESET', 'PRINT', and 'VIEW DOCUMENTS'. The context indicates this interface is intended for staff members managing customer data, with specific protocols mentioned in the surrounding text.",
-    "tokens": 131,
+    "content": "[Image Name]customer_information_form_screenshot\n[Image Type]Screenshot\n\nThe image presents a screenshot of a digital form titled 'Customer Information' from a banking application, specifically for Unity Small Finance Bank. The form is displayed in 'Mode: Create,' indicating it is for entering new customer details. The layout features various fields such as 'Customer ID,' 'Basic Details,' 'Full Name,' 'Date of Birth,' and more. Significant attributes include a checkbox for 'Staff,' which is currently unchecked. The interface allows selection for fields such as 'Gender,' 'Relationship Officer ID,' and 'Search Relationship Manager ID.' The visualization also shows options for validating customer details and a workspace toolbar with functionalities like 'SEARCH,' 'RESET,' and 'PRINT.' This information supports the context of staff eligibility for benefits as detailed in the provided leading text.",
+    "tokens": 169,
     "sidecar": {
       "type": "drawing",
       "id": "im-2e34273750791ef213944c7971a5e5a1-0011",
@@ -1112,8 +1458,8 @@
     },
     "llm_cache_list": [
       "default:analysis:a00ecae759fa4b7a1da4e48a001bd643",
-      "default:extract:6d64e8a879c1294ec4ef691d2b07e183",
-      "default:extract:fd26155046ccda8c34611103f819afd7"
+      "default:extract:8a45d9c10f2c6c6e644b95892c693393",
+      "default:extract:99a593848e680f5569bd50ac7bb36f04"
     ],
     "heading": {
       "level": 0,
@@ -1124,15 +1470,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619033,
+    "create_time": 1786704042,
+    "update_time": 1786704124,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-drawing-010"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-000": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-000",
     "chunk_order_index": 25,
-    "content": "[Table Name]document_version_change_control\n\nThe table provides essential information regarding the document version and change control for the 'Standard operating procedures for Account Opening for Retail Customers' at Unity Small Finance Bank. It consists of six rows and two columns. The first column contains key identifiers such as 'SOP / Document Name', 'Last Review Date', 'Owner / Owner Department', 'Version No', and 'Release Date', while the second column details the corresponding values: the name of the document, the last review date of '23/06/2025', the responsible department 'Consumer Banking', the version number '1.6', and the release date '24/06/2025'. It is noteworthy that there are no merged cells or computed columns within this table. The structure indicates that the focus is on providing a clear and organized view of the document's administrative details, essential for maintaining oversight and version control. The absence of empty cells and null markers suggests that all fields are complete with relevant information. The context presented indicates that the table is part of internal documentation further emphasizing the significance of these details for bank operations.",
-    "tokens": 225,
+    "content": "[Table Name]document_version_change_control\n\nThe table outlines the version and change control details for the Standard Operating Procedures (SOP) document related to Account Opening for Retail Customers at Unity Small Finance Bank. It consists of six rows and two columns, with the first column serving as the descriptor for key attributes and the second column providing specific information related to each attribute. The attributes include 'SOP / Document Name', 'Last Review Date', 'Owner / Owner Department', 'Version No', and 'Release Date'. The document name explicitly states that it pertains to standard operating procedures for retail customer account opening, indicating its focus on operational guidelines. The last review date is recorded as '23/06/2025', with the version number noted as '1.6', suggesting that the document is relatively recent and has undergone multiple revisions. The release date is set for '24/06/2025', indicating the document is pending release. The owner of the document is listed as 'Consumer Banking', which reflects the department responsible for the SOP. The table effectively functions as a control mechanism for document management, ensuring clarity on versioning and review timelines. It directly supports the context of the leading and trailing text noting the relevance of this SOP within the framework of Unity Small Finance Bank's internal policies.",
+    "tokens": 259,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0001",
@@ -1145,8 +1491,8 @@
     },
     "llm_cache_list": [
       "default:analysis:23327c6d1b2bbe27de8038a843f6dd70",
-      "default:extract:63ec05e5a01ac34da3eedc69c3ecebb3",
-      "default:extract:b56155c0e3fb82dc6a6309c964a2be06"
+      "default:extract:c29358326920cdd5941b43a16d5b7f8c",
+      "default:extract:0d2acc67dfdd82cd5e8828ea05580fc5"
     ],
     "heading": {
       "level": 0,
@@ -1155,15 +1501,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619038,
+    "create_time": 1786704042,
+    "update_time": 1786704119,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-000"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-001": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-001",
     "chunk_order_index": 26,
-    "content": "[Table Name]standard_operating_procedures_signatures\n\nThis table outlines the standard operating procedures prepared by various individuals at Unity Small Finance Bank. It consists of five rows and four columns detailing the names, designations, dates, and signatures of the individuals involved in the preparation process. The first row serves as a merged header with the title 'Standard Operating Procedures Prepared By', indicating the purpose of the table. The subsequent rows list the names of individuals such as Swapnil Bhagwat (Executive), Deepa Vanjari (Sr. Executive), Gauri Bhosle (Sr. Executive), Pranjal Dhoke/Medha Walimbe (Asst. Manager/Senior Manager), and Ajay Salvi (Manager), along with the respective dates of their signature which are critical for record-keeping and accountability in the procedure establishment. Notably, the dates range from February 15, 2023, to April 25, 2025, showing a systematic approach to documenting the preparation of these procedures over time. The signature columns are empty, suggesting the need for validation of the document. Overall, this table plays a significant role in maintaining the procedural standards required for account opening for retail customers at the bank.",
-    "tokens": 248,
+    "content": "[Table Name]standard_operating_procedures_authors\n\nThe table outlines the individuals involved in the preparation of Standard Operating Procedures for account opening for retail customers at Unity Small Finance Bank. It consists of five rows, each representing a different contributor along with their designation, date of contribution, and signature. The first row contains a merged header spanning four columns labeled 'Standard Operating Procedures Prepared By', indicating the overall purpose of the table. The subsequent rows detail the contributors: Swapnil Bhagwat, an Executive, contributed on February 15, 2023; Deepa Vanjari, a Senior Executive, on March 10, 2023; Gauri Bhosle, also a Senior Executive, on February 15, 2024; Pranjal Dhoke and Medha Walimbe, noted as Assistant Manager and Senior Manager respectively, contributed on October 31, 2024; and finally Ajay Salvi, a Manager, contributed on April 25, 2025. Notably, all signature fields are empty, indicating that these contributions may not have been formally signed off. The table does not include any totals or averages, focusing solely on the contributors' relevant information.",
+    "tokens": 242,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0002",
@@ -1176,8 +1522,8 @@
     },
     "llm_cache_list": [
       "default:analysis:d37679166ab5fa65c18b5c43c2e511e6",
-      "default:extract:20ad5d64bf9e1f82284a583c88ea3f04",
-      "default:extract:fac2212f283e6a0d316b5c5e8dd857c4"
+      "default:extract:7305cb5a7e827137f79364a03b6863a2",
+      "default:extract:aaa6e25c0ea613bc761817b9c1895d0f"
     ],
     "heading": {
       "level": 0,
@@ -1186,15 +1532,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619041,
+    "create_time": 1786704042,
+    "update_time": 1786704125,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-001"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-002": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-002",
     "chunk_order_index": 27,
-    "content": "[Table Name]standard_operating_procedures_signatures\n\nThis table outlines the standard operating procedures recommended by specific individuals associated with Unity Small Finance Bank. The table consists of four columns: 'Name', 'Designation', 'Date', and 'Signature'. There are a total of five rows of entries, excluding the header row. The 'Name' column features three distinct individuals, including Manjusha Nimkar and Gauri Bhosle, while the 'Designation' column specifies their roles, such as Manager and Sr. Executive. Notably, Manjusha Nimkar appears twice, with dates indicating different occurrences: April 15, 2023, and June 19, 2023. A row in the table has an empty 'Name' and 'Designation' cell but includes a date of October 31, 2024. Kumar Anurag is listed as a Sr. Manager with a signature date of April 25, 2025. The 'Signature' column remains empty for all entries, indicating that signatures may still be pending. This structured record suggests a formal procedure for documenting approvals or recommendations, with particular focus on who initiated the procedures alongside relevant dates. The context of retail customer account opening procedures indicates that these signatures may be part of compliance or governance requirements for the bank's operations.",
-    "tokens": 264,
+    "content": "[Table Name]sop_recommendations_signature_log\n\nThis table presents a log of Standard Operating Procedures (SOPs) recommended by various personnel at Unity Small Finance Bank for the internal process of account opening for retail customers. The table consists of a single header that is merged across four columns, indicating that the following data pertains specifically to the recommendations made. The first row of the table includes the column headers: 'Name', 'Designation', 'Date', and 'Signature'. The data rows contain entries for individuals, detailing their names, designations, and the respective dates on which the SOPs were recommended. Notably, Manjusha Nimkar appears twice with different dates, indicating ongoing involvement in the procedure. The dates range from April 15, 2023, to April 25, 2025, suggesting that the recommendations are part of an evolving protocol, possibly due to regulatory or operational changes. There are empty cells in the 'Signature' column, indicating that the SOPs have yet to be formally approved or signed off. The presence of a row with only a date but no associated name or designation highlights a potential outlier or incomplete entry that may require follow-up. Overall, the table illustrates the contributions of various staff members towards the SOPs and emphasizes the continuity of updates leading into 2025.",
+    "tokens": 266,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0003",
@@ -1207,8 +1553,8 @@
     },
     "llm_cache_list": [
       "default:analysis:10eceab6ebf7ced47e2415763e5f5e15",
-      "default:extract:e3156756afb3a320de2451399f3c03f9",
-      "default:extract:69368eab142fd89462b9a746d2407a08"
+      "default:extract:5e51ca89ea5c87c71598843d9841ae07",
+      "default:extract:0dcbd37c2c02e22d604e877031d8cd83"
     ],
     "heading": {
       "level": 0,
@@ -1217,15 +1563,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619047,
+    "create_time": 1786704042,
+    "update_time": 1786704125,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-002"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-003": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-003",
     "chunk_order_index": 28,
-    "content": "[Table Name]standard_operating_procedures_reviewed\n\nThis table summarizes the standard operating procedures reviewed by specified personnel in Unity Small Finance Bank, detailing the names, designations, review dates, and signatures of individuals involved in the process. The table contains four columns: 'Name', 'Designation', 'Date', and 'Signature'. The first row acts as a merged title header stating 'Standard Operating Procedures Reviewed By' across four columns. The following row includes the specific column headers. Notably, there is only one individual identified with complete information: Uma Sundar as the Vice President, who reviewed the procedures on 29/04/2023. The table also contains additional review dates sequenced chronologically, with three other dates listed although without associated names or designations, indicating potential entries for individuals who reviewed those procedures on 25/07/2023, 16/02/2024, 31/10/2024, and 25/04/2024. All signature fields are blank, suggesting that the procedure may still be pending finalization or documentation. The table captures a snapshot of procedural review dates but lacks completion for all entries, which could indicate ongoing review processes. The surrounding context highlights that this information relates to internal protocols of Unity Small Finance Bank, reinforcing its institutional significance.\n\n[Table Footnotes]Unity Small Finance Bank Ltd.",
-    "tokens": 275,
+    "content": "[Table Name]standard_operating_procedures_reviewed\n\nThe table outlines the review of standard operating procedures within Unity Small Finance Bank, highlighting key personnel involved in the review process along with their designations and the corresponding dates. It consists of a single row header indicating the name, designation, date, and signature of individuals who reviewed the procedures. The table has a total of 5 rows, with the first row serving as a merged cell header titled 'Standard Operating Procedures Reviewed By'. The columns specify the reviewer’s name, their designation within the bank, the review date, and a space for their signature. Notably, only Uma Sundar is listed with a designation of 'Vice President' along with a review date of '29/04/2023'. Further review dates, listed without names or designations, appear on '25/07/2023', '16/02/2024', '31/10/2024', and '25/04/2024', suggesting the ongoing nature of the review process. The signature fields remain empty in the table. The presence of empty cells indicates that there may have been no recorded names for the subsequent review dates. This table serves a critical function in documenting the review process of the operating procedures for retail customer account openings at Unity Small Finance Bank, thereby reinforcing compliance and accountability within the organization.\n\n[Table Footnotes]Unity Small Finance Bank Ltd.",
+    "tokens": 284,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0004",
@@ -1238,8 +1584,8 @@
     },
     "llm_cache_list": [
       "default:analysis:4506dd6ce280cb0ab1ab1f5f0070644f",
-      "default:extract:4a288c2e732a9fe18e9b46bf534f69cc",
-      "default:extract:addfc4f7102644bdc9c70fcef35d1342"
+      "default:extract:a23c97f4e14c52ac76d6e4b9e5a04c56",
+      "default:extract:c108f5f18fff5da0cc826d8e79711b69"
     ],
     "heading": {
       "level": 0,
@@ -1248,15 +1594,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619044,
+    "create_time": 1786704042,
+    "update_time": 1786704125,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-003"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-004": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-004",
     "chunk_order_index": 29,
-    "content": "[Table Name]sop_approval_signatures\n\nThis table outlines the approvals for Standard Operating Procedures (SOPs) related to account opening for retail customers at Unity Small Finance Bank. The main columns include 'Name', 'Designation', 'Date', and 'Signature', with the header spanning across four columns to emphasize the overarching context of SOP approvals. The first row indicates the name of the approver, Surinderpal Singh R S, who holds the position of Executive Vice President, along with the approval date of 29/04/2023. The following rows indicate additional approval dates of 25/07/2023, 16/02/2024, and 31/10/2024, although they do not provide names or signatures, suggesting these entries may indicate future approvals without specifying the approvers. The table lacks actual signatures, which may imply pending approvals or a placeholder format. The data spans a time range from April 2023 through October 2024, suggesting ongoing processes for SOP validation. The leading and trailing text reinforces the context of internal procedures at Unity Small Finance Bank but does not add specifics about the data captured in the table itself.",
-    "tokens": 237,
+    "content": "[Table Name]standard_operating_procedures_approvals\n\nThis table captures the approvals for Standard Operating Procedures (SOPs) related to account opening for retail customers at Unity Small Finance Bank. It consists of a single header row and multiple data rows. The first row serves as a merged header indicating the overall content of the table. The columns include 'Name', 'Designation', 'Date', and 'Signature', which represent the individual who approved the SOP, their role within the bank, the date of approval, and space for their signature. The data spans from April 29, 2023, with Surinderpal Singh R S being listed as the Executive Vice President who approved the SOP on that date. Subsequent rows include additional dates for which approvals are presumably pending but do not list names or designations. These dates are: July 25, 2023; February 16, 2024; and October 31, 2024. The signature cells remain empty, indicating that these approvals were not yet completed as of the table's last entry. The absence of names in subsequent rows suggests a hierarchical approval process, with only the initial approval being recorded. No totals or computations are present in the data. The context surrounding the table indicates it pertains to internal bank procedures, emphasizing its administrative nature within the organization's operations.",
+    "tokens": 270,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0005",
@@ -1269,8 +1615,8 @@
     },
     "llm_cache_list": [
       "default:analysis:eb6c20a80cf76a960c1088e320c6e313",
-      "default:extract:c96aff789a6d5e0e9a006d874e310130",
-      "default:extract:1a67e896ef38509cd2071eb29d561cff"
+      "default:extract:7eddc379e5d5edd8967ed4263cb95299",
+      "default:extract:96c45544ad3e9d2f0172354d4831edf5"
     ],
     "heading": {
       "level": 0,
@@ -1279,15 +1625,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619046,
+    "create_time": 1786704042,
+    "update_time": 1786704137,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-004"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-005": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-005",
     "chunk_order_index": 30,
-    "content": "[Table Name]approved_signatures_for_2025\n\nThis table presents the approved signatures for key personnel in Unity Small Finance Bank, specifically for the year 2025. It comprises three columns: 'Name', 'Designation', and 'Date', indicating the individuals who have authorized processes relevant to retail customer account opening procedures. The table contains a total of four rows, excluding the header row, and defines a clear structure with the first row serving as a merged header that indicates 'Approved by'. The data reveals that Surinderpal Singh R S, in the role of Group Head – Branch Banking Controls, approved actions on June 23, 2025. Ponnuraj P, Head - Product & Distribution, recorded his approval on June 16, 2025, and Gautam Chawla, the National Head - Retail Branch Banking, did so on June 6, 2025. There are no totals, averages, or computed values in the table. It illustrates the hierarchy and responsibility within the organization by showcasing the various titles of approvers, ultimately reflecting the governance structure for retail operations at the bank.",
-    "tokens": 226,
+    "content": "[Table Name]approved_signatories_for_account_opening\n\nThis table outlines the signatories approved for the standard operating procedures related to account opening for retail customers at Unity Small Finance Bank. The table consists of four rows and three columns, with 'Approved by' as a merged header spanning two columns at the top. The rows detail the names, designations, and approval dates of three individuals: Surinderpal Singh R S, who is the Group Head – Branch Banking Controls, approved on 23/06/2025; Ponnuraj P, who serves as the Head - Product & Distribution, approved on 16/06/2025; and Gautam Chawla, the National Head - Retail Branch Banking, approved on 06/06/2025. Each individual has a specific designation indicating their roles within the bank that relate to account management and customer engagement. The latest approval date is 23/06/2025 and the established approvals suggest a structured approach to governance within the institution regarding customer account management. The table does not include any empty cells or footnotes, providing a clean overview of the relevant approved personnel. This content aligns with the leading context addressing standard operating procedures for account opening, affirming the procedural framework and the authority behind the approvals listed.",
+    "tokens": 258,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0006",
@@ -1300,8 +1646,8 @@
     },
     "llm_cache_list": [
       "default:analysis:dc76da290d71561b1f1d2c65f3c47387",
-      "default:extract:886434ef1f9c30a833dbeac706e6c092",
-      "default:extract:20d8e43cde958221d83605d66e36acf9"
+      "default:extract:d3cfe02fa7a26124cf87eb023163fd6e",
+      "default:extract:192a3f0442bd4a03ed84bb2182487106"
     ],
     "heading": {
       "level": 0,
@@ -1310,15 +1656,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619048,
+    "create_time": 1786704042,
+    "update_time": 1786704131,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-005"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-006": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-006",
     "chunk_order_index": 31,
-    "content": "[Table Name]document_amendment_history_summary\n\nThe table presents a summary of document amendments for the Standard Operating Procedures regarding account opening for retail customers at Unity Small Finance Bank. It is structured into five columns: Version No., Date, Paragraph Reference and Area of Change - Title, Details of Change, and Reason for Change. The single row of data provided features version 1.5, dated October 31, 2024. The changes noted encompass revisions to existing processes, including updates in minor account handling and risk categorization, as well as the addition of new processes such as account opening for individuals. Key data points include specific mention of areas like SOP1.1 and the Consumer Banking Team’s current processes, indicating adaptations to meet operational requirements. The table captures the most relevant updates that inform stakeholders about procedural changes and their justifications, emphasizing a commitment to adapting services to customer needs and regulatory requirements.",
-    "tokens": 183,
+    "content": "[Table Name]document_amendment_history_summary\n\nThe table titled 'Document Amendment History / Summary of Changes' outlines the changes made to standard operating procedures (SOPs) for account opening within Unity Small Finance Bank. It consists of a single header row followed by a single data row detailing the changes. The columns represent 'Version No.', 'Date', 'Para Reference and Area of Change - Title', 'Details of Change', and 'Reason for Change'. The table features one row of data corresponding to version 1.5, dated 31/10/2024. This version encompasses multiple revisions and additions within different sections of the SOP, particularly focused on account opening processes. Noteworthy changes include updates to acquiring account processes, risk categorization, and document management systems for individual account openings. The reasons provided for these changes indicate a response to current processes managed by the Consumer Banking Team and adjustments in unit nomenclature. The table thus provides a clear summary of recent procedural updates, potentially affecting customers and internal processes. The surrounding context suggests that these amendments are part of the internal documentation practices of the bank, aimed at maintaining up-to-date operational guidelines.",
+    "tokens": 232,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0007",
@@ -1331,8 +1677,8 @@
     },
     "llm_cache_list": [
       "default:analysis:f3ef98a5e1d14373dabd75abf10a041f",
-      "default:extract:af2e05478b8e52a6ae7f4cbc23dc803e",
-      "default:extract:858aef3ba2bac7bd734c97364bebf681"
+      "default:extract:5fcd4f606860eb87d90d54cd2e4a3ea3",
+      "default:extract:9fce38f147c3f44cccca25f59d008162"
     ],
     "heading": {
       "level": 0,
@@ -1341,15 +1687,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619058,
+    "create_time": 1786704042,
+    "update_time": 1786704137,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-006"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-007": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-007",
     "chunk_order_index": 32,
-    "content": "[Table Name]account_opening_policies_update_2025\n\nThis table outlines updates to account opening policies for Unity Small Finance Bank as of April 21, 2025. The overall structure consists of two rows and four columns, with several merged cells presenting detailed information. The first row contains a secondary header spanning four columns, providing context for account types and additional notes on policy changes. The second row displays specific policies, including guidelines for account openings for minors, individuals with disabilities, and updates related to enhanced due diligence processes. Key data points include the mention of various account types, such as retail accounts for minors and policies for illiterate persons and those with mental disabilities. The table specifies that accounts for minors can be opened without a guardian if the minor is literate and above the age of 10, while also highlighting the necessary legal requirements when a guardian is involved. Additionally, it references current regulations per the latest RBI Circular. The footnote provided attributes the table to Unity Small Finance Bank Ltd., further establishing its source but does not impact the interpretation of the table data itself. Notably, the complexities of the updates reflect a more inclusive banking policy, catering to a diverse population, which indicates a progressive approach to financial services.\n\n[Table Footnotes]Unity Small Finance Bank Ltd.",
-    "tokens": 259,
+    "content": "[Table Name]account_opening_policy_updates\n\nThe table outlines updates and details regarding account opening policies at Unity Small Finance Bank, with a focus on various user categories. It consists of two main rows, including a header and a data row, with a total of five columns. The columns encompass the policy section (identified by numbers such as 1.6 and 1.10), effective date, policy description, updates regarding specific categories of account openings, and references to regulatory guidance or additional information. The unit of measurement, referenced indirectly, includes details about account opening for minors, individuals with disabilities, and various demographic considerations such as gender identity. Notably, the table reflects progressive changes in banking policies as of April 21, 2025, emphasizing inclusivity for account openings for minors with specific guidelines and the importance of guardianship in specific instances. The longest cell contains comprehensive information about the account opening process for retail accounts that accommodates various circumstances, clarifying responsibilities for guardians and age specifications for minors. The data highlights a substantial policy shift to respect the regulatory framework and cater to marginalized user groups while ensuring compliance with RBI directives. An overarching theme observed in the policy updates is the enhancement of due diligence procedures and the necessity of notifications and registrations for account operations. The table serves as a crucial document illustrating the bank's commitment to evolving its account opening practices in alignment with contemporary standards and requirements.\n\n[Table Footnotes]Unity Small Finance Bank Ltd.",
+    "tokens": 290,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0008",
@@ -1362,8 +1708,8 @@
     },
     "llm_cache_list": [
       "default:analysis:9d233de970e5811da8f5bba7475ecac9",
-      "default:extract:aaa6ec1d000ba58ff8c99b823c48f4cd",
-      "default:extract:b7afc3bc0a13949b3e2579144fc877d7"
+      "default:extract:d471b895a465b70e98dd261e9d71e6fc",
+      "default:extract:92d6cb3ece024ec07c3ad49e5d9a0468"
     ],
     "heading": {
       "level": 0,
@@ -1372,15 +1718,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619055,
+    "create_time": 1786704042,
+    "update_time": 1786704137,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-007"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-008": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-008",
     "chunk_order_index": 33,
-    "content": "[Table Name]account_opening_guidelines_joint_individual\n\nThis table outlines the guidelines and requirements for opening retail accounts at Unity Small Finance Bank, specifically focusing on the protocols for individual and joint accounts. The table presents a total of five rows and five columns, with each row dedicated to a particular aspect of account opening procedures. The columns include information on required documentation, procedures for enhanced due diligence, account types, and restrictions. Notable entries include details about the Permanent Account Number (PAN) requirements and the specification that for joint accounts, both individuals must sign nomination forms. The guidelines emphasize the necessity for initial deposits, outlining that cash acceptance for initial payments requires special approvals under exceptional circumstances. Additionally, it states that certain accounts tagged as inoperative can be reactivated by providing the required Know Your Customer (KYC) documentation. The legal compliance aspects are highlighted throughout, with references to various approvals needed from cluster and zonal managers. The table suggests that any discrepancies regarding proof of address and documentation must be addressed, with measures effective from April 4, 2025, indicating ongoing adaptations in the bank's compliance requirements. There are no totals or explicit numerical data, but it extensively describes qualitative procedures, thus facilitating clarity in how to safely onboard customers while adhering to financial regulations.\n\n[Table Footnotes]Unity Small Finance Bank Ltd.",
-    "tokens": 267,
+    "content": "[Table Name]account_opening_documentation_requirements\n\nThe table outlines the documentation requirements for opening various types of accounts at Unity Small Finance Bank, focusing on retail accounts and joint accounts. It comprises five rows and four columns, though many cells are merged, suggesting comprehensive content rather than structured data points. The first column, which is vacant, may imply grouping or definitions, while the second column also remains empty. The third and fourth columns provide detailed requirements and guidelines for account opening based on the type of account—individual or joint. The document outlines essential documentation such as the Permanent Account Number (PAN), and criteria for initial deposits, particularly emphasizing the necessity of an initial payment for account creation. Notable points include that cash may only be accepted in exceptional cases, and also that an account cannot be opened without this initial deposit. The fifth column includes additional notes or requirements that vary by case or are subject to approval from designated managers. An important trend is the repeated reference to enhanced due diligence and adherence to compliance, reflecting the regulatory considerations in banking operations. Additionally, specific procedural updates are highlighted, such as the discontinuation of Contact Point Verification for proof of address from April 2025. Overall, this table serves as a critical reference for personnel involved in customer onboarding and documentation verification within the bank's internal framework.\n\n[Table Footnotes]Unity Small Finance Bank Ltd.",
+    "tokens": 274,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0009",
@@ -1393,8 +1739,8 @@
     },
     "llm_cache_list": [
       "default:analysis:1470e1ac41ee04617f64ac49672e3af5",
-      "default:extract:80743521e7a35f46dc6c18f3aa81fdc5",
-      "default:extract:a4eee0f5c55f639b305a67613c61f1d9"
+      "default:extract:ede7b24dfa9c4056102e2c36d35d15dc",
+      "default:extract:99e5afbcd62fe9d08cf3542e275e0d08"
     ],
     "heading": {
       "level": 0,
@@ -1403,15 +1749,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619061,
+    "create_time": 1786704042,
+    "update_time": 1786704142,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-008"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-009": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-009",
     "chunk_order_index": 34,
-    "content": "[Table Name]inoperative_account_activation_procedures\n\nThis table provides detailed procedural guidelines related to the activation and management of inoperative accounts at Unity Small Finance Bank. It consists of four main columns, with varying levels of detail regarding risk management, documentation requirements, and procedural updates for account activation and closure. The first few rows include general information concerning the activation of accounts based on KYC document submission, highlighting that a periodic review for medium-risk accounts will occur every eight years, as mandated. The table lists specific references, such as scheme code changes, and clarifies documentation that must be collected during such procedures. It emphasizes the importance of obtaining fresh operating instructions and KYC documents when minors reach the age of majority, ensuring compliance with current regulations from the latest RBI Circular dated April 21, 2025. Additionally, any premature closure of term deposits or active accounts requires approval from the Cluster Head, asserting a hierarchical interjection in account management protocols. Notably, the repayment protocols indicate that amounts of Rs.20,000 or more must be settled either through direct credit to the payee's account or through an account payee cheque. The table encapsulates critical operational guidelines for bank staff, reflecting both regulatory and internal compliance measures, thus serving as an essential resource for ensuring proper account management. This information is particularly relevant given its context within the internal framework of Unity Small Finance Bank, although there are no apparent relationships to the provided leading or trailing texts beyond the organizational affiliation.\n\n[Table Footnotes]Unity Small Finance Bank Ltd.",
-    "tokens": 307,
+    "content": "[Table Name]inoperative_account_activation_sop_details\n\nThis table provides detailed descriptive guidelines regarding the activation of inoperative accounts and the necessary documents required for various banking procedures at Unity Small Finance Bank. The table contains multiple rows and columns, with information segmented into distinct categories related to account management and customer documentation requirements. The first data row discusses the procedures for activating accounts along with the requirement for KYC documents, indicating that a Standard Operating Procedure (SOP) is in place for activating inoperative accounts after fulfilling the KYC requirements. The second row outlines regulations pertaining to medium-risk customers, particularly the periodic update of KYC every eight years, as noted in a review by the Operational Risk Management Division (ORMD). Subsequent entries include detailed instructions on the documentation required for product code changes, emphasizing the importance of obtaining fresh operating instructions and KYC documents as account holders reach the age of majority. Additionally, there are stipulations for account closure procedures, including the necessity for approvals and defined repayment methods for significant closure amounts. Overall, the table serves as a comprehensive reference for the procedural aspects of managing inactive accounts and the requisite compliance measures, underscoring adherence to regulatory mandates issued by the Reserve Bank of India. The information reflects internal policies and implications for the handling of customer accounts, reinforcing guidelines established through the governance of the Approval Committee.\n\n[Table Footnotes]Unity Small Finance Bank Ltd.",
+    "tokens": 279,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0010",
@@ -1424,8 +1770,8 @@
     },
     "llm_cache_list": [
       "default:analysis:c3d040178e3ea7cd4e9928f778d48bc4",
-      "default:extract:9217483cc0d43c46488eefa9625df79f",
-      "default:extract:ac0038efadbf73c73d8a2f274bb07742"
+      "default:extract:8ad31c3f66809015fa0053d117c3e615",
+      "default:extract:035abbc310b64f99ec32cbb1740a6ff2"
     ],
     "heading": {
       "level": 0,
@@ -1436,15 +1782,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619057,
+    "create_time": 1786704042,
+    "update_time": 1786704144,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-009"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-010": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-010",
     "chunk_order_index": 35,
-    "content": "[Table Name]appointment_of_mandate_holder_poa_loa\n\nThe table presents an internal record detailing the appointment of a mandate holder, Power of Attorney (POA), and Letter of Authorization (LOA) for UNITY Small Finance Bank. It consists of a single row and five columns. The primary focus is on the merged cell that spans multiple columns, specifically noting the addition of the item titled '1.11 Appointment of Mandate Holder, POA and LOA (Added)'. The first three columns are empty, which suggests either a placeholder for additional information or that they may not be applicable in this context. The table lacks specific data points, measurements, or trends, as it appears to serve more as a header or reference for an internal document rather than a detailed data table. As such, there are no identifiable patterns, totals, or averages to analyze. The surrounding text indicates that this table is part of an internal document related to the bank, although no specific relationships are drawn from the leading text.",
-    "tokens": 205,
+    "content": "[Table Name]appointment_of_mandate_holder_poa_loa\n\nThe table titled '1.11 Appointment of Mandate Holder, POA and LOA (Added)' presents a structure with a single row and five columns. However, there are no specific data entries or labels for the first three columns, indicating that they might be reserved for future use or are placeholders. The content of the table primarily emphasizes the appointment topic, suggesting a focus on governance or legal frameworks related to the mandate holder, Power of Attorney (POA), and Letter of Authority (LOA). As it currently stands, this table does not provide data or patterns but serves as a header or section indicator within the document. The context implies that it pertains to the internal affairs of UNITY Small Finance Bank, although no specific figures, trends, or values can be discerned from the table itself.",
+    "tokens": 175,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0011",
@@ -1457,8 +1803,8 @@
     },
     "llm_cache_list": [
       "default:analysis:9e7a83e77ebb7f09569184a72527a23d",
-      "default:extract:d0d33ccf492a08d894106580ecb88f65",
-      "default:extract:67c5d58648a17c33bceb57fc5ec46e79"
+      "default:extract:92b31cd554cbd29758cc47907d84d922",
+      "default:extract:232b2a9e3471d5c0eb7d75e94046a34b"
     ],
     "heading": {
       "level": 0,
@@ -1469,15 +1815,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619065,
+    "create_time": 1786704042,
+    "update_time": 1786704143,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-010"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-011": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-011",
     "chunk_order_index": 36,
-    "content": "[Table Name]version_change_history\n\nThe table titled 'Change History' chronicles the revisions made to a document over time, detailing each version's identification, changes made, dates of those changes, and the authors involved. It has four columns: 'Version', 'Change Description', 'Date', and 'Author'. The data spans three versions from 2022 to 2023, outlining key updates such as the first version established according to Old CBS standards as indicated in the row for version 1.1, released on January 25, 2022. The subsequent row for version 1.2 acknowledges the second version updated to align with new CBS guidelines, released on April 29, 2023. The latest entry, version 1.3, denotes an update made based on ORM comments and was approved by ORM on July 25, 2023. The 'Author' column, however, does not contain any entries, making it currently devoid of author information. The table does not indicate any totals or averages, and there are no notable outliers or empty cells aside from the absence of authors. Overall, this table serves to document the evolution of the referred document as necessary for compliance with regulatory standards and organizational policies, as referenced in the leading text.",
-    "tokens": 256,
+    "content": "[Table Name]document_change_history\n\nThe table presents the change history of a document, detailing various versions, their corresponding descriptions, dates of release, and authors. The rows indicate individual versions, labeled from 1.1 to 1.3, with version 1.1 released on January 25, 2022, as the first version according to Old CBS (Finacle). Version 1.2, released on April 29, 2023, represents the second version updated according to the new CBS (Turing). The latest entry, version 1.3, was updated on July 25, 2023, incorporating comments from ORM and receiving their approval. Notably, the 'Author' column remains empty for all entries, indicating a lack of specified authors for these document updates. Overall, the table serves to chronicle the evolution of the document over time, reflecting the bank's adherence to regulatory changes and internal policies as outlined in the leading text, which emphasizes periodic reviews for compliance and effectiveness.",
+    "tokens": 207,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0012",
@@ -1490,8 +1836,8 @@
     },
     "llm_cache_list": [
       "default:analysis:d08c3bd8bd5369c987097d6ae42e9f49",
-      "default:extract:a4e2bdb2f85b6fc560d85442fa26cc02",
-      "default:extract:bb20bceb467db599e7a9f0e77072018a"
+      "default:extract:4e00cc371bbaef9d3a1aeb42a9b9f411",
+      "default:extract:7f220f920355e7fef60c474b1809eb75"
     ],
     "heading": {
       "level": 0,
@@ -1502,15 +1848,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619070,
+    "create_time": 1786704042,
+    "update_time": 1786704145,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-011"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-012": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-012",
     "chunk_order_index": 37,
-    "content": "[Table Name]sop_revision_updates_retail_accounts\n\nThis table presents updates made to the Standard Operating Procedures (SOPs) related to customer risk categorization and account opening for retail accounts at Unity Small Finance Bank. It outlines specific revisions within SOP 1.3 and SOP 1.1, detailing the modifications and their effective dates. The first row details a revision in SOP 1.3 concerning customer risk categorization, specifically stating that all customers rated 'HIGH' require approval from the Business Head before onboarding. Additionally, it indicates that joint account holders must have their Know Your Customer (KYC) documents obtained and due diligence performed, with the new KYC retrieval process now involving the CKYCR Number to comply with audit requirements. The effective date of this update is noted as February 16, 2024. The second row outlines updates to SOP 1.5 based on the latest Operational Risk Management (ORM) comments, highlighting a process enhancement as advised by the Compliance Department, specifically the discontinuation of the customer profile verification (CPV) process in accordance with a recent RBI Circular from April 21, 2025. There are no totals or computed columns in this table, but it effectively illustrates the ongoing efforts by the bank to enhance compliance and operational efficiency. The surrounding context indicates that these procedures are part of a broader internal policy document designed to instruct employees on various responsibilities throughout the account opening process.",
-    "tokens": 288,
+    "content": "[Table Name]sop_revision_updates\n\nThis table presents updates to the Standard Operating Procedures (SOP) for Retail Account Opening at Unity Small Finance Bank, focusing on customer risk categorization and process enhancements. The rows document specific revisions, with each revision identified by a version number in the first column. The second column provides details about the modifications made, including the removal of requirements for high-risk customer approvals and the addition of KYC documentation protocols for joint account holders, reflecting compliance with audit requirements. Dates in the third column signify when these updates were documented: the first update on February 16, 2024, and the second on March 25, 2025. The absence of values in the fourth column suggests no additional comments or notes for these entries. The updates aim to align with regulatory changes and internal compliance standards, demonstrating a commitment to improving customer due diligence processes. Overall, the table encapsulates significant procedural changes mandated by both internal audits and external regulatory guidance.",
+    "tokens": 196,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0013",
@@ -1523,8 +1869,8 @@
     },
     "llm_cache_list": [
       "default:analysis:343a28b5c8ec157df297a0d4626fa9a5",
-      "default:extract:cb7578750071a8a46967df01dcf6d59a",
-      "default:extract:69543b96f5482e2b4cce68d2f75270ea"
+      "default:extract:be2dbd04323346c8f3bb3f71ac9b4764",
+      "default:extract:66f2f22501fbd55dc1d4f731946907cf"
     ],
     "heading": {
       "level": 0,
@@ -1535,15 +1881,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619075,
+    "create_time": 1786704042,
+    "update_time": 1786704157,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-012"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-013": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-013",
     "chunk_order_index": 38,
-    "content": "[Table Name]accounts_details_for_peps\n\nThe table outlines the structure of account details for Politically Exposed Persons (PEPs) as maintained by Unity Small Finance Bank. It serves as a template for capturing critical information needed to assess and manage the accounts of individuals classified as PEPs, who hold or have held prominent public positions. The table consists of six rows and two columns, with the first column containing specific categories of information and the second column left empty, presumably for data entry. The rows include relevant sections such as 'Branch,' which identifies the specific bank branch managing the PEP account; 'Details of all accounts maintained with the Bank,' which pertains to the overall account management; 'Balance (for existing customer – as of ____),' designed to capture account balances; 'KYC (Y/N),' where KYC compliance is indicated; 'Match Category,' likely related to risk assessment classifications; and 'Details of the Match,' which would contain pertinent information regarding checks against compliance databases. The table thus provides a systematic approach to recording and monitoring information essential for the management of high-risk customers, ensuring that all necessary details are captured to meet regulatory standards. This is particularly crucial given the context of managing accounts for individuals who may pose heightened risk due to their political exposure.",
-    "tokens": 256,
+    "content": "[Table Name]pep_account_details_structure\n\nThe table provides a structural overview for documenting account details specifically for Politically Exposed Persons (PEPs) at Unity Small Finance Bank Ltd. It consists of a series of row headings that denote various aspects of the accounts maintained with the bank, detailing necessary information for KYC (Know Your Customer) compliance. The first column lists the relevant categories such as 'Branch', 'Details of all accounts maintained with the Bank', and 'Balance (for existing customer – as of ___)', indicating that the data collected will include the branch handling the account, comprehensive details about the accounts, and the account balance for existing customers at a specified date. Additionally, it includes a 'KYC (Y/N)' column to discern whether the KYC requirements have been fulfilled and a column labeled 'Match Category', which likely indicates the risk level or classification of the account. Lastly, the 'Details of the Match' column may be used for noting specific information or results from background checks against lists like the World Check database. Overall, this table serves as a template for ensuring comprehensive verification and management of accounts associated with PEPs, adhering to regulatory standards. The leading text prior to the table emphasizes the importance of stringent measures when dealing with PEP accounts, reflecting the bank's commitment to compliance and risk management.",
+    "tokens": 266,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0014",
@@ -1556,8 +1902,8 @@
     },
     "llm_cache_list": [
       "default:analysis:30d436a77e2798fe185138c1249783eb",
-      "default:extract:c53cf4d61e0997cc03a7600e84420686",
-      "default:extract:12cc171cffad4d1d356c44a626dd1a1d"
+      "default:extract:a75aadff3b072f4f60d671164a991cb7",
+      "default:extract:5a5d9f2e9c30a1b9f2579873c41a3055"
     ],
     "heading": {
       "level": 0,
@@ -1568,15 +1914,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619073,
+    "create_time": 1786704042,
+    "update_time": 1786704151,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-013"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-014": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-014",
     "chunk_order_index": 39,
-    "content": "[Table Name]risk_rating_update_authorization\n\nThis table documents the authorization and update of risk ratings as managed by the AML Central Team. It encompasses two rows and two columns, displaying critical process information. The first row consists of a message indicating that the system has been updated with a revised risk rating by the AML Central Team, alongside an associated date, which remains unspecified. The second row details the authorization aspect, specifying 'Authorised by and date', while the second cell remains empty. The overall structure suggests a formal protocol for updating risk ratings within the bank's compliance framework. The table does not present any numerical data, trends, or statistical values, but serves as a log of actions and approvals related to risk management processes. Additionally, no footnotes or further explanations are provided, which may imply a reliance on contextual documentation for additional clarity. The surrounding text emphasizes the importance of risk assessment, referring to actions to be taken based on the approval status, but the table itself remains a straightforward representation of the update and authorization process without elaborative data or insights.",
-    "tokens": 212,
+    "content": "[Table Name]risk_rating_update_information\n\nThe table provides administrative information regarding the update of risk ratings by the AML Central Team for a financial institution. It consists of two rows and two columns, detailing the authorization process and the relevant dates associated with the risk rating changes. The first row states, 'System updated with revised risk rating by AML Central Team' alongside a column for 'Date:', indicating when this update was made. The second row contains 'Authorised by and date,' where the specific authorizer’s details and the date would presumably be recorded, although the second cell is empty. This table is likely part of internal documentation to ensure that risks associated with clients are systematically monitored and logged following compliance regulations. Given the additional context, it implies that this risk assessment is crucial for either approving or declining client onboarding and existing customer relationships, thereby emphasizing the importance of proper authorization and documentation in managing risks effectively.",
+    "tokens": 181,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0015",
@@ -1589,8 +1935,8 @@
     },
     "llm_cache_list": [
       "default:analysis:5db681c2433f6ee16da2087bd0e9fc9b",
-      "default:extract:77468b3581c87866c9ad244bea5be4a0",
-      "default:extract:c9971244429f3329e188fc7a516914ae"
+      "default:extract:795cdb1c2981fc42551d00b028190bb4",
+      "default:extract:ae3dbe5bd437af7ad68ac27582a3b765"
     ],
     "heading": {
       "level": 0,
@@ -1601,15 +1947,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619074,
+    "create_time": 1786704042,
+    "update_time": 1786704150,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-014"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-015": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-015",
     "chunk_order_index": 40,
-    "content": "[Table Name]enhanced_due_diligence_checklist\n\nThe table titled 'Enhanced due diligence (EDD) Checklist' is a structured form designed for capturing essential information about customers in the context of enhanced due diligence at Unity Small Finance Bank. It consists of 16 rows and 2 columns, containing various particulars related to the customer and the branch response. The first column lists categories such as 'Date of EDD', 'Name of customer and account no', 'Address of Communication', and 'Purpose of EDD', which aim to gather comprehensive customer data. The second column is intended for the branch to provide responses. Notably, the third row is dedicated to a detailed list of possible activities related to 'Purpose of EDD', including options like 'Activity', 'Account opening', 'Business proof', 'Stock verification', and 'Address Verification', indicating the checklist's multifaceted approach to understanding customer backgrounds and intentions. The table also addresses aspects such as whether the customer is a Politically Exposed Person (PEP), the expected annual income or turnover, sources of income, and customer experience in business. The absence of data in the second column for most rows suggests that this table serves as a template for bank representatives to fill out during an in-person assessment or interview with the customer. The table's overall design reflects a formal requirement for due diligence processes and aims to ensure that all pertinent customer information is documented to adhere to regulatory compliance standards. Additionally, while the table itself does not contain totals or averages, it provides a comprehensive view of necessary customer evaluations that the bank needs to perform. This table is integral to the customer onboarding processes and reflects Unity Small Finance Bank's emphasis on thorough customer vetting and compliance with banking regulations.",
-    "tokens": 347,
+    "content": "[Table Name]enhanced_due_diligence_checklist\n\nThe table serves as an Enhanced Due Diligence (EDD) Checklist for Unity Small Finance Bank, aimed at assessing customer risk profiles and ensuring compliance with KYC (Know Your Customer) requirements. It contains specific particulars divided into two main columns: 'Particulars' and 'Branch Response'. The first column lists a series of criteria related to the customer, including details like 'Date of EDD', 'Name of customer and account no', 'Address of Communication', and many others reflecting the information necessary for thorough due diligence. The second column is intended for bank personnel to provide their responses or notes for each corresponding category, though many cells remain empty, indicating that the information is to be filled out during the due diligence process. The table captures essential information needed to determine the customer’s financial credibility, purpose for account setup, expected income, and whether the customer qualifies as a Politically Exposed Person (PEP). Notably, the 'Purpose of EDD' row lists multiple scenarios such as 'Activity', 'Account opening', and 'Address Verification', suggesting various contexts in which EDD would be necessary. Overall, the table highlights the factors contributing to understanding the customer’s financial profile, underscoring the importance of capturing complete and accurate data to mitigate potential risks. There are no totals or computed columns in this table, and it contains no footnotes, demonstrating its straightforward purpose of gathering thorough customer information. The surrounding context signals the internal nature of the table, reinforcing that its primary usage is for office reference within the bank's EDD procedures.",
+    "tokens": 324,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0016",
@@ -1622,8 +1968,8 @@
     },
     "llm_cache_list": [
       "default:analysis:0f7d70121a478619108314e926da5719",
-      "default:extract:4ffd2e1d5ebdfcdafe942508eddfce4f",
-      "default:extract:d39c5fc4bb873491c3e49e1728768422"
+      "default:extract:695074ede446ace13dbfb3b956ff09e2",
+      "default:extract:accc94cb820128ce0b5958d997da0a2a"
     ],
     "heading": {
       "level": 0,
@@ -1634,15 +1980,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619089,
+    "create_time": 1786704042,
+    "update_time": 1786704159,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-015"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-016": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-016",
     "chunk_order_index": 41,
-    "content": "[Table Name]customer_requirements_business_setup\n\nThe table outlines key aspects related to 'Customer Requirements' and 'Business Setup', as part of an Enhanced Due Diligence (EDD) checklist for Unity Small Finance Bank. The table consists of two rows, each containing a single cell with headings that suggest areas of focus for the bank's internal procedures. 'Customer Requirements' likely pertains to the necessary documentation and criteria customers must meet, while 'Business Setup' suggests elements related to establishing operations or accounts within the bank. As there are no additional data points or metrics provided, the table serves as a simple delineation of these two critical categories without any connected values or measurements. It is situated in a document that discusses KYC (Know Your Customer) procedures and various account types, confirming its relevance to customer due diligence practices and regulatory compliance. The table is a straightforward presentation of headings that guide bank staff on customer engagement protocols during account opening or business initiation.",
-    "tokens": 191,
+    "content": "[Table Name]customer_requirements_business_setup\n\nThe table outlines key customer requirements and business setup components used by Unity Small Finance Bank as part of their enhanced due diligence (EDD) checklist. It consists of two main rows: 'Customer Requirements' and 'Business Setup', each represented in their own cells, indicating distinct categories of information. The table does not contain any quantitative data or metrics but rather titles that suggest the focus areas for customer interactions and necessary setups in the banking process. The presence of multi-level headers or the merging of cells is not applicable in this straightforward arrangement. Furthermore, there are no missing values, figures, or complex patterns observed within this structure. The data is delivered in a clear, segmented format, facilitating an understanding of the different aspects important for customer onboarding and account management under the bank's policy. The table effectively contributes to the surrounding context by succinctly summarizing critical areas that warrant attention during the customer due diligence process as specified in the leading and trailing text.",
+    "tokens": 197,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0017",
@@ -1655,8 +2001,8 @@
     },
     "llm_cache_list": [
       "default:analysis:6641093a5dd5c3de30fa98ec6b57fb9a",
-      "default:extract:6689bd76c50ab9bdea1482e07aaee400",
-      "default:extract:6da819e291dad7c318d1bd1e6ec07a76"
+      "default:extract:a6c37c5f1069f6bbdcbac49dcd825d84",
+      "default:extract:6c09f990518261d8eab0f10df060bc25"
     ],
     "heading": {
       "level": 0,
@@ -1667,15 +2013,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619080,
+    "create_time": 1786704042,
+    "update_time": 1786704157,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-016"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-017": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-017",
     "chunk_order_index": 42,
-    "content": "[Table Name]due_diligence_checklist_business_information\n\nThis table serves as a checklist for enhanced due diligence (EDD) regarding business information, likely to be used by Unity Small Finance Bank in assessing client backgrounds. The table is structured into five distinct rows, each listing specific inquiries related to the traceability and quality of the business address and operation. The columns present binary responses or descriptive choices available to the respondent. The first row asks whether the address is easily traceable, offering a simple Yes/No response. Subsequent rows further delve into various dimensions of the business: the quality of the business office setup (with options ranging from 'Not good' to 'Excellent'), the nature of accommodation (differentiating between Owned, Rented, or others), the type of building (with specified categorizations such as 'Slum', 'Apartment', etc.), and whether any business activity is observed at the location (again, a Yes/No answer). This table does not contain any numerical data or calculations, but rather categorical options which indicate the condition or state of the business in relation to its operational environment. The table’s context within the checklist hints at its purpose in the context of KYC (Know Your Customer) processes, particularly for clients who may not have full documentation. Each inquiry serves to gauge compliance and operational legitimacy, ultimately supporting risk assessment and verification procedures that the bank conducts as part of its internal protocols.",
-    "tokens": 287,
+    "content": "[Table Name]business_address_verification_checklist\n\nThe table outlines a checklist for verifying aspects of a business's address, which is part of the Enhanced Due Diligence (EDD) process for Unity Small Finance Bank. It consists of five rows, each detailing a specific attribute related to the business address, with corresponding status options presented in the second column. The attributes listed include whether the address is easily traceable, the quality of the business office setup, the nature of the accommodation, the type of building, and the visibility of business activity. The responses for 'Yes/No' and categorical labels indicate the degree of quality or status, such as 'Not good', 'Average', 'Good', 'Excellent', or current state of renovation for the office setup. Also included are various forms of accommodation options like 'Owned', 'Rented', as well as types of buildings such as 'Slum', 'Chawl', and 'Mall'. The table does not contain any numerical data or calculations, instead focusing on qualitative classifications of the business address characteristics. There are no footnotes or special markers noted within the cells, nor are there any empty cells present. Each point highlights crucial facets of business premises which could impact the bank's due diligence processes. This table is a functional component of a larger internal document regarding customer due diligence protocols at the bank.",
+    "tokens": 271,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0018",
@@ -1688,8 +2034,8 @@
     },
     "llm_cache_list": [
       "default:analysis:c3916aecea80419cc859cb3683dc31ca",
-      "default:extract:340b11609564e79cf1eabe30636d858d",
-      "default:extract:55b8c54672d8fca7bd9ff4a50890c9d5"
+      "default:extract:feca31edeaabb574c58b54610c939169",
+      "default:extract:a2fd4155823f3a30bbeb1fe3d3ffde23"
     ],
     "heading": {
       "level": 0,
@@ -1700,15 +2046,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619083,
+    "create_time": 1786704042,
+    "update_time": 1786704164,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-017"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-018": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-018",
     "chunk_order_index": 43,
-    "content": "[Table Name]recommendations_positive_negative_feedback\n\nThe table presents a simple structure addressing feedback on recommendations tied to positive or negative outcomes within the context of enhanced due diligence for Unity Small Finance Bank. It consists of two columns: the first titled 'Recommendations' which indicates potential actions or observations, and the second column 'Positive/Negative' that categorizes the feedback associated with those recommendations. The table includes a row dedicated to remarks specifically in cases of a negative result, though the second column remains empty beneath it, indicating no additional feedback is provided. There is no indication of merged cells or additional rows beyond the basic two and a remark row. The presentation is straightforward, focused on the essential aspects of feedback without numerical data or complex formatting. The lack of specific recommendations or feedback in the table suggests it serves as a template or checklist rather than a filled-in report. Overall, the table encapsulates a snapshot of assessment criteria for recommendations, highlighting areas that require attention based on their classification as positive or negative outcomes. It directly supports the larger context of procedures and requirements outlined in the leading and trailing texts related to the customer account opening processes and verification in a banking environment, hinting at a systematized approach to risk assessment and customer due diligence for the bank.",
-    "tokens": 251,
+    "content": "[Table Name]edd_checklist_recommendations\n\nThe table presents a simple structure with two columns: 'Recommendations' and 'Positive/Negative'. It details a workflow related to enhanced due diligence (EDD) practices for Unity Small Finance Bank. The first row consists of two column headers indicating the main topics of the table, while the second row provides a sub-entry under the 'Recommendations' column. The cell under 'Remarks in case of Negative result' is empty, suggesting that this section is reserved for notes or comments that would accompany a negative outcome within the EDD process. No specific data values, measurements, or footnotes are present in this table. The overall focus is on providing guidance regarding the handling of customer accounts following KYC regulations, which is a backdrop to the table's inclusion. The context and leading text emphasize the importance of KYC and account verification processes within the bank, underscoring the necessity for such a checklist in managing customer relations and compliance effectively.",
+    "tokens": 196,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0019",
@@ -1721,8 +2067,8 @@
     },
     "llm_cache_list": [
       "default:analysis:ccc9704740d6a17b0c99313a209f6d32",
-      "default:extract:6accec5a67a4c7fd8da4cd937f1511b1",
-      "default:extract:bc46327fbda02a40628c2d01930d82ed"
+      "default:extract:5d6c584fcc9ea38a9d0013c9005b0ff2",
+      "default:extract:e1cc8834df1d452ecc3c00a1f6443110"
     ],
     "heading": {
       "level": 0,
@@ -1733,15 +2079,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619082,
+    "create_time": 1786704042,
+    "update_time": 1786704161,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-018"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-019": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-019",
     "chunk_order_index": 44,
-    "content": "[Table Name]edd_checklist_branch_details\n\nThe table presents a structure for an Enhanced Due Diligence (EDD) checklist specific to Unity Small Finance Bank. It has five rows, with the first four rows serving as headers that outline different aspects of the EDD process: 'Branch Name & Code', 'EDD Conducted by EMP ID', 'EDD Conducted by Name', and 'EDD Conducted by Designation'. Each row provides a specific focus area for the EDD process, although the actual content within those rows is currently empty, suggesting that it is a template intended for future data entry rather than displaying existing data. The absence of details indicates that the EDD checklist is yet to be filled with information pertinent to specific branches and the employees involved in carrying out the EDD tasks. The table's placement in the context of the document marks it for internal use within Unity Small Finance Bank, which emphasizes the procedural aspect of customer verification without KYC documents. The overarching context clarifies the purpose of the checklist—ensuring proper identification and classification of customers engaging with the bank under their Small Account protocols. This implies a regulatory compliance role and hints at the bank's internal framework for record-keeping and customer verification during account setup.",
-    "tokens": 248,
+    "content": "[Table Name]edd_checklist_branch_details\n\nThis table presents the structure for collecting Enhanced Due Diligence (EDD) data for branches of Unity Small Finance Bank. It contains a series of headings intended to capture specific information about the personnel conducting the EDD, specifically through four rows that each provide a different focus area. The first row includes a column header for 'Branch Name & Code', which is the primary identification for the branch involved in the EDD process. The subsequent rows are structured to capture detailed information about the employee conducting the EDD. They are labeled 'EDD Conducted by EMP ID', 'EDD Conducted by Name', and 'EDD Conducted by Designation', which outline the identification number, name, and job title of the employee involved in the process. The table does not have any filled data or concrete units of measurement, but it serves as a framework for documenting crucial information within the EDD checklist. There are no merged cells, total rows, or empty cells apart from what is required for formatting. Overall, this table may be essential for maintaining proper documentation and adherence to regulatory standards regarding EDD at Unity Small Finance Bank.",
+    "tokens": 232,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0020",
@@ -1754,8 +2100,8 @@
     },
     "llm_cache_list": [
       "default:analysis:5582a271ce8d1f31178df29c73b073bd",
-      "default:extract:277787341d46c3af39647843dcd0252c",
-      "default:extract:a887b843677dbe6f1505820c1e84392c"
+      "default:extract:55ba1041ab81acce29d290e672e1f338",
+      "default:extract:5245453dfc2b6660dd6a0f4b1b3d94fa"
     ],
     "heading": {
       "level": 0,
@@ -1766,15 +2112,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619085,
+    "create_time": 1786704042,
+    "update_time": 1786704168,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-019"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-020": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-020",
     "chunk_order_index": 45,
-    "content": "[Table Name]customer_account_details_table\n\nThis table presents key information about accounts maintained with a bank, specifically targeting high-risk customers during an on-boarding or retention review process. The rows of the table include several critical details: the branch of the bank, account balances as of a specific date, customer KYC status (Yes/No), match category, and details of any matches identified during screenings. The data appears to have a structure where the first column lists various attributes or metrics related to customer accounts, while the second column remains empty, indicating that it may be intended for future data entry or annotations. Although specific values are not provided in the table, the table's layout and the contextual information imply the importance of maintaining proper KYC records and screening for compliance purposes. The overarching focus is on managing customer relationships, particularly those flagged as high risk, ensuring that all necessary account details are considered in decision-making processes. The table supports the surrounding text by outlining the data required for justifying retention or exit strategies regarding the customers highlighted in the ongoing review.",
-    "tokens": 211,
+    "content": "[Table Name]customer_account_details_review\n\nThe table provides a framework for documenting the details of accounts maintained with Unity Small Finance Bank, particularly for customers identified as high-risk. It contains six rows of information headers pertaining to various aspects of account management and compliance checks. The initial row indicates the branch of the bank responsible for the account, followed by details regarding the accounts held by existing customers. The third row alludes to an account balance metric as of a specific date that is left blank, indicating that the balance needs to be populated according to the chosen date. KYC (Know Your Customer) compliance is captured in the fourth row, again marked as Y/N to signify whether the KYC process has been completed. The fifth row categorizes the match against regulatory or compliance frameworks, while the final row is for detailing any findings or specifics relating to these matches. The presence of blank cells indicates that specific numerical or categorical data has yet to be filled in. This table is necessary for justifying customer relationship decisions, particularly for accounts that may involve risks and need careful review. Overall, the table acts as a structured guide for information that needs to be collected and assessed in the context of customer onboarding and retention in light of risk analysis.",
+    "tokens": 246,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0021",
@@ -1787,8 +2133,8 @@
     },
     "llm_cache_list": [
       "default:analysis:a240e4d2dbf83f1c85ae9588f948072a",
-      "default:extract:cb8886297383c62e36d5db691fcca44c",
-      "default:extract:f5bab514e941db6bc96c432a9cf9a600"
+      "default:extract:bb221c235a3c99e7bf0308deeeb5f76b",
+      "default:extract:e3ad3b97f4d9da8d653b0f40546b2bbb"
     ],
     "heading": {
       "level": 0,
@@ -1799,15 +2145,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619090,
+    "create_time": 1786704042,
+    "update_time": 1786704170,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-020"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-021": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-021",
     "chunk_order_index": 46,
-    "content": "[Table Name]approval_decision_documentation\n\nThis table appears to summarize the approval and decline decisions made by two key officers at a financial institution, specifically the Chief Business Officer and the Chief Compliance Officer. There are no explicit row or column headers, but the structure implies a record of decisions associated with a specific date. Each officer's decision-making process is grouped under a single header cell, indicating their respective approvals or declines for a particular case or proposal. The presence of both roles suggests a dual approach to decision-making, reflecting both business and compliance perspectives. The table does not include specific data points, units of measurement, or key values as it primarily outlines the approval status rather than quantitative information. Furthermore, this table is immediately preceded by a section detailing the justification for decisions, although it does not directly enumerate the reasons in the table itself. The trailing text elaborates on the consequences of the decisions made, laying out further actions for both approved and declined cases, indicating that the table serves as documentation for internal processes at UNITY Small Finance Bank.",
-    "tokens": 208,
+    "content": "[Table Name]approval_status_officials_dates\n\nThe table presents the approval and decline status along with associated officials and corresponding dates for a decision-making process, likely related to compliance or risk assessment. It features a 2-column structure without any row or column headers explicitly defined. Each column appears to represent the approval or decline status for two different officials: the Chief Business Officer and the Chief Compliance Officer. The columns are distinct, but they share a common thematic element of decision-making related to a proposal. There are no specified values or indicators present in the table cells, so the status and dates are not quantified. The surrounding context hints at actions that will follow based on the approval or decline of proposals discussed, suggesting that this table is part of a larger compliance or risk evaluation process. Overall, while the structure is straightforward, the lack of clear data limits its interpretive depth without additional context.",
+    "tokens": 179,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0022",
@@ -1820,8 +2166,8 @@
     },
     "llm_cache_list": [
       "default:analysis:63e9c72a336dae4301b7c8f3f5718c25",
-      "default:extract:0be4a83bd991145bf479ca7296e666fb",
-      "default:extract:80f761c4113338e45450fb3c6e60be88"
+      "default:extract:046c3c95bbc512e3fcd30390447d272c",
+      "default:extract:cbe31a7e38f661b462e4bbc41fa8d169"
     ],
     "heading": {
       "level": 0,
@@ -1832,15 +2178,15 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619088,
+    "create_time": 1786704042,
+    "update_time": 1786704170,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-021"
   },
   "doc-2e34273750791ef213944c7971a5e5a1-mm-table-022": {
     "chunk_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-022",
     "chunk_order_index": 47,
-    "content": "[Table Name]risk_rating_update_information\n\nThe table presents information regarding the update of a revised risk rating by the AML Central Team. It is structured into two rows and two columns, with the first column primarily containing details about the system and its related actions and the second column indicating the date of the update. The first row notes that the system has been updated with a revised risk rating, while the second row references authorisation and the date, although the specific date information is left blank. This suggests a procedural aspect to the risk rating update process, where necessary approvals and timestamps may be required. The table does not encapsulate quantitative data or distinct measurements, but rather focuses on administrative updates pertinent to risk management in the banking context. The associated footnote indicates the table is specifically relevant to the Unity Small Finance Bank Ltd., signifying that this update is part of internal compliance or regulatory practices. The surrounding context implies a decision-making process related to customer risk ratings, indicating that actions will follow based on whether a risk rating recommendation is approved or declined.\n\n[Table Footnotes]Unity Small Finance Bank Ltd.",
-    "tokens": 220,
+    "content": "[Table Name]risk_rating_update_details\n\nThe table presents key information regarding the revision of a risk rating by the AML Central Team. It contains two rows: the first details the system update status and the date it was updated, while the second row notes the authorisation details along with an empty cell for the date. The overall structure includes two columns and two rows, with merged cells indicating the informative nature rather than typical data entries. The first cell provides the context of the update—specifically that it pertains to a risk rating revision—while the second cell seeks to clarify the date of the update. The trailing text indicates the document’s internal nature and affiliation with UNITY Small Finance Bank. The captured data emphasizes the firm stance that revisions of risk ratings are a formal and documented process, reflecting oversight and strict compliance protocols within the bank. Although the table lacks numerical data or complex entries, its key function is to summarize actionable steps regarding customer relationships based on risk ratings, aligning with the surrounding leading text that outlines formal procedures to follow based on approval or decline of risk assessments.\n\n[Table Footnotes]Unity Small Finance Bank Ltd.",
+    "tokens": 225,
     "sidecar": {
       "type": "table",
       "id": "tb-2e34273750791ef213944c7971a5e5a1-0023",
@@ -1853,8 +2199,8 @@
     },
     "llm_cache_list": [
       "default:analysis:87fcd2074c212f8024e9736bb880ba26",
-      "default:extract:2ff12a6e68c37731430c81b78a4d2676",
-      "default:extract:98e1b44adcfdf82e68990877659e6db0"
+      "default:extract:e54f95f92ddd8d1af3a0f71d4243519e",
+      "default:extract:786d9eaa64fa2dcc6e226b7e03aaefee"
     ],
     "heading": {
       "level": 0,
@@ -1865,8 +2211,8 @@
     },
     "full_doc_id": "doc-2e34273750791ef213944c7971a5e5a1",
     "file_path": "SOP - Account opening for Retail Customers.pdf",
-    "create_time": 1786618955,
-    "update_time": 1786619091,
+    "create_time": 1786704042,
+    "update_time": 1786704170,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1-mm-table-022"
   }
 }

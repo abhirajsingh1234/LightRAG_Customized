@@ -2,16 +2,20 @@
   "doc-574eef8b2a231a2171cb4eadad4c29e5": {
     "relation_pairs": [
       [
-        "Banking Service Savings Limits",
+        "Bank Service Savings Per Instance",
         "Cash Delivery"
       ],
       [
-        "Banking Service Savings Limits",
+        "Bank Service Savings Per Instance",
         "Cash Pickup"
       ],
       [
-        "Banking Service Savings Limits",
+        "Bank Service Savings Per Instance",
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Banking Correspondents",
+        "Unity Bank"
       ],
       [
         "Cash Delivery",
@@ -19,11 +23,11 @@
       ],
       [
         "Cash Delivery",
-        "Differently Abled"
+        "Differently Abled Customers"
       ],
       [
         "Cash Delivery",
-        "Senior Citizen"
+        "Senior Citizens"
       ],
       [
         "Cash Delivery",
@@ -39,11 +43,11 @@
       ],
       [
         "Cash Pickup",
-        "Differently Abled"
+        "Differently Abled Customers"
       ],
       [
         "Cash Pickup",
-        "Senior Citizen"
+        "Senior Citizens"
       ],
       [
         "Cash Pickup",
@@ -54,184 +58,404 @@
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
-        "Customer",
-        "Service Charges"
-      ],
-      [
-        "Customer",
-        "Unity Bank"
-      ],
-      [
-        "Differently Abled",
-        "Doorstep Banking"
-      ],
-      [
-        "Differently Abled",
+        "Differently Abled Customers",
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
-        "Doorstep Banking",
+        "Differently-Abled",
+        "Door Step Banking"
+      ],
+      [
+        "Door Step Banking",
         "Reserve Bank of India"
       ],
       [
-        "Doorstep Banking",
-        "Senior Citizen"
+        "Door Step Banking",
+        "Senior Citizens"
       ],
       [
-        "Doorstep Banking",
+        "Door Step Banking",
         "TPIN"
       ],
       [
-        "Doorstep Banking",
+        "Door Step Banking",
         "Unity Bank"
       ],
       [
-        "Senior Citizen",
+        "Doorstep Banking Services",
+        "Request for Door-Step Delivery"
+      ],
+      [
+        "Doorstep Banking Services",
+        "Unity Bank"
+      ],
+      [
+        "KYC Document",
+        "Unity Bank"
+      ],
+      [
+        "Senior Citizens",
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Service Charges",
+        "Unity Bank"
       ]
     ],
-    "count": 22,
-    "create_time": 1786618357,
-    "update_time": 1786618357,
+    "count": 25,
+    "create_time": 1786696477,
+    "update_time": 1786696477,
     "_id": "doc-574eef8b2a231a2171cb4eadad4c29e5"
+  },
+  "doc-6e9c97657e05cf315dfdf575fb8d6364": {
+    "relation_pairs": [
+      [
+        "ATM Network",
+        "Bank"
+      ],
+      [
+        "Account Holder",
+        "Depositor"
+      ],
+      [
+        "Automated Clearing House",
+        "Bank"
+      ],
+      [
+        "Bank",
+        "Banking Ombudsman"
+      ],
+      [
+        "Bank",
+        "Basic Savings Bank Deposit Account (BSBDA)"
+      ],
+      [
+        "Bank",
+        "Bulk Deposit"
+      ],
+      [
+        "Bank",
+        "Current Account"
+      ],
+      [
+        "Bank",
+        "Customer Awareness Campaigns"
+      ],
+      [
+        "Bank",
+        "Debit Card"
+      ],
+      [
+        "Bank",
+        "Depositor"
+      ],
+      [
+        "Bank",
+        "Electronic Clearing Service"
+      ],
+      [
+        "Bank",
+        "HUF"
+      ],
+      [
+        "Bank",
+        "Illiterate Person"
+      ],
+      [
+        "Bank",
+        "Interest Rate"
+      ],
+      [
+        "Bank",
+        "Interest Rate Card"
+      ],
+      [
+        "Bank",
+        "Internet Banking"
+      ],
+      [
+        "Bank",
+        "Joint Account"
+      ],
+      [
+        "Bank",
+        "Know Your Customer (KYC)"
+      ],
+      [
+        "Bank",
+        "Limited Liability Partnership"
+      ],
+      [
+        "Bank",
+        "Master Policy on Customer Service"
+      ],
+      [
+        "Bank",
+        "Minimum Average Balance"
+      ],
+      [
+        "Bank",
+        "Mobile Banking"
+      ],
+      [
+        "Bank",
+        "NEFT"
+      ],
+      [
+        "Bank",
+        "Nomination"
+      ],
+      [
+        "Bank",
+        "Non-callable deposits"
+      ],
+      [
+        "Bank",
+        "Permanent Account Number (PAN)"
+      ],
+      [
+        "Bank",
+        "Power of Attorney"
+      ],
+      [
+        "Bank",
+        "Premature Withdrawal"
+      ],
+      [
+        "Bank",
+        "Public"
+      ],
+      [
+        "Bank",
+        "RBI"
+      ],
+      [
+        "Bank",
+        "RTGS"
+      ],
+      [
+        "Bank",
+        "Recurring Deposits"
+      ],
+      [
+        "Bank",
+        "Savings Account"
+      ],
+      [
+        "Bank",
+        "Senior Citizen"
+      ],
+      [
+        "Bank",
+        "Service Charges"
+      ],
+      [
+        "Bank",
+        "Standing Instructions"
+      ],
+      [
+        "Bank",
+        "Statement of Account"
+      ],
+      [
+        "Bank",
+        "Stop Payment Facility"
+      ],
+      [
+        "Bank",
+        "Tax Deduction Certificate"
+      ],
+      [
+        "Bank",
+        "Term Deposit"
+      ],
+      [
+        "Bank",
+        "Term Deposits"
+      ],
+      [
+        "Bank",
+        "WhatsApp Banking"
+      ],
+      [
+        "Banking Ombudsman",
+        "Reserve Bank of India"
+      ],
+      [
+        "Banking Regulation Act, 1949",
+        "Depositors"
+      ],
+      [
+        "Board of Directors",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Customer Information",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Customers",
+        "Deposit Accounts"
+      ],
+      [
+        "Deposit Accounts",
+        "Reserve Bank of India"
+      ],
+      [
+        "Deposit Accounts",
+        "Unity Small Finance Bank Limited"
+      ],
+      [
+        "Deposit Insurance and Credit Guarantee Corporation of India",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Depositor",
+        "Form 15G/15H"
+      ],
+      [
+        "Depositor",
+        "Inoperative Account"
+      ],
+      [
+        "Depositor",
+        "Legal Heir"
+      ],
+      [
+        "Depositor",
+        "Legal Heirs"
+      ],
+      [
+        "Depositor",
+        "Nominee"
+      ],
+      [
+        "Depositor",
+        "Term Deposit Account"
+      ],
+      [
+        "Depositor",
+        "Unclaimed Deposits"
+      ],
+      [
+        "Depositor(s)",
+        "Loans Against Deposits"
+      ],
+      [
+        "Deposits",
+        "Interest Rate"
+      ],
+      [
+        "Domestic Account",
+        "Interest Rate"
+      ],
+      [
+        "Dormant Accounts",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Grievance Redressal Policy",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Guardian",
+        "Mental Health Act, 1987"
+      ],
+      [
+        "Guardian",
+        "Minor"
+      ],
+      [
+        "Guardian",
+        "National Trust for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation and Multiple Disabilities Act, 1999"
+      ],
+      [
+        "Guardian",
+        "Transgender Person"
+      ],
+      [
+        "Guardian",
+        "Visually Challenged Person"
+      ],
+      [
+        "Inactive Accounts",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Interest Rate",
+        "Non-Resident External Account"
+      ],
+      [
+        "Interest Rate",
+        "Non-Resident Ordinary Account"
+      ],
+      [
+        "Interest Rate",
+        "Term Deposit Account"
+      ],
+      [
+        "Legal Heirs",
+        "Nominee"
+      ],
+      [
+        "Maturity Date",
+        "Term Deposit Account"
+      ],
+      [
+        "Minimum Tenor",
+        "Term Deposit"
+      ],
+      [
+        "NRE Deposits",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "NRO Deposits",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "RBI",
+        "Unclaimed Deposits"
+      ]
+    ],
+    "count": 77,
+    "create_time": 1786696706,
+    "update_time": 1786696706,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364"
   },
   "doc-2e34273750791ef213944c7971a5e5a1": {
     "relation_pairs": [
       [
-        "1.11 Appointment of Mandate Holder, POA and LOA (Added)",
-        "appointment_of_mandate_holder_poa_loa"
+        "08-Dec-2023",
+        "Screenshot"
       ],
       [
-        "1.11 Appointment of Mandate Holder, POA and LOA (Added)",
-        "tb-2e34273750791ef213944c7971a5e5a1-0011"
-      ],
-      [
-        "16/02/2024",
-        "Standard Operating Procedures"
-      ],
-      [
-        "16/02/2024",
-        "tb-2e34273750791ef213944c7971a5e5a1-0004"
-      ],
-      [
-        "16/02/2024",
-        "tb-2e34273750791ef213944c7971a5e5a1-0005"
-      ],
-      [
-        "2022",
-        "Version 1.1"
-      ],
-      [
-        "2022",
-        "tb-2e34273750791ef213944c7971a5e5a1-0012"
-      ],
-      [
-        "2023",
-        "Version 1.2"
-      ],
-      [
-        "2023",
-        "Version 1.3"
-      ],
-      [
-        "2023",
-        "tb-2e34273750791ef213944c7971a5e5a1-0012"
-      ],
-      [
-        "23/06/2025",
-        "Standard Operating Procedures for Account Opening for Retail Customers"
-      ],
-      [
-        "23/06/2025",
-        "tb-2e34273750791ef213944c7971a5e5a1-0001"
-      ],
-      [
-        "24/06/2025",
-        "Standard Operating Procedures for Account Opening for Retail Customers"
-      ],
-      [
-        "24/06/2025",
-        "tb-2e34273750791ef213944c7971a5e5a1-0001"
-      ],
-      [
-        "25/04/2024",
-        "Standard Operating Procedures"
-      ],
-      [
-        "25/04/2024",
-        "tb-2e34273750791ef213944c7971a5e5a1-0004"
-      ],
-      [
-        "25/07/2023",
-        "Standard Operating Procedures"
-      ],
-      [
-        "25/07/2023",
-        "tb-2e34273750791ef213944c7971a5e5a1-0004"
-      ],
-      [
-        "25/07/2023",
-        "tb-2e34273750791ef213944c7971a5e5a1-0005"
-      ],
-      [
-        "26 - PANVEL",
-        "Account Opening Form"
-      ],
-      [
-        "26 - PANVEL",
-        "im-2e34273750791ef213944c7971a5e5a1-0007"
-      ],
-      [
-        "29/04/2023",
-        "Surinderpal Singh R S"
-      ],
-      [
-        "29/04/2023",
-        "Uma Sundar"
-      ],
-      [
-        "29/04/2023",
-        "tb-2e34273750791ef213944c7971a5e5a1-0004"
-      ],
-      [
-        "29/04/2023",
-        "tb-2e34273750791ef213944c7971a5e5a1-0005"
-      ],
-      [
-        "31/10/2024",
-        "Standard Operating Procedures"
-      ],
-      [
-        "31/10/2024",
-        "tb-2e34273750791ef213944c7971a5e5a1-0004"
-      ],
-      [
-        "31/10/2024",
-        "tb-2e34273750791ef213944c7971a5e5a1-0005"
-      ],
-      [
-        "AML",
-        "KYC"
-      ],
-      [
-        "AML - KYC",
-        "Digital Dashboard"
-      ],
-      [
-        "AML - KYC",
+        "08-Dec-2023",
         "im-2e34273750791ef213944c7971a5e5a1-0003"
       ],
       [
-        "AML Central Team",
-        "Bank's Compliance Framework"
+        "AADHAAR Card",
+        "Account Opening Form"
+      ],
+      [
+        "AADHAAR Card",
+        "im-2e34273750791ef213944c7971a5e5a1-0010"
       ],
       [
         "AML Central Team",
-        "Risk Rating Update Authorization"
+        "Financial Institution"
+      ],
+      [
+        "AML Central Team",
+        "Risk Rating Update Details"
       ],
       [
         "AML Central Team",
         "Risk Rating Update Information"
+      ],
+      [
+        "AML Central Team",
+        "UNITY Small Finance Bank"
       ],
       [
         "AML Central Team",
@@ -242,6 +466,18 @@
         "tb-2e34273750791ef213944c7971a5e5a1-0023"
       ],
       [
+        "AML-KYC",
+        "Unity Small Finance Bank"
+      ],
+      [
+        "AML-KYC",
+        "im-2e34273750791ef213944c7971a5e5a1-0003"
+      ],
+      [
+        "Aadhaar",
+        "Unity Small Finance Bank"
+      ],
+      [
         "Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act, 2016",
         "KYC"
       ],
@@ -250,236 +486,168 @@
         "Unity Small Finance Bank"
       ],
       [
-        "Aadhaar Number",
-        "Individuals"
+        "Accommodation Type",
+        "Business Address"
       ],
       [
-        "Aadhaar Number",
-        "im-2e34273750791ef213944c7971a5e5a1-0005"
+        "Accommodation Type",
+        "tb-2e34273750791ef213944c7971a5e5a1-0018"
       ],
       [
-        "Aadhar Number",
+        "Account Activation SOP",
+        "Inoperative Accounts"
+      ],
+      [
+        "Account Balance Metric",
+        "Customer Account Details Review"
+      ],
+      [
+        "Account Balance Metric",
+        "tb-2e34273750791ef213944c7971a5e5a1-0021"
+      ],
+      [
+        "Account Holder",
+        "Customer"
+      ],
+      [
+        "Account Holder",
+        "Home Branch"
+      ],
+      [
+        "Account Holder",
         "Minor"
       ],
       [
-        "Aadhar Number",
-        "im-2e34273750791ef213944c7971a5e5a1-0009"
+        "Account Holder",
+        "Request Letter"
       ],
       [
-        "Account Management",
-        "DOCZONE"
+        "Account Opening Documentation Requirements",
+        "Additional Notes"
       ],
       [
-        "Account Management",
-        "im-2e34273750791ef213944c7971a5e5a1-0005"
+        "Account Opening Documentation Requirements",
+        "Joint Accounts"
       ],
       [
-        "Account Master",
-        "Banking Dashboard Interface"
+        "Account Opening Documentation Requirements",
+        "Retail Accounts"
       ],
       [
-        "Account Master",
-        "im-2e34273750791ef213944c7971a5e5a1-0002"
-      ],
-      [
-        "Account Opening",
-        "Enhanced Due Diligence (EDD) Checklist"
-      ],
-      [
-        "Account Opening",
+        "Account Opening Documentation Requirements",
         "Unity Small Finance Bank"
       ],
       [
-        "Account Opening",
-        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+        "Account Opening Documentation Requirements",
+        "tb-2e34273750791ef213944c7971a5e5a1-0009"
       ],
       [
         "Account Opening Form",
-        "Add Document"
+        "Blind Person"
       ],
       [
         "Account Opening Form",
-        "Customer Branch"
+        "Customer Profile Form"
       ],
       [
         "Account Opening Form",
-        "Customer Details"
+        "E-KYC Authentication"
       ],
       [
         "Account Opening Form",
-        "DOB"
+        "KYC Data"
       ],
       [
         "Account Opening Form",
-        "Document Type"
+        "PAN Card"
       ],
       [
         "Account Opening Form",
-        "Fill CKYC Data"
-      ],
-      [
-        "Account Opening Form",
-        "Individuals"
-      ],
-      [
-        "Account Opening Form",
-        "KYC"
-      ],
-      [
-        "Account Opening Form",
-        "KYC Process"
-      ],
-      [
-        "Account Opening Form",
-        "MANAV K PANDAV"
-      ],
-      [
-        "Account Opening Form",
-        "PAN No."
-      ],
-      [
-        "Account Opening Form",
-        "Save"
-      ],
-      [
-        "Account Opening Form",
-        "Search & Download Kyc"
-      ],
-      [
-        "Account Opening Form",
-        "UNITY Small Finance Bank"
-      ],
-      [
-        "Account Opening Form",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Account Opening Form",
-        "Unity Small Finance Bank Ltd."
-      ],
-      [
-        "Account Opening Form",
-        "User Interface"
-      ],
-      [
-        "Account Opening Form",
-        "im-2e34273750791ef213944c7971a5e5a1-0007"
+        "Unity Small Finance Bank Ltd"
       ],
       [
         "Account Opening Form",
         "im-2e34273750791ef213944c7971a5e5a1-0010"
       ],
       [
-        "Account Opening Guidelines",
-        "Cluster and Zonal Managers"
+        "Account Opening Form Interface",
+        "CKYC Data"
       ],
       [
-        "Account Opening Guidelines",
-        "Documentation Discrepancies"
+        "Account Opening Form Interface",
+        "Customer Information"
       ],
       [
-        "Account Opening Guidelines",
-        "Initial Deposits"
-      ],
-      [
-        "Account Opening Guidelines",
-        "Inoperative Accounts"
-      ],
-      [
-        "Account Opening Guidelines",
-        "Know Your Customer"
-      ],
-      [
-        "Account Opening Guidelines",
-        "Nomination Forms"
-      ],
-      [
-        "Account Opening Guidelines",
-        "Permanent Account Number"
-      ],
-      [
-        "Account Opening Guidelines",
+        "Account Opening Form Interface",
         "Unity Small Finance Bank"
       ],
       [
-        "Account Opening Guidelines",
-        "tb-2e34273750791ef213944c7971a5e5a1-0009"
-      ],
-      [
-        "Account Opening Policies",
-        "Account Types"
-      ],
-      [
-        "Account Opening Policies",
-        "Individuals with Disabilities"
-      ],
-      [
-        "Account Opening Policies",
-        "Minors"
-      ],
-      [
-        "Account Opening Policies",
-        "RBI Circular"
-      ],
-      [
-        "Account Opening Policies",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Account Opening Policies",
-        "tb-2e34273750791ef213944c7971a5e5a1-0008"
-      ],
-      [
-        "Account Opening for Retail Customers",
-        "Standard Operating Procedures"
-      ],
-      [
-        "Account Opening for Retail Customers",
-        "tb-2e34273750791ef213944c7971a5e5a1-0007"
-      ],
-      [
-        "Account Types",
-        "tb-2e34273750791ef213944c7971a5e5a1-0008"
-      ],
-      [
-        "Activity",
-        "Enhanced Due Diligence (EDD) Checklist"
-      ],
-      [
-        "Activity",
-        "tb-2e34273750791ef213944c7971a5e5a1-0016"
-      ],
-      [
-        "Add Document",
+        "Account Opening Form Interface",
         "im-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
-        "Addition of Relative",
-        "C-KYC Related Person Data Form"
+        "Account Opening Policy Updates",
+        "Account Opening for Minors"
       ],
       [
-        "Addition of Relative",
-        "im-2e34273750791ef213944c7971a5e5a1-0008"
+        "Account Opening Policy Updates",
+        "April 21, 2025"
       ],
       [
-        "Address Verification",
-        "Enhanced Due Diligence (EDD) Checklist"
+        "Account Opening Policy Updates",
+        "Due Diligence Procedures"
       ],
       [
-        "Address Verification",
-        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+        "Account Opening Policy Updates",
+        "Gender Identity"
       ],
       [
-        "Address of Communication",
-        "Enhanced Due Diligence (EDD) Checklist"
+        "Account Opening Policy Updates",
+        "Individuals with Disabilities"
       ],
       [
-        "Address of Communication",
-        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+        "Account Opening Policy Updates",
+        "Progressive Changes"
+      ],
+      [
+        "Account Opening Policy Updates",
+        "Unity Small Finance Bank"
+      ],
+      [
+        "Account Opening Policy Updates",
+        "tb-2e34273750791ef213944c7971a5e5a1-0008"
+      ],
+      [
+        "Account Opening Processes",
+        "Document Amendment History / Summary of Changes"
+      ],
+      [
+        "Account Opening Processes",
+        "Version 1.5"
+      ],
+      [
+        "Account Opening Processes",
+        "tb-2e34273750791ef213944c7971a5e5a1-0007"
+      ],
+      [
+        "Account Opening for Minors",
+        "tb-2e34273750791ef213944c7971a5e5a1-0008"
+      ],
+      [
+        "Additional Notes",
+        "tb-2e34273750791ef213944c7971a5e5a1-0009"
+      ],
+      [
+        "Admin",
+        "Banking Application Dashboard"
+      ],
+      [
+        "Admin",
+        "im-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
         "Ajay Salvi",
-        "Standard Operating Procedures Signatures"
+        "Standard Operating Procedures"
       ],
       [
         "Ajay Salvi",
@@ -490,28 +658,68 @@
         "tb-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
-        "Application for Minor Turn Major",
+        "Applicant",
+        "C-KYC Data Input Form"
+      ],
+      [
+        "Applicant",
+        "Ketan"
+      ],
+      [
+        "Applicant",
+        "Manawa"
+      ],
+      [
+        "Applicant",
+        "Pandav"
+      ],
+      [
+        "Applicant",
+        "im-2e34273750791ef213944c7971a5e5a1-0009"
+      ],
+      [
+        "Application",
         "Customer"
       ],
       [
-        "Approval Decision Documentation",
+        "Application for Minor Turn Major",
+        "Minor"
+      ],
+      [
+        "Approval Committee",
+        "Inoperative Account Activation Sop Details"
+      ],
+      [
+        "Approval Committee",
+        "Unity Small Finance Bank"
+      ],
+      [
+        "Approval Committee",
+        "tb-2e34273750791ef213944c7971a5e5a1-0010"
+      ],
+      [
+        "Approval Status Officials Dates",
         "Chief Business Officer"
       ],
       [
-        "Approval Decision Documentation",
+        "Approval Status Officials Dates",
         "Chief Compliance Officer"
       ],
       [
-        "Approval Decision Documentation",
-        "UNITY Small Finance Bank"
+        "Approval Status Officials Dates",
+        "Decision-Making Process"
       ],
       [
-        "Approval Decision Documentation",
+        "Approval Status Officials Dates",
         "tb-2e34273750791ef213944c7971a5e5a1-0022"
       ],
       [
+        "Approved Signatories for Account Opening",
+        "tb-2e34273750791ef213944c7971a5e5a1-0006"
+      ],
+      [
         "April 15, 2023",
-        "Manjusha Nimkar"
+        "Standard Operating Procedures"
       ],
       [
         "April 15, 2023",
@@ -519,75 +727,35 @@
       ],
       [
         "April 21, 2025",
-        "tb-2e34273750791ef213944c7971a5e5a1-0013"
+        "tb-2e34273750791ef213944c7971a5e5a1-0008"
       ],
       [
         "April 25, 2025",
-        "Kumar Anurag"
-      ],
-      [
-        "April 25, 2025",
-        "Standard Operating Procedures Signatures"
-      ],
-      [
-        "April 25, 2025",
-        "tb-2e34273750791ef213944c7971a5e5a1-0002"
+        "Standard Operating Procedures"
       ],
       [
         "April 25, 2025",
         "tb-2e34273750791ef213944c7971a5e5a1-0003"
       ],
       [
-        "April 31, 2024",
-        "Standard Operating Procedures Signatures"
+        "April 29, 2023",
+        "Standard Operating Procedures"
       ],
       [
-        "Audit",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Author",
-        "Change History"
-      ],
-      [
-        "Author",
-        "tb-2e34273750791ef213944c7971a5e5a1-0012"
+        "April 29, 2023",
+        "tb-2e34273750791ef213944c7971a5e5a1-0005"
       ],
       [
         "Authorized Signatory",
-        "Authorized Signatory Tab"
+        "Letter of Authority"
       ],
       [
         "Authorized Signatory",
-        "CIF"
+        "Mandate"
       ],
       [
         "Authorized Signatory",
-        "Current Account Holder"
-      ],
-      [
-        "Authorized Signatory",
-        "KYC Documents"
-      ],
-      [
-        "Authorized Signatory",
-        "Rubber Stamp"
-      ],
-      [
-        "BIDMS",
-        "CKYC"
-      ],
-      [
-        "BIDMS",
-        "Digital Dashboard"
-      ],
-      [
-        "BIDMS",
-        "Guardian"
-      ],
-      [
-        "BIDMS",
-        "KYC"
+        "Power of Attorney"
       ],
       [
         "BIDMS",
@@ -603,7 +771,11 @@
       ],
       [
         "BSBDA",
-        "KYC"
+        "Unity Small Finance Bank"
+      ],
+      [
+        "BSBDA",
+        "Unity Small Finance Bank Ltd."
       ],
       [
         "BSBDA Account",
@@ -611,130 +783,226 @@
       ],
       [
         "Bank",
-        "Customer Account Details Table"
+        "Contract Staff"
       ],
       [
         "Bank",
-        "High-Risk Customers"
+        "Customer"
       ],
       [
         "Bank",
-        "Screenings"
+        "Guardian"
       ],
       [
         "Bank",
-        "tb-2e34273750791ef213944c7971a5e5a1-0021"
+        "HR Operation"
       ],
       [
-        "Bank Official",
-        "Individuals"
+        "Bank",
+        "Politically Exposed Person (PEP)"
       ],
       [
-        "Bank's Compliance Framework",
-        "tb-2e34273750791ef213944c7971a5e5a1-0015"
+        "Bank",
+        "Product Code"
       ],
       [
-        "Banking Dashboard Interface",
+        "Bank",
+        "Queer Partners"
+      ],
+      [
+        "Bank",
+        "Retired Staff"
+      ],
+      [
+        "Bank",
+        "Senior Citizen"
+      ],
+      [
+        "Bank",
+        "Transgender Person"
+      ],
+      [
+        "Bank",
+        "Unity Small Finance Bank Ltd."
+      ],
+      [
+        "Bank Staff",
+        "KYC"
+      ],
+      [
+        "Banking Application Dashboard",
+        "Clearing Inward Local"
+      ],
+      [
+        "Banking Application Dashboard",
+        "Compliance and Security"
+      ],
+      [
+        "Banking Application Dashboard",
         "Customer Creation (Individual)"
       ],
       [
-        "Banking Dashboard Interface",
-        "Customer Maintenance"
-      ],
-      [
-        "Banking Dashboard Interface",
+        "Banking Application Dashboard",
         "Exception Report"
       ],
       [
-        "Banking Dashboard Interface",
-        "Integrated Channels"
-      ],
-      [
-        "Banking Dashboard Interface",
-        "KYC/CKYC Process"
-      ],
-      [
-        "Banking Dashboard Interface",
+        "Banking Application Dashboard",
         "Loan Repayment Chart"
       ],
       [
-        "Banking Dashboard Interface",
+        "Banking Application Dashboard",
+        "Product Master"
+      ],
+      [
+        "Banking Application Dashboard",
         "Sonal Jagdish Sogam"
       ],
       [
-        "Banking Dashboard Interface",
+        "Banking Application Dashboard",
+        "TUNING 3.0"
+      ],
+      [
+        "Banking Application Dashboard",
         "Transactions"
       ],
       [
-        "Banking Dashboard Interface",
+        "Banking Application Dashboard",
         "Transfer"
       ],
       [
-        "Banking Dashboard Interface",
+        "Banking Application Dashboard",
         "im-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
         "Banking Operations-KYC/AML Cell",
-        "Unity Small Finance Bank Ltd."
+        "Customer"
       ],
       [
-        "Branch Change",
-        "Centralised Processing Team"
+        "Basic Details",
+        "Customer Information Form"
       ],
       [
-        "Branch Change",
-        "Unity Small Finance Bank Ltd."
+        "Basic Details",
+        "im-2e34273750791ef213944c7971a5e5a1-0011"
+      ],
+      [
+        "Blind Person",
+        "Unity Small Finance Bank"
       ],
       [
         "Branch Manager",
-        "Chief Business Officer"
+        "Customer"
       ],
       [
         "Branch Manager",
-        "Customer Information File"
+        "Customer Due Diligence"
       ],
       [
-        "Business Information",
-        "Due Diligence Checklist"
+        "Branch Manager",
+        "KYC"
       ],
       [
-        "Business Information",
-        "tb-2e34273750791ef213944c7971a5e5a1-0018"
+        "Branch Manager",
+        "Politically Exposed Person (PEP)"
       ],
       [
-        "Business Proof",
-        "Enhanced Due Diligence (EDD) Checklist"
+        "Branch Manager",
+        "Relationship Officer"
       ],
       [
-        "Business Proof",
+        "Branch Manager",
+        "Unity Small Finance Bank"
+      ],
+      [
+        "Branch Name & Code",
+        "EDD Checklist Branch Details"
+      ],
+      [
+        "Branch Name & Code",
+        "tb-2e34273750791ef213944c7971a5e5a1-0020"
+      ],
+      [
+        "Branch Officer",
+        "Customer Identification Number (CIF)"
+      ],
+      [
+        "Branch Response",
+        "Enhanced Due Diligence Checklist"
+      ],
+      [
+        "Branch Response",
         "tb-2e34273750791ef213944c7971a5e5a1-0016"
       ],
       [
-        "Business Setup",
+        "Building Type",
+        "Business Address"
+      ],
+      [
+        "Building Type",
+        "tb-2e34273750791ef213944c7971a5e5a1-0018"
+      ],
+      [
+        "Business Activity Visibility",
+        "Business Address"
+      ],
+      [
+        "Business Activity Visibility",
+        "tb-2e34273750791ef213944c7971a5e5a1-0018"
+      ],
+      [
+        "Business Address",
+        "Business Office Setup"
+      ],
+      [
+        "Business Address",
+        "Status Options"
+      ],
+      [
+        "Business Address",
         "Unity Small Finance Bank"
+      ],
+      [
+        "Business Address",
+        "tb-2e34273750791ef213944c7971a5e5a1-0018"
+      ],
+      [
+        "Business Address Verification Checklist",
+        "Enhanced Due Diligence"
+      ],
+      [
+        "Business Address Verification Checklist",
+        "tb-2e34273750791ef213944c7971a5e5a1-0018"
+      ],
+      [
+        "Business Office Setup",
+        "tb-2e34273750791ef213944c7971a5e5a1-0018"
+      ],
+      [
+        "Business Setup",
+        "Enhanced Due Diligence (EDD) Checklist"
       ],
       [
         "Business Setup",
         "tb-2e34273750791ef213944c7971a5e5a1-0017"
       ],
       [
-        "C-KYC Data Entry Form",
-        "Customer Onboarding"
+        "C-KYC",
+        "Unity Small Finance Bank"
       ],
       [
-        "C-KYC Data Entry Form",
-        "Guardians"
-      ],
-      [
-        "C-KYC Data Entry Form",
+        "C-KYC Data Input Form",
         "Minor"
       ],
       [
-        "C-KYC Data Entry Form",
-        "Personal Details"
+        "C-KYC Data Input Form",
+        "Permanent Account Number (PAN)"
       ],
       [
-        "C-KYC Data Entry Form",
+        "C-KYC Data Input Form",
+        "Proof of Address"
+      ],
+      [
+        "C-KYC Data Input Form",
         "im-2e34273750791ef213944c7971a5e5a1-0009"
       ],
       [
@@ -743,59 +1011,47 @@
       ],
       [
         "C-KYC Related Person Data Form",
-        "INDIAN"
+        "KYC Process"
       ],
       [
         "C-KYC Related Person Data Form",
-        "Unity Small Finance Bank"
+        "Web Application Interface"
       ],
       [
         "C-KYC Related Person Data Form",
         "im-2e34273750791ef213944c7971a5e5a1-0008"
       ],
       [
-        "CASA",
-        "Unity Small Finance Bank Ltd."
-      ],
-      [
-        "CERSAI",
+        "CASA Account",
         "Unity Small Finance Bank"
       ],
       [
-        "CIF",
-        "CIF Tab"
+        "CERSAI",
+        "Consumer Banking Team"
       ],
       [
-        "CIF",
-        "Guardian"
+        "CERSAI",
+        "KYC Identifier"
       ],
       [
-        "CIF",
-        "KYC"
+        "CIF Number",
+        "Customer Management"
       ],
       [
-        "CIF",
-        "Unity Small Finance Bank Ltd."
+        "CIF Number",
+        "im-2e34273750791ef213944c7971a5e5a1-0005"
       ],
       [
-        "CKYCR",
-        "Unity Small Finance Bank Ltd."
+        "CKYC",
+        "Unity Small Finance Bank"
       ],
       [
-        "CKYCR Number",
-        "SOP 1.3"
-      ],
-      [
-        "CKYCR Number",
-        "tb-2e34273750791ef213944c7971a5e5a1-0013"
+        "CKYC Data",
+        "im-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
         "CPC Team",
         "Unity Small Finance Bank"
-      ],
-      [
-        "CRM Application",
-        "Centralised Processing Team"
       ],
       [
         "Central AML Team",
@@ -803,35 +1059,31 @@
       ],
       [
         "Centralized Account Opening Cell",
-        "Entity Based Customers"
-      ],
-      [
-        "Change Description",
-        "Change History"
-      ],
-      [
-        "Change Description",
-        "tb-2e34273750791ef213944c7971a5e5a1-0012"
+        "Customer"
       ],
       [
         "Change History",
-        "Date"
+        "Unity Small Finance Bank"
       ],
       [
-        "Change History",
-        "Version"
+        "Checkbox for Staff",
+        "Customer Information Form"
       ],
       [
-        "Change History",
-        "tb-2e34273750791ef213944c7971a5e5a1-0012"
+        "Checkbox for Staff",
+        "im-2e34273750791ef213944c7971a5e5a1-0011"
+      ],
+      [
+        "Cheque Book",
+        "Customer"
       ],
       [
         "Chief Business Officer",
-        "Chief Compliance Officer"
+        "Compliance"
       ],
       [
         "Chief Business Officer",
-        "Compliance Officer"
+        "Politically Exposed Person (PEP)"
       ],
       [
         "Chief Business Officer",
@@ -843,67 +1095,71 @@
       ],
       [
         "Chief Compliance Officer",
-        "Unity Small Finance Bank"
+        "Compliance"
       ],
       [
         "Chief Compliance Officer",
         "tb-2e34273750791ef213944c7971a5e5a1-0022"
       ],
       [
-        "Client Backgrounds",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Client Backgrounds",
-        "tb-2e34273750791ef213944c7971a5e5a1-0018"
+        "Clearing Inward Local",
+        "im-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
         "Cluster Head",
         "Customer"
       ],
       [
-        "Cluster Head",
-        "Inoperative Account Activation Procedures"
-      ],
-      [
-        "Cluster Head",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Cluster Head",
-        "tb-2e34273750791ef213944c7971a5e5a1-0010"
+        "Cluster Heads",
+        "Joint Account"
       ],
       [
         "Cluster Heads",
-        "Unity Small Finance Bank Ltd."
+        "Joint Accounts"
       ],
       [
         "Cluster Manager",
-        "Unity Small Finance Bank Ltd."
-      ],
-      [
-        "Cluster and Zonal Managers",
-        "tb-2e34273750791ef213944c7971a5e5a1-0009"
+        "Zonal Manager"
       ],
       [
         "Collectors of Districts",
-        "Mental Health Act, 1987"
+        "Guardian"
       ],
       [
-        "Collectors of Districts",
-        "Savings Bank"
+        "Compliance",
+        "tb-2e34273750791ef213944c7971a5e5a1-0022"
       ],
       [
         "Compliance Department",
         "Unity Small Finance Bank"
       ],
       [
-        "Compliance Department",
-        "tb-2e34273750791ef213944c7971a5e5a1-0013"
+        "Compliance Frameworks",
+        "Customer Account Details Review"
+      ],
+      [
+        "Compliance Frameworks",
+        "tb-2e34273750791ef213944c7971a5e5a1-0021"
+      ],
+      [
+        "Compliance Officer",
+        "Politically Exposed Person (PEP)"
+      ],
+      [
+        "Compliance Regulations",
+        "Financial Institution"
+      ],
+      [
+        "Compliance Regulations",
+        "tb-2e34273750791ef213944c7971a5e5a1-0015"
+      ],
+      [
+        "Compliance and Security",
+        "im-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
         "Consumer Banking",
-        "Unity Small Finance Bank"
+        "Standard Operating Procedures"
       ],
       [
         "Consumer Banking",
@@ -911,7 +1167,7 @@
       ],
       [
         "Consumer Banking Team",
-        "Standard Operating Procedures"
+        "SOPs"
       ],
       [
         "Consumer Banking Team",
@@ -922,108 +1178,108 @@
         "tb-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
-        "Current Account",
-        "Current Account Holder"
+        "Contact Point Verification",
+        "Unity Small Finance Bank"
       ],
       [
-        "Current Account",
-        "Unity Small Finance Bank Ltd."
+        "Contact Point Verification",
+        "tb-2e34273750791ef213944c7971a5e5a1-0009"
       ],
       [
-        "Current Account Holder",
-        "Letter of Authority"
+        "Court of Law",
+        "Minors"
       ],
       [
-        "Current Account Holder",
+        "Court of Law",
+        "Testamentary Guardian"
+      ],
+      [
+        "Criteria",
+        "Enhanced Due Diligence Checklist"
+      ],
+      [
+        "Criteria",
+        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+      ],
+      [
+        "Current Account Holders",
         "Mandate"
       ],
       [
-        "Current Account Holder",
-        "Power of Attorney"
+        "Customer",
+        "Entity Based Customers"
       ],
       [
         "Customer",
+        "High Risk"
+      ],
+      [
+        "Customer",
+        "KYC-AML Policy"
+      ],
+      [
+        "Customer",
+        "Low Risk"
+      ],
+      [
+        "Customer",
+        "Medium Risk"
+      ],
+      [
+        "Customer",
+        "Minor"
+      ],
+      [
+        "Customer",
+        "NRE Account"
+      ],
+      [
+        "Customer",
+        "NRO Account"
+      ],
+      [
+        "Customer",
+        "Periodic Updation of KYC"
+      ],
+      [
+        "Customer",
+        "Retail Customers"
+      ],
+      [
+        "Customer",
+        "Unity Small Finance Bank"
+      ],
+      [
+        "Customer Account Details Review",
+        "Customer Relationship Decisions"
+      ],
+      [
+        "Customer Account Details Review",
         "KYC"
       ],
       [
-        "Customer",
-        "NRE/NRO Account"
-      ],
-      [
-        "Customer",
-        "OVD"
-      ],
-      [
-        "Customer",
-        "PAN"
-      ],
-      [
-        "Customer",
-        "Passport"
-      ],
-      [
-        "Customer",
+        "Customer Account Details Review",
         "Unity Small Finance Bank"
       ],
       [
-        "Customer",
-        "Visa Details"
-      ],
-      [
-        "Customer Account Details Table",
-        "Screenings"
-      ],
-      [
-        "Customer Account Details Table",
+        "Customer Account Details Review",
         "tb-2e34273750791ef213944c7971a5e5a1-0021"
-      ],
-      [
-        "Customer Account Information",
-        "DOCZONE"
-      ],
-      [
-        "Customer Account Information",
-        "im-2e34273750791ef213944c7971a5e5a1-0005"
-      ],
-      [
-        "Customer Account Opening Processes",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Customer Account Opening Processes",
-        "tb-2e34273750791ef213944c7971a5e5a1-0019"
-      ],
-      [
-        "Customer Branch",
-        "im-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
         "Customer Creation (Individual)",
         "im-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
-        "Customer Details",
-        "im-2e34273750791ef213944c7971a5e5a1-0010"
-      ],
-      [
         "Customer Due Diligence",
         "Unity Small Finance Bank"
       ],
       [
-        "Customer Due Diligence",
-        "tb-2e34273750791ef213944c7971a5e5a1-0019"
+        "Customer Due Diligence Processes",
+        "Customer Risk Categorization"
       ],
       [
-        "Customer Experience",
-        "Unity Small Finance Bank Ltd."
-      ],
-      [
-        "Customer Experience in Business",
-        "Enhanced Due Diligence (EDD) Checklist"
-      ],
-      [
-        "Customer Experience in Business",
-        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+        "Customer Due Diligence Processes",
+        "tb-2e34273750791ef213944c7971a5e5a1-0013"
       ],
       [
         "Customer ID",
@@ -1034,24 +1290,28 @@
         "im-2e34273750791ef213944c7971a5e5a1-0011"
       ],
       [
-        "Customer Identification Number",
+        "Customer Identification Number (CIF)",
+        "Customer Relationship Management Solution (CRM)"
+      ],
+      [
+        "Customer Identification Number (CIF)",
+        "Relationship Manager"
+      ],
+      [
+        "Customer Identification Number (CIF)",
         "Unity Small Finance Bank"
       ],
       [
-        "Customer Information File",
-        "Entity Based Customers"
-      ],
-      [
-        "Customer Information File",
-        "Retail Customers"
-      ],
-      [
-        "Customer Information File",
-        "Risk Profiling"
-      ],
-      [
-        "Customer Information File",
+        "Customer Identification Number (CIF)",
         "Unity Small Finance Bank Ltd."
+      ],
+      [
+        "Customer Information",
+        "im-2e34273750791ef213944c7971a5e5a1-0007"
+      ],
+      [
+        "Customer Information File",
+        "Unity Small Finance Bank"
       ],
       [
         "Customer Information Form",
@@ -1067,39 +1327,47 @@
       ],
       [
         "Customer Information Form",
-        "Mobile Number"
+        "Relationship Officer ID"
       ],
       [
         "Customer Information Form",
-        "Relationship Manager ID"
+        "Search Relationship Manager ID"
       ],
       [
         "Customer Information Form",
         "Unity Small Finance Bank"
+      ],
+      [
+        "Customer Information Form",
+        "Validation of Customer Details"
+      ],
+      [
+        "Customer Information Form",
+        "Workspace Toolbar"
       ],
       [
         "Customer Information Form",
         "im-2e34273750791ef213944c7971a5e5a1-0011"
       ],
       [
-        "Customer Maintenance",
-        "im-2e34273750791ef213944c7971a5e5a1-0002"
+        "Customer Management",
+        "In Progress"
       ],
       [
-        "Customer Name",
+        "Customer Management",
         "im-2e34273750791ef213944c7971a5e5a1-0005"
       ],
       [
-        "Customer Onboarding",
-        "im-2e34273750791ef213944c7971a5e5a1-0009"
+        "Customer Profile Form",
+        "im-2e34273750791ef213944c7971a5e5a1-0010"
       ],
       [
-        "Customer Relationship Management Solution (CRM)",
-        "Unity Small Finance Bank Ltd."
+        "Customer Relationship Decisions",
+        "tb-2e34273750791ef213944c7971a5e5a1-0021"
       ],
       [
         "Customer Requirements",
-        "Unity Small Finance Bank"
+        "Enhanced Due Diligence (EDD) Checklist"
       ],
       [
         "Customer Requirements",
@@ -1107,43 +1375,15 @@
       ],
       [
         "Customer Risk Categorization",
-        "Unity Small Finance Bank"
+        "Standard Operating Procedures"
       ],
       [
-        "D0006/746",
-        "Docket Number"
-      ],
-      [
-        "D0006/746",
-        "im-2e34273750791ef213944c7971a5e5a1-0006"
-      ],
-      [
-        "DOB",
-        "im-2e34273750791ef213944c7971a5e5a1-0007"
-      ],
-      [
-        "DOCZONE",
-        "Docket Listing"
+        "Customer Risk Categorization",
+        "tb-2e34273750791ef213944c7971a5e5a1-0013"
       ],
       [
         "DOCZONE",
         "Document Management System"
-      ],
-      [
-        "DOCZONE",
-        "Export Reports"
-      ],
-      [
-        "DOCZONE",
-        "New Customer"
-      ],
-      [
-        "DOCZONE",
-        "Search Functions"
-      ],
-      [
-        "DOCZONE",
-        "Version 2.0"
       ],
       [
         "DOCZONE",
@@ -1154,40 +1394,20 @@
         "im-2e34273750791ef213944c7971a5e5a1-0005"
       ],
       [
-        "Date",
-        "Risk Rating Update Authorization"
-      ],
-      [
-        "Date",
-        "tb-2e34273750791ef213944c7971a5e5a1-0012"
-      ],
-      [
-        "Date",
-        "tb-2e34273750791ef213944c7971a5e5a1-0015"
-      ],
-      [
-        "Date of Birth",
-        "Minor"
-      ],
-      [
-        "Date of Birth",
-        "im-2e34273750791ef213944c7971a5e5a1-0009"
-      ],
-      [
         "Date of Birth",
         "im-2e34273750791ef213944c7971a5e5a1-0011"
       ],
       [
-        "Date of EDD",
-        "Enhanced Due Diligence (EDD) Checklist"
+        "Decision-Making Process",
+        "Risk Assessment"
       ],
       [
-        "Date of EDD",
-        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+        "Decision-Making Process",
+        "tb-2e34273750791ef213944c7971a5e5a1-0022"
       ],
       [
         "Deepa Vanjari",
-        "Standard Operating Procedures Signatures"
+        "Standard Operating Procedures"
       ],
       [
         "Deepa Vanjari",
@@ -1199,99 +1419,67 @@
       ],
       [
         "Details of the Match",
-        "accounts_details_for_peps"
+        "Pep Account Details Structure"
       ],
       [
         "Details of the Match",
         "tb-2e34273750791ef213944c7971a5e5a1-0014"
       ],
       [
-        "Digital Dashboard",
-        "Mobile Banking Admin Panel"
-      ],
-      [
-        "Digital Dashboard",
-        "NEFT/RTGS"
-      ],
-      [
-        "Digital Dashboard",
-        "Reports"
-      ],
-      [
-        "Digital Dashboard",
-        "Ticketing System"
-      ],
-      [
-        "Digital Dashboard",
-        "Treasury"
-      ],
-      [
-        "Digital Dashboard",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Digital Dashboard",
-        "Working Date"
-      ],
-      [
-        "Digital Dashboard",
-        "im-2e34273750791ef213944c7971a5e5a1-0003"
-      ],
-      [
-        "Digital Interfaces",
-        "Word Document Icon"
-      ],
-      [
-        "Digital Interfaces",
-        "im-2e34273750791ef213944c7971a5e5a1-0001"
-      ],
-      [
         "District Courts",
-        "Mental Health Act, 1987"
-      ],
-      [
-        "District Courts",
-        "Savings Bank"
-      ],
-      [
-        "District Master",
-        "im-2e34273750791ef213944c7971a5e5a1-0004"
+        "Guardian"
       ],
       [
         "Docket Listing",
-        "KYC REJECTED"
+        "Docket Number D0096/746"
       ],
       [
         "Docket Listing",
-        "im-2e34273750791ef213944c7971a5e5a1-0004"
+        "New Account"
       ],
       [
-        "Docket Number",
+        "Docket Listing",
         "im-2e34273750791ef213944c7971a5e5a1-0006"
       ],
       [
-        "Document Amendment History Summary",
-        "Minor Account Handling"
+        "Docket Number D0096/746",
+        "im-2e34273750791ef213944c7971a5e5a1-0006"
       ],
       [
-        "Document Amendment History Summary",
-        "New Processes"
+        "Document Amendment History / Summary of Changes",
+        "SOPs"
       ],
       [
-        "Document Amendment History Summary",
-        "Risk Categorization"
-      ],
-      [
-        "Document Amendment History Summary",
-        "Standard Operating Procedures"
-      ],
-      [
-        "Document Amendment History Summary",
+        "Document Amendment History / Summary of Changes",
         "tb-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
+        "Document Change History",
+        "Version 1.1"
+      ],
+      [
+        "Document Change History",
+        "Version 1.2"
+      ],
+      [
+        "Document Change History",
+        "Version 1.3"
+      ],
+      [
+        "Document Change History",
+        "tb-2e34273750791ef213944c7971a5e5a1-0012"
+      ],
+      [
         "Document Management System",
-        "KYC Processes"
+        "INDIRA C. BASAVARAJIDU"
+      ],
+      [
+        "Document Management System",
+        "New Customer"
+      ],
+      [
+        "Document Management System",
+        "RAJESHWARI CHARITABLE TRUST"
       ],
       [
         "Document Management System",
@@ -1302,44 +1490,48 @@
         "im-2e34273750791ef213944c7971a5e5a1-0005"
       ],
       [
-        "Document Type",
-        "im-2e34273750791ef213944c7971a5e5a1-0010"
+        "Document Management Systems",
+        "Version 1.5"
+      ],
+      [
+        "Document Management Systems",
+        "tb-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
         "Document Version Change Control",
-        "Standard Operating Procedures for Account Opening for Retail Customers"
+        "Standard Operating Procedures"
       ],
       [
         "Document Version Change Control",
         "tb-2e34273750791ef213944c7971a5e5a1-0001"
       ],
       [
-        "Documentation Discrepancies",
-        "tb-2e34273750791ef213944c7971a5e5a1-0009"
+        "Due Diligence Procedures",
+        "tb-2e34273750791ef213944c7971a5e5a1-0008"
       ],
       [
-        "Due Diligence",
-        "KYC Documents"
+        "Due Diligence Process",
+        "Enhanced Due Diligence"
       ],
       [
-        "Due Diligence Checklist",
-        "KYC (Know Your Customer)"
+        "Due Diligence Process",
+        "tb-2e34273750791ef213944c7971a5e5a1-0016"
       ],
       [
-        "Due Diligence Checklist",
-        "Operational Environment"
+        "E-KYC Authentication",
+        "im-2e34273750791ef213944c7971a5e5a1-0010"
       ],
       [
-        "Due Diligence Checklist",
-        "Unity Small Finance Bank"
+        "EDD Checklist Branch Details",
+        "EDD Conducted by Designation"
       ],
       [
-        "Due Diligence Checklist",
-        "tb-2e34273750791ef213944c7971a5e5a1-0018"
+        "EDD Checklist Branch Details",
+        "EDD Conducted by EMP ID"
       ],
       [
-        "EDD",
-        "Unity Small Finance Bank"
+        "EDD Checklist Branch Details",
+        "EDD Conducted by Name"
       ],
       [
         "EDD Checklist Branch Details",
@@ -1350,48 +1542,40 @@
         "tb-2e34273750791ef213944c7971a5e5a1-0020"
       ],
       [
-        "Enhanced Due Diligence",
-        "KYC"
-      ],
-      [
-        "Enhanced Due Diligence",
-        "Recommendations Positive Negative Feedback"
-      ],
-      [
-        "Enhanced Due Diligence",
+        "EDD Checklist Recommendations",
         "Unity Small Finance Bank"
       ],
       [
-        "Enhanced Due Diligence",
-        "tb-2e34273750791ef213944c7971a5e5a1-0017"
-      ],
-      [
-        "Enhanced Due Diligence",
+        "EDD Checklist Recommendations",
         "tb-2e34273750791ef213944c7971a5e5a1-0019"
       ],
       [
-        "Enhanced Due Diligence (EDD) Checklist",
-        "Expected Annual Income or Turnover"
+        "EDD Conducted by Designation",
+        "tb-2e34273750791ef213944c7971a5e5a1-0020"
       ],
       [
-        "Enhanced Due Diligence (EDD) Checklist",
-        "Name of Customer and Account No"
+        "EDD Conducted by EMP ID",
+        "tb-2e34273750791ef213944c7971a5e5a1-0020"
       ],
       [
-        "Enhanced Due Diligence (EDD) Checklist",
-        "Politically Exposed Person (PEP)"
+        "EDD Conducted by Name",
+        "tb-2e34273750791ef213944c7971a5e5a1-0020"
       ],
       [
-        "Enhanced Due Diligence (EDD) Checklist",
-        "Purpose of EDD"
+        "Enhanced Due Diligence",
+        "Unity Small Finance Bank"
       ],
       [
-        "Enhanced Due Diligence (EDD) Checklist",
-        "Sources of Income"
+        "Enhanced Due Diligence",
+        "tb-2e34273750791ef213944c7971a5e5a1-0009"
       ],
       [
-        "Enhanced Due Diligence (EDD) Checklist",
-        "Stock Verification"
+        "Enhanced Due Diligence",
+        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+      ],
+      [
+        "Enhanced Due Diligence",
+        "tb-2e34273750791ef213944c7971a5e5a1-0018"
       ],
       [
         "Enhanced Due Diligence (EDD) Checklist",
@@ -1399,6 +1583,22 @@
       ],
       [
         "Enhanced Due Diligence (EDD) Checklist",
+        "tb-2e34273750791ef213944c7971a5e5a1-0017"
+      ],
+      [
+        "Enhanced Due Diligence Checklist",
+        "KYC (Know Your Customer)"
+      ],
+      [
+        "Enhanced Due Diligence Checklist",
+        "Politically Exposed Person (PEP)"
+      ],
+      [
+        "Enhanced Due Diligence Checklist",
+        "Unity Small Finance Bank"
+      ],
+      [
+        "Enhanced Due Diligence Checklist",
         "tb-2e34273750791ef213944c7971a5e5a1-0016"
       ],
       [
@@ -1406,51 +1606,43 @@
         "im-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
-        "Executive Vice President",
-        "tb-2e34273750791ef213944c7971a5e5a1-0005"
+        "Executant",
+        "Unity Small Finance Bank Ltd."
       ],
       [
-        "Expected Annual Income or Turnover",
-        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+        "External Regulatory Guidance",
+        "SOP Revision Updates"
       ],
       [
-        "Export Reports",
-        "im-2e34273750791ef213944c7971a5e5a1-0005"
+        "External Regulatory Guidance",
+        "tb-2e34273750791ef213944c7971a5e5a1-0013"
       ],
       [
-        "FATCA Declaration Form",
+        "FATCA",
         "Unity Small Finance Bank"
       ],
       [
-        "FATCA Form",
-        "Individuals"
+        "FATCA Declaration Form",
+        "Guardian"
       ],
       [
-        "February 15, 2023",
-        "Standard Operating Procedures Signatures"
+        "February 16, 2024",
+        "SOP Revision Updates"
       ],
       [
-        "February 15, 2023",
-        "tb-2e34273750791ef213944c7971a5e5a1-0002"
+        "February 16, 2024",
+        "Standard Operating Procedures"
+      ],
+      [
+        "February 16, 2024",
+        "tb-2e34273750791ef213944c7971a5e5a1-0005"
       ],
       [
         "February 16, 2024",
         "tb-2e34273750791ef213944c7971a5e5a1-0013"
       ],
       [
-        "Fill CKYC Data",
-        "im-2e34273750791ef213944c7971a5e5a1-0007"
-      ],
-      [
-        "Finacle",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Formal Protocol",
-        "Risk Ratings"
-      ],
-      [
-        "Formal Protocol",
+        "Financial Institution",
         "tb-2e34273750791ef213944c7971a5e5a1-0015"
       ],
       [
@@ -1459,7 +1651,7 @@
       ],
       [
         "Gauri Bhosle",
-        "Standard Operating Procedures Signatures"
+        "Standard Operating Procedures"
       ],
       [
         "Gauri Bhosle",
@@ -1468,10 +1660,6 @@
       [
         "Gauri Bhosle",
         "tb-2e34273750791ef213944c7971a5e5a1-0002"
-      ],
-      [
-        "Gauri Bhosle",
-        "tb-2e34273750791ef213944c7971a5e5a1-0003"
       ],
       [
         "Gautam Chawla",
@@ -1483,27 +1671,19 @@
       ],
       [
         "Gender",
-        "Minor"
-      ],
-      [
-        "Gender",
-        "im-2e34273750791ef213944c7971a5e5a1-0009"
-      ],
-      [
-        "Gender",
         "im-2e34273750791ef213944c7971a5e5a1-0011"
       ],
       [
-        "Guardian",
-        "Minor"
+        "Gender Identity",
+        "tb-2e34273750791ef213944c7971a5e5a1-0008"
       ],
       [
         "Guardian",
-        "Minors"
+        "Mental Health Act, 1987"
       ],
       [
         "Guardian",
-        "Nomination Form"
+        "Minor Accounts"
       ],
       [
         "Guardian of Minor",
@@ -1511,66 +1691,66 @@
       ],
       [
         "Guardians",
-        "im-2e34273750791ef213944c7971a5e5a1-0009"
+        "Minor"
       ],
       [
-        "High Risk Customers",
-        "KYC"
-      ],
-      [
-        "High Risk Customers",
-        "Money Laundering Risk"
+        "High Risk",
+        "Professionals with High Money-Laundering Risks"
       ],
       [
         "High-Risk Customers",
-        "KYC Records"
+        "Unity Small Finance Bank"
       ],
       [
         "High-Risk Customers",
         "tb-2e34273750791ef213944c7971a5e5a1-0021"
       ],
       [
-        "INDIAN",
-        "im-2e34273750791ef213944c7971a5e5a1-0008"
+        "INDIRA C. BASAVARAJIDU",
+        "im-2e34273750791ef213944c7971a5e5a1-0004"
       ],
       [
         "Illiterate Person",
-        "Thumb Impression"
+        "Unity Small Finance Bank"
+      ],
+      [
+        "In Progress",
+        "im-2e34273750791ef213944c7971a5e5a1-0005"
       ],
       [
         "Individuals",
-        "Unity Small Finance Bank Ltd."
+        "KYC Documents"
+      ],
+      [
+        "Individuals",
+        "Unity Small Finance Bank"
       ],
       [
         "Individuals with Disabilities",
         "tb-2e34273750791ef213944c7971a5e5a1-0008"
       ],
       [
-        "Initial Deposits",
-        "tb-2e34273750791ef213944c7971a5e5a1-0009"
-      ],
-      [
-        "Inoperative Account Activation Procedures",
-        "KYC Documents"
-      ],
-      [
-        "Inoperative Account Activation Procedures",
-        "Operational Guidelines"
-      ],
-      [
-        "Inoperative Account Activation Procedures",
-        "RBI Circular dated April 21, 2025"
-      ],
-      [
-        "Inoperative Account Activation Procedures",
-        "Term Deposits"
-      ],
-      [
-        "Inoperative Account Activation Procedures",
+        "Initial Deposit",
         "Unity Small Finance Bank"
       ],
       [
-        "Inoperative Account Activation Procedures",
+        "Initial Deposit",
+        "tb-2e34273750791ef213944c7971a5e5a1-0009"
+      ],
+      [
+        "Inoperative Account Activation Sop Details",
+        "KYC Documents"
+      ],
+      [
+        "Inoperative Account Activation Sop Details",
+        "Operational Risk Management Division"
+      ],
+      [
+        "Inoperative Account Activation Sop Details",
+        "Unity Small Finance Bank"
+      ],
+      [
+        "Inoperative Account Activation Sop Details",
         "tb-2e34273750791ef213944c7971a5e5a1-0010"
       ],
       [
@@ -1578,52 +1758,40 @@
         "Unity Small Finance Bank"
       ],
       [
-        "Inoperative Accounts",
-        "tb-2e34273750791ef213944c7971a5e5a1-0009"
+        "Internal Audits",
+        "SOP Revision Updates"
       ],
       [
-        "Integrated Channels",
-        "im-2e34273750791ef213944c7971a5e5a1-0002"
+        "Internal Audits",
+        "tb-2e34273750791ef213944c7971a5e5a1-0013"
       ],
       [
         "Joint Account",
         "Unity Small Finance Bank"
       ],
       [
-        "June 19, 2023",
-        "Manjusha Nimkar"
+        "Joint Accounts",
+        "tb-2e34273750791ef213944c7971a5e5a1-0009"
       ],
       [
-        "June 19, 2023",
-        "tb-2e34273750791ef213944c7971a5e5a1-0003"
+        "July 25, 2023",
+        "Standard Operating Procedures"
       ],
       [
-        "KYC",
-        "Low Risk Customers"
-      ],
-      [
-        "KYC",
-        "Medium Risk Customers"
+        "July 25, 2023",
+        "tb-2e34273750791ef213944c7971a5e5a1-0005"
       ],
       [
         "KYC",
-        "NSDL"
+        "New Account"
       ],
       [
         "KYC",
-        "New Account KYC Interface"
+        "OVDs"
       ],
       [
         "KYC",
-        "PAN"
-      ],
-      [
-        "KYC",
-        "Risk Profiling"
-      ],
-      [
-        "KYC",
-        "Self-attested Photograph"
+        "Pep Account Details Structure"
       ],
       [
         "KYC",
@@ -1635,7 +1803,7 @@
       ],
       [
         "KYC",
-        "accounts_details_for_peps"
+        "Unity Small Finance Bank Ltd."
       ],
       [
         "KYC",
@@ -1643,35 +1811,31 @@
       ],
       [
         "KYC",
-        "im-2e34273750791ef213944c7971a5e5a1-0007"
-      ],
-      [
-        "KYC",
         "tb-2e34273750791ef213944c7971a5e5a1-0014"
       ],
       [
         "KYC",
-        "tb-2e34273750791ef213944c7971a5e5a1-0017"
+        "tb-2e34273750791ef213944c7971a5e5a1-0021"
       ],
       [
         "KYC (Know Your Customer)",
+        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+      ],
+      [
+        "KYC Data",
+        "im-2e34273750791ef213944c7971a5e5a1-0010"
+      ],
+      [
+        "KYC Documentation Protocols",
+        "Standard Operating Procedures"
+      ],
+      [
+        "KYC Documentation Protocols",
+        "tb-2e34273750791ef213944c7971a5e5a1-0013"
+      ],
+      [
+        "KYC Documents",
         "Unity Small Finance Bank"
-      ],
-      [
-        "KYC (Know Your Customer)",
-        "tb-2e34273750791ef213944c7971a5e5a1-0018"
-      ],
-      [
-        "KYC Documents",
-        "Master Direction - Know Your Customer (KYC) Directions, 2016"
-      ],
-      [
-        "KYC Documents",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "KYC Documents",
-        "Unity Small Finance Bank Ltd."
       ],
       [
         "KYC Documents",
@@ -1679,58 +1843,50 @@
       ],
       [
         "KYC Process",
-        "im-2e34273750791ef213944c7971a5e5a1-0010"
+        "im-2e34273750791ef213944c7971a5e5a1-0008"
       ],
       [
-        "KYC Processes",
-        "im-2e34273750791ef213944c7971a5e5a1-0004"
+        "KYC Regulations",
+        "Unity Small Finance Bank"
       ],
       [
-        "KYC REJECTED",
-        "im-2e34273750791ef213944c7971a5e5a1-0004"
+        "KYC Regulations",
+        "tb-2e34273750791ef213944c7971a5e5a1-0019"
       ],
       [
-        "KYC Records",
-        "tb-2e34273750791ef213944c7971a5e5a1-0021"
+        "KYC Requirements",
+        "Unity Small Finance Bank"
+      ],
+      [
+        "KYC Requirements",
+        "im-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
         "KYC-AML Policy",
         "Unity Small Finance Bank Ltd."
       ],
       [
-        "KYC/CKYC Process",
-        "im-2e34273750791ef213944c7971a5e5a1-0002"
-      ],
-      [
-        "Know Your Customer",
-        "tb-2e34273750791ef213944c7971a5e5a1-0009"
-      ],
-      [
-        "Know Your Customer",
-        "tb-2e34273750791ef213944c7971a5e5a1-0013"
-      ],
-      [
-        "Kumar Anurag",
-        "Standard Operating Procedures Signatures"
+        "Ketan",
+        "im-2e34273750791ef213944c7971a5e5a1-0009"
       ],
       [
         "Kumar Anurag",
         "Unity Small Finance Bank"
       ],
       [
-        "Kumar Anurag",
-        "tb-2e34273750791ef213944c7971a5e5a1-0003"
+        "Last Review Date",
+        "Standard Operating Procedures"
+      ],
+      [
+        "Last Review Date",
+        "tb-2e34273750791ef213944c7971a5e5a1-0001"
       ],
       [
         "Letter of Authority",
-        "Unity Small Finance Bank Ltd."
+        "Mandate Holder"
       ],
       [
-        "Letter of Authorization",
-        "appointment_of_mandate_holder_poa_loa"
-      ],
-      [
-        "Letter of Authorization",
+        "Letter of Authority",
         "tb-2e34273750791ef213944c7971a5e5a1-0011"
       ],
       [
@@ -1738,20 +1894,28 @@
         "im-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
-        "MANAV K PANDAV",
-        "im-2e34273750791ef213944c7971a5e5a1-0007"
-      ],
-      [
-        "Manager",
-        "tb-2e34273750791ef213944c7971a5e5a1-0003"
+        "Manawa",
+        "im-2e34273750791ef213944c7971a5e5a1-0009"
       ],
       [
         "Mandate",
         "Unity Small Finance Bank Ltd."
       ],
       [
+        "Mandate Holder",
+        "Power of Attorney"
+      ],
+      [
+        "Mandate Holder",
+        "UNITY Small Finance Bank"
+      ],
+      [
+        "Mandate Holder",
+        "tb-2e34273750791ef213944c7971a5e5a1-0011"
+      ],
+      [
         "Manjusha Nimkar",
-        "Standard Operating Procedures Signatures"
+        "Standard Operating Procedures"
       ],
       [
         "Manjusha Nimkar",
@@ -1762,8 +1926,16 @@
         "tb-2e34273750791ef213944c7971a5e5a1-0003"
       ],
       [
+        "March 25, 2025",
+        "SOP Revision Updates"
+      ],
+      [
+        "March 25, 2025",
+        "tb-2e34273750791ef213944c7971a5e5a1-0013"
+      ],
+      [
         "Match Category",
-        "accounts_details_for_peps"
+        "Pep Account Details Structure"
       ],
       [
         "Match Category",
@@ -1771,7 +1943,7 @@
       ],
       [
         "Medha Walimbe",
-        "Standard Operating Procedures Signatures"
+        "Standard Operating Procedures"
       ],
       [
         "Medha Walimbe",
@@ -1782,11 +1954,7 @@
         "tb-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
-        "Mental Health Act, 1987",
-        "Mentally Ill Person"
-      ],
-      [
-        "Mentally Ill Person",
+        "Medium Risk Customers",
         "Unity Small Finance Bank"
       ],
       [
@@ -1799,31 +1967,11 @@
       ],
       [
         "Minor",
-        "Mother Name"
-      ],
-      [
-        "Minor",
-        "PAN Number"
-      ],
-      [
-        "Minor",
-        "Proof of Address"
-      ],
-      [
-        "Minor",
         "Unity Small Finance Bank"
       ],
       [
         "Minor",
         "im-2e34273750791ef213944c7971a5e5a1-0009"
-      ],
-      [
-        "Minor Account",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Minor Account Handling",
-        "tb-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
         "Minor Accounts",
@@ -1831,54 +1979,34 @@
       ],
       [
         "Minors",
-        "tb-2e34273750791ef213944c7971a5e5a1-0008"
+        "Natural Guardian"
+      ],
+      [
+        "Minors",
+        "Unity Small Finance Bank"
+      ],
+      [
+        "Mobile Banking Admin Panel",
+        "Unity Small Finance Bank"
       ],
       [
         "Mobile Banking Admin Panel",
         "im-2e34273750791ef213944c7971a5e5a1-0003"
       ],
       [
-        "Mobile Number",
-        "im-2e34273750791ef213944c7971a5e5a1-0005"
-      ],
-      [
-        "Mobile Number",
-        "im-2e34273750791ef213944c7971a5e5a1-0011"
-      ],
-      [
-        "Mother Name",
-        "im-2e34273750791ef213944c7971a5e5a1-0009"
-      ],
-      [
-        "NEFT/RTGS",
-        "im-2e34273750791ef213944c7971a5e5a1-0003"
-      ],
-      [
         "NSDL",
-        "Unity Small Finance Bank Ltd."
+        "PAN"
       ],
       [
-        "Name of Customer and Account No",
-        "tb-2e34273750791ef213944c7971a5e5a1-0016"
-      ],
-      [
-        "National Trust for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation and Multiple Disabilities Act, 1999",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "New Account KYC Interface",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "New Account KYC Interface",
+        "New Account",
         "im-2e34273750791ef213944c7971a5e5a1-0006"
       ],
       [
-        "New CBS Guidelines",
+        "New CBS",
         "Version 1.2"
       ],
       [
-        "New CBS Guidelines",
+        "New CBS",
         "tb-2e34273750791ef213944c7971a5e5a1-0012"
       ],
       [
@@ -1886,108 +2014,72 @@
         "im-2e34273750791ef213944c7971a5e5a1-0004"
       ],
       [
-        "New Processes",
-        "tb-2e34273750791ef213944c7971a5e5a1-0007"
-      ],
-      [
-        "Nomination Form",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Nomination Forms",
-        "tb-2e34273750791ef213944c7971a5e5a1-0009"
-      ],
-      [
-        "ORM Comments",
+        "ORM",
         "Version 1.3"
       ],
       [
-        "ORM Comments",
+        "ORM",
         "tb-2e34273750791ef213944c7971a5e5a1-0012"
       ],
       [
-        "ORMD",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "OVD",
-        "Unity Small Finance Bank"
+        "October 31, 2024",
+        "Standard Operating Procedures"
       ],
       [
         "October 31, 2024",
-        "Version 1.5"
+        "tb-2e34273750791ef213944c7971a5e5a1-0005"
       ],
       [
-        "October 31, 2024",
-        "tb-2e34273750791ef213944c7971a5e5a1-0003"
+        "Office Use Only",
+        "im-2e34273750791ef213944c7971a5e5a1-0009"
       ],
       [
-        "October 31, 2024",
-        "tb-2e34273750791ef213944c7971a5e5a1-0007"
-      ],
-      [
-        "Old CBS Standards",
+        "Old CBS",
         "Version 1.1"
       ],
       [
-        "Old CBS Standards",
+        "Old CBS",
         "tb-2e34273750791ef213944c7971a5e5a1-0012"
       ],
       [
-        "Ongoing Verification Documents (OVDs)",
-        "Unity Small Finance Bank Ltd."
-      ],
-      [
-        "Operational Environment",
-        "tb-2e34273750791ef213944c7971a5e5a1-0018"
-      ],
-      [
-        "Operational Guidelines",
+        "Operational Risk Management Division",
         "tb-2e34273750791ef213944c7971a5e5a1-0010"
       ],
       [
-        "Operational Risk Management",
-        "SOP 1.5"
+        "PAN Card",
+        "im-2e34273750791ef213944c7971a5e5a1-0010"
       ],
       [
-        "Operational Risk Management",
-        "tb-2e34273750791ef213944c7971a5e5a1-0013"
-      ],
-      [
-        "PAN No.",
-        "im-2e34273750791ef213944c7971a5e5a1-0007"
-      ],
-      [
-        "PAN Number",
+        "Pandav",
         "im-2e34273750791ef213944c7971a5e5a1-0009"
+      ],
+      [
+        "Pep Account Details Structure",
+        "Unity Small Finance Bank Ltd"
+      ],
+      [
+        "Pep Account Details Structure",
+        "World Check Database"
+      ],
+      [
+        "Pep Account Details Structure",
+        "tb-2e34273750791ef213944c7971a5e5a1-0014"
+      ],
+      [
+        "Permanent Account Number",
+        "Unity Small Finance Bank"
       ],
       [
         "Permanent Account Number",
         "tb-2e34273750791ef213944c7971a5e5a1-0009"
       ],
       [
-        "Personal Details",
+        "Permanent Account Number (PAN)",
         "im-2e34273750791ef213944c7971a5e5a1-0009"
       ],
       [
         "Politically Exposed Person (PEP)",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Politically Exposed Person (PEP)",
         "tb-2e34273750791ef213944c7971a5e5a1-0016"
-      ],
-      [
-        "Politically Exposed Persons",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Politically Exposed Persons",
-        "accounts_details_for_peps"
-      ],
-      [
-        "Politically Exposed Persons",
-        "tb-2e34273750791ef213944c7971a5e5a1-0014"
       ],
       [
         "Ponnuraj P",
@@ -1996,14 +2088,6 @@
       [
         "Ponnuraj P",
         "tb-2e34273750791ef213944c7971a5e5a1-0006"
-      ],
-      [
-        "Power of Attorney",
-        "Unity Small Finance Bank Ltd."
-      ],
-      [
-        "Power of Attorney",
-        "appointment_of_mandate_holder_poa_loa"
       ],
       [
         "Power of Attorney",
@@ -2011,7 +2095,7 @@
       ],
       [
         "Pranjal Dhoke",
-        "Standard Operating Procedures Signatures"
+        "Standard Operating Procedures"
       ],
       [
         "Pranjal Dhoke",
@@ -2022,188 +2106,200 @@
         "tb-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
+        "Product Master",
+        "im-2e34273750791ef213944c7971a5e5a1-0002"
+      ],
+      [
+        "Progressive Changes",
+        "tb-2e34273750791ef213944c7971a5e5a1-0008"
+      ],
+      [
         "Proof of Address",
         "im-2e34273750791ef213944c7971a5e5a1-0009"
       ],
       [
-        "Purpose of EDD",
-        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+        "Pull Customer Data",
+        "Web Application Interface"
       ],
       [
-        "Queer Partners",
-        "Unity Small Finance Bank"
+        "Pull Customer Data",
+        "im-2e34273750791ef213944c7971a5e5a1-0008"
+      ],
+      [
+        "RAJESHWARI CHARITABLE TRUST",
+        "im-2e34273750791ef213944c7971a5e5a1-0004"
       ],
       [
         "RBI",
         "Unity Small Finance Bank"
       ],
       [
-        "RBI Circular",
-        "SOP 1.5"
-      ],
-      [
-        "RBI Circular",
+        "RBI",
         "tb-2e34273750791ef213944c7971a5e5a1-0008"
       ],
       [
         "RBI Circular",
-        "tb-2e34273750791ef213944c7971a5e5a1-0013"
-      ],
-      [
-        "RBI Circular dated April 21, 2025",
-        "tb-2e34273750791ef213944c7971a5e5a1-0010"
-      ],
-      [
-        "Recommendations Positive Negative Feedback",
         "Unity Small Finance Bank"
       ],
       [
-        "Recommendations Positive Negative Feedback",
-        "tb-2e34273750791ef213944c7971a5e5a1-0019"
+        "Relationship Officer ID",
+        "im-2e34273750791ef213944c7971a5e5a1-0011"
       ],
       [
-        "Relationship Manager ID",
-        "im-2e34273750791ef213944c7971a5e5a1-0011"
+        "Release Date",
+        "Standard Operating Procedures"
+      ],
+      [
+        "Release Date",
+        "tb-2e34273750791ef213944c7971a5e5a1-0001"
+      ],
+      [
+        "Reports",
+        "Unity Small Finance Bank"
       ],
       [
         "Reports",
         "im-2e34273750791ef213944c7971a5e5a1-0003"
       ],
       [
-        "Risk Assessment",
+        "Reserve Bank of India",
         "Unity Small Finance Bank"
       ],
       [
+        "Reserve Bank of India",
+        "tb-2e34273750791ef213944c7971a5e5a1-0010"
+      ],
+      [
+        "Retail Accounts",
+        "tb-2e34273750791ef213944c7971a5e5a1-0009"
+      ],
+      [
+        "Review Dates",
+        "Unity Small Finance Bank"
+      ],
+      [
+        "Review Dates",
+        "tb-2e34273750791ef213944c7971a5e5a1-0004"
+      ],
+      [
         "Risk Assessment",
-        "tb-2e34273750791ef213944c7971a5e5a1-0019"
+        "tb-2e34273750791ef213944c7971a5e5a1-0022"
+      ],
+      [
+        "Risk Categorization",
+        "Version 1.5"
       ],
       [
         "Risk Categorization",
         "tb-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
-        "Risk Management",
-        "Unity Small Finance Bank Ltd."
+        "Risk Rating",
+        "Risk Rating Update Details"
       ],
       [
-        "Risk Management",
+        "Risk Rating",
+        "UNITY Small Finance Bank"
+      ],
+      [
+        "Risk Rating",
         "tb-2e34273750791ef213944c7971a5e5a1-0023"
       ],
       [
-        "Risk Rating Update Authorization",
-        "Risk Ratings"
+        "Risk Rating Update Details",
+        "UNITY Small Finance Bank"
       ],
       [
-        "Risk Rating Update Authorization",
-        "tb-2e34273750791ef213944c7971a5e5a1-0015"
-      ],
-      [
-        "Risk Rating Update Information",
-        "Unity Small Finance Bank Ltd."
-      ],
-      [
-        "Risk Rating Update Information",
+        "Risk Rating Update Details",
         "tb-2e34273750791ef213944c7971a5e5a1-0023"
       ],
       [
-        "Risk Ratings",
+        "Risk Rating Update Information",
         "tb-2e34273750791ef213944c7971a5e5a1-0015"
       ],
       [
-        "SOP 1.1",
+        "SOP Revision Updates",
         "Standard Operating Procedures"
       ],
       [
-        "SOP 1.1",
-        "tb-2e34273750791ef213944c7971a5e5a1-0013"
-      ],
-      [
-        "SOP 1.3",
-        "Standard Operating Procedures"
-      ],
-      [
-        "SOP 1.3",
-        "tb-2e34273750791ef213944c7971a5e5a1-0013"
-      ],
-      [
-        "SOP 1.5",
-        "Standard Operating Procedures"
-      ],
-      [
-        "SOP 1.5",
-        "tb-2e34273750791ef213944c7971a5e5a1-0013"
-      ],
-      [
-        "SOP Approval Signatures",
-        "Surinderpal Singh R S"
-      ],
-      [
-        "SOP Approval Signatures",
+        "SOP Revision Updates",
         "Unity Small Finance Bank"
       ],
       [
-        "SOP Approval Signatures",
-        "tb-2e34273750791ef213944c7971a5e5a1-0005"
+        "SOP Revision Updates",
+        "tb-2e34273750791ef213944c7971a5e5a1-0013"
       ],
       [
-        "SOP1.1",
-        "Standard Operating Procedures"
+        "SOPs",
+        "Unity Small Finance Bank"
       ],
       [
-        "SOP1.1",
+        "SOPs",
+        "Version 1.5"
+      ],
+      [
+        "SOPs",
         "tb-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
-        "Save",
-        "im-2e34273750791ef213944c7971a5e5a1-0007"
+        "Scheme Code Change",
+        "Unity Small Finance Bank"
       ],
       [
-        "Savings Account",
+        "Screenshot",
+        "Unity Small Finance Bank"
+      ],
+      [
+        "Screenshot",
+        "im-2e34273750791ef213944c7971a5e5a1-0003"
+      ],
+      [
+        "Search Relationship Manager ID",
+        "im-2e34273750791ef213944c7971a5e5a1-0011"
+      ],
+      [
+        "Self-Drawn Cheque",
         "Unity Small Finance Bank Ltd."
       ],
       [
-        "Screenings",
-        "tb-2e34273750791ef213944c7971a5e5a1-0021"
-      ],
-      [
-        "Search & Download Kyc",
-        "im-2e34273750791ef213944c7971a5e5a1-0007"
-      ],
-      [
-        "Search Functions",
-        "im-2e34273750791ef213944c7971a5e5a1-0005"
-      ],
-      [
-        "Senior Citizen Benefit",
-        "Staff Benefit"
-      ],
-      [
-        "Small Account (BSBDA)",
-        "Unity Small Finance Bank Ltd."
+        "Sick Person",
+        "Unity Small Finance Bank"
       ],
       [
         "Sonal Jagdish Sogam",
         "im-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
-        "Sources of Income",
-        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+        "Standard Operating Procedures",
+        "Surinderpal Singh R S"
       ],
       [
-        "Sr. Executive",
-        "tb-2e34273750791ef213944c7971a5e5a1-0003"
+        "Standard Operating Procedures",
+        "Swapnil Bhagwat"
       ],
       [
-        "Sr. Manager",
-        "tb-2e34273750791ef213944c7971a5e5a1-0003"
-      ],
-      [
-        "Staff Benefit",
-        "Unity Small Finance Bank Ltd."
+        "Standard Operating Procedures",
+        "Uma Sundar"
       ],
       [
         "Standard Operating Procedures",
         "Unity Small Finance Bank"
+      ],
+      [
+        "Standard Operating Procedures",
+        "Version No"
+      ],
+      [
+        "Standard Operating Procedures",
+        "tb-2e34273750791ef213944c7971a5e5a1-0001"
+      ],
+      [
+        "Standard Operating Procedures",
+        "tb-2e34273750791ef213944c7971a5e5a1-0002"
+      ],
+      [
+        "Standard Operating Procedures",
+        "tb-2e34273750791ef213944c7971a5e5a1-0003"
       ],
       [
         "Standard Operating Procedures",
@@ -2211,43 +2307,15 @@
       ],
       [
         "Standard Operating Procedures",
-        "tb-2e34273750791ef213944c7971a5e5a1-0007"
+        "tb-2e34273750791ef213944c7971a5e5a1-0005"
       ],
       [
         "Standard Operating Procedures",
         "tb-2e34273750791ef213944c7971a5e5a1-0013"
       ],
       [
-        "Standard Operating Procedures (SOP)",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Standard Operating Procedures Signatures",
-        "Swapnil Bhagwat"
-      ],
-      [
-        "Standard Operating Procedures Signatures",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Standard Operating Procedures Signatures",
-        "tb-2e34273750791ef213944c7971a5e5a1-0002"
-      ],
-      [
-        "Standard Operating Procedures Signatures",
-        "tb-2e34273750791ef213944c7971a5e5a1-0003"
-      ],
-      [
-        "Standard Operating Procedures for Account Opening for Retail Customers",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Standard Operating Procedures for Account Opening for Retail Customers",
-        "tb-2e34273750791ef213944c7971a5e5a1-0001"
-      ],
-      [
-        "Stock Verification",
-        "tb-2e34273750791ef213944c7971a5e5a1-0016"
+        "Status Options",
+        "tb-2e34273750791ef213944c7971a5e5a1-0018"
       ],
       [
         "Surinderpal Singh R S",
@@ -2270,20 +2338,8 @@
         "tb-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
-        "Term Deposit Account",
-        "Unity Small Finance Bank Ltd."
-      ],
-      [
-        "Term Deposits",
-        "tb-2e34273750791ef213944c7971a5e5a1-0010"
-      ],
-      [
-        "Thumb Impression",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "Ticketing System",
-        "im-2e34273750791ef213944c7971a5e5a1-0003"
+        "TUNING 3.0",
+        "im-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
         "Transactions",
@@ -2294,7 +2350,7 @@
         "im-2e34273750791ef213944c7971a5e5a1-0002"
       ],
       [
-        "Transgender Person",
+        "Treasury",
         "Unity Small Finance Bank"
       ],
       [
@@ -2302,28 +2358,12 @@
         "im-2e34273750791ef213944c7971a5e5a1-0003"
       ],
       [
-        "Turing",
-        "Unity Small Finance Bank"
-      ],
-      [
-        "UIDAI",
-        "Unity Small Finance Bank Ltd."
-      ],
-      [
-        "UNITY Small Finance Bank",
-        "appointment_of_mandate_holder_poa_loa"
-      ],
-      [
-        "UNITY Small Finance Bank",
-        "im-2e34273750791ef213944c7971a5e5a1-0007"
-      ],
-      [
         "UNITY Small Finance Bank",
         "tb-2e34273750791ef213944c7971a5e5a1-0011"
       ],
       [
         "UNITY Small Finance Bank",
-        "tb-2e34273750791ef213944c7971a5e5a1-0022"
+        "tb-2e34273750791ef213944c7971a5e5a1-0023"
       ],
       [
         "Uma Sundar",
@@ -2335,11 +2375,11 @@
       ],
       [
         "Unity Small Finance Bank",
-        "Visually Impaired Person"
+        "Version 1.5"
       ],
       [
         "Unity Small Finance Bank",
-        "accounts_details_for_peps"
+        "Visually Impaired Person"
       ],
       [
         "Unity Small Finance Bank",
@@ -2347,11 +2387,7 @@
       ],
       [
         "Unity Small Finance Bank",
-        "im-2e34273750791ef213944c7971a5e5a1-0006"
-      ],
-      [
-        "Unity Small Finance Bank",
-        "im-2e34273750791ef213944c7971a5e5a1-0008"
+        "im-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
         "Unity Small Finance Bank",
@@ -2400,10 +2436,6 @@
       [
         "Unity Small Finance Bank",
         "tb-2e34273750791ef213944c7971a5e5a1-0013"
-      ],
-      [
-        "Unity Small Finance Bank",
-        "tb-2e34273750791ef213944c7971a5e5a1-0014"
       ],
       [
         "Unity Small Finance Bank",
@@ -2426,24 +2458,20 @@
         "tb-2e34273750791ef213944c7971a5e5a1-0020"
       ],
       [
-        "Unity Small Finance Bank Ltd.",
-        "Zonal Manager"
+        "Unity Small Finance Bank",
+        "tb-2e34273750791ef213944c7971a5e5a1-0021"
       ],
       [
-        "Unity Small Finance Bank Ltd.",
+        "Unity Small Finance Bank Ltd",
         "im-2e34273750791ef213944c7971a5e5a1-0010"
       ],
       [
-        "Unity Small Finance Bank Ltd.",
-        "tb-2e34273750791ef213944c7971a5e5a1-0023"
+        "Unity Small Finance Bank Ltd",
+        "tb-2e34273750791ef213944c7971a5e5a1-0014"
       ],
       [
-        "User Interface",
-        "im-2e34273750791ef213944c7971a5e5a1-0010"
-      ],
-      [
-        "Version",
-        "tb-2e34273750791ef213944c7971a5e5a1-0012"
+        "Validation of Customer Details",
+        "im-2e34273750791ef213944c7971a5e5a1-0011"
       ],
       [
         "Version 1.1",
@@ -2462,29 +2490,29 @@
         "tb-2e34273750791ef213944c7971a5e5a1-0007"
       ],
       [
-        "Version 2.0",
-        "im-2e34273750791ef213944c7971a5e5a1-0005"
+        "Version No",
+        "tb-2e34273750791ef213944c7971a5e5a1-0001"
+      ],
+      [
+        "Web Application Interface",
+        "im-2e34273750791ef213944c7971a5e5a1-0008"
       ],
       [
         "Word Document Icon",
         "im-2e34273750791ef213944c7971a5e5a1-0001"
       ],
       [
-        "Working Date",
-        "im-2e34273750791ef213944c7971a5e5a1-0003"
+        "Workspace Toolbar",
+        "im-2e34273750791ef213944c7971a5e5a1-0011"
       ],
       [
-        "accounts_details_for_peps",
+        "World Check Database",
         "tb-2e34273750791ef213944c7971a5e5a1-0014"
-      ],
-      [
-        "appointment_of_mandate_holder_poa_loa",
-        "tb-2e34273750791ef213944c7971a5e5a1-0011"
       ]
     ],
-    "count": 596,
-    "create_time": 1786619091,
-    "update_time": 1786619091,
+    "count": 521,
+    "create_time": 1786704170,
+    "update_time": 1786704170,
     "_id": "doc-2e34273750791ef213944c7971a5e5a1"
   }
 }
