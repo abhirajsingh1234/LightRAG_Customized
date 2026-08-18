@@ -4644,7 +4644,7 @@ def create_document_routes(
             if doc is None:
                 raise HTTPException(404, f"Document '{request.doc_id}' not found")
             
-            existing_meta = doc.metadata or {}
+            existing_meta = doc.get("metadata") or {} if isinstance(doc, dict) else doc.metadata or {}
             await rag.doc_status.update_doc_status_fields(
                 request.doc_id,
                 fields={"metadata": {**existing_meta, "visibility": request.visibility}}

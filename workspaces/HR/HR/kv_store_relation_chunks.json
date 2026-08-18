@@ -1,310 +1,237 @@
 {
-  "Door Step Banking<SEP>Reserve Bank of India": {
+  "Door-Step Banking<SEP>Reserve Bank of India": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Door Step Banking<SEP>Reserve Bank of India"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Door-Step Banking<SEP>Reserve Bank of India"
   },
-  "KYC Document<SEP>Senior Citizen": {
+  "Customer<SEP>Unity Bank": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "KYC Document<SEP>Senior Citizen"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Customer<SEP>Unity Bank"
   },
-  "Door Step Banking<SEP>Senior Citizen": {
+  "KYC Document<SEP>Unity Bank": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Door Step Banking<SEP>Senior Citizen"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "KYC Document<SEP>Unity Bank"
   },
-  "Bank Service Savings Limits<SEP>Cash Pickup": {
+  "Banking Service Financial Limits<SEP>Savings (Individuals)": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Bank Service Savings Limits<SEP>Cash Pickup"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Banking Service Financial Limits<SEP>Savings (Individuals)"
   },
-  "Differently Abled<SEP>Door Step Banking": {
+  "Cash Management Vendor<SEP>Unity Bank": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Differently Abled<SEP>Door Step Banking"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Cash Management Vendor<SEP>Unity Bank"
   },
-  "Bank Service Savings Limits<SEP>Cash Delivery": {
+  "Banking Service Financial Limits<SEP>Senior Citizen / Differently Abled": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Bank Service Savings Limits<SEP>Cash Delivery"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Banking Service Financial Limits<SEP>Senior Citizen / Differently Abled"
   },
-  "Cash Pickup<SEP>Savings (Individuals)": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Cash Pickup<SEP>Savings (Individuals)"
-  },
-  "Door Step Banking<SEP>Unity Bank": {
+  "Banking Correspondents<SEP>Unity Bank": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Door Step Banking<SEP>Unity Bank"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Banking Correspondents<SEP>Unity Bank"
   },
-  "Differently Abled<SEP>KYC Document": {
+  "Banking Service Financial Limits<SEP>Current Account Customers": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Banking Service Financial Limits<SEP>Current Account Customers"
+  },
+  "Door-Step Banking<SEP>Unity Bank": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Differently Abled<SEP>KYC Document"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Door-Step Banking<SEP>Unity Bank"
   },
-  "Cash Pickup<SEP>Senior Citizen / Differently Abled": {
+  "Banking Service Financial Limits<SEP>Cash Pickup Services": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Cash Pickup<SEP>Senior Citizen / Differently Abled"
-  },
-  "Cash Delivery<SEP>Savings (Individuals)": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Cash Delivery<SEP>Savings (Individuals)"
-  },
-  "Cash Management Vendor<SEP>Door Step Banking": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Cash Management Vendor<SEP>Door Step Banking"
-  },
-  "Cash Pickup<SEP>Current Account Customers": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Cash Pickup<SEP>Current Account Customers"
-  },
-  "Cash Delivery<SEP>Senior Citizen / Differently Abled": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Cash Delivery<SEP>Senior Citizen / Differently Abled"
-  },
-  "Bank Service Savings Limits<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Bank Service Savings Limits<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
-  },
-  "Door Step Banking<SEP>Service Charges": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Door Step Banking<SEP>Service Charges"
-  },
-  "Cash Delivery<SEP>Current Account Customers": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Cash Delivery<SEP>Current Account Customers"
-  },
-  "Cash Pickup<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Cash Pickup<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
-  },
-  "Door Step Banking<SEP>Force Majeure": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Door Step Banking<SEP>Force Majeure"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Banking Service Financial Limits<SEP>Cash Pickup Services"
   },
   "Savings (Individuals)<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
     "_id": "Savings (Individuals)<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Door-Step Banking<SEP>Senior Citizens": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Door-Step Banking<SEP>Senior Citizens"
+  },
+  "Banking Service Financial Limits<SEP>Cash Delivery Services": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Banking Service Financial Limits<SEP>Cash Delivery Services"
   },
   "Senior Citizen / Differently Abled<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
     "_id": "Senior Citizen / Differently Abled<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
   },
-  "Bank Policy<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+  "Differently-Abled<SEP>Door-Step Banking": {
     "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Bank Policy<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Differently-Abled<SEP>Door-Step Banking"
   },
   "Current Account Customers<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
     "_id": "Current Account Customers<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
   },
-  "Cash Delivery<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+  "Cash Pickup Services<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Cash Delivery<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Cash Pickup Services<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
   },
-  "Banking System<SEP>Depositors": {
+  "Cash Delivery Services<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Cash Delivery Services<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Banking Service Financial Limits<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Banking Service Financial Limits<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Banking Regulation Act, 1949<SEP>Unity Small Finance Bank Limited": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Banking System<SEP>Depositors"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Banking Regulation Act, 1949<SEP>Unity Small Finance Bank Limited"
   },
-  "Banking Regulation Act, 1949<SEP>Reserve Bank of India": {
+  "Deposit Products<SEP>Financial System": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Banking Regulation Act, 1949<SEP>Reserve Bank of India"
-  },
-  "Deposit Accounts<SEP>Unity Small Finance Bank Limited": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Deposit Accounts<SEP>Unity Small Finance Bank Limited"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Deposit Products<SEP>Financial System"
   },
   "Bank<SEP>Demand Deposits": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Demand Deposits"
   },
-  "Interest Rates<SEP>Reserve Bank of India": {
+  "Reserve Bank of India<SEP>Unity Small Finance Bank Limited": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Interest Rates<SEP>Reserve Bank of India"
-  },
-  "Depositors<SEP>Unity Small Finance Bank Limited": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Depositors<SEP>Unity Small Finance Bank Limited"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Reserve Bank of India<SEP>Unity Small Finance Bank Limited"
   },
   "Bank<SEP>Time Deposits": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Time Deposits"
   },
-  "Deposit Accounts<SEP>Depositors": {
+  "Depositors<SEP>Unity Small Finance Bank Limited": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Deposit Accounts<SEP>Depositors"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Depositors<SEP>Unity Small Finance Bank Limited"
   },
   "Bank<SEP>Savings Account": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 2,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Savings Account"
-  },
-  "Bank<SEP>Basic Savings Bank Deposit Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Basic Savings Bank Deposit Account"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Savings Account"
   },
   "Bank<SEP>Current Account": {
     "chunk_ids": [
@@ -312,81 +239,71 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 2,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Current Account"
   },
-  "Bank<SEP>Know Your Customer": {
+  "Bank<SEP>RBI": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Know Your Customer"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>RBI"
   },
   "Bank<SEP>Permanent Account Number": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Permanent Account Number"
   },
-  "Bank<SEP>Recurring Deposit": {
+  "Bank<SEP>Basic Savings Bank Deposit Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Recurring Deposit"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Basic Savings Bank Deposit Account"
   },
-  "Bank<SEP>Short Term Deposits": {
+  "Bank<SEP>Know Your Customer (KYC)": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Short Term Deposits"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Know Your Customer (KYC)"
   },
-  "Bank<SEP>Limited Liability Partnership": {
+  "Bank<SEP>Minimum / Average Balance Requirements": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Limited Liability Partnership"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Minimum / Average Balance Requirements"
   },
-  "Bank<SEP>Customers": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
-    ],
-    "count": 2,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Customers"
-  },
-  "Bank<SEP>Specified Associates": {
+  "Bank<SEP>Risk Categorization": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Specified Associates"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Risk Categorization"
   },
   "Bank<SEP>Debit Card": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Debit Card"
   },
   "Bank<SEP>Mobile Banking": {
@@ -394,8 +311,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Mobile Banking"
   },
   "Bank<SEP>WhatsApp Banking": {
@@ -403,8 +320,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>WhatsApp Banking"
   },
   "Bank<SEP>Internet Banking": {
@@ -412,8 +329,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Internet Banking"
   },
   "ATM Network<SEP>Bank": {
@@ -421,8 +338,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "ATM Network<SEP>Bank"
   },
   "Bank<SEP>NEFT": {
@@ -430,72 +347,62 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>NEFT"
-  },
-  "Depositor<SEP>Nominee": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
-    ],
-    "count": 2,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Depositor<SEP>Nominee"
   },
   "Bank<SEP>RTGS": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>RTGS"
+  },
+  "Bank<SEP>Saving Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Saving Account"
   },
   "Bank<SEP>Statement of Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Statement of Account"
   },
-  "Bank<SEP>Minor Account": {
+  "Bank<SEP>Passbook": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Minor Account"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Passbook"
   },
   "Bank<SEP>Joint Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Joint Account"
-  },
-  "Guardian<SEP>Persons with Disabilities": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Guardian<SEP>Persons with Disabilities"
   },
   "Bank<SEP>Power of Attorney": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Power of Attorney"
   },
   "Bank<SEP>Nomination": {
@@ -503,423 +410,460 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Nomination"
+  },
+  "Accounts Operations<SEP>Bank": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Accounts Operations<SEP>Bank"
+  },
+  "Depositor<SEP>Nominee": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
+    ],
+    "count": 2,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Depositor<SEP>Nominee"
+  },
+  "Accounts of Minors<SEP>Bank": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Accounts of Minors<SEP>Bank"
+  },
+  "Appointee<SEP>Depositor": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Appointee<SEP>Depositor"
+  },
+  "Bank<SEP>Joint Account Mandate": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Joint Account Mandate"
+  },
+  "Accounts of Minors<SEP>Guardian": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Accounts of Minors<SEP>Guardian"
+  },
+  "Bank<SEP>Former or Survivor Mandate": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Former or Survivor Mandate"
+  },
+  "Disabled Person<SEP>Guardian": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Disabled Person<SEP>Guardian"
+  },
+  "Bank<SEP>Jointly by All Mandate": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Jointly by All Mandate"
+  },
+  "Bank<SEP>KYC Documents": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>KYC Documents"
   },
   "Bank<SEP>Nominee": {
     "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
-    "count": 2,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Nominee"
   },
-  "Bank<SEP>Senior Citizens": {
+  "Bank<SEP>Depositor": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Senior Citizens"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Depositor"
   },
-  "Bank<SEP>Illiterate Person": {
+  "Bank<SEP>Senior Citizen": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Illiterate Person"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Senior Citizen"
   },
-  "Bank<SEP>Visually Challenged Persons": {
+  "Bank<SEP>Visually Challenged Person": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Visually Challenged Persons"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Visually Challenged Person"
   },
   "Bank<SEP>Transgender Person": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Transgender Person"
   },
-  "Bank<SEP>Customer": {
+  "Bank<SEP>Non-Resident Individual": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Customer"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Non-Resident Individual"
   },
-  "Depositor<SEP>Term Deposit": {
+  "Bank<SEP>Domestic Non-Resident Ordinary Account": {
     "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Depositor<SEP>Term Deposit"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Domestic Non-Resident Ordinary Account"
+  },
+  "Bank<SEP>Non-Resident External Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Non-Resident External Account"
   },
   "Bank<SEP>Reserve Bank of India": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Reserve Bank of India"
   },
-  "Tax Deduction Certificate<SEP>Term Deposit": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Tax Deduction Certificate<SEP>Term Deposit"
-  },
-  "Bank<SEP>Domestic, Non-Resident Ordinary Accounts": {
+  "Bank<SEP>Senior Citizens": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Domestic, Non-Resident Ordinary Accounts"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Senior Citizens"
   },
-  "Legal Heirs<SEP>Term Deposit": {
+  "Depositor<SEP>Term Deposit": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Legal Heirs<SEP>Term Deposit"
-  },
-  "Bank<SEP>Non-Resident (External) Accounts": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Non-Resident (External) Accounts"
-  },
-  "Depositor<SEP>Form 15G": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Depositor<SEP>Form 15G"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Depositor<SEP>Term Deposit"
   },
   "Bank<SEP>Domestic Current Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Domestic Current Account"
   },
-  "Master Policy on Customer Service<SEP>Term Deposit": {
+  "Depositor<SEP>Legal Heirs": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Master Policy on Customer Service<SEP>Term Deposit"
-  },
-  "Depositor<SEP>Form 15H": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Depositor<SEP>Form 15H"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Depositor<SEP>Legal Heirs"
   },
   "Bank<SEP>Domestic Savings Bank Accounts": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Domestic Savings Bank Accounts"
   },
-  "Interest Rates<SEP>NRE/NRO Deposit Scheme": {
+  "Depositor<SEP>Form 15G": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Interest Rates<SEP>NRE/NRO Deposit Scheme"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Depositor<SEP>Form 15G"
+  },
+  "Bank<SEP>Term Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Term Deposits"
+  },
+  "Depositor<SEP>Form 15H": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Depositor<SEP>Form 15H"
+  },
+  "Bank<SEP>Bulk Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Bulk Deposits"
   },
   "NRE Deposit<SEP>Scheduled Commercial Banks": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "NRE Deposit<SEP>Scheduled Commercial Banks"
   },
-  "Bank<SEP>Domestic Term Deposits": {
+  "Bank<SEP>Capital Gains Accounts Scheme": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Domestic Term Deposits"
-  },
-  "Deposit Insurance and Credit Guarantee Corporation of India (DICGC)<SEP>Insurance Cover for Deposits": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Deposit Insurance and Credit Guarantee Corporation of India (DICGC)<SEP>Insurance Cover for Deposits"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Capital Gains Accounts Scheme"
   },
   "NRO Deposit<SEP>Scheduled Commercial Banks": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "NRO Deposit<SEP>Scheduled Commercial Banks"
   },
-  "Board of Directors<SEP>NRE Deposit": {
+  "Bank<SEP>Deposit Interest Rate Card": {
     "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Board of Directors<SEP>NRE Deposit"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Deposit Interest Rate Card"
   },
   "Bank<SEP>Term Deposit": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank<SEP>Term Deposit"
-  },
-  "Customer Information<SEP>Scheduled Commercial Banks": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Customer Information<SEP>Scheduled Commercial Banks"
-  },
-  "Board of Directors<SEP>NRO Deposit": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Board of Directors<SEP>NRO Deposit"
   },
   "RBI<SEP>Unclaimed Deposits": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "RBI<SEP>Unclaimed Deposits"
   },
-  "Inactive Account<SEP>Scheduled Commercial Banks": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Inactive Account<SEP>Scheduled Commercial Banks"
-  },
-  "Bank<SEP>RBI": {
+  "Bank<SEP>Income Tax Act": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>RBI"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Income Tax Act"
   },
-  "Deposit Insurance and Credit Guarantee Corporation of India (DICGC)<SEP>Interest Rates": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Deposit Insurance and Credit Guarantee Corporation of India (DICGC)<SEP>Interest Rates"
-  },
-  "Dormant Account<SEP>Scheduled Commercial Banks": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Dormant Account<SEP>Scheduled Commercial Banks"
-  },
-  "Customer<SEP>Joint Account Holders": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Customer<SEP>Joint Account Holders"
-  },
-  "Bank<SEP>Interest Rates": {
+  "Bank<SEP>Term Deposit Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Interest Rates"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Term Deposit Account"
   },
-  "Scheduled Commercial Banks<SEP>Settlement of Dues in Deceased Deposit Account": {
+  "Customers<SEP>Depositors": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Customers<SEP>Depositors"
+  },
+  "Bank<SEP>Master Policy on Customer Service": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 2,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Master Policy on Customer Service"
+  },
+  "Banking Ombudsman<SEP>Depositors": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Banking Ombudsman<SEP>Depositors"
+  },
+  "Bank<SEP>NRE Deposit": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Scheduled Commercial Banks<SEP>Settlement of Dues in Deceased Deposit Account"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>NRE Deposit"
   },
-  "Bank<SEP>Premature Withdrawal Penalty": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Premature Withdrawal Penalty"
-  },
-  "Banking Ombudsman<SEP>Customers": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Banking Ombudsman<SEP>Customers"
-  },
-  "Scheduled Commercial Banks<SEP>Term Deposits": {
+  "Bank<SEP>NRO Deposit": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Scheduled Commercial Banks<SEP>Term Deposits"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>NRO Deposit"
   },
-  "Bank<SEP>KYC Documents": {
+  "Depositors<SEP>Standing Instructions": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Depositors<SEP>Standing Instructions"
+  },
+  "Bank<SEP>Deposit Insurance and Credit Guarantee Corporation of India": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>KYC Documents"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Deposit Insurance and Credit Guarantee Corporation of India"
   },
-  "Bank<SEP>Minor": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Minor"
-  },
-  "Bank<SEP>Public": {
+  "Bank<SEP>Customers": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Public"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Customers"
   },
-  "Bank<SEP>Legal Heir": {
+  "Bank<SEP>Public Awareness Campaigns": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Legal Heir"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Public Awareness Campaigns"
   },
-  "Bank<SEP>Grievance Redressal Policy": {
+  "Bank<SEP>Inoperative Accounts": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Grievance Redressal Policy"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Inoperative Accounts"
   },
-  "Bank<SEP>Direct Selling Agents": {
+  "Bank<SEP>Unclaimed Deposits": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Direct Selling Agents"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Unclaimed Deposits"
   },
-  "Bank<SEP>Business Facilitators": {
+  "Bank<SEP>Charges": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Business Facilitators"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Charges"
   },
-  "Bank<SEP>Business Correspondents": {
+  "Bank<SEP>Electronic Clearing Service": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Business Correspondents"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bank<SEP>Electronic Clearing Service"
   },
-  "Bank<SEP>Self-help Groups": {
+  "Automated Clearing House<SEP>Bank": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Bank<SEP>Self-help Groups"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Automated Clearing House<SEP>Bank"
   }
 }

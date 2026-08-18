@@ -54,17 +54,17 @@
     "file_path": "Door-Step Banking for Senior Citizens and Differently-Abled.pdf",
     "llm_cache_list": [
       "default:extract:0b10eb59c57ecc057591e2b5df39eb5b",
-      "default:extract:a82a1792c49675e2113c48d7b4b6ee1b"
+      "default:extract:b89c268e2b3a76268198cd50b62ea722"
     ],
-    "create_time": 1786964791,
-    "update_time": 1786964804,
+    "create_time": 1787055123,
+    "update_time": 1787055132,
     "_id": "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
   },
   "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000": {
     "chunk_id": "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000",
     "chunk_order_index": 1,
-    "content": "[Table Name]bank_service_savings_limits\n\nThis table outlines the savings limits per instance for different types of banking services offered to various customer categories. The rows represent types of services, specifically 'Cash Pickup' and 'Cash Delivery'. The columns delineate the specific savings limits applicable to three distinct customer categories: 'Savings (individuals)', 'Senior Citizen / Differently Abled', and 'Current Account Customers'. Each service allows individuals and senior citizens/differently abled customers to save up to 20,000 per instance, while current account customers have a significantly higher limit of 5 lacs per instance. Notably, the distinction in savings limits highlights the banks' approach to meet different needs across customer segments. The values are presented clearly, with all monetary amounts expressed as per instance, and the note at the bottom indicates that savings limits are subject to change per bank policy. This table serves as a guideline for customers to understand the limits connected to their specific service type and demographic category.\n\n[Table Footnotes]# Subject to change from time to time as per banks policy.",
-    "tokens": 218,
+    "content": "[Table Name]banking_service_financial_limits\n\nThis table outlines the financial limits associated with different types of banking services, specifically focusing on cash pickup and cash delivery services offered by the bank. It consists of four columns: 'Type of service', 'Savings (individuals)', 'Senior Citizen / Differently Abled', and 'Current Account Customers'. The table spans two rows of data for both cash pickup and cash delivery services. For both services, individuals can save up to 20,000 per instance, while the limits for Senior Citizens and Differently Abled individuals mirror this amount. However, Current Account Customers have a significantly higher limit of 5 lacs per instance for both services. This creates a noticeable distinction in perceived value and access to banking services across customer categories. Overall, the data reflects the bank's commitment to accessibility for specific groups while still offering considerable limits to standard account holders. The policy with respect to service limits is noted to be subject to change, hinting at flexibility in response to varying bank policies over time.\n\n[Table Footnotes]# Subject to change from time to time as per banks policy.",
+    "tokens": 227,
     "sidecar": {
       "type": "table",
       "id": "tb-574eef8b2a231a2171cb4eadad4c29e5-0001",
@@ -77,8 +77,8 @@
     },
     "llm_cache_list": [
       "default:analysis:53d4ada8a04450839110a9de86687dd7",
-      "default:extract:9f07bcd0eb41559652b93bfdfb977fc0",
-      "default:extract:a876fec10546ebe0053dea83d18e15ff"
+      "default:extract:2d7988bb613a660368a7cab0775d0fda",
+      "default:extract:fa8891b9cb34fae91aa89ec42c8b550e"
     ],
     "heading": {
       "level": 0,
@@ -89,8 +89,8 @@
     },
     "full_doc_id": "doc-574eef8b2a231a2171cb4eadad4c29e5",
     "file_path": "Door-Step Banking for Senior Citizens and Differently-Abled.pdf",
-    "create_time": 1786964791,
-    "update_time": 1786964808,
+    "create_time": 1787055123,
+    "update_time": 1787055131,
     "_id": "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
   },
   "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-000": {
@@ -118,8 +118,8 @@
       "default:extract:0fe7f56020bfa5f6254eccd58b41d1b1",
       "default:extract:7b87b8fbc93aaa98ef09ea8773961b5a"
     ],
-    "create_time": 1786967947,
-    "update_time": 1786967950,
+    "create_time": 1787057470,
+    "update_time": 1787057473,
     "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-000"
   },
   "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001": {
@@ -151,10 +151,10 @@
     "file_path": "Deposit Policy.pdf",
     "llm_cache_list": [
       "default:extract:5533ca6524f7ae829adfc27d839b6904",
-      "default:extract:7d3c32b74a54238b1d3305731d5aec90"
+      "default:extract:16d8c6c653e05eba894a79d572f19898"
     ],
-    "create_time": 1786967947,
-    "update_time": 1786967955,
+    "create_time": 1787057470,
+    "update_time": 1787057478,
     "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
   },
   "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002": {
@@ -186,10 +186,10 @@
     "file_path": "Deposit Policy.pdf",
     "llm_cache_list": [
       "default:extract:c5cd83a4fd01d217b7b2f7b8b8439323",
-      "default:extract:97a4d59ebac03ad59d272fa834795737"
+      "default:extract:f7afa367d501433b78820140d294a70a"
     ],
-    "create_time": 1786967947,
-    "update_time": 1786967963,
+    "create_time": 1787057470,
+    "update_time": 1787057482,
     "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
   },
   "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003": {
@@ -221,10 +221,10 @@
     "file_path": "Deposit Policy.pdf",
     "llm_cache_list": [
       "default:extract:12861dd64d82a2d2c5a4ccb61c93d950",
-      "default:extract:913dd00ce2bbd6a091b9c5ca996fb994"
+      "default:extract:1d9190a39ceb585e476c6e3777fb6810"
     ],
-    "create_time": 1786967947,
-    "update_time": 1786967961,
+    "create_time": 1787057470,
+    "update_time": 1787057494,
     "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
   },
   "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004": {
@@ -253,10 +253,10 @@
     "file_path": "Deposit Policy.pdf",
     "llm_cache_list": [
       "default:extract:b5c0a9fe6e5be49df8d03703c6d1af00",
-      "default:extract:ec2ecb6d48f0c8d6e272b9ecbc3d93d4"
+      "default:extract:dbeb0eb33338edf478b3bfef136ddc28"
     ],
-    "create_time": 1786967947,
-    "update_time": 1786967961,
+    "create_time": 1787057470,
+    "update_time": 1787057486,
     "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
   },
   "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005": {
@@ -296,10 +296,10 @@
     "file_path": "Deposit Policy.pdf",
     "llm_cache_list": [
       "default:extract:d8381f0234ea2fad18404497535826e9",
-      "default:extract:e8b2221cf8f7b3338f0ede104125ae12"
+      "default:extract:6624fa085107d0038a71f57687b7b5f8"
     ],
-    "create_time": 1786967947,
-    "update_time": 1786967966,
+    "create_time": 1787057470,
+    "update_time": 1787057488,
     "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
   },
   "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006": {
@@ -339,10 +339,10 @@
     "file_path": "Deposit Policy.pdf",
     "llm_cache_list": [
       "default:extract:b259756e7ffbb5e1931ddcee2770aecd",
-      "default:extract:bc108739025a538c77c14803745f6f1d"
+      "default:extract:58d3a5457a53397fa60baf45ca38252f"
     ],
-    "create_time": 1786967947,
-    "update_time": 1786967972,
+    "create_time": 1787057470,
+    "update_time": 1787057493,
     "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
   },
   "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007": {
@@ -382,10 +382,10 @@
     "file_path": "Deposit Policy.pdf",
     "llm_cache_list": [
       "default:extract:1ce76e730fb393fdbef7438886dd9c2b",
-      "default:extract:fd4f1c98ffb471d6ae57447e1c5f360c"
+      "default:extract:ee50f882e8075470df99c22a3d2c8533"
     ],
-    "create_time": 1786967947,
-    "update_time": 1786967977,
+    "create_time": 1787057470,
+    "update_time": 1787057498,
     "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
   },
   "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008": {
@@ -433,10 +433,10 @@
     "file_path": "Deposit Policy.pdf",
     "llm_cache_list": [
       "default:extract:e2e89ed4ea7133ee4651002f4c761ce6",
-      "default:extract:1eb1c52386e6638244767a6ca1646455"
+      "default:extract:bb400be179ce4fb6f1fe3a1658b3e2d8"
     ],
-    "create_time": 1786967947,
-    "update_time": 1786967976,
+    "create_time": 1787057470,
+    "update_time": 1787057501,
     "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
   }
 }

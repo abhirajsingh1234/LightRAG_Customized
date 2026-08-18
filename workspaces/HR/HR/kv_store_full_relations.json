@@ -2,55 +2,43 @@
   "doc-574eef8b2a231a2171cb4eadad4c29e5": {
     "relation_pairs": [
       [
-        "Bank Policy",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+        "Banking Correspondents",
+        "Unity Bank"
       ],
       [
-        "Bank Service Savings Limits",
-        "Cash Delivery"
+        "Banking Service Financial Limits",
+        "Cash Delivery Services"
       ],
       [
-        "Bank Service Savings Limits",
-        "Cash Pickup"
+        "Banking Service Financial Limits",
+        "Cash Pickup Services"
       ],
       [
-        "Bank Service Savings Limits",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
-      ],
-      [
-        "Cash Delivery",
+        "Banking Service Financial Limits",
         "Current Account Customers"
       ],
       [
-        "Cash Delivery",
+        "Banking Service Financial Limits",
         "Savings (Individuals)"
       ],
       [
-        "Cash Delivery",
+        "Banking Service Financial Limits",
         "Senior Citizen / Differently Abled"
       ],
       [
-        "Cash Delivery",
+        "Banking Service Financial Limits",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Cash Delivery Services",
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
         "Cash Management Vendor",
-        "Door Step Banking"
+        "Unity Bank"
       ],
       [
-        "Cash Pickup",
-        "Current Account Customers"
-      ],
-      [
-        "Cash Pickup",
-        "Savings (Individuals)"
-      ],
-      [
-        "Cash Pickup",
-        "Senior Citizen / Differently Abled"
-      ],
-      [
-        "Cash Pickup",
+        "Cash Pickup Services",
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
@@ -58,36 +46,28 @@
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
-        "Differently Abled",
-        "Door Step Banking"
+        "Customer",
+        "Unity Bank"
       ],
       [
-        "Differently Abled",
-        "KYC Document"
+        "Differently-Abled",
+        "Door-Step Banking"
       ],
       [
-        "Door Step Banking",
-        "Force Majeure"
-      ],
-      [
-        "Door Step Banking",
+        "Door-Step Banking",
         "Reserve Bank of India"
       ],
       [
-        "Door Step Banking",
-        "Senior Citizen"
+        "Door-Step Banking",
+        "Senior Citizens"
       ],
       [
-        "Door Step Banking",
-        "Service Charges"
-      ],
-      [
-        "Door Step Banking",
+        "Door-Step Banking",
         "Unity Bank"
       ],
       [
         "KYC Document",
-        "Senior Citizen"
+        "Unity Bank"
       ],
       [
         "Savings (Individuals)",
@@ -98,9 +78,9 @@
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ]
     ],
-    "count": 24,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
+    "count": 19,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
     "_id": "doc-574eef8b2a231a2171cb4eadad4c29e5"
   },
   "doc-6e9c97657e05cf315dfdf575fb8d6364": {
@@ -110,24 +90,44 @@
         "Bank"
       ],
       [
+        "Accounts Operations",
+        "Bank"
+      ],
+      [
+        "Accounts of Minors",
+        "Bank"
+      ],
+      [
+        "Accounts of Minors",
+        "Guardian"
+      ],
+      [
+        "Appointee",
+        "Depositor"
+      ],
+      [
+        "Automated Clearing House",
+        "Bank"
+      ],
+      [
         "Bank",
         "Basic Savings Bank Deposit Account"
       ],
       [
         "Bank",
-        "Business Correspondents"
+        "Bulk Deposits"
       ],
       [
         "Bank",
-        "Business Facilitators"
+        "Capital Gains Accounts Scheme"
+      ],
+      [
+        "Bank",
+        "Charges"
       ],
       [
         "Bank",
         "Current Account"
-      ],
-      [
-        "Bank",
-        "Customer"
       ],
       [
         "Bank",
@@ -143,7 +143,15 @@
       ],
       [
         "Bank",
-        "Direct Selling Agents"
+        "Deposit Insurance and Credit Guarantee Corporation of India"
+      ],
+      [
+        "Bank",
+        "Deposit Interest Rate Card"
+      ],
+      [
+        "Bank",
+        "Depositor"
       ],
       [
         "Bank",
@@ -151,27 +159,27 @@
       ],
       [
         "Bank",
+        "Domestic Non-Resident Ordinary Account"
+      ],
+      [
+        "Bank",
         "Domestic Savings Bank Accounts"
       ],
       [
         "Bank",
-        "Domestic Term Deposits"
+        "Electronic Clearing Service"
       ],
       [
         "Bank",
-        "Domestic, Non-Resident Ordinary Accounts"
+        "Former or Survivor Mandate"
       ],
       [
         "Bank",
-        "Grievance Redressal Policy"
+        "Income Tax Act"
       ],
       [
         "Bank",
-        "Illiterate Person"
-      ],
-      [
-        "Bank",
-        "Interest Rates"
+        "Inoperative Accounts"
       ],
       [
         "Bank",
@@ -183,27 +191,27 @@
       ],
       [
         "Bank",
+        "Joint Account Mandate"
+      ],
+      [
+        "Bank",
+        "Jointly by All Mandate"
+      ],
+      [
+        "Bank",
         "KYC Documents"
       ],
       [
         "Bank",
-        "Know Your Customer"
+        "Know Your Customer (KYC)"
       ],
       [
         "Bank",
-        "Legal Heir"
+        "Master Policy on Customer Service"
       ],
       [
         "Bank",
-        "Limited Liability Partnership"
-      ],
-      [
-        "Bank",
-        "Minor"
-      ],
-      [
-        "Bank",
-        "Minor Account"
+        "Minimum / Average Balance Requirements"
       ],
       [
         "Bank",
@@ -215,6 +223,14 @@
       ],
       [
         "Bank",
+        "NRE Deposit"
+      ],
+      [
+        "Bank",
+        "NRO Deposit"
+      ],
+      [
+        "Bank",
         "Nomination"
       ],
       [
@@ -223,7 +239,15 @@
       ],
       [
         "Bank",
-        "Non-Resident (External) Accounts"
+        "Non-Resident External Account"
+      ],
+      [
+        "Bank",
+        "Non-Resident Individual"
+      ],
+      [
+        "Bank",
+        "Passbook"
       ],
       [
         "Bank",
@@ -235,11 +259,7 @@
       ],
       [
         "Bank",
-        "Premature Withdrawal Penalty"
-      ],
-      [
-        "Bank",
-        "Public"
+        "Public Awareness Campaigns"
       ],
       [
         "Bank",
@@ -251,11 +271,15 @@
       ],
       [
         "Bank",
-        "Recurring Deposit"
+        "Reserve Bank of India"
       ],
       [
         "Bank",
-        "Reserve Bank of India"
+        "Risk Categorization"
+      ],
+      [
+        "Bank",
+        "Saving Account"
       ],
       [
         "Bank",
@@ -263,19 +287,11 @@
       ],
       [
         "Bank",
-        "Self-help Groups"
+        "Senior Citizen"
       ],
       [
         "Bank",
         "Senior Citizens"
-      ],
-      [
-        "Bank",
-        "Short Term Deposits"
-      ],
-      [
-        "Bank",
-        "Specified Associates"
       ],
       [
         "Bank",
@@ -287,6 +303,14 @@
       ],
       [
         "Bank",
+        "Term Deposit Account"
+      ],
+      [
+        "Bank",
+        "Term Deposits"
+      ],
+      [
+        "Bank",
         "Time Deposits"
       ],
       [
@@ -295,7 +319,11 @@
       ],
       [
         "Bank",
-        "Visually Challenged Persons"
+        "Unclaimed Deposits"
+      ],
+      [
+        "Bank",
+        "Visually Challenged Person"
       ],
       [
         "Bank",
@@ -303,47 +331,19 @@
       ],
       [
         "Banking Ombudsman",
-        "Customers"
+        "Depositors"
       ],
       [
         "Banking Regulation Act, 1949",
-        "Reserve Bank of India"
-      ],
-      [
-        "Banking System",
-        "Depositors"
-      ],
-      [
-        "Board of Directors",
-        "NRE Deposit"
-      ],
-      [
-        "Board of Directors",
-        "NRO Deposit"
-      ],
-      [
-        "Customer",
-        "Joint Account Holders"
-      ],
-      [
-        "Customer Information",
-        "Scheduled Commercial Banks"
-      ],
-      [
-        "Deposit Accounts",
-        "Depositors"
-      ],
-      [
-        "Deposit Accounts",
         "Unity Small Finance Bank Limited"
       ],
       [
-        "Deposit Insurance and Credit Guarantee Corporation of India (DICGC)",
-        "Insurance Cover for Deposits"
+        "Customers",
+        "Depositors"
       ],
       [
-        "Deposit Insurance and Credit Guarantee Corporation of India (DICGC)",
-        "Interest Rates"
+        "Deposit Products",
+        "Financial System"
       ],
       [
         "Depositor",
@@ -355,6 +355,10 @@
       ],
       [
         "Depositor",
+        "Legal Heirs"
+      ],
+      [
+        "Depositor",
         "Nominee"
       ],
       [
@@ -363,35 +367,15 @@
       ],
       [
         "Depositors",
+        "Standing Instructions"
+      ],
+      [
+        "Depositors",
         "Unity Small Finance Bank Limited"
       ],
       [
-        "Dormant Account",
-        "Scheduled Commercial Banks"
-      ],
-      [
-        "Guardian",
-        "Persons with Disabilities"
-      ],
-      [
-        "Inactive Account",
-        "Scheduled Commercial Banks"
-      ],
-      [
-        "Interest Rates",
-        "NRE/NRO Deposit Scheme"
-      ],
-      [
-        "Interest Rates",
-        "Reserve Bank of India"
-      ],
-      [
-        "Legal Heirs",
-        "Term Deposit"
-      ],
-      [
-        "Master Policy on Customer Service",
-        "Term Deposit"
+        "Disabled Person",
+        "Guardian"
       ],
       [
         "NRE Deposit",
@@ -406,21 +390,13 @@
         "Unclaimed Deposits"
       ],
       [
-        "Scheduled Commercial Banks",
-        "Settlement of Dues in Deceased Deposit Account"
-      ],
-      [
-        "Scheduled Commercial Banks",
-        "Term Deposits"
-      ],
-      [
-        "Tax Deduction Certificate",
-        "Term Deposit"
+        "Reserve Bank of India",
+        "Unity Small Finance Bank Limited"
       ]
     ],
-    "count": 78,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "count": 77,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364"
   }
 }

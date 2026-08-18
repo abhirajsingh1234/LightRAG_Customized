@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
-<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
-<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
-<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
-<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
-<key id="d8" for="edge" attr.name="description" attr.type="string"/>
-<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d14" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d13" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d12" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d11" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d10" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d9" for="edge" attr.name="description" attr.type="string"/>
+<key id="d8" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d7" for="node" attr.name="id" attr.type="string"/>
 <key id="d6" for="node" attr.name="truncate" attr.type="string"/>
 <key id="d5" for="node" attr.name="created_at" attr.type="long"/>
 <key id="d4" for="node" attr.name="file_path" attr.type="string"/>
@@ -16,1814 +17,1754 @@
 <graph edgedefault="undirected"><node id="Reserve Bank of India">
   <data key="d0">Reserve Bank of India</data>
   <data key="d1">organization</data>
-  <data key="d2">The Reserve Bank of India is the central banking institution of India, which regulates the issue and supply of the Indian rupee and oversees the country's monetary policy.&lt;SEP&gt;The central bank of India, responsible for regulating the issuance and supply of the Indian currency and overseeing the financial system.&lt;SEP&gt;The central banking institution of India, responsible for regulating the issuance and supply of the Indian rupee and overseeing the country's banking system.&lt;SEP&gt;The central banking institution of India, which regulates the country's currency and financial system.</data>
+  <data key="d2">The central bank of India responsible for regulating the monetary policy and banking operations in the country.&lt;SEP&gt;The Reserve Bank of India is the central bank of India, responsible for issuing directives on interest rates and overseeing the banking sector's conduct regarding deposit accounts.&lt;SEP&gt;The central banking institution of India that regulates the issue and supply of the Indian rupee and oversees monetary policy.&lt;SEP&gt;The central banking institution of India, responsible for regulating the country's monetary policy and overseeing the banking system.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf&lt;SEP&gt;Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
+  <data key="d7">Reserve Bank of India</data>
 </node>
-<node id="Door Step Banking">
-  <data key="d0">Door Step Banking</data>
+<node id="Door-Step Banking">
+  <data key="d0">Door-Step Banking</data>
   <data key="d1">concept</data>
-  <data key="d2">Door Step Banking refers to a banking service that provides financial services directly at the customer's premises, catering specifically to individuals such as senior citizens and differently-abled persons.</data>
+  <data key="d2">A banking service that includes cash pickup and delivery, instrument collection, and KYC document submission, specifically designed for senior citizens and differently-abled individuals.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
 <node id="Unity Bank">
   <data key="d0">Unity Bank</data>
   <data key="d1">organization</data>
-  <data key="d2">Unity Bank is a financial institution that provides various banking services, including doorstep banking to its customers.</data>
+  <data key="d2">A bank that offers various banking services, including Door-Step Banking services for its customers.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
-<node id="Senior Citizen">
-  <data key="d0">Senior Citizen</data>
-  <data key="d1">concept</data>
-  <data key="d2">A senior citizen refers to individuals aged over 60 years who are eligible for specific banking services designed to accommodate their needs.</data>
+<node id="Senior Citizens">
+  <data key="d0">Senior Citizens</data>
+  <data key="d1">person</data>
+  <data key="d2">Individuals aged over 60 years who qualify for specific banking services such as Door-Step Banking.&lt;SEP&gt;Individuals who are typically above the age of 60 and may be eligible for additional interest rates on their deposits.</data>
+  <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf&lt;SEP&gt;Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+  <data key="d7">Senior Citizens</data>
+</node>
+<node id="Differently-Abled">
+  <data key="d0">Differently-Abled</data>
+  <data key="d1">other</data>
+  <data key="d2">Individuals with physical or mental disabilities who may require specialized banking services like Door-Step Banking.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
-<node id="Differently Abled">
-  <data key="d0">Differently Abled</data>
-  <data key="d1">concept</data>
-  <data key="d2">Differently abled refers to individuals who have physical or mental disabilities that may affect their daily activities, including banking services.</data>
+<node id="Customer">
+  <data key="d0">Customer</data>
+  <data key="d1">other</data>
+  <data key="d2">A resident account holder maintaining either a savings or current account with Unity Bank, eligible to utilize Door-Step Banking services.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787056645</data>
   <data key="d6"></data>
+  <data key="d7">Customer</data>
 </node>
 <node id="KYC Document">
   <data key="d0">KYC Document</data>
-  <data key="d1">content</data>
-  <data key="d2">KYC (Know Your Customer) documents are identification and verification documents that customers must provide to banks to comply with regulatory requirements.</data>
+  <data key="d1">other</data>
+  <data key="d2">Documents required by the bank for verifying the identity of customers, particularly for senior citizens and differently-abled individuals in the context of Door-Step Banking services.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
 <node id="Cash Management Vendor">
   <data key="d0">Cash Management Vendor</data>
   <data key="d1">organization</data>
-  <data key="d2">A cash management vendor is a company that specializes in the management, transportation, and handling of cash for various financial institutions.</data>
+  <data key="d2">An external service provider that Unity Bank may outsource Door-Step Banking operations to, ensuring efficient cash management services.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
-<node id="Service Charges">
-  <data key="d0">Service Charges</data>
-  <data key="d1">concept</data>
-  <data key="d2">Service charges are fees that banks may levy on customers for providing specific services, which can vary based on the service and customer relationship.</data>
+<node id="Banking Correspondents">
+  <data key="d0">Banking Correspondents</data>
+  <data key="d1">organization</data>
+  <data key="d2">Entities or individuals officially partnered with Unity Bank to provide Door-Step Banking services to customers at their premises.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
-<node id="Force Majeure">
-  <data key="d0">Force Majeure</data>
-  <data key="d1">concept</data>
-  <data key="d2">Force Majeure refers to unforeseeable circumstances that prevent parties from fulfilling contracts, including natural disasters and other unexpected events.</data>
-  <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
-  <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
-  <data key="d6"></data>
-</node>
-<node id="Bank Service Savings Limits">
-  <data key="d0">Bank Service Savings Limits</data>
+<node id="Banking Service Financial Limits">
+  <data key="d0">Banking Service Financial Limits</data>
   <data key="d1">content</data>
-  <data key="d2">A table that outlines the savings limits for different types of banking services offered to various customer categories, including service types and monetary limits.</data>
+  <data key="d2">A table that outlines the financial limits associated with different types of banking services, particularly focusing on cash pickup and cash delivery services.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
-  <data key="d6"></data>
-</node>
-<node id="Cash Pickup">
-  <data key="d0">Cash Pickup</data>
-  <data key="d1">method</data>
-  <data key="d2">A banking service type that allows customers to withdraw cash from designated locations.</data>
-  <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
-  <data key="d6"></data>
-</node>
-<node id="Cash Delivery">
-  <data key="d0">Cash Delivery</data>
-  <data key="d1">method</data>
-  <data key="d2">A banking service type that allows customers to receive cash delivered to their location.</data>
-  <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
 <node id="Savings (Individuals)">
   <data key="d0">Savings (Individuals)</data>
-  <data key="d1">customercategory</data>
-  <data key="d2">A customer category representing individual account holders with specific savings limits.</data>
+  <data key="d1">concept</data>
+  <data key="d2">A category in banking services indicating the financial limits for individual customers saving cash.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
 <node id="Senior Citizen / Differently Abled">
   <data key="d0">Senior Citizen / Differently Abled</data>
-  <data key="d1">customercategory</data>
-  <data key="d2">A customer category that includes senior citizens and differently abled individuals, with tailored savings limits.</data>
+  <data key="d1">concept</data>
+  <data key="d2">A customer category in banking services reflecting financial limits specifically for senior citizens and differently-abled individuals.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
 <node id="Current Account Customers">
   <data key="d0">Current Account Customers</data>
-  <data key="d1">customercategory</data>
-  <data key="d2">A customer category consisting of individuals holding a current account, offering higher savings limits compared to other categories.</data>
+  <data key="d1">concept</data>
+  <data key="d2">A category in banking services that indicates the financial limits applicable to customers holding current accounts.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
-<node id="Bank Policy">
-  <data key="d0">Bank Policy</data>
-  <data key="d1">concept</data>
-  <data key="d2">The guidelines and regulations established by banks, which influence the savings limits and other banking services.</data>
+<node id="Cash Pickup Services">
+  <data key="d0">Cash Pickup Services</data>
+  <data key="d1">method</data>
+  <data key="d2">A type of banking service that allows customers to pick up cash from designated locations.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
+  <data key="d5">1787055132</data>
+  <data key="d6"></data>
+</node>
+<node id="Cash Delivery Services">
+  <data key="d0">Cash Delivery Services</data>
+  <data key="d1">method</data>
+  <data key="d2">A type of banking service that enables the delivery of cash to customers at their specified addresses.</data>
+  <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
 <node id="tb-574eef8b2a231a2171cb4eadad4c29e5-0001">
   <data key="d0">tb-574eef8b2a231a2171cb4eadad4c29e5-0001</data>
   <data key="d1">table</data>
-  <data key="d2">[Table Name]bank_service_savings_limits
+  <data key="d2">[Table Name]banking_service_financial_limits
 
-This table outlines the savings limits per instance for different types of banking services offered to various customer categories. The rows represent types of services, specifically 'Cash Pickup' and 'Cash Delivery'. The columns delineate the specific savings limits applicable to three distinct customer categories: 'Savings (individuals)', 'Senior Citizen / Differently Abled', and 'Current Account Customers'. Each service allows individuals and senior citizens/differently abled customers to save up to 20,000 per instance, while current account customers have a significantly higher limit of 5 lacs per instance. Notably, the distinction in savings limits highlights the banks' approach to meet different needs across customer segments. The values are presented clearly, with all monetary amounts expressed as per instance, and the note at the bottom indicates that savings limits are subject to change per bank policy. This table serves as a guideline for customers to understand the limits connected to their specific service type and demographic category.
+This table outlines the financial limits associated with different types of banking services, specifically focusing on cash pickup and cash delivery services offered by the bank. It consists of four columns: 'Type of service', 'Savings (individuals)', 'Senior Citizen / Differently Abled', and 'Current Account Customers'. The table spans two rows of data for both cash pickup and cash delivery services. For both services, individuals can save up to 20,000 per instance, while the limits for Senior Citizens and Differently Abled individuals mirror this amount. However, Current Account Customers have a significantly higher limit of 5 lacs per instance for both services. This creates a noticeable distinction in perceived value and access to banking services across customer categories. Overall, the data reflects the bank's commitment to accessibility for specific groups while still offering considerable limits to standard account holders. The policy with respect to service limits is noted to be subject to change, hinting at flexibility in response to varying bank policies over time.
 
 [Table Footnotes]# Subject to change from time to time as per banks policy.</data>
   <data key="d3">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
   <data key="d4">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d5">1786964808</data>
-  <data key="d6"></data>
-</node>
-<node id="Banking System">
-  <data key="d0">Banking System</data>
-  <data key="d1">concept</data>
-  <data key="d2">An organized system that manages the acceptance of deposits and the lending of funds among various financial institutions.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Banking Regulation Act, 1949">
-  <data key="d0">Banking Regulation Act, 1949</data>
-  <data key="d1">content</data>
-  <data key="d2">A legislative framework in India that governs the functioning and operations of banks, enshrining the rights of depositors.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787055132</data>
   <data key="d6"></data>
 </node>
 <node id="Unity Small Finance Bank Limited">
   <data key="d0">Unity Small Finance Bank Limited</data>
   <data key="d1">organization</data>
-  <data key="d2">A financial institution that offers various deposit products and services to customers, emphasizing the rights and interests of depositors.</data>
+  <data key="d2">Unity Small Finance Bank Limited is a banking institution that offers various deposit products and operates under the regulatory framework of the Banking Regulation Act, 1949 in India.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Banking Regulation Act, 1949">
+  <data key="d0">Banking Regulation Act, 1949</data>
+  <data key="d1">content</data>
+  <data key="d2">The Banking Regulation Act, 1949 is a legislative framework that governs the banking sector in India, outlining the rights of depositors and the regulations that banks must follow.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Depositors">
   <data key="d0">Depositors</data>
   <data key="d1">person</data>
-  <data key="d2">Individuals who place their money into deposit accounts at banks, forming a key stakeholder group in the banking system.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
+  <data key="d2">Depositors are individuals or entities that place money into a bank, becoming major stakeholders in the banking system and involved in the regulatory framework for banking in India.&lt;SEP&gt;Individuals or entities that deposit money into the bank's accounts.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Deposit Accounts">
-  <data key="d0">Deposit Accounts</data>
+<node id="Financial System">
+  <data key="d0">Financial System</data>
   <data key="d1">concept</data>
-  <data key="d2">Accounts held by depositors that allow them to deposit money and earn interest, with specific terms and conditions governing their use.</data>
+  <data key="d2">The financial system refers to the broader economic context within which financial institutions operate, including aspects like deregulation of interest rates and banking reforms.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Interest Rates">
-  <data key="d0">Interest Rates</data>
-  <data key="d1">concept</data>
-  <data key="d2">The percentage at which interest is paid by depositors on their deposits held in banks, subject to guidelines from regulatory bodies.&lt;SEP&gt;Conditions specifying the rate of interest applicable to various types of deposits, including NRE and NRO deposits.&lt;SEP&gt;Interest rates represent the proportion of a loan or deposit that is charged as interest to the borrower or paid to the depositor, expressed as a percentage of the principal.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+<node id="Deposit Products">
+  <data key="d0">Deposit Products</data>
+  <data key="d1">method</data>
+  <data key="d2">Deposit products are financial products offered by banks to accept deposits from customers, with varied terms and conditions governing their operations.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Bank">
   <data key="d0">Bank</data>
   <data key="d1">organization</data>
-  <data key="d2">The Bank is a financial institution that offers various deposit products, including Demand Deposits and Time Deposits, to customers under different schemes.&lt;SEP&gt;The Bank is responsible for providing various banking services, including account management and deposit facilities. It serves as the regulatory body for deposit accounts and offers guidance on account operations.&lt;SEP&gt;The Bank offers various banking products and services to customers, including debit cards, mobile banking, and access to ATM networks.&lt;SEP&gt;A financial institution that offers banking services, including interest rates on various types of deposit accounts, and operates under specific policies and regulations.&lt;SEP&gt;The institution that manages term deposits and related financial services.&lt;SEP&gt;The financial institution that provides various banking services, including managing customer accounts, facilitating transactions, and implementing customer service policies.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d2">A financial institution offering various deposit products and banking services.&lt;SEP&gt;Financial institution that accepts deposits from customers and offers interest on those deposits in various accounts.&lt;SEP&gt;The financial institution managing the deposit accounts and responsible for the nomination process and customer service policies.&lt;SEP&gt;An organization offering various banking products and services, including but not limited to debit cards, mobile banking, internet banking, and ATM access.&lt;SEP&gt;The financial institution responsible for managing term deposits, paying interest, and enforcing policies regarding depositors, particularly in the context of deceased account holders.&lt;SEP&gt;A financial institution offering banking services and products to customers, including account management, deposit collections, and financial literacy support.&lt;SEP&gt;Bank refers to the financial institution providing services such as accepting deposits, offering loans, and other financial services to individuals and businesses.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Demand Deposits">
   <data key="d0">Demand Deposits</data>
   <data key="d1">concept</data>
-  <data key="d2">Demand Deposits refer to deposits received by the Bank that can be withdrawn on demand by customers without prior notice.</data>
+  <data key="d2">A category of deposit products that are withdrawable on demand by customers.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Time Deposits">
   <data key="d0">Time Deposits</data>
   <data key="d1">concept</data>
-  <data key="d2">Time Deposits are deposits received by the Bank for a fixed period and include products like Recurring and Fixed Deposits.</data>
+  <data key="d2">A category of deposit products received for a fixed period, including services like recurring and fixed deposits.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Savings Account">
   <data key="d0">Savings Account</data>
-  <data key="d1">content</data>
-  <data key="d2">A Savings Account is a form of Demand Deposit subject to restrictions on the number and amount of withdrawals permitted by the Bank during specified periods.&lt;SEP&gt;An account type that can be opened by an individual, allowing for deposits and withdrawals with interest.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d1">other</data>
+  <data key="d2">A form of demand deposit with restrictions on the number and amount of withdrawals allowed.&lt;SEP&gt;A deposit account that typically offers interest on the balance, often compared to the interest rate of a term deposit when payouts occur.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Basic Savings Bank Deposit Account">
   <data key="d0">Basic Savings Bank Deposit Account</data>
-  <data key="d1">content</data>
-  <data key="d2">The Basic Savings Bank Deposit Account (BSBDA) is a type of Savings Account offered as per the guidelines of the Reserve Bank of India (RBI).</data>
+  <data key="d1">other</data>
+  <data key="d2">A specific type of savings account offered by the Bank as per the extant guidelines laid down by the RBI.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Current Account">
   <data key="d0">Current Account</data>
-  <data key="d1">content</data>
-  <data key="d2">A Current Account is a type of Demand Deposit that allows withdrawals any number of times up to a specific agreed amount.&lt;SEP&gt;An account type designed for frequent transactions and is typically used by businesses for managing cash flows.</data>
+  <data key="d1">other</data>
+  <data key="d2">A form of demand deposit allowing unlimited withdrawals, subject to account balance.&lt;SEP&gt;A type of bank account that is used for frequent transactions, typically by businesses or individuals requiring regular access to funds.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Cash Credit">
-  <data key="d0">Cash Credit</data>
-  <data key="d1">concept</data>
-  <data key="d2">Cash Credit is a credit facility provided by banks to borrowers, which allows them to withdraw money as needed within a limit.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Overdraft">
-  <data key="d0">Overdraft</data>
-  <data key="d1">concept</data>
-  <data key="d2">Overdraft is a banking service that allows customers to withdraw more money than they have in their accounts, up to a certain limit.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="RBI">
   <data key="d0">RBI</data>
   <data key="d1">organization</data>
-  <data key="d2">The Reserve Bank of India (RBI) is the central banking institution of India, overseeing monetary policy and regulation of banks.&lt;SEP&gt;Reserve Bank of India, the central banking institution in India that regulates monetary policy.&lt;SEP&gt;The Reserve Bank of India (RBI) is the central banking institution of India responsible for regulating the country's monetary policy and managing its currency.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d2">Reserve Bank of India, the central banking institution responsible for regulating the Indian banking system.&lt;SEP&gt;RBI stands for Reserve Bank of India, which is the central bank of India responsible for regulating the country's monetary policy.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Know Your Customer">
-  <data key="d0">Know Your Customer</data>
+<node id="Cash Credit">
+  <data key="d0">Cash Credit</data>
   <data key="d1">concept</data>
-  <data key="d2">Know Your Customer (KYC) is a process used by banks to verify the identity of their clients to prevent fraud.</data>
+  <data key="d2">A short-term loan facility that allows a borrower to withdraw money from a bank account that exceeds their actual balance.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Overdraft">
+  <data key="d0">Overdraft</data>
+  <data key="d1">concept</data>
+  <data key="d2">A facility allowing an account holder to withdraw more money than what is available in their account, up to a specified limit.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Permanent Account Number">
   <data key="d0">Permanent Account Number</data>
-  <data key="d1">data</data>
-  <data key="d2">The Permanent Account Number (PAN) is a unique identifier issued by the Indian Income Tax Department to track financial transactions and tax compliance.</data>
+  <data key="d1">other</data>
+  <data key="d2">A unique identifier issued by the Income Tax Department of India to individuals and entities for tax purposes.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Recurring Deposit">
-  <data key="d0">Recurring Deposit</data>
-  <data key="d1">content</data>
-  <data key="d2">A Recurring Deposit is a form of Time Deposit where the customer contributes a fixed amount at regular intervals instead of a lump sum.</data>
+<node id="Minimum / Average Balance Requirements">
+  <data key="d0">Minimum / Average Balance Requirements</data>
+  <data key="d1">concept</data>
+  <data key="d2">Terms specified by the Bank that outline the minimum or average amounts that must be maintained in deposit accounts.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Short Term Deposits">
-  <data key="d0">Short Term Deposits</data>
-  <data key="d1">content</data>
-  <data key="d2">Short Term Deposits are a category of Time Deposits that are accepted for a shorter duration compared to standard fixed deposits.</data>
+<node id="Know Your Customer (KYC)">
+  <data key="d0">Know Your Customer (KYC)</data>
+  <data key="d1">concept</data>
+  <data key="d2">A regulatory process used by the Bank to verify the identity of its customers before opening accounts.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Limited Liability Partnership">
-  <data key="d0">Limited Liability Partnership</data>
-  <data key="d1">organization</data>
-  <data key="d2">Limited Liability Partnership is a business structure that combines elements of partnerships and corporations, providing limited liability to its owners.</data>
+<node id="Risk Categorization">
+  <data key="d0">Risk Categorization</data>
+  <data key="d1">concept</data>
+  <data key="d2">A process used by the Bank to assign a risk category to customers and monitor transactions.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Customers">
-  <data key="d0">Customers</data>
-  <data key="d1">person</data>
-  <data key="d2">Customers refer to individuals or entities that avail banking services, including the opening and maintenance of various deposit accounts.&lt;SEP&gt;Individuals or entities that maintain accounts and utilize the services provided by the bank.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Specified Associates">
-  <data key="d0">Specified Associates</data>
-  <data key="d1">organization</data>
-  <data key="d2">Specified Associates are defined groups or organizations that are allowed to open accounts with the Bank under certain conditions.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Debit Card">
   <data key="d0">Debit Card</data>
   <data key="d1">artifact</data>
-  <data key="d2">A payment card issued by the Bank to customers having Saving Bank or Current Accounts, enabling them to perform transactions according to regulatory guidelines.</data>
+  <data key="d2">A card issued by the Bank to customers, allowing them to make transactions from their Saving or Current Accounts, often subject to usage charges.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Mobile Banking">
   <data key="d0">Mobile Banking</data>
   <data key="d1">method</data>
-  <data key="d2">A service provided by the Bank that allows customers to perform banking transactions through mobile devices.</data>
+  <data key="d2">A service offered by the Bank that allows customers to conduct banking transactions using their mobile devices.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="WhatsApp Banking">
   <data key="d0">WhatsApp Banking</data>
   <data key="d1">method</data>
-  <data key="d2">A service offered by the Bank enabling customers to conduct banking transactions via WhatsApp.</data>
+  <data key="d2">A banking service that enables customers to perform transactions via the WhatsApp messaging platform.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Internet Banking">
   <data key="d0">Internet Banking</data>
   <data key="d1">method</data>
-  <data key="d2">An online banking service provided by the Bank for customers to manage their accounts and transactions over the internet.</data>
+  <data key="d2">A digital banking service provided by the Bank that allows customers to manage their accounts and perform transactions online.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="ATM Network">
   <data key="d0">ATM Network</data>
-  <data key="d1">concept</data>
-  <data key="d2">Network enabling customers to access ATMs belonging to the Bank as well as other banks, regulated by authorities.</data>
+  <data key="d1">other</data>
+  <data key="d2">A network that provides access to ATMs operated by the Bank as well as other banks, allowing customers to perform cash withdrawals and other banking functions.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="NEFT">
   <data key="d0">NEFT</data>
   <data key="d1">method</data>
-  <data key="d2">National Electronic Funds Transfer, a service provided by the Bank for the electronic transfer of funds.</data>
+  <data key="d2">National Electronic Funds Transfer, an electronic payment system that enables customers to transfer money from one bank to another.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="RTGS">
   <data key="d0">RTGS</data>
   <data key="d1">method</data>
-  <data key="d2">Real Time Gross Settlement, another electronic funds transfer method offered by the Bank.</data>
+  <data key="d2">Real-Time Gross Settlement, a system that enables high-value money transfers between banks in real time.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Saving Account">
+  <data key="d0">Saving Account</data>
+  <data key="d1">other</data>
+  <data key="d2">A type of bank account that allows customers to deposit money, earn interest, and withdraw funds without penalties.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Statement of Account">
   <data key="d0">Statement of Account</data>
   <data key="d1">content</data>
-  <data key="d2">A summary report provided to customers on their account activity, available in digital form and accessible via various banking platforms.</data>
+  <data key="d2">A document provided by the Bank detailing the transactions and balance of a customer's account, issued monthly.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Minor Account">
-  <data key="d0">Minor Account</data>
-  <data key="d1">account</data>
-  <data key="d2">A type of account that can be opened for a minor, operated by a guardian or the minor themselves if above a certain age.</data>
+<node id="Passbook">
+  <data key="d0">Passbook</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A physical book issued by the Bank to account holders, recording all transactions and balance updates for their accounts.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Joint Account">
   <data key="d0">Joint Account</data>
-  <data key="d1">account</data>
-  <data key="d2">An account held by two or more individuals that can be operated under various mandates.</data>
+  <data key="d1">other</data>
+  <data key="d2">A bank account held by more than one individual, allowing them to share access to funds and make mutual transactions.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Power of Attorney">
   <data key="d0">Power of Attorney</data>
   <data key="d1">artifact</data>
-  <data key="d2">A legal document that allows a designated person to operate a Bank account on behalf of the account holder.</data>
+  <data key="d2">A legal authorization allowing one person to act on behalf of another in financial transactions, specifically related to banking.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Nomination">
   <data key="d0">Nomination</data>
   <data key="d1">concept</data>
-  <data key="d2">A facility allowing account holders to designate individuals who will inherit account balances upon their demise.</data>
+  <data key="d2">A facility that allows account holders to designate a person to receive their account balance after their death.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Nominee">
-  <data key="d0">Nominee</data>
-  <data key="d1">person</data>
-  <data key="d2">The Nominee is a person, who receives the outstanding balance in a deposit account in the event of the depositor's death, serving as a trustee for the legal heirs.&lt;SEP&gt;An individual designated to receive the proceeds of a term deposit upon the death of the depositor.&lt;SEP&gt;An individual designated to receive the balance from a bank account in the event of the account holder's demise.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+<node id="Accounts Operations">
+  <data key="d0">Accounts Operations</data>
+  <data key="d1">other</data>
+  <data key="d2">A process that involves various types of accounts and how they can be operated, including types such as Savings accounts, minor accounts, and joint accounts.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Depositor">
-  <data key="d0">Depositor</data>
-  <data key="d1">person</data>
-  <data key="d2">The Depositor is an individual who opens and manages a deposit account with the bank and may nominate another person to receive funds upon the depositor's death.&lt;SEP&gt;An individual who places money in a bank's term deposit account.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+<node id="Accounts of Minors">
+  <data key="d0">Accounts of Minors</data>
+  <data key="d1">other</data>
+  <data key="d2">A specific account type that allows a minor to have a savings bank account or term deposit operated by their guardian.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Senior Citizens">
-  <data key="d0">Senior Citizens</data>
-  <data key="d1">population</data>
-  <data key="d2">Senior Citizens refers to Resident Indian individuals aged over 60 years who may be eligible for higher interest rates on fixed deposits.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+<node id="Joint Account Mandate">
+  <data key="d0">Joint Account Mandate</data>
+  <data key="d1">concept</data>
+  <data key="d2">Rules governing how joint accounts can be operated by multiple account holders, including different forms of mandates such as 'Either or Survivor' or 'Anyone or Survivor(s)'.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Illiterate Person">
-  <data key="d0">Illiterate Person</data>
-  <data key="d1">person</data>
-  <data key="d2">An Illiterate Person is an individual who may open a deposit account under conditions set by the bank, requiring personal attendance and a witness.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+<node id="Former or Survivor Mandate">
+  <data key="d0">Former or Survivor Mandate</data>
+  <data key="d1">concept</data>
+  <data key="d2">A joint account operation method where one account holder (the former) has the primary control over the account, and the final balance is paid to the former on maturity.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Visually Challenged Persons">
-  <data key="d0">Visually Challenged Persons</data>
-  <data key="d1">population</data>
-  <data key="d2">Visually Challenged Persons are individuals who may open deposit accounts which they operate personally, with assistance from bank officials if necessary.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+<node id="Jointly by All Mandate">
+  <data key="d0">Jointly by All Mandate</data>
+  <data key="d1">concept</data>
+  <data key="d2">A joint account operation method requiring all account holders to act together for account management and access.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Persons with Disabilities">
-  <data key="d0">Persons with Disabilities</data>
-  <data key="d1">population</data>
-  <data key="d2">Persons with Disabilities refers to individuals covered under the National Trust for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation and Multiple Disabilities Act, 1999, who can have accounts managed by guardians.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Guardian">
   <data key="d0">Guardian</data>
   <data key="d1">person</data>
-  <data key="d2">The Guardian is a person appointed to manage the care and property of individuals with disabilities or minors, often required to facilitate banking transactions on their behalf.</data>
+  <data key="d2">An individual appointed to manage the care and property of a disabled person, responsible for opening bank accounts on their behalf.&lt;SEP&gt;An individual authorized to operate a savings bank account or term deposit on behalf of a minor.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="KYC Documents">
+  <data key="d0">KYC Documents</data>
+  <data key="d1">data</data>
+  <data key="d2">Documents required for Know Your Customer (KYC) verification to open a bank account, particularly for minors reaching the age of majority.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Depositor">
+  <data key="d0">Depositor</data>
+  <data key="d1">person</data>
+  <data key="d2">A person who holds a deposit account at the Bank and has the authority to nominate a major appointee to manage the account during the minor nominee's minority.&lt;SEP&gt;The individual who places a term deposit with the bank, whose death may affect the handling of the deposit and associated interest.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Appointee">
+  <data key="d0">Appointee</data>
+  <data key="d1">person</data>
+  <data key="d2">A major individual nominated by the depositor to receive the deposit amount on behalf of the minor nominee.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Nominee">
+  <data key="d0">Nominee</data>
+  <data key="d1">person</data>
+  <data key="d2">A minor individual designated by the depositor to receive the account balance in the event of the depositor's death.&lt;SEP&gt;An individual designated by the depositor to receive the benefits of the term deposit in the event of the depositor's death.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Senior Citizen">
+  <data key="d0">Senior Citizen</data>
+  <data key="d1">person</data>
+  <data key="d2">An individual over the age of 60 years who is eligible for higher interest rates on fixed deposits as provided by the Bank.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Illiterate Person">
+  <data key="d0">Illiterate Person</data>
+  <data key="d1">person</data>
+  <data key="d2">An individual who is unable to read or write, under whom the Bank may open deposit accounts with specific conditions.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Visually Challenged Person">
+  <data key="d0">Visually Challenged Person</data>
+  <data key="d1">person</data>
+  <data key="d2">An individual with visual impairment for whom the Bank provides specialized account management and facilities.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Disabled Person">
+  <data key="d0">Disabled Person</data>
+  <data key="d1">person</data>
+  <data key="d2">Persons covered under the National Trust for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation and Multiple Disabilities Act, 1999, eligible for account services managed by a guardian.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Transgender Person">
   <data key="d0">Transgender Person</data>
   <data key="d1">person</data>
-  <data key="d2">A Transgender Person is recognized as 'Third Gender' in banking operations, and they should be treated equally as other customers without discrimination.</data>
+  <data key="d2">An individual who identifies as a gender different from their assigned sex at birth, recognized as 'Third Gender' by the Bank for account purposes.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Customer">
-  <data key="d0">Customer</data>
+<node id="Non-Resident Individual">
+  <data key="d0">Non-Resident Individual</data>
   <data key="d1">person</data>
-  <data key="d2">The Customer is any individual using the banking services provided by the bank, including account openings, withdrawals, and closures.&lt;SEP&gt;A customer is an individual or entity that has taken out a loan or has a deposit account with a bank and engages with the financial services provided.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d2">An individual living outside their country of residence eligible to open deposit accounts based on regulatory guidelines.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Domestic, Non-Resident Ordinary Accounts">
-  <data key="d0">Domestic, Non-Resident Ordinary Accounts</data>
-  <data key="d1">other</data>
-  <data key="d2">Types of bank accounts designated for non-resident individuals to manage their income earned in India, offering specific interest rate conditions.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+<node id="Local Level Committees">
+  <data key="d0">Local Level Committees</data>
+  <data key="d1">organization</data>
+  <data key="d2">Committees established under the National Trust Act to oversee the care of disabled persons and facilitate banking services.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Non-Resident (External) Accounts">
-  <data key="d0">Non-Resident (External) Accounts</data>
+<node id="District Courts">
+  <data key="d0">District Courts</data>
+  <data key="d1">organization</data>
+  <data key="d2">Judicial authorities that can appoint guardians for individuals needing assistance for banking purposes under the Mental Health Act, 1987.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Domestic Non-Resident Ordinary Account">
+  <data key="d0">Domestic Non-Resident Ordinary Account</data>
   <data key="d1">other</data>
-  <data key="d2">Types of accounts meant for non-resident Indians to hold foreign currency and manage funds internationally, with guidelines for interest payments.</data>
+  <data key="d2">Type of bank account for non-resident individuals allowing for deposits and earning interest.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Non-Resident External Account">
+  <data key="d0">Non-Resident External Account</data>
+  <data key="d1">other</data>
+  <data key="d2">Type of bank account for non-resident individuals, primarily for foreign currency deposits.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Domestic Current Account">
   <data key="d0">Domestic Current Account</data>
   <data key="d1">other</data>
-  <data key="d2">A type of bank account that typically does not earn interest but allows for frequent transactions and is designed for businesses or individuals needing liquidity.</data>
+  <data key="d2">Type of bank account that does not earn any interest on deposits and is primarily meant for day-to-day transactions.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Domestic Savings Bank Accounts">
   <data key="d0">Domestic Savings Bank Accounts</data>
   <data key="d1">other</data>
-  <data key="d2">Bank accounts that earn interest on deposits and offer flexibility for withdrawals and deposits, with interest calculated on a daily product basis.</data>
+  <data key="d2">Type of bank accounts that earn interest on deposits and are typically used for individual savings.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Domestic Term Deposits">
-  <data key="d0">Domestic Term Deposits</data>
-  <data key="d1">other</data>
-  <data key="d2">Deposits made with a set term, with fixed interest rates determined by the bank and governed by Reserve Bank of India guidelines.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Term Deposit">
-  <data key="d0">Term Deposit</data>
-  <data key="d1">content</data>
-  <data key="d2">A financial product where a depositor invests money for a fixed period at a specified interest rate.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Legal Heirs">
-  <data key="d0">Legal Heirs</data>
-  <data key="d1">person</data>
-  <data key="d2">Individuals who are entitled by law to inherit the assets of a deceased person.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Tax Deduction Certificate">
-  <data key="d0">Tax Deduction Certificate</data>
-  <data key="d1">artifact</data>
-  <data key="d2">A document issued by the bank certifying the amount of tax deducted at source on interest earned.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Form 15G">
-  <data key="d0">Form 15G</data>
-  <data key="d1">artifact</data>
-  <data key="d2">A form used by depositors to declare that their total income is below the taxable limit to avoid TDS.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Form 15H">
-  <data key="d0">Form 15H</data>
-  <data key="d1">artifact</data>
-  <data key="d2">A form similar to Form 15G, but specifically for senior citizens to claim exemption from TDS.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Master Policy on Customer Service">
-  <data key="d0">Master Policy on Customer Service</data>
-  <data key="d1">content</data>
-  <data key="d2">A document detailing the policies and guidelines related to customer service and term deposits.&lt;SEP&gt;A comprehensive policy document outlining the bank's customer service procedures, rights, and obligations.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="NRE/NRO Deposit Scheme">
-  <data key="d0">NRE/NRO Deposit Scheme</data>
-  <data key="d1">concept</data>
-  <data key="d2">A scheme allowing non-resident Indians to deposit money under specific terms and conditions.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Premature Withdrawal Penalty">
-  <data key="d0">Premature Withdrawal Penalty</data>
-  <data key="d1">concept</data>
-  <data key="d2">A financial penalty applied by banks for withdrawing a term deposit before its maturity date.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="NRE Deposit">
-  <data key="d0">NRE Deposit</data>
-  <data key="d1">other</data>
-  <data key="d2">NRE deposits refer to Non-Resident External deposits that are maintained by non-resident Indians in banks in India, specifically catered to foreign currency earnings.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="NRO Deposit">
-  <data key="d0">NRO Deposit</data>
-  <data key="d1">other</data>
-  <data key="d2">NRO deposits refer to Non-Resident Ordinary deposits that are maintained by non-resident Indians for managing income earned in India.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Scheduled Commercial Banks">
-  <data key="d0">Scheduled Commercial Banks</data>
-  <data key="d1">organization</data>
-  <data key="d2">Scheduled Commercial Banks are banks in India that are included in the Second Schedule of the Reserve Bank of India Act, 1934, and are engaged in providing banking services.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Deposit Insurance and Credit Guarantee Corporation of India (DICGC)">
-  <data key="d0">Deposit Insurance and Credit Guarantee Corporation of India (DICGC)</data>
-  <data key="d1">organization</data>
-  <data key="d2">DICGC is a government corporation in India that provides insurance for deposits held by consumers in banks, offering protection against bank failures.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Board of Directors">
-  <data key="d0">Board of Directors</data>
-  <data key="d1">organization</data>
-  <data key="d2">The Board of Directors is a group of individuals elected to represent shareholders and oversee the activities and policy-making of an organization, such as a bank.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Customer Information">
-  <data key="d0">Customer Information</data>
-  <data key="d1">concept</data>
-  <data key="d2">Customer information refers to the data collected from customers by banks, which can be used for various purposes, including cross-selling services.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="KYC Documents">
-  <data key="d0">KYC Documents</data>
-  <data key="d1">other</data>
-  <data key="d2">KYC (Know Your Customer) documents are necessary identification documents that banks require to verify the identity of their customers.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Inactive Account">
-  <data key="d0">Inactive Account</data>
-  <data key="d1">concept</data>
-  <data key="d2">An inactive account is a bank account that has not had any customer-initiated transactions for a specified period, leading to its classification for monitoring.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Dormant Account">
-  <data key="d0">Dormant Account</data>
-  <data key="d1">concept</data>
-  <data key="d2">A dormant account is a bank account which has been inactive for an extended period, typically two years, prompting banks to classify it as dormant.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Unclaimed Deposits">
-  <data key="d0">Unclaimed Deposits</data>
-  <data key="d1">concept</data>
-  <data key="d2">Unclaimed deposits are funds in bank accounts that have not been accessed by the account holder for a designated period, usually resulting in their transfer to a regulatory authority.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Insurance Cover for Deposits">
-  <data key="d0">Insurance Cover for Deposits</data>
-  <data key="d1">concept</data>
-  <data key="d2">Insurance cover for deposits refers to the financial protection provided to bank depositors by the DICGC, safeguarding their deposits up to a certain limit.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Settlement of Dues in Deceased Deposit Account">
-  <data key="d0">Settlement of Dues in Deceased Deposit Account</data>
-  <data key="d1">concept</data>
-  <data key="d2">The settlement of dues in deceased deposit accounts refers to the procedures banks follow to release funds from accounts of deceased customers to their legal heirs.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Term Deposits">
   <data key="d0">Term Deposits</data>
   <data key="d1">other</data>
-  <data key="d2">Term deposits are deposits held at a bank for a fixed term, where the depositor agrees not to withdraw funds for the duration of the term in exchange for a higher interest rate.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d2">Type of deposit account offering a fixed interest rate over a specified term or period.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Joint Account Holders">
-  <data key="d0">Joint Account Holders</data>
+<node id="Bulk Deposits">
+  <data key="d0">Bulk Deposits</data>
+  <data key="d1">other</data>
+  <data key="d2">Large deposit amounts typically exceeding three crore rupees that may attract different interest rates.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Capital Gains Accounts Scheme">
+  <data key="d0">Capital Gains Accounts Scheme</data>
+  <data key="d1">other</data>
+  <data key="d2">A specific scheme under which deposits can be made related to the proceeds of capital gains.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Deposit Interest Rate Card">
+  <data key="d0">Deposit Interest Rate Card</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Document maintained by the Bank that lists the interest rates applicable to various deposit accounts.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Term Deposit">
+  <data key="d0">Term Deposit</data>
+  <data key="d1">content</data>
+  <data key="d2">A type of financial deposit placed with the bank for a fixed period, often bearing a specified interest rate that can be affected by various conditions including the death of the depositor.&lt;SEP&gt;A term deposit is a financial instrument offered by banks where a customer deposits a fixed amount of money for a specific term at a predetermined interest rate.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Maturity Date">
+  <data key="d0">Maturity Date</data>
   <data key="d1">concept</data>
-  <data key="d2">Joint account holders are individuals who share ownership of a bank account, having equal rights to the funds and responsibilities associated with the account.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d2">The date on which a term deposit reaches the end of its agreed term, at which point the depositor is entitled to the principal amount and any interest accrued.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Minor">
-  <data key="d0">Minor</data>
+<node id="Legal Heirs">
+  <data key="d0">Legal Heirs</data>
   <data key="d1">person</data>
-  <data key="d2">A minor is an individual under the legal age of adulthood, typically unable to independently enter contracts such as banking agreements without a guardian.</data>
+  <data key="d2">Individuals entitled to inherit from the deceased depositor, who may have a claim on the term deposit in absence of a nominee.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Income Tax Act">
+  <data key="d0">Income Tax Act</data>
+  <data key="d1">concept</data>
+  <data key="d2">The legal framework that governs taxation on interest earned from deposits, determining when tax must be deducted at source.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Form 15G">
+  <data key="d0">Form 15G</data>
+  <data key="d1">data</data>
+  <data key="d2">A declaration form that can be submitted by depositors to claim exemption from TDS on interest income as prescribed under tax regulations.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Form 15H">
+  <data key="d0">Form 15H</data>
+  <data key="d1">data</data>
+  <data key="d2">Similar to Form 15G, this form is utilized by senior citizens to declare their eligibility for tax exemption on interest earned from deposits.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Term Deposit Account">
+  <data key="d0">Term Deposit Account</data>
+  <data key="d1">content</data>
+  <data key="d2">A specific type of account where a term deposit is held, allowing for the management of funds over a predetermined term.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="NRE Deposit">
+  <data key="d0">NRE Deposit</data>
+  <data key="d1">concept</data>
+  <data key="d2">NRE deposits refer to Non-Resident External deposits allowing non-resident Indians to park their income earned abroad in India, denominated in Indian rupees.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="NRO Deposit">
+  <data key="d0">NRO Deposit</data>
+  <data key="d1">concept</data>
+  <data key="d2">NRO deposits refer to Non-Resident Ordinary deposits that allow non-resident Indians to manage their income earned in India in Indian rupees.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Scheduled Commercial Banks">
+  <data key="d0">Scheduled Commercial Banks</data>
+  <data key="d1">organization</data>
+  <data key="d2">Scheduled Commercial Banks are banks that are included in the second schedule of the Reserve Bank of India Act, 1934, and they provide a range of banking services.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Deposit Insurance and Credit Guarantee Corporation of India">
+  <data key="d0">Deposit Insurance and Credit Guarantee Corporation of India</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Deposit Insurance and Credit Guarantee Corporation of India (DICGC) is a government entity that provides insurance for bank deposits in India.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Master Policy on Customer Service">
+  <data key="d0">Master Policy on Customer Service</data>
+  <data key="d1">content</data>
+  <data key="d2">A formal document outlining the bank's policies and procedures related to customer service and complaint redressal.&lt;SEP&gt;The Master Policy on Customer Service is a document outlining the protocols and guidelines for ensuring customer service and management of accounts at the bank.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Unclaimed Deposits">
+  <data key="d0">Unclaimed Deposits</data>
+  <data key="d1">concept</data>
+  <data key="d2">Unclaimed deposits are accounts that have not had any activity for ten years and are transferred to the Reserve Bank of India under specific regulations.&lt;SEP&gt;Deposits in bank accounts that have not been claimed by the account holder or their nominee after a certain period.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Customer Information">
+  <data key="d0">Customer Information</data>
+  <data key="d1">concept</data>
+  <data key="d2">Customer Information refers to the data collected from customers that can be used for marketing and service improvement purposes.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Public Awareness Campaigns">
+  <data key="d0">Public Awareness Campaigns</data>
+  <data key="d1">event</data>
+  <data key="d2">Initiatives conducted by the bank to educate the public about banking procedures, including activation of inoperative accounts and claiming unclaimed deposits.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Grievance Redressal Policy">
+  <data key="d0">Grievance Redressal Policy</data>
+  <data key="d1">concept</data>
+  <data key="d2">A policy framework established by the bank for addressing customer complaints and grievances relating to bank services.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Banking Ombudsman">
   <data key="d0">Banking Ombudsman</data>
   <data key="d1">person</data>
-  <data key="d2">An official appointed by the Reserve Bank of India to address complaints and grievances of bank customers.</data>
+  <data key="d2">An authority appointed by the Reserve Bank of India to address customer complaints against banks and ensure fair treatment.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Legal Heir">
-  <data key="d0">Legal Heir</data>
+<node id="Customers">
+  <data key="d0">Customers</data>
   <data key="d1">person</data>
-  <data key="d2">An individual who is entitled by law to inherit the assets of a deceased account holder.</data>
+  <data key="d2">Individuals or entities that use banking services provided by the bank.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Public">
-  <data key="d0">Public</data>
+<node id="Inoperative Accounts">
+  <data key="d0">Inoperative Accounts</data>
   <data key="d1">concept</data>
-  <data key="d2">The general population for whom the bank conducts awareness and financial literacy campaigns.</data>
+  <data key="d2">Bank accounts that have not had any activity for a specified period and may need activation for further transactions.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Charges">
+  <data key="d0">Charges</data>
+  <data key="d1">data</data>
+  <data key="d2">Fees specified by the bank for various services rendered, including stop payments, transfers, and account management.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Direct Debit">
+  <data key="d0">Direct Debit</data>
+  <data key="d1">method</data>
+  <data key="d2">A banking method that allows the bank to withdraw funds directly from a depositor's account to pay for recurring transactions.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
+  <data key="d6"></data>
+</node>
+<node id="Standing Instructions">
+  <data key="d0">Standing Instructions</data>
+  <data key="d1">method</data>
+  <data key="d2">Predefined instructions given by a depositor to the bank for automatic transfers or remittances between accounts.</data>
+  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d4">Deposit Policy.pdf</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Electronic Clearing Service">
   <data key="d0">Electronic Clearing Service</data>
   <data key="d1">method</data>
-  <data key="d2">A facility provided by the bank for making periodic payments through direct debits to customer accounts.</data>
+  <data key="d2">A service provided by the bank to facilitate recurring payments directly from a depositor's account.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
 <node id="Automated Clearing House">
   <data key="d0">Automated Clearing House</data>
   <data key="d1">method</data>
-  <data key="d2">A system that allows the automatic transfer of funds from one bank account to another for regular payments.</data>
+  <data key="d2">A network that processes electronic payments and transfers for banking transactions.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="Grievance Redressal Policy">
-  <data key="d0">Grievance Redressal Policy</data>
-  <data key="d1">content</data>
-  <data key="d2">The set procedures established by the bank for addressing and resolving customer complaints and grievances.</data>
+<node id="Service Charges">
+  <data key="d0">Service Charges</data>
+  <data key="d1">data</data>
+  <data key="d2">Fees imposed by the bank for providing various banking services, detailed in the bank's service and fees leaflet.</data>
   <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
   <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
+  <data key="d5">1787057501</data>
   <data key="d6"></data>
 </node>
-<node id="SCHEDULE- I">
-  <data key="d0">SCHEDULE- I</data>
-  <data key="d1">content</data>
-  <data key="d2">A list that specifies the types of entities to which certain banking provisions do not apply.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Direct Selling Agents">
-  <data key="d0">Direct Selling Agents</data>
-  <data key="d1">person</data>
-  <data key="d2">Individuals or groups hired by banks to sell financial products directly to customers.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Business Facilitators">
-  <data key="d0">Business Facilitators</data>
-  <data key="d1">person</data>
-  <data key="d2">Individuals or groups that assist banks in providing services to customers without being formal employees.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Business Correspondents">
-  <data key="d0">Business Correspondents</data>
-  <data key="d1">person</data>
-  <data key="d2">Representatives that help banks reach underserved populations by providing essential banking services.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<node id="Self-help Groups">
-  <data key="d0">Self-help Groups</data>
-  <data key="d1">organization</data>
-  <data key="d2">Small, informal groups formed by individuals in the community to promote savings and financial management.</data>
-  <data key="d3">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d4">Deposit Policy.pdf</data>
-  <data key="d5">1786967977</data>
-  <data key="d6"></data>
-</node>
-<edge source="Reserve Bank of India" target="Door Step Banking">
-  <data key="d7">1.0</data>
-  <data key="d8">The Reserve Bank of India provides guidelines and regulations for the implementation of Door Step Banking services.</data>
-  <data key="d9">guidelines,services</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Reserve Bank of India" target="Door-Step Banking">
+  <data key="d8">1.0</data>
+  <data key="d9">The Reserve Bank of India issued guidelines which define and regulate the Door-Step Banking services offered to customers.</data>
+  <data key="d10">banking,regulation,service</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Reserve Bank of India" target="Banking Regulation Act, 1949">
-  <data key="d7">1.0</data>
-  <data key="d8">The Reserve Bank of India is empowered by the Banking Regulation Act, 1949 to issue directives regarding banking operations.</data>
-  <data key="d9">empowerment,governance</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Reserve Bank of India" target="Interest Rates">
-  <data key="d7">1.0</data>
-  <data key="d8">The Reserve Bank of India issues directives on interest rates pertaining to deposits in the banking system.</data>
-  <data key="d9">directive,regulation</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Reserve Bank of India" target="Unity Small Finance Bank Limited">
+  <data key="d8">1.0</data>
+  <data key="d9">The Reserve Bank of India issues directives regarding the conduct of deposit accounts that affect Unity Small Finance Bank Limited and its operations.</data>
+  <data key="d10">banking conduct,issues directives</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Reserve Bank of India" target="Bank">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank operates under the regulations and guidelines set by the Reserve Bank of India, ensuring compliance with monetary policy and banking standards.</data>
-  <data key="d9">oversight,regulation</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank follows guidelines issued by the Reserve Bank of India regarding interest rates on deposits.</data>
+  <data key="d10">follows,guidelines</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Door Step Banking" target="Senior Citizen">
-  <data key="d7">1.0</data>
-  <data key="d8">Door Step Banking includes specific services designed for Senior Citizens to facilitate their banking needs.</data>
-  <data key="d9">inclusion,service</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Door-Step Banking" target="Unity Bank">
+  <data key="d8">1.0</data>
+  <data key="d9">Unity Bank provides Door-Step Banking services to its customers as per RBI guidelines.</data>
+  <data key="d10">banking,offering,service</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Door Step Banking" target="Differently Abled">
-  <data key="d7">1.0</data>
-  <data key="d8">Door Step Banking includes specific services designed to accommodate Differently Abled individuals for their banking needs.</data>
-  <data key="d9">inclusion,service</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Door-Step Banking" target="Senior Citizens">
+  <data key="d8">1.0</data>
+  <data key="d9">Senior citizens are eligible for specialized Door-Step Banking services designed to assist them.</data>
+  <data key="d10">banking,eligibility,service</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Door Step Banking" target="Unity Bank">
-  <data key="d7">1.0</data>
-  <data key="d8">Unity Bank offers Door Step Banking services to its customers, following the guidelines issued by the Reserve Bank of India.</data>
-  <data key="d9">implementation,service provider</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Door-Step Banking" target="Differently-Abled">
+  <data key="d8">1.0</data>
+  <data key="d9">Differently-abled individuals are eligible for specialized Door-Step Banking services tailored to meet their needs.</data>
+  <data key="d10">banking,eligibility,service</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Door Step Banking" target="Cash Management Vendor">
-  <data key="d7">1.0</data>
-  <data key="d8">Cash Management Vendors may be outsourced by banks to facilitate the delivery of Door Step Banking services.</data>
-  <data key="d9">outsourcing,service delivery</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Unity Bank" target="Customer">
+  <data key="d8">1.0</data>
+  <data key="d9">A customer is an account holder who maintains a relationship with Unity Bank and is eligible to use its Door-Step Banking services.</data>
+  <data key="d10">account holder,banking,service</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Door Step Banking" target="Service Charges">
-  <data key="d7">1.0</data>
-  <data key="d8">Banks may impose Service Charges on customers for utilizing Door Step Banking services, which must be communicated in advance.</data>
-  <data key="d9">customer notification,fees</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Unity Bank" target="KYC Document">
+  <data key="d8">1.0</data>
+  <data key="d9">Unity Bank requires KYC Documents from senior citizens and differently-abled individuals to facilitate Door-Step Banking services.</data>
+  <data key="d10">banking,customer service,requirement</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Door Step Banking" target="Force Majeure">
-  <data key="d7">1.0</data>
-  <data key="d8">Force Majeure events can affect the delivery of Door Step Banking services, relieving the bank of liability for delays.</data>
-  <data key="d9">liability,service delivery</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Unity Bank" target="Cash Management Vendor">
+  <data key="d8">1.0</data>
+  <data key="d9">Unity Bank may outsource Door-Step Banking services to Cash Management Vendors to enhance operational efficiency.</data>
+  <data key="d10">banking,outsourcing,service provision</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Senior Citizen" target="KYC Document">
-  <data key="d7">1.0</data>
-  <data key="d8">Senior Citizens are required to submit KYC documents to avail of Door Step Banking services.</data>
-  <data key="d9">requirement,service</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Unity Bank" target="Banking Correspondents">
+  <data key="d8">1.0</data>
+  <data key="d9">Unity Bank collaborates with Banking Correspondents to extend Door-Step Banking services to customers.</data>
+  <data key="d10">banking,partnership,service provision</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Differently Abled" target="KYC Document">
-  <data key="d7">1.0</data>
-  <data key="d8">Differently Abled individuals must provide KYC documents to benefit from Door Step Banking services.</data>
-  <data key="d9">requirement,service</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Senior Citizens" target="Bank">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides additional interest rates for deposits made by Senior Citizens.</data>
+  <data key="d10">additional interest,provides</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank Service Savings Limits" target="Cash Pickup">
-  <data key="d7">1.0</data>
-  <data key="d8">The 'Bank Service Savings Limits' table includes information regarding the 'Cash Pickup' service type and its associated savings limit.</data>
-  <data key="d9">Savings Limit,Service Type</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Banking Service Financial Limits" target="Savings (Individuals)">
+  <data key="d8">1.0</data>
+  <data key="d9">The Banking Service Financial Limits table outlines the financial limits for the Savings (Individuals) category.</data>
+  <data key="d10">financial limits,service category</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank Service Savings Limits" target="Cash Delivery">
-  <data key="d7">1.0</data>
-  <data key="d8">The 'Bank Service Savings Limits' table outlines details about the 'Cash Delivery' service type along with its savings limit.</data>
-  <data key="d9">Savings Limit,Service Type</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Banking Service Financial Limits" target="Senior Citizen / Differently Abled">
+  <data key="d8">1.0</data>
+  <data key="d9">The Banking Service Financial Limits table includes financial limits that apply to the Senior Citizen / Differently Abled category.</data>
+  <data key="d10">financial limits,service category</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank Service Savings Limits" target="tb-574eef8b2a231a2171cb4eadad4c29e5-0001">
-  <data key="d7">1.0</data>
-  <data key="d8">Bank Service Savings Limits is associated with table bank_service_savings_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
-  <data key="d9">associated with,contained in</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Banking Service Financial Limits" target="Current Account Customers">
+  <data key="d8">1.0</data>
+  <data key="d9">The Banking Service Financial Limits table notes significantly higher financial limits for Current Account Customers compared to other categories.</data>
+  <data key="d10">financial limits,service category</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Cash Pickup" target="Savings (Individuals)">
-  <data key="d7">1.0</data>
-  <data key="d8">'Cash Pickup' service allows 'Savings (Individuals)' category customers to save up to 20,000 per instance.</data>
-  <data key="d9">Customer Category,Savings Limit</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Banking Service Financial Limits" target="Cash Pickup Services">
+  <data key="d8">1.0</data>
+  <data key="d9">The Banking Service Financial Limits table specifies the limits relevant to Cash Pickup Services.</data>
+  <data key="d10">financial limits,service type</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Cash Pickup" target="Senior Citizen / Differently Abled">
-  <data key="d7">1.0</data>
-  <data key="d8">'Cash Pickup' service permits 'Senior Citizen / Differently Abled' customers to save up to 20,000 per instance.</data>
-  <data key="d9">Customer Category,Savings Limit</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Banking Service Financial Limits" target="Cash Delivery Services">
+  <data key="d8">1.0</data>
+  <data key="d9">The Banking Service Financial Limits table specifies the limits relevant to Cash Delivery Services.</data>
+  <data key="d10">financial limits,service type</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Cash Pickup" target="Current Account Customers">
-  <data key="d7">1.0</data>
-  <data key="d8">'Cash Pickup' service is available to 'Current Account Customers', who have a higher savings limit of 5 lacs per instance.</data>
-  <data key="d9">Customer Category,Savings Limit</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Cash Pickup" target="tb-574eef8b2a231a2171cb4eadad4c29e5-0001">
-  <data key="d7">1.0</data>
-  <data key="d8">Cash Pickup is associated with table bank_service_savings_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
-  <data key="d9">associated with,contained in</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Cash Delivery" target="Savings (Individuals)">
-  <data key="d7">1.0</data>
-  <data key="d8">'Cash Delivery' service allows 'Savings (Individuals)' category customers to save up to 20,000 per instance.</data>
-  <data key="d9">Customer Category,Savings Limit</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Cash Delivery" target="Senior Citizen / Differently Abled">
-  <data key="d7">1.0</data>
-  <data key="d8">'Cash Delivery' service enables 'Senior Citizen / Differently Abled' customers to save up to 20,000 per instance.</data>
-  <data key="d9">Customer Category,Savings Limit</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Cash Delivery" target="Current Account Customers">
-  <data key="d7">1.0</data>
-  <data key="d8">'Cash Delivery' service is accessible to 'Current Account Customers', also allowing a higher savings limit of 5 lacs per instance.</data>
-  <data key="d9">Customer Category,Savings Limit</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Cash Delivery" target="tb-574eef8b2a231a2171cb4eadad4c29e5-0001">
-  <data key="d7">1.0</data>
-  <data key="d8">Cash Delivery is associated with table bank_service_savings_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
-  <data key="d9">associated with,contained in</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Banking Service Financial Limits" target="tb-574eef8b2a231a2171cb4eadad4c29e5-0001">
+  <data key="d8">1.0</data>
+  <data key="d9">Banking Service Financial Limits is associated with table banking_service_financial_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
+  <data key="d10">associated with,contained in</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Savings (Individuals)" target="tb-574eef8b2a231a2171cb4eadad4c29e5-0001">
-  <data key="d7">1.0</data>
-  <data key="d8">Savings (Individuals) is associated with table bank_service_savings_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
-  <data key="d9">associated with,contained in</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">Savings (Individuals) is associated with table banking_service_financial_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
+  <data key="d10">associated with,contained in</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Senior Citizen / Differently Abled" target="tb-574eef8b2a231a2171cb4eadad4c29e5-0001">
-  <data key="d7">1.0</data>
-  <data key="d8">Senior Citizen / Differently Abled is associated with table bank_service_savings_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
-  <data key="d9">associated with,contained in</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">Senior Citizen / Differently Abled is associated with table banking_service_financial_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
+  <data key="d10">associated with,contained in</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Current Account Customers" target="tb-574eef8b2a231a2171cb4eadad4c29e5-0001">
-  <data key="d7">1.0</data>
-  <data key="d8">Current Account Customers is associated with table bank_service_savings_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
-  <data key="d9">associated with,contained in</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">Current Account Customers is associated with table banking_service_financial_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
+  <data key="d10">associated with,contained in</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank Policy" target="tb-574eef8b2a231a2171cb4eadad4c29e5-0001">
-  <data key="d7">1.0</data>
-  <data key="d8">Bank Policy is associated with table bank_service_savings_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
-  <data key="d9">associated with,contained in</data>
-  <data key="d10">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
-  <data key="d11">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
-  <data key="d12">1786964808</data>
-  <data key="d13"></data>
+<edge source="Cash Pickup Services" target="tb-574eef8b2a231a2171cb4eadad4c29e5-0001">
+  <data key="d8">1.0</data>
+  <data key="d9">Cash Pickup Services is associated with table banking_service_financial_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
+  <data key="d10">associated with,contained in</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Banking System" target="Depositors">
-  <data key="d7">1.0</data>
-  <data key="d8">Depositors are key stakeholders in the Banking System, as they provide the necessary funds for banks to lend.</data>
-  <data key="d9">involvement,stakeholders</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Cash Delivery Services" target="tb-574eef8b2a231a2171cb4eadad4c29e5-0001">
+  <data key="d8">1.0</data>
+  <data key="d9">Cash Delivery Services is associated with table banking_service_financial_limits in section Operating guidelines of document "Door-Step Banking for Senior Citizens and Differently-Abled.pdf"</data>
+  <data key="d10">associated with,contained in</data>
+  <data key="d11">doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000</data>
+  <data key="d12">Door-Step Banking for Senior Citizens and Differently-Abled.pdf</data>
+  <data key="d13">1787055132</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Unity Small Finance Bank Limited" target="Deposit Accounts">
-  <data key="d7">1.0</data>
-  <data key="d8">Unity Small Finance Bank Limited formulates various deposit accounts for the public as per the regulatory framework.</data>
-  <data key="d9">offering,terms</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Unity Small Finance Bank Limited" target="Banking Regulation Act, 1949">
+  <data key="d8">1.0</data>
+  <data key="d9">Unity Small Finance Bank Limited operates within the regulatory framework established by the Banking Regulation Act, 1949, which governs the banking sector in India.</data>
+  <data key="d10">operates under,regulatory framework</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Unity Small Finance Bank Limited" target="Depositors">
-  <data key="d7">1.0</data>
-  <data key="d8">Unity Small Finance Bank Limited offers services and products to depositors, ensuring their rights are recognized.</data>
-  <data key="d9">rights,services</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">2.0</data>
+  <data key="d9">Unity Small Finance Bank Limited aims to uphold the rights of depositors by providing services they are entitled to receive, fostering greater transparency in customer dealings.&lt;SEP&gt;Depositors are key stakeholders of Unity Small Finance Bank Limited, impacting its operational framework and policies regarding deposit acceptance.</data>
+  <data key="d10">banking system,customer rights,services,stakeholders</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Depositors" target="Deposit Accounts">
-  <data key="d7">1.0</data>
-  <data key="d8">Depositors maintain deposit accounts at banks to securely hold their funds and earn interest.</data>
-  <data key="d9">holding,interest</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Depositors" target="Customers">
+  <data key="d8">1.0</data>
+  <data key="d9">Customers include Depositors who utilize the bank's services to manage their accounts.</data>
+  <data key="d10">are,individuals</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Interest Rates" target="NRE/NRO Deposit Scheme">
-  <data key="d7">1.0</data>
-  <data key="d8">The interest rates applicable to NRE and NRO deposits are subject to specific conditions outlined in the deposit scheme.</data>
-  <data key="d9">applies,conditions</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Depositors" target="Banking Ombudsman">
+  <data key="d8">1.0</data>
+  <data key="d9">Depositors can approach the Banking Ombudsman for grievances not resolved by the Bank within a specified timeframe.</data>
+  <data key="d10">can approach,grievance</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Interest Rates" target="Deposit Insurance and Credit Guarantee Corporation of India (DICGC)">
-  <data key="d7">1.0</data>
-  <data key="d8">The DICGC provides insurance on bank deposits, including interest-bearing deposits which ensure financial security for depositors in case of bank failure.</data>
-  <data key="d9">deposit insurance,financial security</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Depositors" target="Standing Instructions">
+  <data key="d8">1.0</data>
+  <data key="d9">Depositors can give Standing Instructions to the Bank for transferring funds between accounts.</data>
+  <data key="d10">can give,for transfers</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Interest Rates" target="Bank">
-  <data key="d7">1.0</data>
-  <data key="d8">The bank sets and determines the interest rates applicable to term deposits based on various criteria.</data>
-  <data key="d9">determines,sets</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Financial System" target="Deposit Products">
+  <data key="d8">1.0</data>
+  <data key="d9">The liberalization of the financial system allows banks to formulate various deposit products, thereby enhancing the options available to depositors.</data>
+  <data key="d10">deregulation,liberalization</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Bank" target="Demand Deposits">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank offers Demand Deposits as part of its financial products for customers.</data>
-  <data key="d9">offers,type</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank offers various products categorized as Demand Deposits.</data>
+  <data key="d10">offers,provides</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Bank" target="Time Deposits">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank offers Time Deposits as part of its financial products for customers.</data>
-  <data key="d9">offers,type</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank offers various products categorized as Time Deposits.</data>
+  <data key="d10">offers,provides</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Bank" target="Savings Account">
-  <data key="d7">2.0</data>
-  <data key="d8">The Bank offers Savings Accounts as a specific kind of Demand Deposit.&lt;SEP&gt;The Bank opens Savings Accounts for individuals.</data>
-  <data key="d9">offers,opens,type</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Basic Savings Bank Deposit Account">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank offers Basic Savings Bank Deposit Accounts as per the guidelines of the RBI.</data>
-  <data key="d9">offers,type,under guidelines</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides a specific type of demand deposit known as a Savings Account.</data>
+  <data key="d10">offers,provides</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Bank" target="Current Account">
-  <data key="d7">2.0</data>
-  <data key="d8">The Bank offers Current Accounts as a type of Demand Deposit that allows unlimited withdrawals.&lt;SEP&gt;The Bank opens Current Accounts for individuals or businesses.</data>
-  <data key="d9">offers,opens,type</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Know Your Customer">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank requires a Know Your Customer (KYC) process to ensure the identity of clients before opening accounts.</data>
-  <data key="d9">process,requires</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Permanent Account Number">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank collects Permanent Account Number (PAN) details as part of the KYC requirements.</data>
-  <data key="d9">collects,requirement</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Recurring Deposit">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank offers Recurring Deposits as a specific type of Time Deposit.</data>
-  <data key="d9">offers,type</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Short Term Deposits">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank offers Short Term Deposits as a category of Time Deposits.</data>
-  <data key="d9">offers,type</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Limited Liability Partnership">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank allows Limited Liability Partnerships to open various types of deposit accounts.</data>
-  <data key="d9">allows account opening,entity type</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Customers">
-  <data key="d7">2.0</data>
-  <data key="d8">The Bank serves Customers by providing a range of banking services, including account opening and management.&lt;SEP&gt;The bank provides various financial services to customers, including account management and transaction facilitation.</data>
-  <data key="d9">provides services,serves</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Specified Associates">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank allows Specified Associates to open accounts under defined eligibility criteria.</data>
-  <data key="d9">allows account opening,entity type</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Debit Card">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank issues Debit Cards to customers who have Saving or Current Accounts.</data>
-  <data key="d9">issues,offers</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Mobile Banking">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank provides Mobile Banking services to customers for conducting banking transactions.</data>
-  <data key="d9">enables,provides</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="WhatsApp Banking">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank offers WhatsApp Banking services for customer transaction needs.</data>
-  <data key="d9">enables,provides</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Internet Banking">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank provides Internet Banking services allowing customers to manage their accounts online.</data>
-  <data key="d9">enables,provides</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="ATM Network">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank connects customers to its own ATM Network and that of other banks through a regulatory network.</data>
-  <data key="d9">connects,offers</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="NEFT">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank offers NEFT as part of its electronic banking services.</data>
-  <data key="d9">offers,provides</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="RTGS">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank provides RTGS for facilitating electronic funds transfers.</data>
-  <data key="d9">offers,provides</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Statement of Account">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank issues a Statement of Account to Savings Account and Current Account holders monthly.</data>
-  <data key="d9">issues,provides</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Minor Account">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank manages Minor Accounts operated by guardians or, under certain conditions, by the minors themselves.</data>
-  <data key="d9">manages,opens</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Joint Account">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank opens Joint Accounts for multiple individuals, governed by mandates for operation.</data>
-  <data key="d9">manages,opens</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Power of Attorney">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank registers Power of Attorney mandates at the request of depositors for account operations.</data>
-  <data key="d9">authorizes,registers</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Nomination">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank allows account holders to make nominations on their accounts.</data>
-  <data key="d9">allows,offers</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Nominee">
-  <data key="d7">2.0</data>
-  <data key="d8">The Nominee acts as a trustee for the legal heirs, receiving funds from the Bank upon the death of the Depositor.&lt;SEP&gt;In the event of a depositor's death, the bank allows the nominee to claim the balance in the deceased account.</data>
-  <data key="d9">funds transfer,receives account balance,trustee</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Senior Citizens">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank offers higher interest rates on Fixed Deposits to Senior Citizens.</data>
-  <data key="d9">banking services,offers interest rates</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Illiterate Person">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank may open deposit accounts for Illiterate Persons under specific conditions to safeguard their interests.</data>
-  <data key="d9">opens accounts,safeguards interests</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Visually Challenged Persons">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank opens deposit accounts for Visually Challenged Persons and provides necessary banking facilities without discrimination.</data>
-  <data key="d9">opens accounts,provides facilities</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Transgender Person">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank recognizes the gender identity of Transgender Persons and ensures they are treated equally as other customers.</data>
-  <data key="d9">no discrimination,recognizes gender identity</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Customer">
-  <data key="d7">1.0</data>
-  <data key="d8">A Customer wishing to close an account must submit a signed closure application to the Bank.</data>
-  <data key="d9">closes account,submits applications</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Domestic, Non-Resident Ordinary Accounts">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank offers interest on deposits held in Domestic, Non-Resident Ordinary Accounts according to specified terms and conditions.</data>
-  <data key="d9">account types,interest rates</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Non-Resident (External) Accounts">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank pays interest on deposits in Non-Resident (External) Accounts, following designated regulations and guidelines.</data>
-  <data key="d9">account types,interest rates</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Domestic Current Account">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank stipulates that no interest shall be paid on deposits in Domestic Current Accounts.</data>
-  <data key="d9">account policies,interest agreements</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Domestic Savings Bank Accounts">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank pays interest on domestic savings bank accounts at rates specified periodically, with conditions applied to balances.</data>
-  <data key="d9">account policies,interest rates</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Domestic Term Deposits">
-  <data key="d7">1.0</data>
-  <data key="d8">The Bank determines interest rates on Domestic Term Deposits within guidelines issued by the Reserve Bank of India, including additional rates for certain categories.</data>
-  <data key="d9">interest rates,terms</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Bank" target="Term Deposit">
-  <data key="d7">1.0</data>
-  <data key="d8">The bank manages and offers term deposits to depositors.</data>
-  <data key="d9">manages,offers</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">2.0</data>
+  <data key="d9">The Bank provides a specific type of demand deposit known as a Current Account.&lt;SEP&gt;The Bank offers Current Accounts for customers who need frequent access to funds.</data>
+  <data key="d10">account type,offers,provides</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Bank" target="RBI">
-  <data key="d7">1.0</data>
-  <data key="d8">The bank operates under the regulations set forth by the Reserve Bank of India.</data>
-  <data key="d9">compliance,regulates</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank operates under the guidelines and regulations established by the RBI.</data>
+  <data key="d10">guided by</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank" target="Premature Withdrawal Penalty">
-  <data key="d7">1.0</data>
-  <data key="d8">The bank imposes a premature withdrawal penalty if term deposits are withdrawn before the maturity period.</data>
-  <data key="d9">fees,imposes</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Bank" target="Permanent Account Number">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank requires customers to provide their Permanent Account Number as part of the KYC process.</data>
+  <data key="d10">obtains,requires</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Basic Savings Bank Deposit Account">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides Basic Savings Bank Deposit Accounts as per RBI guidelines.</data>
+  <data key="d10">offers,provides</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Know Your Customer (KYC)">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank implements Know Your Customer (KYC) guidelines to ensure proper customer identification.</data>
+  <data key="d10">follows,implements</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Minimum / Average Balance Requirements">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank specifies Minimum / Average Balance Requirements that account holders must meet.</data>
+  <data key="d10">enforces,specifies</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Risk Categorization">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank conducts Risk Categorization to assess customer profiles for transaction monitoring.</data>
+  <data key="d10">conducts,follows</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Debit Card">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank issues Debit Cards to customers with Savings or Current Accounts.</data>
+  <data key="d10">issues,product</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Mobile Banking">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank offers Mobile Banking as a service to facilitate banking transactions via mobile devices.</data>
+  <data key="d10">offers,service</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="WhatsApp Banking">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides WhatsApp Banking to allow customers to conduct transactions through the messaging platform.</data>
+  <data key="d10">offers,service</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Internet Banking">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank offers Internet Banking as a means for customers to manage their accounts and perform transactions online.</data>
+  <data key="d10">offers,service</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="ATM Network">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides access to its own ATM Network and other banks' ATMs for customer transactions.</data>
+  <data key="d10">access,provides</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="NEFT">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank offers NEFT as a method for customers to make electronic fund transfers.</data>
+  <data key="d10">offers,service</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="RTGS">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides RTGS to enable high-value real-time transfers between banks.</data>
+  <data key="d10">offers,service</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Saving Account">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides Saving Accounts for customers to deposit money and earn interest.</data>
+  <data key="d10">account type,provides</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Statement of Account">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank issues Statements of Account monthly to its Savings and Current Account holders.</data>
+  <data key="d10">document,issues</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Passbook">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank issues Passbooks to account holders for recording transactions and balances.</data>
+  <data key="d10">issues,record</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Joint Account">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank offers Joint Accounts to be opened and held by two or more individuals.</data>
+  <data key="d10">account type,offers</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Power of Attorney">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank registers a Power of Attorney to allow an authorized person to operate an account on behalf of the account holder.</data>
+  <data key="d10">legal authorization,registers</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Nomination">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides a Nomination facility for all deposit accounts opened by individuals.</data>
+  <data key="d10">facility,provides</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Accounts Operations">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank oversees Accounts Operations to manage various banking procedures, including account types and their operation.</data>
+  <data key="d10">oversees,process</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Accounts of Minors">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides Accounts of Minors to allow guardians to operate accounts for children.</data>
+  <data key="d10">account type,provides</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Joint Account Mandate">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank defines the Joint Account Mandate which outlines how joint accounts may be operated by the account holders.</data>
+  <data key="d10">defines,operation</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Former or Survivor Mandate">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank implements the Former or Survivor Mandate as part of the joint account operation rules.</data>
+  <data key="d10">implements,joint account rule</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Jointly by All Mandate">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank establishes the Jointly by All Mandate for joint account holders requiring collective action for operations.</data>
+  <data key="d10">establishes,joint account rule</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Bank" target="KYC Documents">
-  <data key="d7">1.0</data>
-  <data key="d8">Banks require KYC documents to verify the identity of customers during account opening and various transactions.</data>
-  <data key="d9">acceptance,verification</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank requires KYC Documents to verify the identity of account holders, especially when minors reach adulthood.</data>
+  <data key="d10">requires,verification</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank" target="Minor">
-  <data key="d7">1.0</data>
-  <data key="d8">The bank may consider requests for loans against deposits held in the name of a minor, requiring a declaration to ensure the loan benefits the minor.</data>
-  <data key="d9">account management,legal restrictions</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Bank" target="Nominee">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides services to the nominee in the event of the depositor's death, allowing access to account funds.</data>
+  <data key="d10">provides services</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank" target="Public">
-  <data key="d7">1.0</data>
-  <data key="d8">The bank conducts public awareness and financial literacy campaigns to educate the public about banking processes.</data>
-  <data key="d9">conducts campaigns</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Bank" target="Depositor">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank offers various services including account opening and management for depositors.</data>
+  <data key="d10">offers services</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank" target="Legal Heir">
-  <data key="d7">1.0</data>
-  <data key="d8">The legal heir of a deceased depositor has the right to claim the account balance from the bank.</data>
-  <data key="d9">receives account balance</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Bank" target="Senior Citizen">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides higher interest rates on fixed deposits specifically for senior citizens.</data>
+  <data key="d10">offers interest rates</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank" target="Grievance Redressal Policy">
-  <data key="d7">1.0</data>
-  <data key="d8">The bank follows the grievance redressal policy to handle customer complaints and ensure satisfactory resolutions.</data>
-  <data key="d9">follows procedures</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Bank" target="Visually Challenged Person">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank commits to providing equal banking facilities to visually challenged persons without discrimination.</data>
+  <data key="d10">offers banking facilities</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank" target="Direct Selling Agents">
-  <data key="d7">1.0</data>
-  <data key="d8">The bank pays commission to direct selling agents for their role in collecting deposits.</data>
-  <data key="d9">pays commission</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Bank" target="Transgender Person">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank recognizes transgender persons as 'Third Gender' and provides banking services without discrimination.</data>
+  <data key="d10">recognizes identity</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank" target="Business Facilitators">
-  <data key="d7">1.0</data>
-  <data key="d8">The bank pays remuneration to business facilitators for assisting in service provision.</data>
-  <data key="d9">pays remuneration</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Bank" target="Non-Resident Individual">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank opens accounts for non-resident individuals in accordance with regulatory guidelines.</data>
+  <data key="d10">opens accounts,regulatory compliance</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank" target="Business Correspondents">
-  <data key="d7">1.0</data>
-  <data key="d8">The bank pays remuneration to business correspondents for helping reach more customers.</data>
-  <data key="d9">pays remuneration</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Bank" target="Domestic Non-Resident Ordinary Account">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank offers interest on deposits in the Domestic Non-Resident Ordinary Account.</data>
+  <data key="d10">interest,offers</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Bank" target="Self-help Groups">
-  <data key="d7">1.0</data>
-  <data key="d8">The bank supports self-help groups that encourage savings habits among members.</data>
-  <data key="d9">promotes savings</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Bank" target="Non-Resident External Account">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank offers interest on deposits in the Non-Resident External Account.</data>
+  <data key="d10">interest,offers</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Domestic Current Account">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank does not pay interest on deposits held in the Domestic Current Account.</data>
+  <data key="d10">does not pay,interest</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Domestic Savings Bank Accounts">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank pays interest on deposits held in Domestic Savings Bank Accounts at rates specified from time to time.</data>
+  <data key="d10">interest,pays</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Term Deposits">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank offers interest rates on Term Deposits decided within the guidelines set by the Reserve Bank of India.</data>
+  <data key="d10">interest rates,offers</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Bulk Deposits">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank may offer differential rates of interest for Bulk Deposits exceeding three crore rupees.</data>
+  <data key="d10">differential rates,may offer</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Capital Gains Accounts Scheme">
+  <data key="d8">1.0</data>
+  <data key="d9">Differential interest rates shall not be applicable for deposits received under the Capital Gains Accounts Scheme.</data>
+  <data key="d10">differential interest,exempts</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Deposit Interest Rate Card">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank maintains the Deposit Interest Rate Card to ensure uniform application of interest rates on all deposits.</data>
+  <data key="d10">maintains,to ensure</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Term Deposit">
+  <data key="d8">1.0</data>
+  <data key="d9">The bank holds and manages the term deposits of depositors.</data>
+  <data key="d10">holds,manages</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Income Tax Act">
+  <data key="d8">1.0</data>
+  <data key="d9">The bank complies with the regulations outlined in the Income Tax Act regarding taxation of interest earned from deposits.</data>
+  <data key="d10">complies,follows</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Term Deposit Account">
+  <data key="d8">1.0</data>
+  <data key="d9">The bank manages and oversees the funds held in the term deposit account.</data>
+  <data key="d10">manages,oversees</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Master Policy on Customer Service">
+  <data key="d8">2.0</data>
+  <data key="d9">Grievance Redressal Policy is part of the Master Policy on Customer Service established by the Bank.&lt;SEP&gt;The Bank implements the Master Policy on Customer Service to ensure effective management and service of customer accounts.</data>
+  <data key="d10">customer service,guidelines,is part of,policies</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="NRE Deposit">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank manages NRE Deposits as part of its offerings to non-resident Indians, providing specific terms and conditions for such accounts.</data>
+  <data key="d10">financial products,managing</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="NRO Deposit">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank manages NRO Deposits as a financial product for non-resident Indians wishing to hold accounts in India.</data>
+  <data key="d10">financial products,managing</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Deposit Insurance and Credit Guarantee Corporation of India">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank ensures that all deposits are covered under the insurance scheme provided by the Deposit Insurance and Credit Guarantee Corporation of India.</data>
+  <data key="d10">customer protection,insurance</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Customers">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides various services and information to Customers regarding account activation and claiming deposits.</data>
+  <data key="d10">provides,services</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Public Awareness Campaigns">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank conducts Public Awareness Campaigns to educate Customers about banking procedures.</data>
+  <data key="d10">conducts,educates</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Inoperative Accounts">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides information on the process for the activation of Inoperative Accounts.</data>
+  <data key="d10">activation process,provides information on</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Unclaimed Deposits">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank provides information on how to claim Unclaimed Deposits.</data>
+  <data key="d10">claiming process,provides information on</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Charges">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank recovers specified Charges for various services rendered to Customers.</data>
+  <data key="d10">fees,recovers</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Electronic Clearing Service">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank offers the Electronic Clearing Service for facilitating direct payments from Customers' accounts.</data>
+  <data key="d10">offers,payment service</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Bank" target="Automated Clearing House">
+  <data key="d8">1.0</data>
+  <data key="d9">The Bank utilizes the Automated Clearing House for managing periodic payments through Direct Debit.</data>
+  <data key="d10">payment processing,utilizes</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="RBI" target="Unclaimed Deposits">
-  <data key="d7">1.0</data>
-  <data key="d8">The RBI is responsible for the regulation and transfer of unclaimed deposits to ensure compliance with financial laws.</data>
-  <data key="d9">fund transfer,regulatory oversight</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">RBI regulates the procedures regarding Unclaimed Deposits, overseeing how accounts inactive for ten years are managed.</data>
+  <data key="d10">financial procedures,regulation</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Customers" target="Banking Ombudsman">
-  <data key="d7">1.0</data>
-  <data key="d8">The banking ombudsman addresses customer complaints regarding the services provided by the bank.</data>
-  <data key="d9">addresses complaints</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Accounts of Minors" target="Guardian">
+  <data key="d8">1.0</data>
+  <data key="d9">Accounts of Minors are operated by a Guardian, who is the authorized person managing the account.</data>
+  <data key="d10">individual,operated by</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
-<edge source="Nominee" target="Depositor">
-  <data key="d7">2.0</data>
-  <data key="d8">The Depositor nominates a Nominee to receive the amount of the deposit in the event of the Depositor's death.&lt;SEP&gt;The depositor designates a nominee to receive the proceeds of the term deposit upon their death.</data>
-  <data key="d9">beneficiary,designates,nominates,receives funds</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+<edge source="Guardian" target="Disabled Person">
+  <data key="d8">1.0</data>
+  <data key="d9">The guardian manages the affairs of the disabled person and can open bank accounts on their behalf.</data>
+  <data key="d10">legal representation,manages</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Depositor" target="Nominee">
+  <data key="d8">2.0</data>
+  <data key="d9">The depositor nominates a minor individual as a nominee to inherit the account balance upon the depositor's death.&lt;SEP&gt;The depositor designates a nominee to receive the term deposit's benefits in case of their death.</data>
+  <data key="d10">account management,assigns,designates,nominates</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004&lt;SEP&gt;doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Depositor" target="Appointee">
+  <data key="d8">1.0</data>
+  <data key="d9">The depositor appoints a major individual to manage the deposit on behalf of the minor nominee.</data>
+  <data key="d10">account management,appoints</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Depositor" target="Term Deposit">
-  <data key="d7">1.0</data>
-  <data key="d8">The depositor places money into a term deposit with the bank.</data>
-  <data key="d9">invests,places</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">The depositor creates and manages a term deposit with the bank.</data>
+  <data key="d10">creates,manages</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
+</edge>
+<edge source="Depositor" target="Legal Heirs">
+  <data key="d8">1.0</data>
+  <data key="d9">The legal heirs may have a claim to the term deposit in the absence of a designated nominee.</data>
+  <data key="d10">inherits,may have claim</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Depositor" target="Form 15G">
-  <data key="d7">1.0</data>
-  <data key="d8">The depositor submits Form 15G to the bank to apply for tax exemption on interest earned.</data>
-  <data key="d9">submits,tax exemption</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">The depositor submits Form 15G to potentially exempt an interest income from TDS.</data>
+  <data key="d10">submits,uses</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="Depositor" target="Form 15H">
-  <data key="d7">1.0</data>
-  <data key="d8">The depositor submits Form 15H to the bank to apply for tax exemption on interest earned as a senior citizen.</data>
-  <data key="d9">submits,tax exemption</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Persons with Disabilities" target="Guardian">
-  <data key="d7">1.0</data>
-  <data key="d8">A Guardian is appointed to manage the accounts for Persons with Disabilities, following the guidelines established by law.</data>
-  <data key="d9">appointed by law,manages accounts</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Customer" target="Joint Account Holders">
-  <data key="d7">1.0</data>
-  <data key="d8">The customer may request to add or delete names of joint account holders, allowing for shared ownership and access to the banking services.</data>
-  <data key="d9">account ownership,shared rights</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Term Deposit" target="Tax Deduction Certificate">
-  <data key="d7">1.0</data>
-  <data key="d8">Interest paid on a term deposit may lead to the generation of a Tax Deduction Certificate by the bank.</data>
-  <data key="d9">documentation,generates</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Term Deposit" target="Legal Heirs">
-  <data key="d7">1.0</data>
-  <data key="d8">Legal heirs are entitled to claim the term deposit upon verification of their authority after the depositor's death.</data>
-  <data key="d9">claim,inherit</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Term Deposit" target="Master Policy on Customer Service">
-  <data key="d7">1.0</data>
-  <data key="d8">The management of term deposits is governed by the guidelines laid out in the Master Policy on Customer Service.</data>
-  <data key="d9">governed by,guidelines</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">The depositor submits Form 15H to claim tax exemption on interest income if eligible due to age.</data>
+  <data key="d10">submits,uses</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="NRE Deposit" target="Scheduled Commercial Banks">
-  <data key="d7">1.0</data>
-  <data key="d8">Scheduled Commercial Banks offer NRE deposits as part of their banking services to non-resident Indians.</data>
-  <data key="d9">deposit management,financial service</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="NRE Deposit" target="Board of Directors">
-  <data key="d7">1.0</data>
-  <data key="d8">The Board of Directors is responsible for approving comprehensive policies related to penalties on premature withdrawal of NRE deposits.</data>
-  <data key="d9">financial governance,policy approval</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">Scheduled Commercial Banks offer NRE Deposits as part of their financial services specifically tailored for non-resident Indians.</data>
+  <data key="d10">financial services,offering</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 <edge source="NRO Deposit" target="Scheduled Commercial Banks">
-  <data key="d7">1.0</data>
-  <data key="d8">Scheduled Commercial Banks provide NRO deposits to non-resident Indians to manage their income earned in India.</data>
-  <data key="d9">deposit management,financial service</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="NRO Deposit" target="Board of Directors">
-  <data key="d7">1.0</data>
-  <data key="d8">The Board of Directors oversees and approves policies regarding the management and penalties of NRO deposits.</data>
-  <data key="d9">financial governance,policy approval</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Scheduled Commercial Banks" target="Customer Information">
-  <data key="d7">1.0</data>
-  <data key="d8">Scheduled Commercial Banks utilize customer information for cross-selling various banking services with customer consent.</data>
-  <data key="d9">banking services,data usage</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Scheduled Commercial Banks" target="Inactive Account">
-  <data key="d7">1.0</data>
-  <data key="d8">Scheduled Commercial Banks monitor inactive accounts to inform customers about their status and encourage activity.</data>
-  <data key="d9">account management,transaction monitoring</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Scheduled Commercial Banks" target="Dormant Account">
-  <data key="d7">1.0</data>
-  <data key="d8">Scheduled Commercial Banks classify accounts as dormant and notify customers if there has been no activity for a specified time.</data>
-  <data key="d9">account classification,customer notification</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Scheduled Commercial Banks" target="Settlement of Dues in Deceased Deposit Account">
-  <data key="d7">1.0</data>
-  <data key="d8">Scheduled Commercial Banks follow a specific policy for the settlement of dues in deceased deposit accounts to facilitate fund release to beneficiaries.</data>
-  <data key="d9">fund disbursement,legal heirs</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Scheduled Commercial Banks" target="Term Deposits">
-  <data key="d7">1.0</data>
-  <data key="d8">Scheduled Commercial Banks manage term deposits as part of their financial services, offering fixed interest returns for the duration of the deposit.</data>
-  <data key="d9">banking services,deposit management</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
-</edge>
-<edge source="Deposit Insurance and Credit Guarantee Corporation of India (DICGC)" target="Insurance Cover for Deposits">
-  <data key="d7">1.0</data>
-  <data key="d8">The DICGC offers insurance cover for deposits held in banks, enhancing financial security for depositors.</data>
-  <data key="d9">deposit insurance,financial protection</data>
-  <data key="d10">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
-  <data key="d11">Deposit Policy.pdf</data>
-  <data key="d12">1786967977</data>
-  <data key="d13"></data>
+  <data key="d8">1.0</data>
+  <data key="d9">Scheduled Commercial Banks offer NRO Deposits as part of their financial services that cater to non-resident Indians managing income earned in India.</data>
+  <data key="d10">financial services,offering</data>
+  <data key="d11">doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007</data>
+  <data key="d12">Deposit Policy.pdf</data>
+  <data key="d13">1787057501</data>
+  <data key="d14"></data>
 </edge>
 </graph></graphml>

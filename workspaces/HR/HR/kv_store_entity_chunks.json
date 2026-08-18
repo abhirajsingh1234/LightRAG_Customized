@@ -7,52 +7,60 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 4,
-    "update_time": 1786967977,
+    "update_time": 1787057501,
     "_id": "Reserve Bank of India"
   },
-  "Door Step Banking": {
+  "Door-Step Banking": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Door Step Banking"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Door-Step Banking"
   },
   "Unity Bank": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
     "_id": "Unity Bank"
   },
-  "Senior Citizen": {
+  "Senior Citizens": {
     "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Senior Citizen"
+    "count": 2,
+    "update_time": 1787057501,
+    "_id": "Senior Citizens"
   },
-  "Differently Abled": {
+  "Differently-Abled": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Differently Abled"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Differently-Abled"
+  },
+  "Customer": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "update_time": 1787056645,
+    "_id": "Customer"
   },
   "KYC Document": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
     "_id": "KYC Document"
   },
   "Cash Management Vendor": {
@@ -60,62 +68,35 @@
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
     "_id": "Cash Management Vendor"
   },
-  "Service Charges": {
+  "Banking Correspondents": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Service Charges"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Banking Correspondents"
   },
-  "Force Majeure": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Force Majeure"
-  },
-  "Bank Service Savings Limits": {
+  "Banking Service Financial Limits": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Bank Service Savings Limits"
-  },
-  "Cash Pickup": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Cash Pickup"
-  },
-  "Cash Delivery": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
-    ],
-    "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Cash Delivery"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Banking Service Financial Limits"
   },
   "Savings (Individuals)": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
     "_id": "Savings (Individuals)"
   },
   "Senior Citizen / Differently Abled": {
@@ -123,8 +104,8 @@
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
     "_id": "Senior Citizen / Differently Abled"
   },
   "Current Account Customers": {
@@ -132,83 +113,82 @@
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
     "_id": "Current Account Customers"
   },
-  "Bank Policy": {
+  "Cash Pickup Services": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
-    "_id": "Bank Policy"
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Cash Pickup Services"
+  },
+  "Cash Delivery Services": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
+    "_id": "Cash Delivery Services"
   },
   "tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
     ],
     "count": 1,
-    "create_time": 1786964808,
-    "update_time": 1786964808,
+    "create_time": 1787055132,
+    "update_time": 1787055132,
     "_id": "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
-  },
-  "Banking System": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Banking System"
-  },
-  "Banking Regulation Act, 1949": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Banking Regulation Act, 1949"
   },
   "Unity Small Finance Bank Limited": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Unity Small Finance Bank Limited"
+  },
+  "Banking Regulation Act, 1949": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Banking Regulation Act, 1949"
   },
   "Depositors": {
     "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "count": 2,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Depositors"
   },
-  "Deposit Accounts": {
+  "Financial System": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Deposit Accounts"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Financial System"
   },
-  "Interest Rates": {
+  "Deposit Products": {
     "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
     ],
-    "count": 3,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Interest Rates"
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Deposit Products"
   },
   "Bank": {
     "chunk_ids": [
@@ -217,11 +197,12 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005",
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 7,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Bank"
   },
   "Demand Deposits": {
@@ -229,8 +210,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Demand Deposits"
   },
   "Time Deposits": {
@@ -238,18 +219,18 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Time Deposits"
   },
   "Savings Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 2,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Savings Account"
   },
   "Basic Savings Bank Deposit Account": {
@@ -257,8 +238,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Basic Savings Bank Deposit Account"
   },
   "Current Account": {
@@ -267,17 +248,27 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 2,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Current Account"
+  },
+  "RBI": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 2,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "RBI"
   },
   "Cash Credit": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Cash Credit"
   },
   "Overdraft": {
@@ -285,92 +276,53 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Overdraft"
-  },
-  "RBI": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 3,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "RBI"
-  },
-  "Know Your Customer": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Know Your Customer"
   },
   "Permanent Account Number": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Permanent Account Number"
   },
-  "Recurring Deposit": {
+  "Minimum / Average Balance Requirements": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Recurring Deposit"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Minimum / Average Balance Requirements"
   },
-  "Short Term Deposits": {
+  "Know Your Customer (KYC)": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Short Term Deposits"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Know Your Customer (KYC)"
   },
-  "Limited Liability Partnership": {
+  "Risk Categorization": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Limited Liability Partnership"
-  },
-  "Customers": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
-    ],
-    "count": 2,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Customers"
-  },
-  "Specified Associates": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Specified Associates"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Risk Categorization"
   },
   "Debit Card": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Debit Card"
   },
   "Mobile Banking": {
@@ -378,8 +330,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Mobile Banking"
   },
   "WhatsApp Banking": {
@@ -387,8 +339,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "WhatsApp Banking"
   },
   "Internet Banking": {
@@ -396,8 +348,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Internet Banking"
   },
   "ATM Network": {
@@ -405,8 +357,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "ATM Network"
   },
   "NEFT": {
@@ -414,8 +366,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "NEFT"
   },
   "RTGS": {
@@ -423,35 +375,44 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "RTGS"
+  },
+  "Saving Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Saving Account"
   },
   "Statement of Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Statement of Account"
   },
-  "Minor Account": {
+  "Passbook": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Minor Account"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Passbook"
   },
   "Joint Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Joint Account"
   },
   "Power of Attorney": {
@@ -459,8 +420,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Power of Attorney"
   },
   "Nomination": {
@@ -468,20 +429,73 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Nomination"
   },
-  "Nominee": {
+  "Accounts Operations": {
     "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
     ],
-    "count": 3,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Nominee"
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Accounts Operations"
+  },
+  "Accounts of Minors": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Accounts of Minors"
+  },
+  "Joint Account Mandate": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Joint Account Mandate"
+  },
+  "Former or Survivor Mandate": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Former or Survivor Mandate"
+  },
+  "Jointly by All Mandate": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Jointly by All Mandate"
+  },
+  "Guardian": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 2,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Guardian"
+  },
+  "KYC Documents": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "KYC Documents"
   },
   "Depositor": {
     "chunk_ids": [
@@ -489,99 +503,126 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 2,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Depositor"
   },
-  "Senior Citizens": {
+  "Appointee": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Senior Citizens"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Appointee"
+  },
+  "Nominee": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
+    ],
+    "count": 2,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Nominee"
+  },
+  "Senior Citizen": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Senior Citizen"
   },
   "Illiterate Person": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Illiterate Person"
   },
-  "Visually Challenged Persons": {
+  "Visually Challenged Person": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Visually Challenged Persons"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Visually Challenged Person"
   },
-  "Persons with Disabilities": {
+  "Disabled Person": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Persons with Disabilities"
-  },
-  "Guardian": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Guardian"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Disabled Person"
   },
   "Transgender Person": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Transgender Person"
   },
-  "Customer": {
+  "Non-Resident Individual": {
     "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
     ],
-    "count": 2,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Customer"
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Non-Resident Individual"
   },
-  "Domestic, Non-Resident Ordinary Accounts": {
+  "Local Level Committees": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Local Level Committees"
+  },
+  "District Courts": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "District Courts"
+  },
+  "Domestic Non-Resident Ordinary Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Domestic, Non-Resident Ordinary Accounts"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Domestic Non-Resident Ordinary Account"
   },
-  "Non-Resident (External) Accounts": {
+  "Non-Resident External Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Non-Resident (External) Accounts"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Non-Resident External Account"
   },
   "Domestic Current Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Domestic Current Account"
   },
   "Domestic Savings Bank Accounts": {
@@ -589,53 +630,90 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Domestic Savings Bank Accounts"
   },
-  "Domestic Term Deposits": {
+  "Term Deposits": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Domestic Term Deposits"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Term Deposits"
+  },
+  "Bulk Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Bulk Deposits"
+  },
+  "Capital Gains Accounts Scheme": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Capital Gains Accounts Scheme"
+  },
+  "Deposit Interest Rate Card": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Deposit Interest Rate Card"
   },
   "Term Deposit": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 2,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Term Deposit"
+  },
+  "Maturity Date": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Term Deposit"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Maturity Date"
   },
   "Legal Heirs": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Legal Heirs"
   },
-  "Tax Deduction Certificate": {
+  "Income Tax Act": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Tax Deduction Certificate"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Income Tax Act"
   },
   "Form 15G": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Form 15G"
   },
   "Form 15H": {
@@ -643,45 +721,26 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Form 15H"
   },
-  "Master Policy on Customer Service": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
-    ],
-    "count": 2,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Master Policy on Customer Service"
-  },
-  "NRE/NRO Deposit Scheme": {
+  "Term Deposit Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "NRE/NRO Deposit Scheme"
-  },
-  "Premature Withdrawal Penalty": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Premature Withdrawal Penalty"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Term Deposit Account"
   },
   "NRE Deposit": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "NRE Deposit"
   },
   "NRO Deposit": {
@@ -689,8 +748,8 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "NRO Deposit"
   },
   "Scheduled Commercial Banks": {
@@ -698,152 +757,127 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Scheduled Commercial Banks"
   },
-  "Deposit Insurance and Credit Guarantee Corporation of India (DICGC)": {
+  "Deposit Insurance and Credit Guarantee Corporation of India": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Deposit Insurance and Credit Guarantee Corporation of India (DICGC)"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Deposit Insurance and Credit Guarantee Corporation of India"
   },
-  "Board of Directors": {
+  "Master Policy on Customer Service": {
     "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Board of Directors"
+    "count": 2,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Master Policy on Customer Service"
+  },
+  "Unclaimed Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 2,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Unclaimed Deposits"
   },
   "Customer Information": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Customer Information"
   },
-  "KYC Documents": {
+  "Public Awareness Campaigns": {
     "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "KYC Documents"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Public Awareness Campaigns"
   },
-  "Inactive Account": {
+  "Grievance Redressal Policy": {
     "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Inactive Account"
-  },
-  "Dormant Account": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Dormant Account"
-  },
-  "Unclaimed Deposits": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Unclaimed Deposits"
-  },
-  "Insurance Cover for Deposits": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Insurance Cover for Deposits"
-  },
-  "Settlement of Dues in Deceased Deposit Account": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Settlement of Dues in Deceased Deposit Account"
-  },
-  "Term Deposits": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Term Deposits"
-  },
-  "Joint Account Holders": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Joint Account Holders"
-  },
-  "Minor": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Minor"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Grievance Redressal Policy"
   },
   "Banking Ombudsman": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Banking Ombudsman"
   },
-  "Legal Heir": {
+  "Customers": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Legal Heir"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Customers"
   },
-  "Public": {
+  "Inoperative Accounts": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Public"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Inoperative Accounts"
+  },
+  "Charges": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Charges"
+  },
+  "Direct Debit": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Direct Debit"
+  },
+  "Standing Instructions": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Standing Instructions"
   },
   "Electronic Clearing Service": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Electronic Clearing Service"
   },
   "Automated Clearing House": {
@@ -851,62 +885,17 @@
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
+    "create_time": 1787057501,
+    "update_time": 1787057501,
     "_id": "Automated Clearing House"
   },
-  "Grievance Redressal Policy": {
+  "Service Charges": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ],
     "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Grievance Redressal Policy"
-  },
-  "SCHEDULE- I": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "SCHEDULE- I"
-  },
-  "Direct Selling Agents": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Direct Selling Agents"
-  },
-  "Business Facilitators": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Business Facilitators"
-  },
-  "Business Correspondents": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Business Correspondents"
-  },
-  "Self-help Groups": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
-    ],
-    "count": 1,
-    "create_time": 1786967977,
-    "update_time": 1786967977,
-    "_id": "Self-help Groups"
+    "create_time": 1787057501,
+    "update_time": 1787057501,
+    "_id": "Service Charges"
   }
 }

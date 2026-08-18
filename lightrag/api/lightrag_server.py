@@ -1403,7 +1403,6 @@ def create_app(args):
 
     def delete_db_and_workspace(
         db_name: str, 
-        workspace_name: str = None, 
         delete_entire_db: bool = True
     ):
         """
@@ -1419,7 +1418,13 @@ def create_app(args):
         # Prevent dropping protected system database
         if db_name == "default" and delete_entire_db:
            raise Exception("❌ Cannot drop the 'default' system database.")
-                
+        db_client = MilvusClient(uri=uri, db_name=db_name)
+
+        collections = db_client.list_collections()
+        for collection in collections:
+            db_client.drop_collection(collection)
+            logger.info(f"Dropped collection '{collection}' from database '{db_name}'.")
+
         default_client = MilvusClient(uri=uri)
         default_client.drop_database(db_name=db_name)
         logger.info(f" Successfully deleted entire database '{db_name}'.")
