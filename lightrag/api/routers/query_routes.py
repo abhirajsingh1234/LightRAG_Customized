@@ -148,6 +148,11 @@ class QueryRequest(BaseModel):
         description="Optional filter string to filter document to search",
     )
 
+    user_type: Optional[str] = Field(
+        default=None,
+        description="Type of the user making the request",
+    )
+
     @field_validator("query", mode="after")
     @classmethod
     def query_strip_after(cls, query: str) -> str:

@@ -22,7 +22,7 @@ import time
 import uuid
 import uvicorn
 import pipmaster as pm
-from typing import Any
+from typing import Any,Literal
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import RedirectResponse
 from pathlib import Path
@@ -535,6 +535,36 @@ def _build_docling_status() -> dict[str, Any]:
         },
     }
 
+class WorkspaceCreateResponse(BaseModel):
+    """Response model for workspace creation.
+
+    Attributes:
+        workspace: Name of the workspace that was created.
+        status: Confirmation status, always 'created'.
+    """
+
+    workspace: str = Field(
+        ..., description="Name of the workspace that was created"
+    )
+    status: Literal["created"] = Field(
+        default="created", description="Confirmation status, always 'created'"
+    )
+
+
+class WorkspaceDeleteResponse(BaseModel):
+    """Response model for workspace deletion.
+
+    Attributes:
+        workspace: Name of the workspace that was deleted.
+        status: Confirmation status, always 'deleted'.
+    """
+
+    workspace: str = Field(
+        ..., description="Name of the workspace that was deleted"
+    )
+    status: Literal["deleted"] = Field(
+        default="deleted", description="Confirmation status, always 'deleted'"
+    )
 
 class AvailableWrokspaceResponse(BaseModel):
     """Response model for available workspaces
@@ -1358,14 +1388,41 @@ def create_app(args):
     # doc_manager = DocumentManager(args.input_dir, workspace=args.workspace)
 
     
-    def list_databases(uri: str = os.getenv("MILVUS_URI")):
+    def list_databases():
         """Lists all databases and the collections (workspaces) inside each."""
+
+        uri = os.getenv('MILVUS_URI',None)
+        if uri is None:
+                raise Exception("ERROR :failed to list workspace, 'MILVUS_URI' not present in env file")
         client = MilvusClient(uri=uri)
         
         dbs = client.list_databases()
         print(f"\n--- [Available Databases] ({len(dbs)} total) ---")
         
         return dbs
+
+    def delete_db_and_workspace(
+        db_name: str, 
+        workspace_name: str = None, 
+        delete_entire_db: bool = True
+    ):
+        """
+        Deletes a specific workspace (collection) or drops the entire database.
+        Note: Milvus requires a database to be completely empty before dropping it.
+        """
+        uri = os.getenv('MILVUS_URI',None)
+        if uri is None:
+            raise Exception("ERROR :failed to delete workspace, 'MILVUS_URI' not present in env file")
+        if db_name not in list_databases():
+            raise Exception("ERROR :failed to delete workspace, provided 'db_name' not present in available database names")
+        
+        # Prevent dropping protected system database
+        if db_name == "default" and delete_entire_db:
+           raise Exception("❌ Cannot drop the 'default' system database.")
+                
+        default_client = MilvusClient(uri=uri)
+        default_client.drop_database(db_name=db_name)
+        logger.info(f" Successfully deleted entire database '{db_name}'.")
 
 
     @asynccontextmanager
@@ -1382,7 +1439,7 @@ def create_app(args):
             )
 
             for name in local_dirs.intersection(milvus_dbs):
-                input_dir = Path(f"./workspaces/{name}/input")
+                input_dir = Path(f"./workspaces/{name}")
                 input_dir.mkdir(parents=True, exist_ok=True)
                 rag = LightRAG( workspace=name,
                 working_dir=os.path.join(base, name),
@@ -1448,10 +1505,12 @@ def create_app(args):
                         for spec in ROLES
                     },
                 )
+                print("working directory of rag : ",rag.working_dir)
                 await rag.initialize_storages()
                 await rag.check_and_migrate_data()
                 registry[name] = rag
-                doc_manager_registry[name] = DocumentManager(input_dir, workspace=name)
+                doc_manager_registry[name] = DocumentManager(input_dir, workspace="")
+                
                 logger.info(f"Loaded workspace: {name}")
 
             ASCIIColors.green("\nServer is ready to accept connections! 🚀\n")
@@ -2403,6 +2462,17 @@ def create_app(args):
         response_model=AvailableWrokspaceResponse,
     )
     async def get_available_workspaces() -> AvailableWrokspaceResponse:
+        """
+        Return the list of currently active workspaces.
+
+        Derives the workspace list from the in-memory registry, which is the
+        source of truth for workspaces that have been fully initialized and are
+        ready to serve requests. Falls back to ["default"] if the registry is
+        unavailable or an unexpected error occurs, so the WebUI never breaks.
+
+        Returns:
+            AvailableWrokspaceResponse: Sorted list of available workspace names.
+        """
         try:
             workspaces = set(list_databases())
 
@@ -2420,9 +2490,29 @@ def create_app(args):
             # Return fallback workspace instead of crashing the UI
             return AvailableWrokspaceResponse(workspaces=["default"])
 
-    @app.post("/workspaces/{name}", status_code=201)
-    async def create_workspace(name: str):
-        input_dir = Path(f"./workspaces/{name}/input")
+    @app.post("/workspaces/{name}", status_code=201, response_model=WorkspaceCreateResponse)
+    async def create_workspace(name: str) -> WorkspaceCreateResponse:
+        """Create a new LightRAG workspace with the given name.
+
+        Initializes the full workspace stack:
+        - Creates the local working directory at ./workspaces/{name}
+        - Provisions a new Milvus database for vector storage
+        - Instantiates and initializes a LightRAG instance with all configured
+        storage backends (KV, graph, vector, doc status)
+        - Registers the RAG instance and DocumentManager in their respective registries
+
+        Args:
+            name (str): Unique workspace identifier. Used as the directory name,
+                        Milvus DB name, and registry key.
+
+        Raises:
+            HTTPException 409: If the workspace already exists in the registry,
+                            or both on disk and in Milvus simultaneously.
+
+        Returns:
+            dict: {"workspace": name, "status": "created"}
+        """
+        input_dir = Path(f"./workspaces/{name}")
         input_dir.mkdir(parents=True, exist_ok=True)
         workspace_doc_manager = DocumentManager(input_dir, workspace="")
         if name in registry:
@@ -2435,7 +2525,9 @@ def create_app(args):
         if name in milvus_dbs and local_exists:
             raise HTTPException(409, "Already exists on disk and Milvus")
         os.makedirs(f"./workspaces/{name}", exist_ok=True)
-        rag = LightRAG(workspace=name, working_dir=f"./workspaces/{name}",
+        base = "./workspaces"
+        os.environ["MILVUS_DB_NAME"] = name 
+        rag = LightRAG(workspace=name, working_dir=os.path.join(base, name),
             llm_model_func=create_llm_model_func(args.llm_binding),
             llm_model_name=args.llm_model,
             llm_model_max_async=args.max_async,
@@ -2503,7 +2595,43 @@ def create_app(args):
         await rag.check_and_migrate_data()
         registry[name] = rag
         doc_manager_registry[name] = workspace_doc_manager
-        return {"workspace": name, "status": "created"}
+        return WorkspaceCreateResponse(workspace=name, status="created")
+
+
+    @app.delete("/workspaces/{name}", status_code=200, response_model=WorkspaceDeleteResponse)
+    async def delete_workspace(name: str) -> WorkspaceDeleteResponse:
+        """
+        Delete an existing LightRAG workspace by name.
+
+        Tears down the full workspace stack in order:
+        - Drops the associated Milvus database (if it exists)
+        - Removes the local working directory at ./workspaces/{name} (if it exists)
+        - Evicts the LightRAG instance and DocumentManager from their registries
+
+        All steps are best-effort and non-raising — a missing Milvus DB,
+        absent directory, or unregistered workspace will be silently skipped
+        rather than returning an error.
+
+        Args:
+            name (str): Workspace identifier to delete.
+
+        Returns:
+            dict: {"workspace": name, "status": "deleted"}
+        """
+        import shutil
+
+        if name in list_databases():
+            delete_db_and_workspace(db_name=name)
+
+        input_dir = Path(f"./workspaces/{name}")
+        if input_dir.exists():
+            shutil.rmtree(input_dir)
+
+        registry.pop(name, None)
+        doc_manager_registry.pop(name, None)
+
+        return WorkspaceDeleteResponse(workspace=name, status="deleted")
+                
 #-------------------------------------------------------------------------------
 # Above is the old code for initializing LightRAG
 # ------------------------------------------------------------------------------

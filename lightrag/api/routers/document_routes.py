@@ -459,6 +459,9 @@ class SourceConflictRepairRequest(BaseModel):
             )
         return self
 
+class UpdateVisibilityRequest(BaseModel):
+    doc_id: str
+    visibility: str  # "public" or "private"
 
 class SourceConflictRepairResponse(BaseModel):
     """Outcome of a source-conflict repair, dry-run or committed."""
@@ -4630,6 +4633,30 @@ def create_document_routes(
                     _cancel_scan_job(rag, track_id, job_owner_token)
                 await _release_scanning_reservation(rag, scanning_token)
 
+    @router.patch("/update_visibility")
+    async def update_document_visibility(
+        request: UpdateVisibilityRequest,
+        rag: LightRAG = Depends(get_rag)
+    ):
+        try:
+            # Get existing doc
+            doc = await rag.doc_status.get_by_id(request.doc_id)
+            if doc is None:
+                raise HTTPException(404, f"Document '{request.doc_id}' not found")
+            
+            existing_meta = doc.metadata or {}
+            await rag.doc_status.update_doc_status_fields(
+                request.doc_id,
+                fields={"metadata": {**existing_meta, "visibility": request.visibility}}
+            )
+            return {"doc_id": request.doc_id, "visibility": request.visibility, "status": "updated"}
+        
+        except HTTPException:
+            raise
+        except Exception as e:
+            logger.error(f"Error updating visibility: {e}")
+            raise internal_server_error(e)
+
     @router.get(
         "/scan/status/{track_id}",
         response_model=ScanJobStatusResponse,
@@ -6523,7 +6550,7 @@ def create_document_routes(
             response_assembly_start = time.perf_counter()
             doc_responses = []
             for doc_id, doc in documents_with_ids:
-                print('metadata for document is : ',doc.metadata)
+                # print('metadata for document is : ',doc.metadata)
                 doc_responses.append(
                     DocStatusResponse(
                         id=doc_id,

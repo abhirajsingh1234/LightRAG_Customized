@@ -166,6 +166,9 @@ class QueryParam:
     doc_filter: Optional[str] = None
     """Optional filter string to restrict document search scope."""
 
+    user_type: Optional[str] = None
+    """Type of the user making the request."""
+
 
 @dataclass
 class StorageNameSpace(ABC):

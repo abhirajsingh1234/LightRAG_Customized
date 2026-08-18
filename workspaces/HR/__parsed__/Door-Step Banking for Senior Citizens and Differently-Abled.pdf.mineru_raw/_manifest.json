@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "engine": "mineru",
+  "api_mode": "local",
+  "engine_version": "",
+  "endpoint_signature": "http://127.0.0.1:8000",
+  "options_signature": "sha256:277b026335ce61369b2368b0d917ec71191e0e9d3f536344996696b9df7bf877",
+  "source_content_hash": "sha256:ab4bb8e480fa95fab71474a5cae0cb07435878e9f3c30da2b5fc3eee939d46ec",
+  "source_size_bytes": 175266,
+  "source_filename_at_parse": "Door-Step Banking for Senior Citizens and Differently-Abled.pdf",
+  "task_id": "2003a1df-54e4-488d-9ba4-5d5ee3c3e73d",
+  "downloaded_at": "2026-08-17T11:06:27.738752+00:00",
+  "critical_file": {
+    "path": "content_list.json",
+    "size": 16587,
+    "sha256": "sha256:ac597c46dcc4731ae4515395a5de3b1b2cdc18bbb7413a4434b037a7dfdae3c3"
+  },
+  "files": [
+    {
+      "path": "Door-Step Banking for Senior Citizens and Differently-Abled.md",
+      "size": 6104,
+      "sha256": null
+    },
+    {
+      "path": "Door-Step Banking for Senior Citizens and Differently-Abled_content_list_v2.json",
+      "size": 29063,
+      "sha256": null
+    },
+    {
+      "path": "Door-Step Banking for Senior Citizens and Differently-Abled_middle.json",
+      "size": 211196,
+      "sha256": null
+    },
+    {
+      "path": "Door-Step Banking for Senior Citizens and Differently-Abled_model.json",
+      "size": 37801,
+      "sha256": null
+    },
+    {
+      "path": "Door-Step Banking for Senior Citizens and Differently-Abled_origin.pdf",
+      "size": 173191,
+      "sha256": null
+    },
+    {
+      "path": "images/610ad36f88f0b38b09ec7066785e0bf9317b1952a430c246654dd1c0f1ecdadd.jpg",
+      "size": 38077,
+      "sha256": null
+    }
+  ],
+  "total_size_bytes": 512019
+}

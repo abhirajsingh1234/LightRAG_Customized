@@ -205,7 +205,8 @@ from lightrag.llm_roles import (
     _RoleLLMState,
 )
 from lightrag.storage_migrations import _StorageMigrationMixin
-
+from dotenv import load_dotenv
+load_dotenv()
 # use the .env that is inside the current folder
 # allows to use different .env file for each lightrag instance
 # the OS environment variables take precedence over the .env file
@@ -3910,6 +3911,7 @@ class LightRAG(_RoleLLMMixin, _StorageMigrationMixin, _PipelineMixin):
         param: QueryParam = QueryParam(),
         system_prompt: str | None = None,
         progress_callback=None,
+        rag =None
     ) -> dict[str, Any]:
         """
         Asynchronous complete query API: returns structured retrieval results with LLM generation.
@@ -3945,6 +3947,7 @@ class LightRAG(_RoleLLMMixin, _StorageMigrationMixin, _PipelineMixin):
                     system_prompt=system_prompt,
                     chunks_vdb=self.chunks_vdb,
                     progress_callback=progress_callback,
+                    rag = rag
                 )
             elif param.mode == "naive":
                 query_result = await naive_query(
@@ -3956,6 +3959,7 @@ class LightRAG(_RoleLLMMixin, _StorageMigrationMixin, _PipelineMixin):
                     system_prompt=system_prompt,
                     text_chunks_db=self.text_chunks,
                     progress_callback=progress_callback,
+                    rag = rag
                 )
             elif param.mode == "bypass":
                 # Bypass mode: directly use LLM without knowledge retrieval

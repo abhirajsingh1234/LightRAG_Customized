@@ -4137,6 +4137,7 @@ class _PipelineMixin:
             try:
                 doc_id_w, status_doc_w = item
                 file_path_w = getattr(status_doc_w, "file_path", "unknown_source")
+                print(f"Processing file: {file_path_w}")
                 # Boundary cancellation check: skip parsing the next queued doc
                 # without invoking the engine, mark it FAILED with a friendly
                 # "User cancelled" message, and let the finally task_done()
@@ -4155,6 +4156,10 @@ class _PipelineMixin:
                     )
                     continue
                 content_data_w = await self.full_docs.get_by_id(doc_id_w)
+                # Add this:
+                source_file_w = _read_source_file(content_data_w) if isinstance(content_data_w, dict) else None
+                print(f"[DEBUG] file_path attr: {file_path_w}")
+                print(f"[DEBUG] source_file in full_docs: {source_file_w}")
                 if not content_data_w:
                     raise Exception(
                         f"Document content not found in full_docs for doc_id: {doc_id_w}"

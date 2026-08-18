@@ -1,0 +1,426 @@
+{
+  "doc-574eef8b2a231a2171cb4eadad4c29e5": {
+    "relation_pairs": [
+      [
+        "Bank Policy",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Bank Service Savings Limits",
+        "Cash Delivery"
+      ],
+      [
+        "Bank Service Savings Limits",
+        "Cash Pickup"
+      ],
+      [
+        "Bank Service Savings Limits",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Cash Delivery",
+        "Current Account Customers"
+      ],
+      [
+        "Cash Delivery",
+        "Savings (Individuals)"
+      ],
+      [
+        "Cash Delivery",
+        "Senior Citizen / Differently Abled"
+      ],
+      [
+        "Cash Delivery",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Cash Management Vendor",
+        "Door Step Banking"
+      ],
+      [
+        "Cash Pickup",
+        "Current Account Customers"
+      ],
+      [
+        "Cash Pickup",
+        "Savings (Individuals)"
+      ],
+      [
+        "Cash Pickup",
+        "Senior Citizen / Differently Abled"
+      ],
+      [
+        "Cash Pickup",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Current Account Customers",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Differently Abled",
+        "Door Step Banking"
+      ],
+      [
+        "Differently Abled",
+        "KYC Document"
+      ],
+      [
+        "Door Step Banking",
+        "Force Majeure"
+      ],
+      [
+        "Door Step Banking",
+        "Reserve Bank of India"
+      ],
+      [
+        "Door Step Banking",
+        "Senior Citizen"
+      ],
+      [
+        "Door Step Banking",
+        "Service Charges"
+      ],
+      [
+        "Door Step Banking",
+        "Unity Bank"
+      ],
+      [
+        "KYC Document",
+        "Senior Citizen"
+      ],
+      [
+        "Savings (Individuals)",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Senior Citizen / Differently Abled",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ]
+    ],
+    "count": 24,
+    "create_time": 1786964808,
+    "update_time": 1786964808,
+    "_id": "doc-574eef8b2a231a2171cb4eadad4c29e5"
+  },
+  "doc-6e9c97657e05cf315dfdf575fb8d6364": {
+    "relation_pairs": [
+      [
+        "ATM Network",
+        "Bank"
+      ],
+      [
+        "Bank",
+        "Basic Savings Bank Deposit Account"
+      ],
+      [
+        "Bank",
+        "Business Correspondents"
+      ],
+      [
+        "Bank",
+        "Business Facilitators"
+      ],
+      [
+        "Bank",
+        "Current Account"
+      ],
+      [
+        "Bank",
+        "Customer"
+      ],
+      [
+        "Bank",
+        "Customers"
+      ],
+      [
+        "Bank",
+        "Debit Card"
+      ],
+      [
+        "Bank",
+        "Demand Deposits"
+      ],
+      [
+        "Bank",
+        "Direct Selling Agents"
+      ],
+      [
+        "Bank",
+        "Domestic Current Account"
+      ],
+      [
+        "Bank",
+        "Domestic Savings Bank Accounts"
+      ],
+      [
+        "Bank",
+        "Domestic Term Deposits"
+      ],
+      [
+        "Bank",
+        "Domestic, Non-Resident Ordinary Accounts"
+      ],
+      [
+        "Bank",
+        "Grievance Redressal Policy"
+      ],
+      [
+        "Bank",
+        "Illiterate Person"
+      ],
+      [
+        "Bank",
+        "Interest Rates"
+      ],
+      [
+        "Bank",
+        "Internet Banking"
+      ],
+      [
+        "Bank",
+        "Joint Account"
+      ],
+      [
+        "Bank",
+        "KYC Documents"
+      ],
+      [
+        "Bank",
+        "Know Your Customer"
+      ],
+      [
+        "Bank",
+        "Legal Heir"
+      ],
+      [
+        "Bank",
+        "Limited Liability Partnership"
+      ],
+      [
+        "Bank",
+        "Minor"
+      ],
+      [
+        "Bank",
+        "Minor Account"
+      ],
+      [
+        "Bank",
+        "Mobile Banking"
+      ],
+      [
+        "Bank",
+        "NEFT"
+      ],
+      [
+        "Bank",
+        "Nomination"
+      ],
+      [
+        "Bank",
+        "Nominee"
+      ],
+      [
+        "Bank",
+        "Non-Resident (External) Accounts"
+      ],
+      [
+        "Bank",
+        "Permanent Account Number"
+      ],
+      [
+        "Bank",
+        "Power of Attorney"
+      ],
+      [
+        "Bank",
+        "Premature Withdrawal Penalty"
+      ],
+      [
+        "Bank",
+        "Public"
+      ],
+      [
+        "Bank",
+        "RBI"
+      ],
+      [
+        "Bank",
+        "RTGS"
+      ],
+      [
+        "Bank",
+        "Recurring Deposit"
+      ],
+      [
+        "Bank",
+        "Reserve Bank of India"
+      ],
+      [
+        "Bank",
+        "Savings Account"
+      ],
+      [
+        "Bank",
+        "Self-help Groups"
+      ],
+      [
+        "Bank",
+        "Senior Citizens"
+      ],
+      [
+        "Bank",
+        "Short Term Deposits"
+      ],
+      [
+        "Bank",
+        "Specified Associates"
+      ],
+      [
+        "Bank",
+        "Statement of Account"
+      ],
+      [
+        "Bank",
+        "Term Deposit"
+      ],
+      [
+        "Bank",
+        "Time Deposits"
+      ],
+      [
+        "Bank",
+        "Transgender Person"
+      ],
+      [
+        "Bank",
+        "Visually Challenged Persons"
+      ],
+      [
+        "Bank",
+        "WhatsApp Banking"
+      ],
+      [
+        "Banking Ombudsman",
+        "Customers"
+      ],
+      [
+        "Banking Regulation Act, 1949",
+        "Reserve Bank of India"
+      ],
+      [
+        "Banking System",
+        "Depositors"
+      ],
+      [
+        "Board of Directors",
+        "NRE Deposit"
+      ],
+      [
+        "Board of Directors",
+        "NRO Deposit"
+      ],
+      [
+        "Customer",
+        "Joint Account Holders"
+      ],
+      [
+        "Customer Information",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Deposit Accounts",
+        "Depositors"
+      ],
+      [
+        "Deposit Accounts",
+        "Unity Small Finance Bank Limited"
+      ],
+      [
+        "Deposit Insurance and Credit Guarantee Corporation of India (DICGC)",
+        "Insurance Cover for Deposits"
+      ],
+      [
+        "Deposit Insurance and Credit Guarantee Corporation of India (DICGC)",
+        "Interest Rates"
+      ],
+      [
+        "Depositor",
+        "Form 15G"
+      ],
+      [
+        "Depositor",
+        "Form 15H"
+      ],
+      [
+        "Depositor",
+        "Nominee"
+      ],
+      [
+        "Depositor",
+        "Term Deposit"
+      ],
+      [
+        "Depositors",
+        "Unity Small Finance Bank Limited"
+      ],
+      [
+        "Dormant Account",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Guardian",
+        "Persons with Disabilities"
+      ],
+      [
+        "Inactive Account",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Interest Rates",
+        "NRE/NRO Deposit Scheme"
+      ],
+      [
+        "Interest Rates",
+        "Reserve Bank of India"
+      ],
+      [
+        "Legal Heirs",
+        "Term Deposit"
+      ],
+      [
+        "Master Policy on Customer Service",
+        "Term Deposit"
+      ],
+      [
+        "NRE Deposit",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "NRO Deposit",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "RBI",
+        "Unclaimed Deposits"
+      ],
+      [
+        "Scheduled Commercial Banks",
+        "Settlement of Dues in Deceased Deposit Account"
+      ],
+      [
+        "Scheduled Commercial Banks",
+        "Term Deposits"
+      ],
+      [
+        "Tax Deduction Certificate",
+        "Term Deposit"
+      ]
+    ],
+    "count": 78,
+    "create_time": 1786967977,
+    "update_time": 1786967977,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364"
+  }
+}

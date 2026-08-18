@@ -4777,9 +4777,11 @@ async def _get_vector_context(
             if os.path.basename(chunk["file_path"]) == doc_filter
             or chunk["file_path"] == doc_filter
         ]
-
+    print("Query Param in _get_vector_context:", query_param)  # Debugging line
     user_type = getattr(query_param, "user_type", None)
+    print(f"user_type: {user_type}, doc_filter: {doc_filter}, rag: {rag}")  # Debugging line
     if user_type == "user" and rag is not None:
+        print(f"Filtering chunks for user_type=user with doc_filter={doc_filter}"   )
         import os
         try:
             documents_with_ids, _ = await rag.doc_status.get_docs_paginated(
@@ -4792,6 +4794,9 @@ async def _get_vector_context(
             )
             # Build filename -> visibility map
             visibility_map = {}
+            print(f"Fetched {len(documents_with_ids)} documents for visibility check") 
+            for document in documents_with_ids:
+                print(f"Document: {document}")  # Debugging line to inspect document structure 
             for _doc_id, doc in documents_with_ids:
                 if doc.file_path:
                     fname = os.path.basename(doc.file_path)
@@ -4954,6 +4959,8 @@ async def _perform_kg_search(
         if query_param.mode == "mix" and chunks_vdb:
             if progress_callback:
                 await progress_callback(QueryProgress.RETRIEVING_CHUNKS)
+
+            print("Query Param in _perform_kg_search:", query_param) 
             vector_chunks = await _get_vector_context(
                 query,
                 chunks_vdb,
@@ -5567,6 +5574,8 @@ async def _build_query_context(
     if not query:
         logger.warning("Query is empty, skipping context building")
         return None
+
+    print("Query Param in _build_query_context:", query_param) 
 
     # Stage 1: Pure search
     search_result = await _perform_kg_search(
