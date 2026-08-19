@@ -37,7 +37,7 @@ STEP 1 — OLLAMA EMBEDDING
          ollama pull qwen3-embedding:4b        # your current model (2560 dim)
 
      Other options by VRAM:
-         ollama pull qwen3-embedding:0.6b      # ~1 GB  (1024 dim)
+         ollama pull qwen3-embedding:4b      # ~1 GB  (1024 dim)
          ollama pull nomic-embed-text          # ~0.5 GB (768 dim)
          ollama pull bge-m3                    # ~1.5 GB (1024 dim)
 

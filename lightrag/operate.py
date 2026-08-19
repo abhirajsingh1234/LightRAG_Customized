@@ -4743,88 +4743,91 @@ async def _get_vector_context(
     chunks_vdb: BaseVectorStorage,
     query_param: QueryParam,
     query_embedding: list[float] = None,
-    rag=None,  # LightRAG instance passed from lightrag.py
+    rag=None,
 ) -> list[dict]:
+    import os
     search_top_k = query_param.chunk_top_k or query_param.top_k
     cosine_threshold = chunks_vdb.cosine_better_than_threshold
-    print('query is :', query)  # Debugging line
+
     results = await chunks_vdb.query(
         query, top_k=search_top_k, query_embedding=query_embedding
     )
-    print(f"Vector search results: {len(results)} chunks found")  # Debugging line
-    print(f"user_type: {getattr(query_param, "user_type", None)}, doc_filter: {getattr(query_param, "doc_filter", None)}, rag: {rag}")
+
     if not results:
-        logger.info(
-            f"Naive query: 0 chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})"
-        )
+        logger.info(f"Naive query: 0 chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})")
         return []
 
     valid_chunks = []
     for result in results:
         if "content" in result:
-            chunk_with_metadata = {
+            valid_chunks.append({
                 "content": result["content"],
                 "created_at": result.get("created_at", None),
                 "file_path": result.get("file_path", "unknown_source"),
                 "source_type": "vector",
                 "chunk_id": result.get("id"),
-            }
-            valid_chunks.append(chunk_with_metadata)
+            })
 
+    # doc_filter
     doc_filter = getattr(query_param, "doc_filter", None)
     if doc_filter:
-        import os
         valid_chunks = [
             chunk for chunk in valid_chunks
             if os.path.basename(chunk["file_path"]) == doc_filter
             or chunk["file_path"] == doc_filter
         ]
-    print("Query Param in _get_vector_context:", query_param)  # Debugging line
+
     user_type = getattr(query_param, "user_type", None)
-    print(f"user_type: {user_type}, doc_filter: {doc_filter}, rag: {rag}")  # Debugging line
     if user_type == "user" and rag is not None:
-        print(f"Filtering chunks for user_type=user with doc_filter={doc_filter}"   )
-        import os
         try:
             documents_with_ids, _ = await rag.doc_status.get_docs_paginated(
-                status_filter=None,
-                status_filters=None,
-                page=1,
-                page_size=10000,
-                sort_field="created_at",
-                sort_direction="desc",
+                status_filter=None, status_filters=None,
+                page=1, page_size=10000,
+                sort_field="created_at", sort_direction="desc",
             )
-            # Build filename -> visibility map
-            visibility_map = {}
-            print(f"Fetched {len(documents_with_ids)} documents for visibility check") 
-            for document in documents_with_ids:
-                print(f"Document: {document}")  # Debugging line to inspect document structure 
-            for _doc_id, doc in documents_with_ids:
-                if doc.file_path:
-                    fname = os.path.basename(doc.file_path)
-                    visibility = (
-                        doc.metadata.get("visibility", "public")
-                        if doc.metadata else "public"
-                    )
-                    visibility_map[fname] = visibility
+
+            private_fnames = {
+                os.path.basename(doc.file_path)
+                for _doc_id, doc in documents_with_ids
+                if doc.file_path and (doc.metadata or {}).get("visibility", "private") == "private"
+            }
+
+            # Capture blocked chunks BEFORE filtering
+            blocked_chunks = [
+                c for c in valid_chunks
+                if os.path.basename(c.get("file_path", "")) in private_fnames
+            ]
+
+            if blocked_chunks:
+                print("\n" + "=" * 60)
+                print("🚨 PRIVATE ACCESS ATTEMPT DETECTED [_get_vector_context]")
+                print(f"   Query     : '{query}'")
+                print(f"   user_type : {user_type}")
+                print(f"   doc_filter: {doc_filter}")
+                print(f"   Private files involved: {private_fnames}")
+                print(f"\n   🔒 BLOCKED CHUNKS ({len(blocked_chunks)}):")
+                for c in blocked_chunks:
+                    print(f"      - chunk_id : {c.get('chunk_id', '?')}")
+                    print(f"        file     : {c.get('file_path', '?')}")
+                    print(f"        content  : {str(c.get('content', ''))[:100]}...")
+                print("=" * 60 + "\n")
+
+            before = len(valid_chunks)
+            valid_chunks = [
+                c for c in valid_chunks
+                if os.path.basename(c.get("file_path", "")) not in private_fnames
+            ]
+            logger.info(
+                f"Visibility filter [_get_vector_context]: removed {before - len(valid_chunks)} private chunks"
+            )
 
         except Exception as e:
-            logger.warning(f"Could not fetch document visibility: {e}. Returning empty to avoid leaking private content.")
+            logger.warning(f"Visibility filter failed in _get_vector_context: {e}. Returning empty to avoid leak.")
             return []
 
-        before = len(valid_chunks)
-        valid_chunks = [
-            chunk for chunk in valid_chunks
-            if visibility_map.get(
-                os.path.basename(chunk["file_path"]), "public"
-            ).lower() != "private"
-        ]
-        logger.info(f"Visibility filter removed {before - len(valid_chunks)} private chunks for user_type=user")
-
-    logger.info(
-        f"Naive query: {len(valid_chunks)} chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})"
-    )
+    logger.info(f"Naive query: {len(valid_chunks)} chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})")
     return valid_chunks
+
 
 async def _perform_kg_search(
     query: str,
@@ -5041,7 +5044,7 @@ async def _perform_kg_search(
     logger.info(
         f"Raw search results: {len(final_entities)} entities, {len(final_relations)} relations, {len(vector_chunks)} vector chunks"
     )
-
+    
     return {
         "final_entities": final_entities,
         "final_relations": final_relations,
@@ -5266,6 +5269,113 @@ async def _attach_content_headings(
     await run_in_tokenizer_executor(_backfill)
 
 
+# async def _merge_all_chunks(
+#     filtered_entities: list[dict],
+#     filtered_relations: list[dict],
+#     vector_chunks: list[dict],
+#     query: str = "",
+#     knowledge_graph_inst: BaseGraphStorage = None,
+#     text_chunks_db: BaseKVStorage = None,
+#     query_param: QueryParam = None,
+#     chunks_vdb: BaseVectorStorage = None,
+#     chunk_tracking: dict = None,
+#     query_embedding: list[float] = None,
+# ) -> list[dict]:
+#     """
+#     Merge chunks from different sources: vector_chunks + entity_chunks + relation_chunks.
+#     """
+#     if chunk_tracking is None:
+#         chunk_tracking = {}
+
+#     # Get chunks from entities
+#     entity_chunks = []
+#     if filtered_entities and text_chunks_db:
+#         entity_chunks = await _find_related_text_unit_from_entities(
+#             filtered_entities,
+#             query_param,
+#             text_chunks_db,
+#             knowledge_graph_inst,
+#             query,
+#             chunks_vdb,
+#             chunk_tracking=chunk_tracking,
+#             query_embedding=query_embedding,
+#         )
+
+#     # Get chunks from relations
+#     relation_chunks = []
+#     if filtered_relations and text_chunks_db:
+#         relation_chunks = await _find_related_text_unit_from_relations(
+#             filtered_relations,
+#             query_param,
+#             text_chunks_db,
+#             entity_chunks,  # For deduplication
+#             query,
+#             chunks_vdb,
+#             chunk_tracking=chunk_tracking,
+#             query_embedding=query_embedding,
+#         )
+
+#     # Round-robin merge chunks from different sources with deduplication
+#     merged_chunks = []
+#     seen_chunk_ids = set()
+#     max_len = max(len(vector_chunks), len(entity_chunks), len(relation_chunks))
+#     origin_len = len(vector_chunks) + len(entity_chunks) + len(relation_chunks)
+
+#     for i in range(max_len):
+#         # Add from vector chunks first (Naive mode)
+#         if i < len(vector_chunks):
+#             chunk = vector_chunks[i]
+#             chunk_id = chunk.get("chunk_id") or chunk.get("id")
+#             if chunk_id and chunk_id not in seen_chunk_ids:
+#                 seen_chunk_ids.add(chunk_id)
+#                 merged_chunks.append(
+#                     {
+#                         "content": chunk["content"],
+#                         "file_path": chunk.get("file_path", "unknown_source"),
+#                         "chunk_id": chunk_id,
+#                     }
+#                 )
+
+#         # Add from entity chunks (Local mode)
+#         if i < len(entity_chunks):
+#             chunk = entity_chunks[i]
+#             chunk_id = chunk.get("chunk_id") or chunk.get("id")
+#             if chunk_id and chunk_id not in seen_chunk_ids:
+#                 seen_chunk_ids.add(chunk_id)
+#                 merged_chunks.append(
+#                     {
+#                         "content": chunk["content"],
+#                         "file_path": chunk.get("file_path", "unknown_source"),
+#                         "chunk_id": chunk_id,
+#                     }
+#                 )
+
+#         # Add from relation chunks (Global mode)
+#         if i < len(relation_chunks):
+#             chunk = relation_chunks[i]
+#             chunk_id = chunk.get("chunk_id") or chunk.get("id")
+#             if chunk_id and chunk_id not in seen_chunk_ids:
+#                 seen_chunk_ids.add(chunk_id)
+#                 merged_chunks.append(
+#                     {
+#                         "content": chunk["content"],
+#                         "file_path": chunk.get("file_path", "unknown_source"),
+#                         "chunk_id": chunk_id,
+#                     }
+#                 )
+
+#     logger.info(
+#         f"Round-robin merged chunks: {origin_len} -> {len(merged_chunks)} (deduplicated {origin_len - len(merged_chunks)})"
+#     )
+
+#     # Backfill heading path before token truncation so it counts toward the budget
+#     if text_chunks_db and text_chunks_db.global_config.get(
+#         "enable_content_headings", False
+#     ):
+#         await _attach_content_headings(merged_chunks, text_chunks_db)
+
+#     return merged_chunks
+
 async def _merge_all_chunks(
     filtered_entities: list[dict],
     filtered_relations: list[dict],
@@ -5277,6 +5387,7 @@ async def _merge_all_chunks(
     chunks_vdb: BaseVectorStorage = None,
     chunk_tracking: dict = None,
     query_embedding: list[float] = None,
+    rag=None,
 ) -> list[dict]:
     """
     Merge chunks from different sources: vector_chunks + entity_chunks + relation_chunks.
@@ -5305,7 +5416,7 @@ async def _merge_all_chunks(
             filtered_relations,
             query_param,
             text_chunks_db,
-            entity_chunks,  # For deduplication
+            entity_chunks,
             query,
             chunks_vdb,
             chunk_tracking=chunk_tracking,
@@ -5319,7 +5430,6 @@ async def _merge_all_chunks(
     origin_len = len(vector_chunks) + len(entity_chunks) + len(relation_chunks)
 
     for i in range(max_len):
-        # Add from vector chunks first (Naive mode)
         if i < len(vector_chunks):
             chunk = vector_chunks[i]
             chunk_id = chunk.get("chunk_id") or chunk.get("id")
@@ -5333,7 +5443,6 @@ async def _merge_all_chunks(
                     }
                 )
 
-        # Add from entity chunks (Local mode)
         if i < len(entity_chunks):
             chunk = entity_chunks[i]
             chunk_id = chunk.get("chunk_id") or chunk.get("id")
@@ -5347,7 +5456,6 @@ async def _merge_all_chunks(
                     }
                 )
 
-        # Add from relation chunks (Global mode)
         if i < len(relation_chunks):
             chunk = relation_chunks[i]
             chunk_id = chunk.get("chunk_id") or chunk.get("id")
@@ -5365,6 +5473,53 @@ async def _merge_all_chunks(
         f"Round-robin merged chunks: {origin_len} -> {len(merged_chunks)} (deduplicated {origin_len - len(merged_chunks)})"
     )
 
+    # Visibility filter for user_type=user
+    user_type = getattr(query_param, "user_type", None)
+    if user_type == "user" and rag is not None:
+        import os
+        try:
+            documents_with_ids, _ = await rag.doc_status.get_docs_paginated(
+                status_filter=None, status_filters=None,
+                page=1, page_size=10000,
+                sort_field="created_at", sort_direction="desc",
+            )
+            private_fnames = {
+                os.path.basename(doc.file_path)
+                for _doc_id, doc in documents_with_ids
+                if doc.file_path and (doc.metadata or {}).get("visibility", "private") == "private"
+            }
+
+            # Capture blocked chunks BEFORE filtering
+            blocked_chunks = [
+                c for c in merged_chunks
+                if os.path.basename(c.get("file_path", "")) in private_fnames
+            ]
+
+            if blocked_chunks:
+                print("\n" + "=" * 60)
+                print("🚨 PRIVATE ACCESS ATTEMPT DETECTED [_merge_all_chunks]")
+                print(f"   Query     : '{query}'")
+                print(f"   user_type : {user_type}")
+                print(f"   Private files involved: {private_fnames}")
+                print(f"\n   🔒 BLOCKED CHUNKS ({len(blocked_chunks)}):")
+                for c in blocked_chunks:
+                    print(f"      - chunk_id : {c.get('chunk_id', '?')}")
+                    print(f"        file     : {c.get('file_path', '?')}")
+                    print(f"        content  : {str(c.get('content', ''))[:100]}...")
+                print("=" * 60 + "\n")
+
+            before = len(merged_chunks)
+            merged_chunks = [
+                c for c in merged_chunks
+                if os.path.basename(c.get("file_path", "")) not in private_fnames
+            ]
+            logger.info(
+                f"Visibility filter [_merge_all_chunks]: removed {before - len(merged_chunks)} private chunks"
+            )
+        except Exception as e:
+            logger.warning(f"Visibility filter failed in _merge_all_chunks: {e}. Clearing to prevent leak.")
+            merged_chunks = []
+
     # Backfill heading path before token truncation so it counts toward the budget
     if text_chunks_db and text_chunks_db.global_config.get(
         "enable_content_headings", False
@@ -5372,6 +5527,7 @@ async def _merge_all_chunks(
         await _attach_content_headings(merged_chunks, text_chunks_db)
 
     return merged_chunks
+
 
 
 async def _build_context_str(
@@ -5580,6 +5736,132 @@ async def _build_query_context(
     print("Query Param in _build_query_context:", query_param) 
 
     # Stage 1: Pure search
+    # search_result = await _perform_kg_search(
+    #     query,
+    #     ll_keywords,
+    #     hl_keywords,
+    #     knowledge_graph_inst,
+    #     entities_vdb,
+    #     relationships_vdb,
+    #     text_chunks_db,
+    #     query_param,
+    #     chunks_vdb,
+    #     progress_callback=progress_callback,
+    #     rag=rag
+    # )
+
+    # if not search_result["final_entities"] and not search_result["final_relations"]:
+    #     if query_param.mode != "mix":
+    #         return None
+    #     else:
+    #         if not search_result["chunk_tracking"]:
+    #             return None
+
+    # if search_result["final_entities"]:
+    #     print("ENTITY SAMPLE:", search_result["final_entities"][0])
+    # if search_result["final_relations"]:
+    #     print("RELATION SAMPLE:", search_result["final_relations"][0])
+
+    # # Stage 2: Apply token truncation for LLM efficiency
+    # truncation_result = await _apply_token_truncation(
+    #     search_result,
+    #     query_param,
+    #     text_chunks_db.global_config,
+    # )
+
+    # # Stage 3: Merge chunks using filtered entities/relations
+    # merged_chunks = await _merge_all_chunks(
+    #     filtered_entities=truncation_result["filtered_entities"],
+    #     filtered_relations=truncation_result["filtered_relations"],
+    #     vector_chunks=search_result["vector_chunks"],
+    #     query=query,
+    #     knowledge_graph_inst=knowledge_graph_inst,
+    #     text_chunks_db=text_chunks_db,
+    #     query_param=query_param,
+    #     chunks_vdb=chunks_vdb,
+    #     chunk_tracking=search_result["chunk_tracking"],
+    #     query_embedding=search_result["query_embedding"],
+    #     rag=rag
+    # )
+
+    # if (
+    #     not merged_chunks
+    #     and not truncation_result["entities_context"]
+    #     and not truncation_result["relations_context"]
+    # ):
+    #     return None
+
+    # # Stage 4: Build final LLM context with dynamic token processing
+    # # _build_context_str now always returns tuple[str, dict]
+    # context, raw_data = await _build_context_str(
+    #     entities_context=truncation_result["entities_context"],
+    #     relations_context=truncation_result["relations_context"],
+    #     merged_chunks=merged_chunks,
+    #     query=query,
+    #     query_param=query_param,
+    #     global_config=text_chunks_db.global_config,
+    #     chunk_tracking=search_result["chunk_tracking"],
+    #     entity_id_to_original=truncation_result["entity_id_to_original"],
+    #     relation_id_to_original=truncation_result["relation_id_to_original"],
+    #     progress_callback=progress_callback,
+    # )
+
+    # # Convert keywords strings to lists and add complete metadata to raw_data
+    # hl_keywords_list = hl_keywords.split(", ") if hl_keywords else []
+    # ll_keywords_list = ll_keywords.split(", ") if ll_keywords else []
+
+    # # Add complete metadata to raw_data (preserve existing metadata including query_mode)
+    # if "metadata" not in raw_data:
+    #     raw_data["metadata"] = {}
+
+    # # Update keywords while preserving existing metadata
+    # raw_data["metadata"]["keywords"] = {
+    #     "high_level": hl_keywords_list,
+    #     "low_level": ll_keywords_list,
+    # }
+    # raw_data["metadata"]["processing_info"] = {
+    #     "total_entities_found": len(search_result.get("final_entities", [])),
+    #     "total_relations_found": len(search_result.get("final_relations", [])),
+    #     "entities_after_truncation": len(
+    #         truncation_result.get("filtered_entities", [])
+    #     ),
+    #     "relations_after_truncation": len(
+    #         truncation_result.get("filtered_relations", [])
+    #     ),
+    #     "merged_chunks_count": len(merged_chunks),
+    #     "final_chunks_count": len(raw_data.get("data", {}).get("chunks", [])),
+    # }
+
+    # logger.debug(
+    #     f"[_build_query_context] Context length: {len(context) if context else 0}"
+    # )
+    # logger.debug(
+    #     f"[_build_query_context] Raw data entities: {len(raw_data.get('data', {}).get('entities', []))}, relationships: {len(raw_data.get('data', {}).get('relationships', []))}, chunks: {len(raw_data.get('data', {}).get('chunks', []))}"
+    # )
+
+    # return QueryContextResult(context=context, raw_data=raw_data)
+
+async def _build_query_context(
+    query: str,
+    ll_keywords: str,
+    hl_keywords: str,
+    knowledge_graph_inst: BaseGraphStorage,
+    entities_vdb: BaseVectorStorage,
+    relationships_vdb: BaseVectorStorage,
+    text_chunks_db: BaseKVStorage,
+    query_param: QueryParam,
+    chunks_vdb: BaseVectorStorage = None,
+    progress_callback: ProgressCallback | None = None,
+    rag=None
+) -> QueryContextResult | None:
+
+    if not query:
+        logger.warning("Query is empty, skipping context building")
+        return None
+
+    print("Query Param in _build_query_context:", query_param)
+
+    # Stage 1: Pure search
     search_result = await _perform_kg_search(
         query,
         ll_keywords,
@@ -5594,6 +5876,88 @@ async def _build_query_context(
         rag=rag
     )
 
+    # Visibility filter for entities, relations, and vector chunks
+    if getattr(query_param, "user_type", None) == "user" and rag is not None:
+        import os
+        try:
+            documents_with_ids, _ = await rag.doc_status.get_docs_paginated(
+                status_filter=None, status_filters=None,
+                page=1, page_size=10000,
+                sort_field="created_at", sort_direction="desc",
+            )
+            private_fnames = {
+                os.path.basename(doc.file_path)
+                for _doc_id, doc in documents_with_ids
+                if doc.file_path and (doc.metadata or {}).get("visibility", "private") == "private"
+            }
+
+            # Capture blocked items BEFORE filtering
+            blocked_entities = [
+                e for e in search_result["final_entities"]
+                if os.path.basename(e.get("file_path", "")) in private_fnames
+            ]
+            blocked_relations = [
+                r for r in search_result["final_relations"]
+                if os.path.basename(r.get("file_path", "")) in private_fnames
+            ]
+            blocked_chunks = [
+                c for c in search_result["vector_chunks"]
+                if os.path.basename(c.get("file_path", "")) in private_fnames
+            ]
+
+            if blocked_entities or blocked_relations or blocked_chunks:
+                print("\n" + "=" * 60)
+                print("🚨 PRIVATE ACCESS ATTEMPT DETECTED")
+                print(f"   Query     : '{query}'")
+                print(f"   user_type : {getattr(query_param, 'user_type', None)}")
+                print(f"   Private files involved: {private_fnames}")
+
+                if blocked_entities:
+                    print(f"\n   🔒 BLOCKED ENTITIES ({len(blocked_entities)}):")
+                    for e in blocked_entities:
+                        print(f"      - [{e.get('entity_type', '?')}] {e.get('entity_name', '?')} | file: {e.get('file_path', '?')}")
+                        print(f"        desc: {str(e.get('description', ''))[:100]}...")
+
+                if blocked_relations:
+                    print(f"\n   🔒 BLOCKED RELATIONS ({len(blocked_relations)}):")
+                    for r in blocked_relations:
+                        print(f"      - {r.get('src_id', '?')} -> {r.get('tgt_id', '?')} | file: {r.get('file_path', '?')}")
+                        print(f"        desc: {str(r.get('description', ''))[:100]}...")
+
+                if blocked_chunks:
+                    print(f"\n   🔒 BLOCKED CHUNKS ({len(blocked_chunks)}):")
+                    for c in blocked_chunks:
+                        print(f"      - chunk_id: {c.get('chunk_id', '?')} | file: {c.get('file_path', '?')}")
+                        print(f"        content: {str(c.get('content', ''))[:100]}...")
+
+                print("=" * 60 + "\n")
+
+            # Apply filters
+            search_result["final_entities"] = [
+                e for e in search_result["final_entities"]
+                if os.path.basename(e.get("file_path", "")) not in private_fnames
+            ]
+            search_result["final_relations"] = [
+                r for r in search_result["final_relations"]
+                if os.path.basename(r.get("file_path", "")) not in private_fnames
+            ]
+            search_result["vector_chunks"] = [
+                c for c in search_result["vector_chunks"]
+                if os.path.basename(c.get("file_path", "")) not in private_fnames
+            ]
+
+            logger.info(
+                f"Visibility filter: removed {len(blocked_entities)} private entities, "
+                f"{len(blocked_relations)} private relations, "
+                f"{len(blocked_chunks)} private vector chunks"
+            )
+
+        except Exception as e:
+            logger.warning(f"Visibility filter failed: {e}. Clearing all to prevent leak.")
+            search_result["final_entities"] = []
+            search_result["final_relations"] = []
+            search_result["vector_chunks"] = []
+
     if not search_result["final_entities"] and not search_result["final_relations"]:
         if query_param.mode != "mix":
             return None
@@ -5601,14 +5965,14 @@ async def _build_query_context(
             if not search_result["chunk_tracking"]:
                 return None
 
-    # Stage 2: Apply token truncation for LLM efficiency
+    # Stage 2: Apply token truncation
     truncation_result = await _apply_token_truncation(
         search_result,
         query_param,
         text_chunks_db.global_config,
     )
 
-    # Stage 3: Merge chunks using filtered entities/relations
+    # Stage 3: Merge chunks
     merged_chunks = await _merge_all_chunks(
         filtered_entities=truncation_result["filtered_entities"],
         filtered_relations=truncation_result["filtered_relations"],
@@ -5620,6 +5984,7 @@ async def _build_query_context(
         chunks_vdb=chunks_vdb,
         chunk_tracking=search_result["chunk_tracking"],
         query_embedding=search_result["query_embedding"],
+        rag=rag
     )
 
     if (
@@ -5629,8 +5994,7 @@ async def _build_query_context(
     ):
         return None
 
-    # Stage 4: Build final LLM context with dynamic token processing
-    # _build_context_str now always returns tuple[str, dict]
+    # Stage 4: Build final LLM context
     context, raw_data = await _build_context_str(
         entities_context=truncation_result["entities_context"],
         relations_context=truncation_result["relations_context"],
@@ -5644,15 +6008,12 @@ async def _build_query_context(
         progress_callback=progress_callback,
     )
 
-    # Convert keywords strings to lists and add complete metadata to raw_data
     hl_keywords_list = hl_keywords.split(", ") if hl_keywords else []
     ll_keywords_list = ll_keywords.split(", ") if ll_keywords else []
 
-    # Add complete metadata to raw_data (preserve existing metadata including query_mode)
     if "metadata" not in raw_data:
         raw_data["metadata"] = {}
 
-    # Update keywords while preserving existing metadata
     raw_data["metadata"]["keywords"] = {
         "high_level": hl_keywords_list,
         "low_level": ll_keywords_list,
@@ -5660,25 +6021,20 @@ async def _build_query_context(
     raw_data["metadata"]["processing_info"] = {
         "total_entities_found": len(search_result.get("final_entities", [])),
         "total_relations_found": len(search_result.get("final_relations", [])),
-        "entities_after_truncation": len(
-            truncation_result.get("filtered_entities", [])
-        ),
-        "relations_after_truncation": len(
-            truncation_result.get("filtered_relations", [])
-        ),
+        "entities_after_truncation": len(truncation_result.get("filtered_entities", [])),
+        "relations_after_truncation": len(truncation_result.get("filtered_relations", [])),
         "merged_chunks_count": len(merged_chunks),
         "final_chunks_count": len(raw_data.get("data", {}).get("chunks", [])),
     }
 
+    logger.debug(f"[_build_query_context] Context length: {len(context) if context else 0}")
     logger.debug(
-        f"[_build_query_context] Context length: {len(context) if context else 0}"
-    )
-    logger.debug(
-        f"[_build_query_context] Raw data entities: {len(raw_data.get('data', {}).get('entities', []))}, relationships: {len(raw_data.get('data', {}).get('relationships', []))}, chunks: {len(raw_data.get('data', {}).get('chunks', []))}"
+        f"[_build_query_context] Raw data entities: {len(raw_data.get('data', {}).get('entities', []))}, "
+        f"relationships: {len(raw_data.get('data', {}).get('relationships', []))}, "
+        f"chunks: {len(raw_data.get('data', {}).get('chunks', []))}"
     )
 
     return QueryContextResult(context=context, raw_data=raw_data)
-
 
 async def _get_node_data(
     query: str,

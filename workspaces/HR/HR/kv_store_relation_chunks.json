@@ -35,15 +35,6 @@
     "update_time": 1787055132,
     "_id": "Banking Service Financial Limits<SEP>Savings (Individuals)"
   },
-  "Cash Management Vendor<SEP>Unity Bank": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
-    ],
-    "count": 1,
-    "create_time": 1787055132,
-    "update_time": 1787055132,
-    "_id": "Cash Management Vendor<SEP>Unity Bank"
-  },
   "Banking Service Financial Limits<SEP>Senior Citizen / Differently Abled": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
@@ -116,15 +107,6 @@
     "update_time": 1787055132,
     "_id": "Banking Service Financial Limits<SEP>Cash Delivery Services"
   },
-  "Senior Citizen / Differently Abled<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
-    ],
-    "count": 1,
-    "create_time": 1787055132,
-    "update_time": 1787055132,
-    "_id": "Senior Citizen / Differently Abled<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
-  },
   "Differently-Abled<SEP>Door-Step Banking": {
     "chunk_ids": [
       "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
@@ -133,15 +115,6 @@
     "create_time": 1787055132,
     "update_time": 1787055132,
     "_id": "Differently-Abled<SEP>Door-Step Banking"
-  },
-  "Current Account Customers<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
-    "chunk_ids": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
-    ],
-    "count": 1,
-    "create_time": 1787055132,
-    "update_time": 1787055132,
-    "_id": "Current Account Customers<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
   },
   "Cash Pickup Services<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
     "chunk_ids": [
@@ -224,43 +197,6 @@
     "update_time": 1787057501,
     "_id": "Depositors<SEP>Unity Small Finance Bank Limited"
   },
-  "Bank<SEP>Savings Account": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Savings Account"
-  },
-  "Bank<SEP>Current Account": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 2,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Current Account"
-  },
-  "Bank<SEP>RBI": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>RBI"
-  },
-  "Bank<SEP>Permanent Account Number": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Permanent Account Number"
-  },
   "Bank<SEP>Basic Savings Bank Deposit Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
@@ -288,51 +224,6 @@
     "update_time": 1787057501,
     "_id": "Bank<SEP>Minimum / Average Balance Requirements"
   },
-  "Bank<SEP>Risk Categorization": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Risk Categorization"
-  },
-  "Bank<SEP>Debit Card": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Debit Card"
-  },
-  "Bank<SEP>Mobile Banking": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Mobile Banking"
-  },
-  "Bank<SEP>WhatsApp Banking": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>WhatsApp Banking"
-  },
-  "Bank<SEP>Internet Banking": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Internet Banking"
-  },
   "ATM Network<SEP>Bank": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
@@ -342,24 +233,6 @@
     "update_time": 1787057501,
     "_id": "ATM Network<SEP>Bank"
   },
-  "Bank<SEP>NEFT": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>NEFT"
-  },
-  "Bank<SEP>RTGS": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>RTGS"
-  },
   "Bank<SEP>Saving Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
@@ -368,51 +241,6 @@
     "create_time": 1787057501,
     "update_time": 1787057501,
     "_id": "Bank<SEP>Saving Account"
-  },
-  "Bank<SEP>Statement of Account": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Statement of Account"
-  },
-  "Bank<SEP>Passbook": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Passbook"
-  },
-  "Bank<SEP>Joint Account": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Joint Account"
-  },
-  "Bank<SEP>Power of Attorney": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Power of Attorney"
-  },
-  "Bank<SEP>Nomination": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Nomination"
   },
   "Accounts Operations<SEP>Bank": {
     "chunk_ids": [
@@ -441,15 +269,6 @@
     "create_time": 1787057501,
     "update_time": 1787057501,
     "_id": "Accounts of Minors<SEP>Bank"
-  },
-  "Appointee<SEP>Depositor": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Appointee<SEP>Depositor"
   },
   "Bank<SEP>Joint Account Mandate": {
     "chunk_ids": [
@@ -514,51 +333,6 @@
     "update_time": 1787057501,
     "_id": "Bank<SEP>Nominee"
   },
-  "Bank<SEP>Depositor": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Depositor"
-  },
-  "Bank<SEP>Senior Citizen": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Senior Citizen"
-  },
-  "Bank<SEP>Visually Challenged Person": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Visually Challenged Person"
-  },
-  "Bank<SEP>Transgender Person": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Transgender Person"
-  },
-  "Bank<SEP>Non-Resident Individual": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Non-Resident Individual"
-  },
   "Bank<SEP>Domestic Non-Resident Ordinary Account": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
@@ -586,42 +360,6 @@
     "update_time": 1787057501,
     "_id": "Bank<SEP>Reserve Bank of India"
   },
-  "Bank<SEP>Senior Citizens": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Senior Citizens"
-  },
-  "Depositor<SEP>Term Deposit": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Depositor<SEP>Term Deposit"
-  },
-  "Bank<SEP>Domestic Current Account": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Domestic Current Account"
-  },
-  "Depositor<SEP>Legal Heirs": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Depositor<SEP>Legal Heirs"
-  },
   "Bank<SEP>Domestic Savings Bank Accounts": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
@@ -631,15 +369,6 @@
     "update_time": 1787057501,
     "_id": "Bank<SEP>Domestic Savings Bank Accounts"
   },
-  "Depositor<SEP>Form 15G": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Depositor<SEP>Form 15G"
-  },
   "Bank<SEP>Term Deposits": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
@@ -648,15 +377,6 @@
     "create_time": 1787057501,
     "update_time": 1787057501,
     "_id": "Bank<SEP>Term Deposits"
-  },
-  "Depositor<SEP>Form 15H": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Depositor<SEP>Form 15H"
   },
   "Bank<SEP>Bulk Deposits": {
     "chunk_ids": [
@@ -703,15 +423,6 @@
     "update_time": 1787057501,
     "_id": "Bank<SEP>Deposit Interest Rate Card"
   },
-  "Bank<SEP>Term Deposit": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
-    ],
-    "count": 1,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Term Deposit"
-  },
   "RBI<SEP>Unclaimed Deposits": {
     "chunk_ids": [
       "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
@@ -747,16 +458,6 @@
     "create_time": 1787057501,
     "update_time": 1787057501,
     "_id": "Customers<SEP>Depositors"
-  },
-  "Bank<SEP>Master Policy on Customer Service": {
-    "chunk_ids": [
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007",
-      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
-    ],
-    "count": 2,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "Bank<SEP>Master Policy on Customer Service"
   },
   "Banking Ombudsman<SEP>Depositors": {
     "chunk_ids": [
@@ -865,5 +566,437 @@
     "create_time": 1787057501,
     "update_time": 1787057501,
     "_id": "Automated Clearing House<SEP>Bank"
+  },
+  "Doorstep Banking<SEP>Reserve Bank of India": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>Reserve Bank of India"
+  },
+  "Doorstep Banking<SEP>Unity Bank": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>Unity Bank"
+  },
+  "Doorstep Banking<SEP>Senior Citizens": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>Senior Citizens"
+  },
+  "Differently-Abled<SEP>Doorstep Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Differently-Abled<SEP>Doorstep Banking"
+  },
+  "KYC Document<SEP>Senior Citizens": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "KYC Document<SEP>Senior Citizens"
+  },
+  "Doorstep Banking<SEP>Savings Account": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>Savings Account"
+  },
+  "Differently-Abled<SEP>KYC Document": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Differently-Abled<SEP>KYC Document"
+  },
+  "Branch<SEP>Unity Bank": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Branch<SEP>Unity Bank"
+  },
+  "Current Account<SEP>Doorstep Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Current Account<SEP>Doorstep Banking"
+  },
+  "Cash Pickup<SEP>Doorstep Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Cash Pickup<SEP>Doorstep Banking"
+  },
+  "Cash Delivery<SEP>Doorstep Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Cash Delivery<SEP>Doorstep Banking"
+  },
+  "Demand Draft<SEP>Doorstep Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Demand Draft<SEP>Doorstep Banking"
+  },
+  "Doorstep Banking<SEP>Pay Order": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>Pay Order"
+  },
+  "Branch<SEP>Doorstep Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Branch<SEP>Doorstep Banking"
+  },
+  "Doorstep Banking<SEP>Phone Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>Phone Banking"
+  },
+  "Doorstep Banking<SEP>IVR": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>IVR"
+  },
+  "Doorstep Banking<SEP>Internet Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>Internet Banking"
+  },
+  "Doorstep Banking<SEP>Mobile Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>Mobile Banking"
+  },
+  "Cash Pickup<SEP>operating_guidelines_savings": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Cash Pickup<SEP>operating_guidelines_savings"
+  },
+  "Call Center<SEP>Doorstep Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Call Center<SEP>Doorstep Banking"
+  },
+  "Cash Delivery<SEP>operating_guidelines_savings": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Cash Delivery<SEP>operating_guidelines_savings"
+  },
+  "Doorstep Banking<SEP>TPIN": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>TPIN"
+  },
+  "Individuals<SEP>operating_guidelines_savings": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Individuals<SEP>operating_guidelines_savings"
+  },
+  "Cash Management Vendor<SEP>Doorstep Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Cash Management Vendor<SEP>Doorstep Banking"
+  },
+  "Senior Citizens<SEP>operating_guidelines_savings": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Senior Citizens<SEP>operating_guidelines_savings"
+  },
+  "Cash Pickup<SEP>Door-Step Banking Services": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Cash Pickup<SEP>Door-Step Banking Services"
+  },
+  "Banking Correspondent<SEP>Doorstep Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Banking Correspondent<SEP>Doorstep Banking"
+  },
+  "Differently Abled Persons<SEP>operating_guidelines_savings": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Differently Abled Persons<SEP>operating_guidelines_savings"
+  },
+  "Cash Delivery<SEP>Door-Step Banking Services": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Cash Delivery<SEP>Door-Step Banking Services"
+  },
+  "Doorstep Banking<SEP>Service Charge": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>Service Charge"
+  },
+  "Current Account Customers<SEP>operating_guidelines_savings": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Current Account Customers<SEP>operating_guidelines_savings"
+  },
+  "Bank Staff<SEP>Door-Step Banking Services": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Bank Staff<SEP>Door-Step Banking Services"
+  },
+  "Doorstep Banking<SEP>Force Majeure": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Doorstep Banking<SEP>Force Majeure"
+  },
+  "Bank Policy<SEP>operating_guidelines_savings": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Bank Policy<SEP>operating_guidelines_savings"
+  },
+  "Cash Pickup<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Cash Pickup<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Door-Step Banking Services<SEP>Vendors": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Door-Step Banking Services<SEP>Vendors"
+  },
+  "Cash Delivery<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Cash Delivery<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Correspondents<SEP>Door-Step Banking Services": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Correspondents<SEP>Door-Step Banking Services"
+  },
+  "Individuals<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Individuals<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "operating_guidelines_savings<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "operating_guidelines_savings<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Senior Citizens<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Senior Citizens<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Differently Abled Persons<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Differently Abled Persons<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Current Account Customers<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Current Account Customers<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Door-Step Banking Services<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Door-Step Banking Services<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Bank Staff<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Bank Staff<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Vendors<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Vendors<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Correspondents<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Correspondents<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Bank Policy<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "Bank Policy<SEP>tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
   }
 }

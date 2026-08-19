@@ -2,401 +2,201 @@
   "doc-574eef8b2a231a2171cb4eadad4c29e5": {
     "relation_pairs": [
       [
-        "Banking Correspondents",
-        "Unity Bank"
+        "Bank Policy",
+        "operating_guidelines_savings"
       ],
       [
-        "Banking Service Financial Limits",
-        "Cash Delivery Services"
-      ],
-      [
-        "Banking Service Financial Limits",
-        "Cash Pickup Services"
-      ],
-      [
-        "Banking Service Financial Limits",
-        "Current Account Customers"
-      ],
-      [
-        "Banking Service Financial Limits",
-        "Savings (Individuals)"
-      ],
-      [
-        "Banking Service Financial Limits",
-        "Senior Citizen / Differently Abled"
-      ],
-      [
-        "Banking Service Financial Limits",
+        "Bank Policy",
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
-        "Cash Delivery Services",
+        "Bank Staff",
+        "Door-Step Banking Services"
+      ],
+      [
+        "Bank Staff",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Banking Correspondent",
+        "Doorstep Banking"
+      ],
+      [
+        "Branch",
+        "Doorstep Banking"
+      ],
+      [
+        "Branch",
+        "Unity Bank"
+      ],
+      [
+        "Call Center",
+        "Doorstep Banking"
+      ],
+      [
+        "Cash Delivery",
+        "Door-Step Banking Services"
+      ],
+      [
+        "Cash Delivery",
+        "Doorstep Banking"
+      ],
+      [
+        "Cash Delivery",
+        "operating_guidelines_savings"
+      ],
+      [
+        "Cash Delivery",
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
         "Cash Management Vendor",
-        "Unity Bank"
+        "Doorstep Banking"
       ],
       [
-        "Cash Pickup Services",
+        "Cash Pickup",
+        "Door-Step Banking Services"
+      ],
+      [
+        "Cash Pickup",
+        "Doorstep Banking"
+      ],
+      [
+        "Cash Pickup",
+        "operating_guidelines_savings"
+      ],
+      [
+        "Cash Pickup",
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Correspondents",
+        "Door-Step Banking Services"
+      ],
+      [
+        "Correspondents",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Current Account",
+        "Doorstep Banking"
+      ],
+      [
+        "Current Account Customers",
+        "operating_guidelines_savings"
       ],
       [
         "Current Account Customers",
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
-        "Customer",
-        "Unity Bank"
+        "Demand Draft",
+        "Doorstep Banking"
+      ],
+      [
+        "Differently Abled Persons",
+        "operating_guidelines_savings"
+      ],
+      [
+        "Differently Abled Persons",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
         "Differently-Abled",
-        "Door-Step Banking"
+        "Doorstep Banking"
       ],
       [
-        "Door-Step Banking",
-        "Reserve Bank of India"
+        "Differently-Abled",
+        "KYC Document"
       ],
       [
-        "Door-Step Banking",
-        "Senior Citizens"
+        "Door-Step Banking Services",
+        "Vendors"
       ],
       [
-        "Door-Step Banking",
-        "Unity Bank"
-      ],
-      [
-        "KYC Document",
-        "Unity Bank"
-      ],
-      [
-        "Savings (Individuals)",
+        "Door-Step Banking Services",
         "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
-        "Senior Citizen / Differently Abled",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
-      ]
-    ],
-    "count": 19,
-    "create_time": 1787055132,
-    "update_time": 1787055132,
-    "_id": "doc-574eef8b2a231a2171cb4eadad4c29e5"
-  },
-  "doc-6e9c97657e05cf315dfdf575fb8d6364": {
-    "relation_pairs": [
-      [
-        "ATM Network",
-        "Bank"
+        "Doorstep Banking",
+        "Force Majeure"
       ],
       [
-        "Accounts Operations",
-        "Bank"
+        "Doorstep Banking",
+        "IVR"
       ],
       [
-        "Accounts of Minors",
-        "Bank"
-      ],
-      [
-        "Accounts of Minors",
-        "Guardian"
-      ],
-      [
-        "Appointee",
-        "Depositor"
-      ],
-      [
-        "Automated Clearing House",
-        "Bank"
-      ],
-      [
-        "Bank",
-        "Basic Savings Bank Deposit Account"
-      ],
-      [
-        "Bank",
-        "Bulk Deposits"
-      ],
-      [
-        "Bank",
-        "Capital Gains Accounts Scheme"
-      ],
-      [
-        "Bank",
-        "Charges"
-      ],
-      [
-        "Bank",
-        "Current Account"
-      ],
-      [
-        "Bank",
-        "Customers"
-      ],
-      [
-        "Bank",
-        "Debit Card"
-      ],
-      [
-        "Bank",
-        "Demand Deposits"
-      ],
-      [
-        "Bank",
-        "Deposit Insurance and Credit Guarantee Corporation of India"
-      ],
-      [
-        "Bank",
-        "Deposit Interest Rate Card"
-      ],
-      [
-        "Bank",
-        "Depositor"
-      ],
-      [
-        "Bank",
-        "Domestic Current Account"
-      ],
-      [
-        "Bank",
-        "Domestic Non-Resident Ordinary Account"
-      ],
-      [
-        "Bank",
-        "Domestic Savings Bank Accounts"
-      ],
-      [
-        "Bank",
-        "Electronic Clearing Service"
-      ],
-      [
-        "Bank",
-        "Former or Survivor Mandate"
-      ],
-      [
-        "Bank",
-        "Income Tax Act"
-      ],
-      [
-        "Bank",
-        "Inoperative Accounts"
-      ],
-      [
-        "Bank",
+        "Doorstep Banking",
         "Internet Banking"
       ],
       [
-        "Bank",
-        "Joint Account"
-      ],
-      [
-        "Bank",
-        "Joint Account Mandate"
-      ],
-      [
-        "Bank",
-        "Jointly by All Mandate"
-      ],
-      [
-        "Bank",
-        "KYC Documents"
-      ],
-      [
-        "Bank",
-        "Know Your Customer (KYC)"
-      ],
-      [
-        "Bank",
-        "Master Policy on Customer Service"
-      ],
-      [
-        "Bank",
-        "Minimum / Average Balance Requirements"
-      ],
-      [
-        "Bank",
+        "Doorstep Banking",
         "Mobile Banking"
       ],
       [
-        "Bank",
-        "NEFT"
+        "Doorstep Banking",
+        "Pay Order"
       ],
       [
-        "Bank",
-        "NRE Deposit"
+        "Doorstep Banking",
+        "Phone Banking"
       ],
       [
-        "Bank",
-        "NRO Deposit"
-      ],
-      [
-        "Bank",
-        "Nomination"
-      ],
-      [
-        "Bank",
-        "Nominee"
-      ],
-      [
-        "Bank",
-        "Non-Resident External Account"
-      ],
-      [
-        "Bank",
-        "Non-Resident Individual"
-      ],
-      [
-        "Bank",
-        "Passbook"
-      ],
-      [
-        "Bank",
-        "Permanent Account Number"
-      ],
-      [
-        "Bank",
-        "Power of Attorney"
-      ],
-      [
-        "Bank",
-        "Public Awareness Campaigns"
-      ],
-      [
-        "Bank",
-        "RBI"
-      ],
-      [
-        "Bank",
-        "RTGS"
-      ],
-      [
-        "Bank",
+        "Doorstep Banking",
         "Reserve Bank of India"
       ],
       [
-        "Bank",
-        "Risk Categorization"
-      ],
-      [
-        "Bank",
-        "Saving Account"
-      ],
-      [
-        "Bank",
+        "Doorstep Banking",
         "Savings Account"
       ],
       [
-        "Bank",
-        "Senior Citizen"
-      ],
-      [
-        "Bank",
+        "Doorstep Banking",
         "Senior Citizens"
       ],
       [
-        "Bank",
-        "Statement of Account"
+        "Doorstep Banking",
+        "Service Charge"
       ],
       [
-        "Bank",
-        "Term Deposit"
+        "Doorstep Banking",
+        "TPIN"
       ],
       [
-        "Bank",
-        "Term Deposit Account"
+        "Doorstep Banking",
+        "Unity Bank"
       ],
       [
-        "Bank",
-        "Term Deposits"
+        "Individuals",
+        "operating_guidelines_savings"
       ],
       [
-        "Bank",
-        "Time Deposits"
+        "Individuals",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
-        "Bank",
-        "Transgender Person"
+        "KYC Document",
+        "Senior Citizens"
       ],
       [
-        "Bank",
-        "Unclaimed Deposits"
+        "Senior Citizens",
+        "operating_guidelines_savings"
       ],
       [
-        "Bank",
-        "Visually Challenged Person"
+        "Senior Citizens",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
-        "Bank",
-        "WhatsApp Banking"
+        "Vendors",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ],
       [
-        "Banking Ombudsman",
-        "Depositors"
-      ],
-      [
-        "Banking Regulation Act, 1949",
-        "Unity Small Finance Bank Limited"
-      ],
-      [
-        "Customers",
-        "Depositors"
-      ],
-      [
-        "Deposit Products",
-        "Financial System"
-      ],
-      [
-        "Depositor",
-        "Form 15G"
-      ],
-      [
-        "Depositor",
-        "Form 15H"
-      ],
-      [
-        "Depositor",
-        "Legal Heirs"
-      ],
-      [
-        "Depositor",
-        "Nominee"
-      ],
-      [
-        "Depositor",
-        "Term Deposit"
-      ],
-      [
-        "Depositors",
-        "Standing Instructions"
-      ],
-      [
-        "Depositors",
-        "Unity Small Finance Bank Limited"
-      ],
-      [
-        "Disabled Person",
-        "Guardian"
-      ],
-      [
-        "NRE Deposit",
-        "Scheduled Commercial Banks"
-      ],
-      [
-        "NRO Deposit",
-        "Scheduled Commercial Banks"
-      ],
-      [
-        "RBI",
-        "Unclaimed Deposits"
-      ],
-      [
-        "Reserve Bank of India",
-        "Unity Small Finance Bank Limited"
+        "operating_guidelines_savings",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
       ]
     ],
-    "count": 77,
-    "create_time": 1787057501,
-    "update_time": 1787057501,
-    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364"
+    "count": 48,
+    "create_time": 1787125496,
+    "update_time": 1787125496,
+    "_id": "doc-574eef8b2a231a2171cb4eadad4c29e5"
   }
 }

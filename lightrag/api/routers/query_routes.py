@@ -538,7 +538,8 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
             param.stream = False
             # Unified approach: always use aquery_llm for both cases
             start_time = time.perf_counter()
-            result = await rag.aquery_llm(request.query, param=param)
+            print('rag object in query_text',rag)
+            result = await rag.aquery_llm(request.query, param=param,rag=rag)
             response_time = round(time.perf_counter() - start_time, 3)
 
             # Extract LLM response and references from unified result
