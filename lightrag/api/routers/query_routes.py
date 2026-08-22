@@ -25,6 +25,23 @@ from lightrag.constants import (
 from lightrag.utils import logger
 from pydantic import BaseModel, Field, field_validator, model_validator
 
+from fastapi import Request
+
+from lightrag.api.audit_logger import (
+    log_query_event,
+    extract_user_context,
+    extract_thread_id,
+    extract_citations,
+)
+
+from lightrag.api.guardrails import (
+    check_input,
+    check_output,
+    log_input_guardrail,
+    log_output_guardrail,
+    FALLBACK_MESSAGE,
+)
+
 
 class QueryRequest(BaseModel):
     query: str = Field(
@@ -153,6 +170,21 @@ class QueryRequest(BaseModel):
         description="Type of the user making the request",
     )
 
+    thread_id: Optional[str] = Field(
+    default=None,
+    description="Unique identifier for the chat conversation/thread.",
+    )
+
+    user_id: Optional[str] = Field(
+    default=None,
+    description="Client-supplied user identifier, used for audit logging.",
+)
+
+    department: Optional[str] = Field(
+        default=None,
+        description="Client-supplied department, used for audit logging.",
+    )
+
     @field_validator("query", mode="after")
     @classmethod
     def query_strip_after(cls, query: str) -> str:
@@ -230,14 +262,16 @@ class QueryRequest(BaseModel):
 
     def to_query_params(self, is_stream: bool) -> "QueryParam":
         """Converts a QueryRequest instance into a QueryParam instance."""
-        # Use Pydantic's `.model_dump(exclude_none=True)` to remove None values automatically
-        # Exclude API-level parameters that don't belong in QueryParam
         request_data = self.model_dump(
             exclude_none=True,
-            exclude={"query", "include_chunk_content", "include_progress"},
+            exclude={
+                "query",
+                "include_chunk_content",
+                "include_progress",
+                "user_id",
+                "department",
+            },
         )
-
-        # Ensure `mode` and `stream` are set explicitly
         param = QueryParam(**request_data)
         param.stream = is_stream
         return param
@@ -454,128 +488,252 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
             },
         },
     )
-    async def query_text(request: QueryRequest,rag: LightRAG = Depends(get_rag)):
+    # async def query_text(request: QueryRequest,rag: LightRAG = Depends(get_rag)):
+        # """
+    #     Comprehensive RAG query endpoint with non-streaming response. Parameter "stream" is ignored.
+
+    #     **Query Modes:**
+    #     - **local**: Focuses on specific entities and their direct relationships
+    #     - **global**: Analyzes broader patterns and relationships across the knowledge graph
+    #     - **hybrid**: Combines local and global approaches for comprehensive results
+    #     - **naive**: Simple vector similarity search without knowledge graph
+    #     - **mix**: Integrates knowledge graph retrieval with vector search (recommended)
+    #     - **bypass**: Direct LLM query without knowledge retrieval
+
+    #     conversation_history parameteris sent to LLM only, does not affect retrieval results.
+
+    #     **Usage Examples:**
+
+    #     Basic query:
+    #     ```json
+    #     {
+    #         "query": "What is machine learning?",
+    #         "mode": "mix"
+    #     }
+    #     ```
+
+    #     Bypass initial LLM call by providing high-level and low-level keywords:
+    #     ```json
+    #     {
+    #         "query": "What is Retrieval-Augmented-Generation?",
+    #         "hl_keywords": ["machine learning", "information retrieval", "natural language processing"],
+    #         "ll_keywords": ["retrieval augmented generation", "RAG", "knowledge base"],
+    #         "mode": "mix"
+    #     }
+    #     ```
+
+    #     Advanced query with references:
+    #     ```json
+    #     {
+    #         "query": "Explain neural networks",
+    #         "mode": "hybrid",
+    #         "include_references": true,
+    #         "response_type": "Multiple Paragraphs",
+    #         "top_k": 10
+    #     }
+    #     ```
+
+    #     Conversation with history:
+    #     ```json
+    #     {
+    #         "query": "Can you give me more details?",
+    #         "conversation_history": [
+    #             {"role": "user", "content": "What is AI?"},
+    #             {"role": "assistant", "content": "AI is artificial intelligence..."}
+    #         ]
+    #     }
+    #     ```
+
+    #     Args:
+    #         request (QueryRequest): The request object containing query parameters:
+    #             - **query**: The question or prompt to process (min 3 characters)
+    #             - **mode**: Query strategy - "mix" recommended for best results
+    #             - **include_references**: Whether to include source citations
+    #             - **response_type**: Format preference (e.g., "Multiple Paragraphs")
+    #             - **top_k**: Number of top entities/relations to retrieve
+    #             - **conversation_history**: Previous dialogue context
+    #             - **max_total_tokens**: Token budget for the entire response
+
+    #     Returns:
+    #         QueryResponse: JSON response containing:
+    #             - **response**: The generated answer to your query
+    #             - **references**: Source citations (if include_references=True)
+
+    #     Raises:
+    #         HTTPException:
+    #             - 400: Invalid input parameters (e.g., query too short)
+    #             - 500: Internal processing error (e.g., LLM service unavailable)
+    #     """
+    #     try:
+    #         param = request.to_query_params(
+    #             False
+    #         )  # Ensure stream=False for non-streaming endpoint
+    #         # Force stream=False for /query endpoint regardless of include_references setting
+    #         param.stream = False
+    #         # Unified approach: always use aquery_llm for both cases
+    #         start_time = time.perf_counter()
+    #         print('rag object in query_text',rag)
+    #         result = await rag.aquery_llm(request.query, param=param,rag=rag)
+    #         response_time = round(time.perf_counter() - start_time, 3)
+
+    #         # Extract LLM response and references from unified result
+    #         llm_response = result.get("llm_response", {})
+    #         data = result.get("data", {})
+    #         references = data.get("references", [])
+
+    #         # Get the non-streaming response content
+    #         response_content = llm_response.get("content", "")
+    #         if not response_content:
+    #             response_content = "No relevant context found for the query."
+
+    #         # Enrich references with chunk content if requested
+    #         if request.include_references and request.include_chunk_content:
+    #             chunks = data.get("chunks", [])
+    #             # Create a mapping from reference_id to chunk content
+    #             ref_id_to_content = {}
+    #             for chunk in chunks:
+    #                 ref_id = chunk.get("reference_id", "")
+    #                 content = chunk.get("content", "")
+    #                 if ref_id and content:
+    #                     # Collect chunk content; join later to avoid quadratic string concatenation
+    #                     ref_id_to_content.setdefault(ref_id, []).append(content)
+
+    #             # Add content to references
+    #             enriched_references = []
+    #             for ref in references:
+    #                 ref_copy = ref.copy()
+    #                 ref_id = ref.get("reference_id", "")
+    #                 if ref_id in ref_id_to_content:
+    #                     # Keep content as a list of chunks (one file may have multiple chunks)
+    #                     ref_copy["content"] = ref_id_to_content[ref_id]
+    #                 enriched_references.append(ref_copy)
+    #             references = enriched_references
+
+    #         # Return response with or without references based on request
+    #         if request.include_references:
+    #             return QueryResponse(
+    #                 response=response_content,
+    #                 references=references,
+    #                 response_time=response_time,
+    #             )
+    #         else:
+    #             return QueryResponse(
+    #                 response=response_content,
+    #                 references=None,
+    #                 response_time=response_time,
+    #             )
+    #     except Exception as e:
+    #         logger.error(f"Error processing query: {str(e)}", exc_info=True)
+    #         raise internal_server_error(e)
+
+#============================ Akash Updated function =====================
+
+    async def query_text(
+        request: QueryRequest,
+        http_request: Request,
+        rag: LightRAG = Depends(get_rag),
+    ):
         """
-        Comprehensive RAG query endpoint with non-streaming response. Parameter "stream" is ignored.
-
-        **Query Modes:**
-        - **local**: Focuses on specific entities and their direct relationships
-        - **global**: Analyzes broader patterns and relationships across the knowledge graph
-        - **hybrid**: Combines local and global approaches for comprehensive results
-        - **naive**: Simple vector similarity search without knowledge graph
-        - **mix**: Integrates knowledge graph retrieval with vector search (recommended)
-        - **bypass**: Direct LLM query without knowledge retrieval
-
-        conversation_history parameteris sent to LLM only, does not affect retrieval results.
-
-        **Usage Examples:**
-
-        Basic query:
-        ```json
-        {
-            "query": "What is machine learning?",
-            "mode": "mix"
-        }
-        ```
-
-        Bypass initial LLM call by providing high-level and low-level keywords:
-        ```json
-        {
-            "query": "What is Retrieval-Augmented-Generation?",
-            "hl_keywords": ["machine learning", "information retrieval", "natural language processing"],
-            "ll_keywords": ["retrieval augmented generation", "RAG", "knowledge base"],
-            "mode": "mix"
-        }
-        ```
-
-        Advanced query with references:
-        ```json
-        {
-            "query": "Explain neural networks",
-            "mode": "hybrid",
-            "include_references": true,
-            "response_type": "Multiple Paragraphs",
-            "top_k": 10
-        }
-        ```
-
-        Conversation with history:
-        ```json
-        {
-            "query": "Can you give me more details?",
-            "conversation_history": [
-                {"role": "user", "content": "What is AI?"},
-                {"role": "assistant", "content": "AI is artificial intelligence..."}
-            ]
-        }
-        ```
-
-        Args:
-            request (QueryRequest): The request object containing query parameters:
-                - **query**: The question or prompt to process (min 3 characters)
-                - **mode**: Query strategy - "mix" recommended for best results
-                - **include_references**: Whether to include source citations
-                - **response_type**: Format preference (e.g., "Multiple Paragraphs")
-                - **top_k**: Number of top entities/relations to retrieve
-                - **conversation_history**: Previous dialogue context
-                - **max_total_tokens**: Token budget for the entire response
-
-        Returns:
-            QueryResponse: JSON response containing:
-                - **response**: The generated answer to your query
-                - **references**: Source citations (if include_references=True)
-
-        Raises:
-            HTTPException:
-                - 400: Invalid input parameters (e.g., query too short)
-                - 500: Internal processing error (e.g., LLM service unavailable)
+        Comprehensive RAG query endpoint with non-streaming response.
+        Runs the input guardrail before generation, the output guardrail
+        after, and writes one audit log row per request (success, fallback,
+        or error) plus a guardrail_logs row for every input/output check.
         """
+        extracted_user_id, extracted_department = await extract_user_context(http_request)
+        user_id = request.user_id or extracted_user_id
+        department = request.department or extracted_department
+        thread_id = request.thread_id or extract_thread_id(http_request)
+ 
+        # --- Input guardrail: runs BEFORE the LLM generates an answer ---
+        input_result = await check_input(request.query)
+        guardrail_log_id = await log_input_guardrail(
+            query_log_id=None,
+            user_id=user_id,
+            thread_id=thread_id,
+            department=department,
+            user_query=request.query,
+            result=input_result,
+        )
+        if input_result.status != "pass":
+            await log_query_event(
+                user_id=user_id,
+                thread_id=thread_id,
+                department=department,
+                user_query=request.query,
+                llm_response=FALLBACK_MESSAGE,
+                status="fallback",
+                error_message=f"Blocked by input guardrail: {input_result.reason}",
+            )
+            return QueryResponse(response=FALLBACK_MESSAGE, references=[])
+ 
         try:
-            param = request.to_query_params(
-                False
-            )  # Ensure stream=False for non-streaming endpoint
-            # Force stream=False for /query endpoint regardless of include_references setting
+            param = request.to_query_params(False)
             param.stream = False
-            # Unified approach: always use aquery_llm for both cases
+ 
             start_time = time.perf_counter()
-            print('rag object in query_text',rag)
-            result = await rag.aquery_llm(request.query, param=param,rag=rag)
+            result = await rag.aquery_llm(request.query, param=param, rag=rag)
             response_time = round(time.perf_counter() - start_time, 3)
-
-            # Extract LLM response and references from unified result
+ 
             llm_response = result.get("llm_response", {})
             data = result.get("data", {})
             references = data.get("references", [])
-
-            # Get the non-streaming response content
+ 
             response_content = llm_response.get("content", "")
+            is_fallback = not response_content
             if not response_content:
                 response_content = "No relevant context found for the query."
-
-            # Enrich references with chunk content if requested
+ 
+            citations = extract_citations(references)
+ 
+            # --- Output guardrail: runs AFTER the LLM generates an answer ---
+            output_result = await check_output(
+                request.query, response_content, citations
+            )
+            await log_output_guardrail(
+                guardrail_log_id=guardrail_log_id,
+                llm_response=response_content,
+                result=output_result,
+            )
+            if output_result.status != "pass":
+                response_content = FALLBACK_MESSAGE
+                is_fallback = True
+ 
+            await log_query_event(
+                user_id=user_id,
+                thread_id=thread_id,
+                department=department,
+                user_query=request.query,
+                llm_response=response_content,
+                status="fallback" if is_fallback else "success",
+                error_message=(
+                    f"Blocked by output guardrail: {output_result.reason}"
+                    if output_result.status != "pass"
+                    else None
+                ),
+                citations=citations,
+            )
+ 
+            if output_result.status != "pass":
+                references = []
+ 
             if request.include_references and request.include_chunk_content:
                 chunks = data.get("chunks", [])
-                # Create a mapping from reference_id to chunk content
                 ref_id_to_content = {}
                 for chunk in chunks:
                     ref_id = chunk.get("reference_id", "")
                     content = chunk.get("content", "")
                     if ref_id and content:
-                        # Collect chunk content; join later to avoid quadratic string concatenation
                         ref_id_to_content.setdefault(ref_id, []).append(content)
-
-                # Add content to references
+ 
                 enriched_references = []
                 for ref in references:
                     ref_copy = ref.copy()
                     ref_id = ref.get("reference_id", "")
                     if ref_id in ref_id_to_content:
-                        # Keep content as a list of chunks (one file may have multiple chunks)
                         ref_copy["content"] = ref_id_to_content[ref_id]
                     enriched_references.append(ref_copy)
                 references = enriched_references
-
-            # Return response with or without references based on request
+ 
             if request.include_references:
                 return QueryResponse(
                     response=response_content,
@@ -590,7 +748,17 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                 )
         except Exception as e:
             logger.error(f"Error processing query: {str(e)}", exc_info=True)
+            await log_query_event(
+                user_id=user_id,
+                thread_id=thread_id,
+                department=department,
+                user_query=request.query,
+                status="error",
+                error_message=str(e),
+            )
             raise internal_server_error(e)
+ 
+
 
     def _build_stream_generator(
         *,
@@ -664,6 +832,77 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                 yield f"{json.dumps({'response_time': round(time.perf_counter() - start_time, 3)})}\n"
 
         return _generate
+
+
+    def _wrap_stream_for_audit(
+    agen,
+    *,
+    user_id: Optional[str],
+    thread_id: Optional[str],
+    department: Optional[str],
+    query_text: str,
+    guardrail_log_id: Optional[str] = None,
+    ):
+        """Wraps an NDJSON async generator, accumulating 'response' chunks
+        and the 'references' line so we can write one audit log row once
+        the stream finishes (or errors out), without changing anything
+        the client receives."""
+
+        async def _generate():
+            collected = []
+            references: list = []
+            saw_error = None
+            try:
+                async for line in agen:
+                    try:
+                        parsed = json.loads(line)
+                        if "response" in parsed and parsed["response"]:
+                            collected.append(parsed["response"])
+                        if "references" in parsed and parsed["references"]:
+                            references = parsed["references"]
+                        if "error" in parsed and parsed["error"]:
+                            saw_error = parsed["error"]
+                    except (json.JSONDecodeError, TypeError):
+                        pass
+                    yield line
+            except Exception as e:
+                saw_error = str(e)
+                raise
+            finally:
+                full_response = "".join(collected)
+                is_fallback = (
+                    not full_response
+                    or full_response == "No relevant context found for the query."
+                )
+                citations = extract_citations(references)
+
+                if not saw_error and guardrail_log_id and full_response:
+                    output_result = await check_output(
+                        query_text, full_response, citations
+                    )
+                    await log_output_guardrail(
+                        guardrail_log_id=guardrail_log_id,
+                        llm_response=full_response,
+                        result=output_result,
+                    )
+                    if output_result.status != "pass":
+                        saw_error = f"Output guardrail failed post-stream: {output_result.reason}"
+
+                await log_query_event(
+                    user_id=user_id,
+                    thread_id=thread_id,
+                    department=department,
+                    user_query=query_text,
+                    llm_response=full_response or None,
+                    status="error"
+                    if saw_error
+                    else ("fallback" if is_fallback else "success"),
+                    error_message=saw_error,
+                    citations=citations,
+                )
+
+        return _generate()
+
 
     @router.post(
         "/query/stream",
@@ -744,7 +983,8 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
             },
         },
     )
-    async def query_text_stream(request: QueryRequest,rag: LightRAG = Depends(get_rag)):
+    # async def query_text_stream(request: QueryRequest,rag: LightRAG = Depends(get_rag)):
+    async def query_text_stream(request: QueryRequest, http_request: Request, rag: LightRAG = Depends(get_rag)):
         """
         Advanced RAG query endpoint with flexible streaming response.
 
@@ -895,6 +1135,49 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
             This endpoint is ideal for applications requiring flexible response delivery.
             Use streaming mode for real-time interfaces and non-streaming for batch processing.
         """
+
+        extracted_user_id, extracted_department = await extract_user_context(http_request)
+        user_id = request.user_id or extracted_user_id
+        department = request.department or extracted_department
+        thread_id = request.thread_id or extract_thread_id(http_request)
+
+        from fastapi.responses import StreamingResponse
+
+        # --- Input guardrail: blocks BEFORE any streaming starts ---
+        input_result = await check_input(request.query)
+        guardrail_log_id = await log_input_guardrail(
+            query_log_id=None,
+            user_id=user_id,
+            thread_id=thread_id,
+            department=department,
+            user_query=request.query,
+            result=input_result,
+        )
+        if input_result.status != "pass":
+            await log_query_event(
+                user_id=user_id,
+                thread_id=thread_id,
+                department=department,
+                user_query=request.query,
+                llm_response=FALLBACK_MESSAGE,
+                status="fallback",
+                error_message=f"Blocked by input guardrail: {input_result.reason}",
+            )
+
+            async def _fallback_stream():
+                yield json.dumps({"response": FALLBACK_MESSAGE}) + "\n"
+
+            return StreamingResponse(
+                _fallback_stream(),
+                media_type="application/x-ndjson",
+                headers={
+                    "Cache-Control": "no-cache",
+                    "Connection": "keep-alive",
+                    "Content-Type": "application/x-ndjson",
+                    "X-Accel-Buffering": "no",
+                },
+            )
+
         try:
             # Use the stream parameter from the request, defaulting to True if not specified
             stream_mode = request.stream if request.stream is not None else True
@@ -987,7 +1270,13 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                             await asyncio.gather(query_task, return_exceptions=True)
 
                 return StreamingResponse(
+                    _wrap_stream_for_audit(
                     merged_generator(),
+                    user_id=user_id,
+                    thread_id=thread_id,
+                    department=department,
+                    query_text=request.query,
+                    guardrail_log_id=guardrail_log_id,),
                     media_type="application/x-ndjson",
                     headers={
                         "Cache-Control": "no-cache",
@@ -1008,7 +1297,14 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                 )
 
                 return StreamingResponse(
-                    stream_gen(),
+                    _wrap_stream_for_audit(
+                        stream_gen(),
+                        user_id=user_id,
+                        thread_id=thread_id,
+                        department=department,
+                        query_text=request.query,
+                        guardrail_log_id=guardrail_log_id,
+                    ),
                     media_type="application/x-ndjson",
                     headers={
                         "Cache-Control": "no-cache",
@@ -1019,7 +1315,17 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                 )
         except Exception as e:
             logger.error(f"Error processing streaming query: {str(e)}", exc_info=True)
+            await log_query_event(
+                user_id=user_id,
+                thread_id=thread_id,
+                department=department,
+                user_query=request.query,
+                status="error",
+                error_message=str(e),
+            )
             raise internal_server_error(e)
+
+            # ===================================================
 
     @router.post(
         "/query/data",
@@ -1317,7 +1623,8 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
             },
         },
     )
-    async def query_data(request: QueryRequest,rag: LightRAG = Depends(get_rag)):
+    # async def query_data(request: QueryRequest,rag: LightRAG = Depends(get_rag)):
+    async def query_data(request: QueryRequest,http_request: Request,rag: LightRAG = Depends(get_rag),):
         """
         Advanced data retrieval endpoint for structured RAG analysis.
 
@@ -1420,15 +1727,70 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
             This endpoint always includes references regardless of the include_references parameter,
             as structured data analysis typically requires source attribution.
         """
-        try:
-            param = request.to_query_params(False)  # No streaming for data endpoint
-            response = await rag.aquery_data(request.query, param=param)
 
-            # aquery_data returns the new format with status, message, data, and metadata
+        extracted_user_id, extracted_department = await extract_user_context(http_request)
+        user_id = request.user_id or extracted_user_id
+        department = request.department or extracted_department
+        thread_id = request.thread_id or extract_thread_id(http_request)
+ 
+        # --- Input guardrail only: no LLM-generated answer text here, so
+        # the output guardrail (groundedness, citation check, etc.) does
+        # not apply. ---
+        input_result = await check_input(request.query)
+        await log_input_guardrail(
+            query_log_id=None,
+            user_id=user_id,
+            thread_id=thread_id,
+            department=department,
+            user_query=request.query,
+            result=input_result,
+        )
+        if input_result.status != "pass":
+            await log_query_event(
+                user_id=user_id,
+                thread_id=thread_id,
+                department=department,
+                user_query=request.query,
+                status="fallback",
+                error_message=f"Blocked by input guardrail: {input_result.reason}",
+            )
+            return QueryDataResponse(
+                status="blocked",
+                message=FALLBACK_MESSAGE,
+                data={},
+                metadata={"guardrail_reason": input_result.reason},
+            )
+ 
+        try:
+            param = request.to_query_params(False)
+            response = await rag.aquery_data(request.query, param=param)
+ 
             if isinstance(response, dict):
+                data = response.get("data", {})
+                is_fallback = (
+                    not data.get("entities")
+                    and not data.get("relationships")
+                    and not data.get("chunks")
+                )
+                await log_query_event(
+                    user_id=user_id,
+                    thread_id=thread_id,
+                    department=department,
+                    user_query=request.query,
+                    llm_response=json.dumps(data)[:5000],
+                    status="fallback" if is_fallback else "success",
+                    citations=extract_citations(data.get("chunks", [])),
+                )
                 return QueryDataResponse(**response)
             else:
-                # Handle unexpected response format
+                await log_query_event(
+                    user_id=user_id,
+                    thread_id=thread_id,
+                    department=department,
+                    user_query=request.query,
+                    status="fallback",
+                    error_message="Invalid response type from aquery_data",
+                )
                 return QueryDataResponse(
                     status="failure",
                     message="Invalid response type",
@@ -1437,6 +1799,15 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                 )
         except Exception as e:
             logger.error(f"Error processing data query: {str(e)}", exc_info=True)
+            await log_query_event(
+                user_id=user_id,
+                thread_id=thread_id,
+                department=department,
+                user_query=request.query,
+                status="error",
+                error_message=str(e),
+            )
             raise internal_server_error(e)
-
+ 
     return router
+ 

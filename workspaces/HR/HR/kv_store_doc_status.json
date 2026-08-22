@@ -1,34 +1,40 @@
 {
-  "doc-574eef8b2a231a2171cb4eadad4c29e5": {
+  "doc-6e9c97657e05cf315dfdf575fb8d6364": {
     "status": "processed",
-    "content_summary": "# SECTION - G\n\n# Door-Step Banking for Senior Citizens and Differently-Abled\n\n## Introduction\nReserve Bank of India advised Banks to have a scheme for providing services on the doorstep of its customers with the approval of the Board. This document e...",
-    "content_length": 6222,
-    "created_at": "2026-08-19T07:44:44.901520+00:00",
-    "updated_at": "2026-08-19T07:44:59.431459+00:00",
-    "file_path": "Door-Step Banking for Senior Citizens and Differently-Abled.pdf",
-    "track_id": "upload_20260819_131444_89d86371",
-    "content_hash": "d718bdbd670ebe59830531a56105d5f5",
+    "content_summary": "## SECTION D\n\n## (1) COMPREHENSIVE DEPOSIT POLICY\n\n## I. Introduction\nOne of the important functions of the bank is to accept deposits from the public for the purpose of lending. In fact, depositors are the major stakeholders of the Banking System. T...",
+    "content_length": 56273,
+    "created_at": "2026-08-22T06:23:09.181282+00:00",
+    "updated_at": "2026-08-22T06:26:47.875052+00:00",
+    "file_path": "Deposit Policy.pdf",
+    "track_id": "upload_20260822_115309_2f733dc7",
+    "content_hash": "0188737eac56978885fca962d3b6a670",
     "metadata": {
       "process_options": "iteP",
-      "source_file": "Door-Step Banking for Senior Citizens and Differently-Abled.pdf",
-      "parse_start_time": 1787125484,
-      "parse_end_time": 1787125489,
+      "source_file": "Deposit Policy.pdf",
+      "parse_start_time": 1787379789,
+      "parse_end_time": 1787379976,
       "parse_format": "lightrag",
       "parse_engine": "mineru",
-      "analyzing_start_time": 1787125489,
-      "analyzing_end_time": 1787125490,
+      "analyzing_start_time": 1787379976,
+      "analyzing_end_time": 1787379976,
       "kg_write_state": "graph_mutation_started",
-      "process_start_time": 1787125490,
-      "process_end_time": 1787125499,
+      "process_start_time": 1787379976,
+      "process_end_time": 1787380007,
       "chunk_method": "paragraph_semantic",
       "chunk_opts": "size=2000, overlap=100, drop_rf=True",
-      "mm_chunks": 1,
-      "visibility": "private"
+      "visibility": "public"
     },
-    "chunks_count": 2,
+    "chunks_count": 9,
     "chunks_list": [
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000",
-      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-000",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
     ]
   }
 }

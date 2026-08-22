@@ -169,6 +169,10 @@ class QueryParam:
     user_type: Optional[str] = None
     """Type of the user making the request."""
 
+    thread_id: Optional[str] = None
+    """Unique identifier for the chat conversation/thread."""
+ 
+
 
 @dataclass
 class StorageNameSpace(ABC):

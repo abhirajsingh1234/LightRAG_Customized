@@ -43,6 +43,10 @@ dependencies = [
     # one Encoding across threads — the thread safety Tokenizer relies on.
     "tiktoken>=0.7.0",
     "xlsxwriter>=3.1.0",
+    "pymysql>=1.2.0",
+    "mineru>=3.4.5",
+    "pymilvus>=3.0.0",
+    "jwt>=1.4.0",
 ]
 
 [project.optional-dependencies]
@@ -217,3 +221,8 @@ markers = [
 
 [tool.ruff]
 target-version = "py310"
+
+[tool.uv.workspace]
+members = [
+    "LightRAG",
+]

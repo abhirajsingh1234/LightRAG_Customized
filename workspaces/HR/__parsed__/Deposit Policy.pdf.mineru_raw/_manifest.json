@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "engine": "mineru",
+  "api_mode": "local",
+  "engine_version": "",
+  "endpoint_signature": "http://127.0.0.1:8000",
+  "options_signature": "sha256:277b026335ce61369b2368b0d917ec71191e0e9d3f536344996696b9df7bf877",
+  "source_content_hash": "sha256:d8712ae142e5051ecd859c379dc3e18839f89639b601e0bd0c121dbf3dc43278",
+  "source_size_bytes": 580031,
+  "source_filename_at_parse": "Deposit Policy.pdf",
+  "task_id": "9e3fd993-88e4-4ee7-838c-ec9e24c7479a",
+  "downloaded_at": "2026-08-22T06:26:16.535728+00:00",
+  "critical_file": {
+    "path": "content_list.json",
+    "size": 105700,
+    "sha256": "sha256:0fb382fc16e4051dd240703d5b84d05fcdb5575b212381ecc188e23bec5fccd6"
+  },
+  "files": [
+    {
+      "path": "Deposit Policy.md",
+      "size": 55435,
+      "sha256": null
+    },
+    {
+      "path": "Deposit Policy_content_list_v2.json",
+      "size": 165028,
+      "sha256": null
+    },
+    {
+      "path": "Deposit Policy_middle.json",
+      "size": 1585417,
+      "sha256": null
+    },
+    {
+      "path": "Deposit Policy_model.json",
+      "size": 260586,
+      "sha256": null
+    },
+    {
+      "path": "Deposit Policy_origin.pdf",
+      "size": 576622,
+      "sha256": null
+    }
+  ],
+  "total_size_bytes": 2748788
+}

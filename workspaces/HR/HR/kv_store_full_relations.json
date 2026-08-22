@@ -1,202 +1,294 @@
 {
-  "doc-574eef8b2a231a2171cb4eadad4c29e5": {
+  "doc-6e9c97657e05cf315dfdf575fb8d6364": {
     "relation_pairs": [
       [
-        "Bank Policy",
-        "operating_guidelines_savings"
+        "ATM Network",
+        "Bank"
       ],
       [
-        "Bank Policy",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+        "Account",
+        "Bank"
       ],
       [
-        "Bank Staff",
-        "Door-Step Banking Services"
+        "Account",
+        "Depositor"
       ],
       [
-        "Bank Staff",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+        "Account Holder",
+        "Bank"
       ],
       [
-        "Banking Correspondent",
-        "Doorstep Banking"
+        "Accounting Guidelines",
+        "Scheduled Commercial Banks"
       ],
       [
-        "Branch",
-        "Doorstep Banking"
+        "Appointee",
+        "Depositor"
       ],
       [
-        "Branch",
-        "Unity Bank"
+        "Bank",
+        "Basic Savings Bank Deposit Account"
       ],
       [
-        "Call Center",
-        "Doorstep Banking"
+        "Bank",
+        "Cash Credit"
       ],
       [
-        "Cash Delivery",
-        "Door-Step Banking Services"
+        "Bank",
+        "Complaint"
       ],
       [
-        "Cash Delivery",
-        "Doorstep Banking"
+        "Bank",
+        "Current Account"
       ],
       [
-        "Cash Delivery",
-        "operating_guidelines_savings"
+        "Bank",
+        "Debit Card"
       ],
       [
-        "Cash Delivery",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+        "Bank",
+        "Demand Deposits"
       ],
       [
-        "Cash Management Vendor",
-        "Doorstep Banking"
+        "Bank",
+        "Depositor"
       ],
       [
-        "Cash Pickup",
-        "Door-Step Banking Services"
+        "Bank",
+        "Domestic Current Account"
       ],
       [
-        "Cash Pickup",
-        "Doorstep Banking"
+        "Bank",
+        "Domestic Savings Bank Accounts"
       ],
       [
-        "Cash Pickup",
-        "operating_guidelines_savings"
+        "Bank",
+        "Domestic Term Deposits"
       ],
       [
-        "Cash Pickup",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+        "Bank",
+        "Grievance"
       ],
       [
-        "Correspondents",
-        "Door-Step Banking Services"
+        "Bank",
+        "HUF"
       ],
       [
-        "Correspondents",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+        "Bank",
+        "Interest"
       ],
       [
-        "Current Account",
-        "Doorstep Banking"
-      ],
-      [
-        "Current Account Customers",
-        "operating_guidelines_savings"
-      ],
-      [
-        "Current Account Customers",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
-      ],
-      [
-        "Demand Draft",
-        "Doorstep Banking"
-      ],
-      [
-        "Differently Abled Persons",
-        "operating_guidelines_savings"
-      ],
-      [
-        "Differently Abled Persons",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
-      ],
-      [
-        "Differently-Abled",
-        "Doorstep Banking"
-      ],
-      [
-        "Differently-Abled",
-        "KYC Document"
-      ],
-      [
-        "Door-Step Banking Services",
-        "Vendors"
-      ],
-      [
-        "Door-Step Banking Services",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
-      ],
-      [
-        "Doorstep Banking",
-        "Force Majeure"
-      ],
-      [
-        "Doorstep Banking",
-        "IVR"
-      ],
-      [
-        "Doorstep Banking",
+        "Bank",
         "Internet Banking"
       ],
       [
-        "Doorstep Banking",
+        "Bank",
+        "Joint Account"
+      ],
+      [
+        "Bank",
+        "KYC"
+      ],
+      [
+        "Bank",
+        "Limited Liability Partnership"
+      ],
+      [
+        "Bank",
+        "Minimum Balance Requirements"
+      ],
+      [
+        "Bank",
         "Mobile Banking"
       ],
       [
-        "Doorstep Banking",
-        "Pay Order"
+        "Bank",
+        "NEFT"
       ],
       [
-        "Doorstep Banking",
-        "Phone Banking"
+        "Bank",
+        "NRE Account"
       ],
       [
-        "Doorstep Banking",
+        "Bank",
+        "NRO Account"
+      ],
+      [
+        "Bank",
+        "National Trust for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation and Multiple Disabilities Act, 1999"
+      ],
+      [
+        "Bank",
+        "Nomination"
+      ],
+      [
+        "Bank",
+        "Overdraft"
+      ],
+      [
+        "Bank",
+        "Power of Attorney"
+      ],
+      [
+        "Bank",
+        "Public"
+      ],
+      [
+        "Bank",
+        "RTGS"
+      ],
+      [
+        "Bank",
         "Reserve Bank of India"
       ],
       [
-        "Doorstep Banking",
+        "Bank",
+        "Resident Indian Senior Citizens"
+      ],
+      [
+        "Bank",
         "Savings Account"
       ],
       [
-        "Doorstep Banking",
+        "Bank",
+        "Specified Associates"
+      ],
+      [
+        "Bank",
+        "Statement of Account"
+      ],
+      [
+        "Bank",
+        "Tax Deduction at Source (TDS)"
+      ],
+      [
+        "Bank",
+        "The Mental Health Act, 1987"
+      ],
+      [
+        "Bank",
+        "Time Deposits"
+      ],
+      [
+        "Bank",
+        "Transgender Person"
+      ],
+      [
+        "Bank",
+        "Visually Challenged Persons"
+      ],
+      [
+        "Bank",
+        "WhatsApp Banking"
+      ],
+      [
+        "Banking Ombudsman",
+        "Depositor"
+      ],
+      [
+        "Banking Ombudsman",
+        "Reserve Bank of India"
+      ],
+      [
+        "Banking Regulation Act, 1949",
+        "Depositors"
+      ],
+      [
+        "Board of Directors",
+        "NRE Deposits"
+      ],
+      [
+        "Complaint",
+        "Grievance Redressal Policy"
+      ],
+      [
+        "Current Account",
+        "Demand Deposits"
+      ],
+      [
+        "Demand Deposits",
+        "Savings Account"
+      ],
+      [
+        "Deposit Insurance and Credit Guarantee Corporation of India",
+        "Unclaimed Deposits"
+      ],
+      [
+        "Deposit Products",
+        "Reserve Bank of India"
+      ],
+      [
+        "Deposit Products",
+        "Unity Small Finance Bank Limited"
+      ],
+      [
+        "Depositor",
+        "Legal Heir"
+      ],
+      [
+        "Depositor",
+        "Legal Heirs"
+      ],
+      [
+        "Depositor",
+        "Nominee"
+      ],
+      [
+        "Depositor",
+        "Survivor"
+      ],
+      [
+        "Depositors",
+        "Financial System"
+      ],
+      [
+        "Depositors",
+        "Unity Small Finance Bank Limited"
+      ],
+      [
+        "Domestic Rupee Term Deposit",
+        "NRE Deposits"
+      ],
+      [
+        "Domestic Term Deposits",
         "Senior Citizens"
       ],
       [
-        "Doorstep Banking",
-        "Service Charge"
+        "Guardian",
+        "Persons with Autism"
       ],
       [
-        "Doorstep Banking",
-        "TPIN"
+        "Guardianship Certificate",
+        "Legal Guardian"
       ],
       [
-        "Doorstep Banking",
-        "Unity Bank"
+        "Interest",
+        "NRE/NRO Deposit Scheme"
       ],
       [
-        "Individuals",
-        "operating_guidelines_savings"
+        "KYC",
+        "PAN"
       ],
       [
-        "Individuals",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+        "KYC Documents",
+        "Scheduled Commercial Banks"
       ],
       [
-        "KYC Document",
-        "Senior Citizens"
+        "Minor",
+        "Term Deposits"
       ],
       [
-        "Senior Citizens",
-        "operating_guidelines_savings"
+        "NRE Deposits",
+        "Scheduled Commercial Banks"
       ],
       [
-        "Senior Citizens",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
-      ],
-      [
-        "Vendors",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
-      ],
-      [
-        "operating_guidelines_savings",
-        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+        "NRO Deposits",
+        "Scheduled Commercial Banks"
       ]
     ],
-    "count": 48,
-    "create_time": 1787125496,
-    "update_time": 1787125496,
-    "_id": "doc-574eef8b2a231a2171cb4eadad4c29e5"
+    "count": 71,
+    "create_time": 1787380002,
+    "update_time": 1787380002,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364"
   }
 }
