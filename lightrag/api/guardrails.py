@@ -321,6 +321,7 @@ def _update_log_output_sync(log_id: str, row: dict) -> None:
 
 async def log_input_guardrail(
     *,
+    log_id: str,
     query_log_id: Optional[str],
     user_id: Optional[str],
     thread_id: Optional[str],
@@ -331,7 +332,7 @@ async def log_input_guardrail(
     """Call after check_input(). Creates the guardrail_logs row. Returns
     the guardrail log's own id, so you can pass it to
     log_output_guardrail() later to update the same row."""
-    log_id = str(uuid.uuid4())
+    # log_id = str(uuid.uuid4())
     row = {
         "id": log_id,
         "query_log_id": query_log_id,

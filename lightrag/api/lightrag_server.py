@@ -2480,8 +2480,15 @@ def create_app(args):
         """
         try:
             workspaces = set(list_databases())
+            available_valid_workspace = []
+            input_dir = os.listdir(Path(f"./workspaces/"))
+            print(f"Available workspaces on disk: {input_dir}")
+            print(f"Available workspaces in Milvus: {workspaces}")
+            for workspace in workspaces:
+                if workspace in input_dir:
+                    available_valid_workspace.append(workspace)
 
-            return AvailableWrokspaceResponse(workspaces=sorted(list(workspaces)))
+            return AvailableWrokspaceResponse(workspaces=sorted(available_valid_workspace))
 
         except Exception as e:
             logger.error(f"Error GET /documents/get_available_workspaces: {str(e)}")

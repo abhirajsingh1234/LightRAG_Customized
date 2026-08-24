@@ -642,22 +642,26 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
         extracted_user_id, extracted_department = await extract_user_context(http_request)
         user_id = request.user_id or extracted_user_id
         department = request.department or extracted_department
-        thread_id = request.thread_id or extract_thread_id(http_request)
+        session_id = request.thread_id or extract_thread_id(http_request)
+        primary_key = str(uuid.uuid4())
  
         # --- Input guardrail: runs BEFORE the LLM generates an answer ---
         input_result = await check_input(request.query)
         guardrail_log_id = await log_input_guardrail(
+            log_id = primary_key,
             query_log_id=None,
             user_id=user_id,
-            thread_id=thread_id,
+            thread_id=session_id,
             department=department,
             user_query=request.query,
             result=input_result,
         )
+
         if input_result.status != "pass":
             await log_query_event(
+                log_id = primary_key,
                 user_id=user_id,
-                thread_id=thread_id,
+                thread_id=session_id,
                 department=department,
                 user_query=request.query,
                 llm_response=FALLBACK_MESSAGE,
@@ -667,8 +671,10 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
             return QueryResponse(response=FALLBACK_MESSAGE, references=[])
  
         try:
+        
             param = request.to_query_params(False)
             param.stream = False
+            param.primary_key = primary_key
  
             start_time = time.perf_counter()
             result = await rag.aquery_llm(request.query, param=param, rag=rag)
@@ -699,8 +705,9 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                 is_fallback = True
  
             await log_query_event(
+                log_id = primary_key,
                 user_id=user_id,
-                thread_id=thread_id,
+                thread_id=session_id,
                 department=department,
                 user_query=request.query,
                 llm_response=response_content,
@@ -749,8 +756,9 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
         except Exception as e:
             logger.error(f"Error processing query: {str(e)}", exc_info=True)
             await log_query_event(
+                log_id = primary_key,
                 user_id=user_id,
-                thread_id=thread_id,
+                thread_id=session_id,
                 department=department,
                 user_query=request.query,
                 status="error",

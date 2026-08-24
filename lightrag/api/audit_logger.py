@@ -125,6 +125,25 @@ _SCHEMA_STATEMENTS = [
         INDEX idx_guardrail_logs_created_at (created_at)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
     """,
+     """
+    CREATE TABLE IF NOT EXISTS private_chunk_access_logs (
+        id              VARCHAR(36) NOT NULL UNIQUE,
+        user_id         VARCHAR(255),
+        thread_id       VARCHAR(255),
+        department      VARCHAR(255),
+        user_query      TEXT,
+        total_chunks    INT UNSIGNED NOT NULL,
+        private_chunks  INT UNSIGNED NOT NULL,
+        private_pct     DECIMAL(5,2) NOT NULL,
+        private_files   JSON,
+        blocked_chunk_ids JSON,
+        created_at      DATETIME(6) NOT NULL,
+        INDEX idx_pca_user_id    (user_id),
+        INDEX idx_pca_created_at (created_at),
+        INDEX idx_pca_pct        (private_pct)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+    """,
+ 
 ]
 
 
@@ -225,6 +244,7 @@ async def init_audit_db() -> None:
 
 async def log_query_event(
     *,
+    log_id: Optional[str] = None,
     user_id: Optional[str] = None,
     thread_id: Optional[str] = None,
     department: Optional[str] = None,
@@ -242,7 +262,7 @@ async def log_query_event(
     logger instead of raising — audit logging should never be able to
     break a real user request.
     """
-    log_id = str(uuid.uuid4())
+    # log_id = str(uuid.uuid4())
     row = {
         "id": log_id,
         "user_id": user_id,
@@ -423,3 +443,76 @@ def extract_citations(references: Optional[List[dict]]) -> List[str]:
         if name not in seen:
             seen.append(name)
     return seen
+
+
+def _insert_private_chunk_log_sync(row: dict) -> None:
+    conn = get_connection()
+    try:
+        _ensure_schema(conn)
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                INSERT INTO private_chunk_access_logs (
+                    id, user_id, thread_id, department,
+                    user_query, total_chunks, private_chunks,
+                    private_pct, private_files, blocked_chunk_ids, created_at
+                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """,
+                (
+                    row["id"],
+                    row.get("user_id"),
+                    row.get("thread_id"),
+                    row.get("department"),
+                    row.get("user_query"),
+                    row["total_chunks"],
+                    row["private_chunks"],
+                    row["private_pct"],
+                    json.dumps(row.get("private_files") or []),
+                    json.dumps(row.get("blocked_chunk_ids") or []),
+                    row["created_at"],
+                ),
+            )
+        conn.commit()
+    finally:
+        conn.close()
+ 
+ 
+async def log_private_chunk_access(
+    *,
+    id: Optional[str] = None,
+    user_id: Optional[str] = None,
+    thread_id: Optional[str] = None,
+    department: Optional[str] = None,
+    user_query: str,
+    total_chunks: int,
+    private_chunks: int,
+    private_files: Optional[List[str]] = None,
+    blocked_chunk_ids: Optional[List[str]] = None,
+) -> None:
+    """
+    Logs to private_chunk_access_logs when >40% of retrieved chunks
+    came from private documents, for user_type == 'user'.
+ 
+    Mirrors the fire-and-forget pattern of log_query_event:
+    never raises, never blocks the event loop.
+    """
+    private_pct = round((private_chunks / total_chunks) * 100, 2)
+    row = {
+        "id": id,
+        "user_id": user_id,
+        "thread_id": thread_id,
+        "department": department,
+        "user_query": user_query,
+        "total_chunks": total_chunks,
+        "private_chunks": private_chunks,
+        "private_pct": private_pct,
+        "private_files": private_files or [],
+        "blocked_chunk_ids": blocked_chunk_ids or [],
+        "created_at": datetime.now(timezone.utc).replace(tzinfo=None),
+    }
+    try:
+        await asyncio.to_thread(_insert_private_chunk_log_sync, row)
+    except Exception:
+        from lightrag.utils import logger as _logger
+        _logger.error("Failed to write private_chunk_access_logs row", exc_info=True)
+ 

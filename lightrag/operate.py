@@ -4667,60 +4667,34 @@ async def extract_keywords_only(
 #     chunks_vdb: BaseVectorStorage,
 #     query_param: QueryParam,
 #     query_embedding: list[float] = None,
-#     rag=None
-#     # rag = Depends(get_rag)
+#     rag=None,
 # ) -> list[dict]:
-#     """
-#     Retrieve text chunks from the vector database without reranking or truncation.
-
-#     This function performs vector search to find relevant text chunks for a query.
-#     Reranking and truncation will be handled later in the unified processing.
-
-#     Args:
-#         query: The query string to search for
-#         chunks_vdb: Vector database containing document chunks
-#         query_param: Query parameters including chunk_top_k and ids
-#         query_embedding: Optional pre-computed query embedding to avoid redundant embedding calls
-
-#     Returns:
-#         List of text chunks with metadata
-#     """
-#     # No broad try/except here -- mirrors _get_node_data/_get_edge_data, whose
-#     # entities_vdb/relationships_vdb queries are also left to propagate. A
-#     # backend query failure is not "zero relevant chunks": swallowing it here
-#     # let a transient vector-store error surface as a confident "no results"
-#     # answer instead of a retrieval failure (and, in mix mode, silently
-#     # dropped the vector-search branch while KG results kept flowing).
+#     import os
 #     search_top_k = query_param.chunk_top_k or query_param.top_k
 #     cosine_threshold = chunks_vdb.cosine_better_than_threshold
 
 #     results = await chunks_vdb.query(
 #         query, top_k=search_top_k, query_embedding=query_embedding
 #     )
+
 #     if not results:
-#         logger.info(
-#             f"Naive query: 0 chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})"
-#         )
+#         logger.info(f"Naive query: 0 chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})")
 #         return []
 
 #     valid_chunks = []
 #     for result in results:
 #         if "content" in result:
-#             chunk_with_metadata = {
+#             valid_chunks.append({
 #                 "content": result["content"],
 #                 "created_at": result.get("created_at", None),
 #                 "file_path": result.get("file_path", "unknown_source"),
-#                 "source_type": "vector",  # Mark the source type
-#                 "chunk_id": result.get("id"),  # Add chunk_id for deduplication
-#             }
-#             valid_chunks.append(chunk_with_metadata)
+#                 "source_type": "vector",
+#                 "chunk_id": result.get("id"),
+#             })
 
+#     # doc_filter
 #     doc_filter = getattr(query_param, "doc_filter", None)
-
-#     #document name filter for naive based search is done here 
 #     if doc_filter:
-#         import os
-#         original_count = len(valid_chunks)
 #         valid_chunks = [
 #             chunk for chunk in valid_chunks
 #             if os.path.basename(chunk["file_path"]) == doc_filter
@@ -4728,16 +4702,57 @@ async def extract_keywords_only(
 #         ]
 
 #     user_type = getattr(query_param, "user_type", None)
-#     documents_with_ids, _ = await rag.doc_status.get_docs_paginated()
-#     input(documents_with_ids)
-#     if user_type == "user":
-#         pass
-        
+#     if user_type == "user" and rag is not None:
+#         try:
+#             documents_with_ids, _ = await rag.doc_status.get_docs_paginated(
+#                 status_filter=None, status_filters=None,
+#                 page=1, page_size=10000,
+#                 sort_field="created_at", sort_direction="desc",
+#             )
 
-#     logger.info(
-#         f"Naive query: {len(valid_chunks)} chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})"
-#     )
+#             private_fnames = {
+#                 os.path.basename(doc.file_path)
+#                 for _doc_id, doc in documents_with_ids
+#                 if doc.file_path and (doc.metadata or {}).get("visibility", "private") == "private"
+#             }
+
+#             # Capture blocked chunks BEFORE filtering
+#             blocked_chunks = [
+#                 c for c in valid_chunks
+#                 if os.path.basename(c.get("file_path", "")) in private_fnames
+#             ]
+
+#             if blocked_chunks:
+#                 print("\n" + "=" * 60)
+#                 print("🚨 PRIVATE ACCESS ATTEMPT DETECTED [_get_vector_context]")
+#                 print(f"   Query     : '{query}'")
+#                 print(f"   user_type : {user_type}")
+#                 print(f"   doc_filter: {doc_filter}")
+#                 print(f"   Private files involved: {private_fnames}")
+#                 print(f"\n   🔒 BLOCKED CHUNKS ({len(blocked_chunks)}):")
+#                 for c in blocked_chunks:
+#                     print(f"      - chunk_id : {c.get('chunk_id', '?')}")
+#                     print(f"        file     : {c.get('file_path', '?')}")
+#                     print(f"        content  : {str(c.get('content', ''))[:100]}...")
+#                 print("=" * 60 + "\n")
+
+#             before = len(valid_chunks)
+#             valid_chunks = [
+#                 c for c in valid_chunks
+#                 if os.path.basename(c.get("file_path", "")) not in private_fnames
+#             ]
+#             logger.info(
+#                 f"Visibility filter [_get_vector_context]: removed {before - len(valid_chunks)} private chunks"
+#             )
+
+#         except Exception as e:
+#             logger.warning(f"Visibility filter failed in _get_vector_context: {e}. Returning empty to avoid leak.")
+#             return []
+
+#     logger.info(f"Naive query: {len(valid_chunks)} chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})")
 #     return valid_chunks
+
+ 
 async def _get_vector_context(
     query: str,
     chunks_vdb: BaseVectorStorage,
@@ -4748,15 +4763,15 @@ async def _get_vector_context(
     import os
     search_top_k = query_param.chunk_top_k or query_param.top_k
     cosine_threshold = chunks_vdb.cosine_better_than_threshold
-
+ 
     results = await chunks_vdb.query(
         query, top_k=search_top_k, query_embedding=query_embedding
     )
-
+ 
     if not results:
         logger.info(f"Naive query: 0 chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})")
         return []
-
+ 
     valid_chunks = []
     for result in results:
         if "content" in result:
@@ -4767,7 +4782,7 @@ async def _get_vector_context(
                 "source_type": "vector",
                 "chunk_id": result.get("id"),
             })
-
+ 
     # doc_filter
     doc_filter = getattr(query_param, "doc_filter", None)
     if doc_filter:
@@ -4776,7 +4791,7 @@ async def _get_vector_context(
             if os.path.basename(chunk["file_path"]) == doc_filter
             or chunk["file_path"] == doc_filter
         ]
-
+ 
     user_type = getattr(query_param, "user_type", None)
     if user_type == "user" and rag is not None:
         try:
@@ -4785,33 +4800,63 @@ async def _get_vector_context(
                 page=1, page_size=10000,
                 sort_field="created_at", sort_direction="desc",
             )
-
+ 
             private_fnames = {
                 os.path.basename(doc.file_path)
                 for _doc_id, doc in documents_with_ids
                 if doc.file_path and (doc.metadata or {}).get("visibility", "private") == "private"
             }
-
+ 
             # Capture blocked chunks BEFORE filtering
             blocked_chunks = [
                 c for c in valid_chunks
                 if os.path.basename(c.get("file_path", "")) in private_fnames
             ]
-
+ 
             if blocked_chunks:
                 print("\n" + "=" * 60)
-                print("🚨 PRIVATE ACCESS ATTEMPT DETECTED [_get_vector_context]")
+                print(" PRIVATE ACCESS ATTEMPT DETECTED [_get_vector_context]")
                 print(f"   Query     : '{query}'")
                 print(f"   user_type : {user_type}")
                 print(f"   doc_filter: {doc_filter}")
                 print(f"   Private files involved: {private_fnames}")
-                print(f"\n   🔒 BLOCKED CHUNKS ({len(blocked_chunks)}):")
+                print(f"\n    BLOCKED CHUNKS ({len(blocked_chunks)}):")
                 for c in blocked_chunks:
                     print(f"      - chunk_id : {c.get('chunk_id', '?')}")
                     print(f"        file     : {c.get('file_path', '?')}")
                     print(f"        content  : {str(c.get('content', ''))[:100]}...")
                 print("=" * 60 + "\n")
-
+ 
+                # ── Log when >40% of chunks are private ───────────────────────
+                total   = len(valid_chunks)
+                n_private = len(blocked_chunks)
+                if total > 0 and (n_private / total) > 0.40:
+                    try:
+                        from lightrag.api.audit_logger import log_private_chunk_access
+                        await log_private_chunk_access(
+                            id = getattr(query_param, "primary_key", None),
+                            user_id=getattr(query_param, "user_id", None),
+                            thread_id=getattr(query_param, "thread_id", None),
+                            department=getattr(query_param, "department", None),
+                            user_query=query,
+                            total_chunks=total,
+                            private_chunks=n_private,
+                            private_files=list({
+                                os.path.basename(c.get("file_path", ""))
+                                for c in blocked_chunks
+                            }),
+                            blocked_chunk_ids=[
+                                c.get("chunk_id") for c in blocked_chunks
+                                if c.get("chunk_id")
+                            ],
+                        )
+                    except Exception:
+                        logger.error(
+                            "Failed to write private_chunk_access_logs row",
+                            exc_info=True,
+                        )
+                # ─────────────────────────────────────────────────────────────
+ 
             before = len(valid_chunks)
             valid_chunks = [
                 c for c in valid_chunks
@@ -4820,14 +4865,16 @@ async def _get_vector_context(
             logger.info(
                 f"Visibility filter [_get_vector_context]: removed {before - len(valid_chunks)} private chunks"
             )
-
+ 
         except Exception as e:
-            logger.warning(f"Visibility filter failed in _get_vector_context: {e}. Returning empty to avoid leak.")
+            logger.warning(
+                f"Visibility filter failed in _get_vector_context: {e}. Returning empty to avoid leak."
+            )
             return []
-
+ 
     logger.info(f"Naive query: {len(valid_chunks)} chunks (chunk_top_k:{search_top_k} cosine:{cosine_threshold})")
     return valid_chunks
-
+ 
 
 async def _perform_kg_search(
     query: str,

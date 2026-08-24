@@ -169,8 +169,12 @@ class QueryParam:
     user_type: Optional[str] = None
     """Type of the user making the request."""
 
+    primary_key: Optional[str] = None
+    """Unique identifier for the entity."""
+
     thread_id: Optional[str] = None
     """Unique identifier for the chat conversation/thread."""
+
  
 
 
