@@ -24,6 +24,14 @@ system prompt and parse the structured verdict. Results are logged to
 the guardrail_logs table (see audit_logger.py's schema) regardless of
 pass/fail, so you have a full record of every check made.
 
+guardrail_logs is keyed directly by query_log_id, which MUST be the same
+uuid generated once per request via audit_logger.new_query_id() and also
+used as query_logs.query_id — this is what keeps a request's rows in
+query_logs and guardrail_logs linked without either table generating its
+own separate id. user_id/thread_id/department/user_query/llm_response
+are NOT duplicated here; join back to query_logs on that id when you
+need them alongside the guardrail verdicts.
+
 Config via env vars (falls back to sensible defaults):
     GUARDRAIL_LLM_BASE_URL   default: https://api.groq.com/openai/v1
     GUARDRAIL_LLM_API_KEY    required (reuse your Groq key)
@@ -44,7 +52,6 @@ Drop this file at: lightrag/api/guardrails.py
 import os
 import json
 import asyncio
-import uuid
 from datetime import datetime, timezone
 from dataclasses import dataclass, field
 from typing import Optional, List, Dict, Any
@@ -249,6 +256,12 @@ async def check_output(
 
 # ---------------------------------------------------------------------------
 # Logging — guardrail_logs table
+#
+# guardrail_logs is keyed directly by query_log_id (== query_logs.query_id),
+# with no separate uuid, user_id, thread_id, department, user_query, or
+# llm_response columns of its own — those all live on query_logs and are
+# read via a JOIN on that shared id when needed, instead of being
+# duplicated here and risking the two tables drifting out of sync.
 # ---------------------------------------------------------------------------
 
 
@@ -260,21 +273,14 @@ def _create_log_sync(row: dict) -> None:
             cur.execute(
                 """
                 INSERT INTO guardrail_logs (
-                    id, query_log_id, user_id, thread_id, department,
-                    user_query, llm_response,
+                    query_log_id,
                     input_guardrail_status, input_guardrail_reason, input_guardrail_details,
                     output_guardrail_status, output_guardrail_reason, output_guardrail_details,
                     created_at, updated_at
-                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """,
                 (
-                    row["id"],
-                    row.get("query_log_id"),
-                    row.get("user_id"),
-                    row.get("thread_id"),
-                    row.get("department"),
-                    row.get("user_query"),
-                    row.get("llm_response"),
+                    row["query_log_id"],
                     row["input_guardrail_status"],
                     row.get("input_guardrail_reason"),
                     json.dumps(row.get("input_guardrail_details") or {}),
@@ -290,7 +296,7 @@ def _create_log_sync(row: dict) -> None:
         conn.close()
 
 
-def _update_log_output_sync(log_id: str, row: dict) -> None:
+def _update_log_output_sync(query_log_id: str, row: dict) -> None:
     conn = get_connection()
     try:
         ensure_schema(conn)
@@ -298,20 +304,18 @@ def _update_log_output_sync(log_id: str, row: dict) -> None:
             cur.execute(
                 """
                 UPDATE guardrail_logs SET
-                    llm_response = %s,
                     output_guardrail_status = %s,
                     output_guardrail_reason = %s,
                     output_guardrail_details = %s,
                     updated_at = %s
-                WHERE id = %s
+                WHERE query_log_id = %s
                 """,
                 (
-                    row.get("llm_response"),
                     row["output_guardrail_status"],
                     row.get("output_guardrail_reason"),
                     json.dumps(row.get("output_guardrail_details") or {}),
                     row["updated_at"],
-                    log_id,
+                    query_log_id,
                 ),
             )
         conn.commit()
@@ -321,25 +325,17 @@ def _update_log_output_sync(log_id: str, row: dict) -> None:
 
 async def log_input_guardrail(
     *,
-    log_id: str,
-    query_log_id: Optional[str],
-    user_id: Optional[str],
-    thread_id: Optional[str],
-    department: Optional[str],
-    user_query: str,
+    query_id: str,
     result: GuardrailResult,
-) -> str:
-    """Call after check_input(). Creates the guardrail_logs row. Returns
-    the guardrail log's own id, so you can pass it to
-    log_output_guardrail() later to update the same row."""
-    # log_id = str(uuid.uuid4())
+) -> None:
+    """Call after check_input(). Creates the guardrail_logs row keyed by
+    ``query_id`` — the SAME uuid you generate once per request (via
+    ``audit_logger.new_query_id()``) and also pass to ``log_query_event``.
+    That's what keeps query_logs.query_id and guardrail_logs.query_log_id
+    identical for a given request, instead of each table minting its own.
+    """
     row = {
-        "id": log_id,
-        "query_log_id": query_log_id,
-        "user_id": user_id,
-        "thread_id": thread_id,
-        "department": department,
-        "user_query": user_query,
+        "query_log_id": query_id,
         "input_guardrail_status": result.status,
         "input_guardrail_reason": result.reason,
         "input_guardrail_details": result.details,
@@ -351,27 +347,26 @@ async def log_input_guardrail(
         from lightrag.utils import logger as _logger
 
         _logger.error("Failed to write input guardrail log row", exc_info=True)
-    return log_id
 
 
 async def log_output_guardrail(
     *,
-    guardrail_log_id: str,
-    llm_response: Optional[str],
+    query_id: str,
     result: GuardrailResult,
 ) -> None:
-    """Call after check_output(), passing the log_id returned by
-    log_input_guardrail() for the same query — updates that same row
-    rather than creating a new one."""
+    """Call after check_output(), passing the same ``query_id`` used for
+    ``log_input_guardrail`` — updates that same row rather than creating
+    a new one. llm_response is no longer stored here (it already lives on
+    the query_logs row for this query_id); join the two tables if you
+    need both guardrail verdicts and the response text together."""
     row = {
-        "llm_response": llm_response,
         "output_guardrail_status": result.status,
         "output_guardrail_reason": result.reason,
         "output_guardrail_details": result.details,
         "updated_at": datetime.now(timezone.utc).replace(tzinfo=None),
     }
     try:
-        await asyncio.to_thread(_update_log_output_sync, guardrail_log_id, row)
+        await asyncio.to_thread(_update_log_output_sync, query_id, row)
     except Exception:
         from lightrag.utils import logger as _logger
 

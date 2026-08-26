@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "tables": {
+    "tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+      "id": "tb-574eef8b2a231a2171cb4eadad4c29e5-0001",
+      "blockid": "1ed21130714667ad142d4989683550d9",
+      "heading": "Operating guidelines",
+      "parent_headings": [
+        "Door-Step Banking for Senior Citizens and Differently-Abled"
+      ],
+      "dimension": [
+        3,
+        4
+      ],
+      "format": "html",
+      "content": "<table><tr><td>Type of service</td><td>Savings (individuals)</td><td>Senior Citizen / Differently Abled</td><td>Current Account Customers</td></tr><tr><td>Cash Pickup</td><td>20,000 per instance</td><td>20,000 per instance</td><td>5 lacs per instance</td></tr><tr><td>Cash Delivery</td><td>20,000 per instance</td><td>20,000 per instance</td><td>5 lacs per instance</td></tr></table>",
+      "caption": "",
+      "footnotes": [
+        "# Subject to change from time to time as per banks policy."
+      ],
+      "self_ref": "content_list.json#/25",
+      "surrounding": {
+        "leading": "## Operating guidelines\n",
+        "trailing": "\nThe Door step banking service can be offered by the bank through any of the following means.\nBy Banks own regular staff\nOutsourcing the operations to a Cash management vendor who have national / regional presence with a good track record. The outsourcing to such vendor will be governed by the outsourcing policy of the bank.\nThrough banking correspondents empaneled with the bank.\nServices provided through outsourcing or through banking correspondents will be through a mutually signed agreement detailing the terms and conditions including charges for executing these services, turnaround time."
+      },
+      "llm_analyze_result": {
+        "name": "service_type_savings_limits",
+        "description": "The table outlines the savings limits for different types of banking services, specifically Cash Pickup and Cash Delivery, across various customer segments. There are four columns in the table: 'Type of service', 'Savings (individuals)', 'Senior Citizen / Differently Abled', and 'Current Account Customers'. Each row details the maximum allowable savings per instance based on the type of service provided. For Cash Pickup, both individuals and senior citizens or differently abled customers can save up to 20,000, while current account customers have a significantly higher limit of 5 lacs per instance. The same savings limits apply to Cash Delivery, with the same values noted for each customer segment. This suggests uniformity in service limits for individual and senior citizen/differently abled customers, while current account customers have a larger cap. The footnote indicates that these savings limits may change in response to bank policies, adding a layer of variability to the content presented. Overall, the table serves to clarify the maximum savings allowed for different customer categories when utilizing specific banking services, which is essential for customer awareness and financial planning.",
+        "analyze_time": 1787740917,
+        "status": "success",
+        "message": ""
+      },
+      "llm_cache_list": [
+        "default:analysis:53d4ada8a04450839110a9de86687dd7"
+      ]
+    }
+  }
+}

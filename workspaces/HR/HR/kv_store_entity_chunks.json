@@ -1,0 +1,2131 @@
+{
+  "Bank": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-004",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 12,
+    "update_time": 1787741494,
+    "_id": "Bank"
+  },
+  "Deposit": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Deposit"
+  },
+  "Depositors": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Depositors"
+  },
+  "Banking Regulation Act, 1949": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 2,
+    "update_time": 1787741494,
+    "_id": "Banking Regulation Act, 1949"
+  },
+  "Reserve Bank of India": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008",
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1787740931,
+    "_id": "Reserve Bank of India"
+  },
+  "Unity Small Finance Bank Limited": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Unity Small Finance Bank Limited"
+  },
+  "Interest Rates": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Interest Rates"
+  },
+  "Financial System": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Financial System"
+  },
+  "Deposit Accounts": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 2,
+    "update_time": 1787741494,
+    "_id": "Deposit Accounts"
+  },
+  "Demand Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Demand Deposits"
+  },
+  "Time Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Time Deposits"
+  },
+  "Savings Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-003"
+    ],
+    "count": 5,
+    "update_time": 1787741494,
+    "_id": "Savings Account"
+  },
+  "Basic Savings Bank Deposit Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Basic Savings Bank Deposit Account"
+  },
+  "Current Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-001"
+    ],
+    "count": 4,
+    "update_time": 1787741494,
+    "_id": "Current Account"
+  },
+  "Cash Credit": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Cash Credit"
+  },
+  "Overdraft": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Overdraft"
+  },
+  "RBI": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 2,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "RBI"
+  },
+  "KYC": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "KYC"
+  },
+  "PAN": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "PAN"
+  },
+  "Unity SFB": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Unity SFB"
+  },
+  "Term Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Term Deposits"
+  },
+  "Minimum Average Balance Requirements": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Minimum Average Balance Requirements"
+  },
+  "Bulk Deposit": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Bulk Deposit"
+  },
+  "Non-callable Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Non-callable Deposits"
+  },
+  "Document Verification": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Document Verification"
+  },
+  "Debit Card": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Debit Card"
+  },
+  "Mobile Banking": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Mobile Banking"
+  },
+  "WhatsApp Banking": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "WhatsApp Banking"
+  },
+  "Internet Banking": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Internet Banking"
+  },
+  "ATM Network": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "ATM Network"
+  },
+  "NEFT": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "NEFT"
+  },
+  "RTGS": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "RTGS"
+  },
+  "Statement of Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Statement of Account"
+  },
+  "Joint Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-003"
+    ],
+    "count": 3,
+    "update_time": 1787741494,
+    "_id": "Joint Account"
+  },
+  "Account Operations": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Account Operations"
+  },
+  "Minor Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Minor Account"
+  },
+  "Power of Attorney": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Power of Attorney"
+  },
+  "Mandate": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Mandate"
+  },
+  "Nomination": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Nomination"
+  },
+  "Depositor": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-003"
+    ],
+    "count": 4,
+    "update_time": 1787741494,
+    "_id": "Depositor"
+  },
+  "Nominee": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006"
+    ],
+    "count": 7,
+    "update_time": 1787741494,
+    "_id": "Nominee"
+  },
+  "Senior Citizen": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 2,
+    "update_time": 1787740931,
+    "_id": "Senior Citizen"
+  },
+  "Illiterate Person": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Illiterate Person"
+  },
+  "Visually Challenged Person": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Visually Challenged Person"
+  },
+  "Transgender Person": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Transgender Person"
+  },
+  "Guardian": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 2,
+    "update_time": 1787741494,
+    "_id": "Guardian"
+  },
+  "Local Level Committees": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Local Level Committees"
+  },
+  "District Courts": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "District Courts"
+  },
+  "Regulator": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Regulator"
+  },
+  "National Trust for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation and Multiple Disabilities Act, 1999": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "National Trust for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation and Multiple Disabilities Act, 1999"
+  },
+  "The Mental Health Act, 1987": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "The Mental Health Act, 1987"
+  },
+  "Term Deposit": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-003"
+    ],
+    "count": 3,
+    "update_time": 1787741494,
+    "_id": "Term Deposit"
+  },
+  "Domestic Non-Resident Ordinary Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Domestic Non-Resident Ordinary Account"
+  },
+  "Non-Resident External Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Non-Resident External Account"
+  },
+  "Bulk Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Bulk Deposits"
+  },
+  "Deposit Interest Rate Card": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Deposit Interest Rate Card"
+  },
+  "Interest Rate Framework": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Interest Rate Framework"
+  },
+  "Interest Rate": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Interest Rate"
+  },
+  "NRE Deposit": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "NRE Deposit"
+  },
+  "NRO Deposit": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "NRO Deposit"
+  },
+  "Master Policy on Customer Service": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Master Policy on Customer Service"
+  },
+  "Tax Deduction at Source (TDS)": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Tax Deduction at Source (TDS)"
+  },
+  "Legal Heirs": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-004",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-006"
+    ],
+    "count": 6,
+    "update_time": 1787741494,
+    "_id": "Legal Heirs"
+  },
+  "Penalty for Premature Withdrawal": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Penalty for Premature Withdrawal"
+  },
+  "NRE Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "NRE Deposits"
+  },
+  "NRO Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "NRO Deposits"
+  },
+  "Scheduled Commercial Banks": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Scheduled Commercial Banks"
+  },
+  "Board of Directors": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Board of Directors"
+  },
+  "DICGC": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "DICGC"
+  },
+  "Customer Service Master Policy": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Customer Service Master Policy"
+  },
+  "Deceased Depositor": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Deceased Depositor"
+  },
+  "Minor": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Minor"
+  },
+  "Joint Account Holders": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Joint Account Holders"
+  },
+  "Inactive Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Inactive Account"
+  },
+  "Dormant Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Dormant Account"
+  },
+  "Unclaimed Deposits": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007",
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 2,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Unclaimed Deposits"
+  },
+  "Claimants": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-007",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 2,
+    "update_time": 1787741494,
+    "_id": "Claimants"
+  },
+  "Vikas Volunteer Vahini": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Vikas Volunteer Vahini"
+  },
+  "Grievance Redressal Policy": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Grievance Redressal Policy"
+  },
+  "Electronic Clearing Service": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Electronic Clearing Service"
+  },
+  "Automated Clearing House": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Automated Clearing House"
+  },
+  "Banking Ombudsman": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Banking Ombudsman"
+  },
+  "Customer": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008",
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1787740931,
+    "_id": "Customer"
+  },
+  "Inoperative Account": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Inoperative Account"
+  },
+  "Legal Heir": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 4,
+    "update_time": 1787741494,
+    "_id": "Legal Heir"
+  },
+  "Direct Selling Agents": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Direct Selling Agents"
+  },
+  "Business Facilitators": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Business Facilitators"
+  },
+  "Business Correspondents": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Business Correspondents"
+  },
+  "Public Awareness Campaigns": {
+    "chunk_ids": [
+      "doc-6e9c97657e05cf315dfdf575fb8d6364-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "Public Awareness Campaigns"
+  },
+  "Doorstep Banking": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Doorstep Banking"
+  },
+  "Unity Bank": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Unity Bank"
+  },
+  "Senior Citizens": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Senior Citizens"
+  },
+  "Differently-Abled": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Differently-Abled"
+  },
+  "KYC Document": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "KYC Document"
+  },
+  "Cash Management Vendor": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Cash Management Vendor"
+  },
+  "Banking Correspondents": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Banking Correspondents"
+  },
+  "Cash Pickup": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000",
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 2,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Cash Pickup"
+  },
+  "Cash Delivery": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000",
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 2,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Cash Delivery"
+  },
+  "Service Charges": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Service Charges"
+  },
+  "Force Majeure": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Force Majeure"
+  },
+  "Service Type Savings Limits": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Service Type Savings Limits"
+  },
+  "Differently Abled": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Differently Abled"
+  },
+  "Current Account Customers": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Current Account Customers"
+  },
+  "Bank Policies": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "Bank Policies"
+  },
+  "tb-574eef8b2a231a2171cb4eadad4c29e5-0001": {
+    "chunk_ids": [
+      "doc-574eef8b2a231a2171cb4eadad4c29e5-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+  },
+  "Rules of Nomination and Settlement of Claims in Respect of Deceased Customers and Missing Persons": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Rules of Nomination and Settlement of Claims in Respect of Deceased Customers and Missing Persons"
+  },
+  "Nomination Facility": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Nomination Facility"
+  },
+  "Survivorship Mandate": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Survivorship Mandate"
+  },
+  "Claim Form": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 5,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Claim Form"
+  },
+  "Death Certificate": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 5,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Death Certificate"
+  },
+  "Claimant": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-001",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-004"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Claimant"
+  },
+  "Competent Court": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Competent Court"
+  },
+  "Threshold Limit": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Threshold Limit"
+  },
+  "Officially Valid Document": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Officially Valid Document"
+  },
+  "Bond of Indemnity": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-004"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Bond of Indemnity"
+  },
+  "Letter of Disclaimer": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Letter of Disclaimer"
+  },
+  "Affidavit": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Affidavit"
+  },
+  "Probate of Will": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-004",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-007",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008"
+    ],
+    "count": 5,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Probate of Will"
+  },
+  "Letter of Administration": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-004",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008"
+    ],
+    "count": 3,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Letter of Administration"
+  },
+  "Court Order": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Court Order"
+  },
+  "Sequencing Certificate": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Sequencing Certificate"
+  },
+  "Missing Person": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Missing Person"
+  },
+  "FIR": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "FIR"
+  },
+  "Non-traceable Report": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Non-traceable Report"
+  },
+  "Survivor": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Survivor"
+  },
+  "Locker Hirer": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Locker Hirer"
+  },
+  "Minor Nominee": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Minor Nominee"
+  },
+  "Deceased Customer": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Deceased Customer"
+  },
+  "Will": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Will"
+  },
+  "Successor Certificate": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Successor Certificate"
+  },
+  "Legal Heir Certificate": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 3,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Legal Heir Certificate"
+  },
+  "Annex I-A": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-007",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 4,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Annex I-A"
+  },
+  "Annex I-B": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-007",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 4,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Annex I-B"
+  },
+  "Annex I-D": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-007",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 4,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Annex I-D"
+  },
+  "Annex I-E": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-007",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 4,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Annex I-E"
+  },
+  "Annex I-F": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Annex I-F"
+  },
+  "Annex I-G": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Annex I-G"
+  },
+  "Joint Locker Hirer": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Joint Locker Hirer"
+  },
+  "Court": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Court"
+  },
+  "Independent Valuer": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Independent Valuer"
+  },
+  "Succession Certificate": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-004",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-007"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Succession Certificate"
+  },
+  "Court Order Decree": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Court Order Decree"
+  },
+  "Inventory Form": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-004",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Inventory Form"
+  },
+  "Standardised Forms": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-004"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Standardised Forms"
+  },
+  "Safe Deposit Locker": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Safe Deposit Locker"
+  },
+  "Mr. Surinderpal Singh": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Mr. Surinderpal Singh"
+  },
+  "Mr. Gautam Chawla": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Mr. Gautam Chawla"
+  },
+  "Mr. Ponnuraj P.": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Mr. Ponnuraj P."
+  },
+  "Ms. Uma Sundar": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Ms. Uma Sundar"
+  },
+  "Ms. Kawalpreet Suri": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Ms. Kawalpreet Suri"
+  },
+  "Customer Service Policy": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Customer Service Policy"
+  },
+  "Claim Settlement": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Claim Settlement"
+  },
+  "Survivorship Clause": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Survivorship Clause"
+  },
+  "Proof of Death Document": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Proof of Death Document"
+  },
+  "Account": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Account"
+  },
+  "Savings A/c": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Savings A/c"
+  },
+  "Current A/c": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Current A/c"
+  },
+  "Term Deposit Account": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-001"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Term Deposit Account"
+  },
+  "FD": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "FD"
+  },
+  "Locker": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-006"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Locker"
+  },
+  "Operational Instructions": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Operational Instructions"
+  },
+  "A": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-007",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-005",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-006"
+    ],
+    "count": 4,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "A"
+  },
+  "B": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-007",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-005",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-006"
+    ],
+    "count": 4,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "B"
+  },
+  "X": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-005"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "X"
+  },
+  "Y": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-006",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-005"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Y"
+  },
+  "Legal Heirs of A": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Legal Heirs of A"
+  },
+  "Legal Heirs of B": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-007"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Legal Heirs of B"
+  },
+  "Annex I-C": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-007",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 3,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Annex I-C"
+  },
+  "Version 4.0 Master Policy on Customer Service": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Version 4.0 Master Policy on Customer Service"
+  },
+  "OVD": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-chunk-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "OVD"
+  },
+  "Surinderpal Singh": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Surinderpal Singh"
+  },
+  "Gautam Chawla": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Gautam Chawla"
+  },
+  "Ponnuraj P.": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Ponnuraj P."
+  },
+  "Uma Sundar": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Uma Sundar"
+  },
+  "Kawalpreet Suri": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Kawalpreet Suri"
+  },
+  "National Sales Head- Branch Banking": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "National Sales Head- Branch Banking"
+  },
+  "Senior Vice President (SVP)": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Senior Vice President (SVP)"
+  },
+  "Vice President (VP)": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Vice President (VP)"
+  },
+  "Claims Settlement": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Claims Settlement"
+  },
+  "Deceased Depositors": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Deceased Depositors"
+  },
+  "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-000"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001"
+  },
+  "Settlement Of Claims With Nomination": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-001"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Settlement Of Claims With Nomination"
+  },
+  "Nominees": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-001"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Nominees"
+  },
+  "Depositor Arrangements": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-001"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Depositor Arrangements"
+  },
+  "Claims Process": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-001"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Claims Process"
+  },
+  "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-001"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002"
+  },
+  "Account Nomination Instructions": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Account Nomination Instructions"
+  },
+  "Person A": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Person A"
+  },
+  "Person B": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Person B"
+  },
+  "Nominee X": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Nominee X"
+  },
+  "Either or Survivor": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-006"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Either or Survivor"
+  },
+  "Self": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Self"
+  },
+  "Jointly": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-002",
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-006"
+    ],
+    "count": 2,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Jointly"
+  },
+  "tb-2d2b1e01babacd5427ea9228ee35f7f9-0003": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-002"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0003"
+  },
+  "Account Depositor Rights Without Nomination": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Account Depositor Rights Without Nomination"
+  },
+  "Fixed Deposit": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Fixed Deposit"
+  },
+  "Single Account": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Single Account"
+  },
+  "Premature Withdrawal of Fixed Deposits": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Premature Withdrawal of Fixed Deposits"
+  },
+  "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-003"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004"
+  },
+  "Account Payable Instructions After Death": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-004"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Account Payable Instructions After Death"
+  },
+  "Account A": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-004"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Account A"
+  },
+  "Account B": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-004"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Account B"
+  },
+  "Beneficiaries": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-004"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Beneficiaries"
+  },
+  "tb-2d2b1e01babacd5427ea9228ee35f7f9-0005": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-004"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0005"
+  },
+  "Locker Access Nomination Protocols": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Locker Access Nomination Protocols"
+  },
+  "Death": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Death"
+  },
+  "tb-2d2b1e01babacd5427ea9228ee35f7f9-0006": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-005"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0006"
+  },
+  "Locker Access Protocols Without Nomination": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-006"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Locker Access Protocols Without Nomination"
+  },
+  "Mandated Individual": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-006"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Mandated Individual"
+  },
+  "Customer Service Policies": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-006"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Customer Service Policies"
+  },
+  "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-006"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007"
+  },
+  "Checklist Settlement Claims Deceased Depositor": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Checklist Settlement Claims Deceased Depositor"
+  },
+  "Accounts with Nominee/Survivorship Clause": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Accounts with Nominee/Survivorship Clause"
+  },
+  "Accounts without Nominee/Survivorship Clause": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Accounts without Nominee/Survivorship Clause"
+  },
+  "Indemnity Bond": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Indemnity Bond"
+  },
+  "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-007"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+  },
+  "Checklist - Settlement of Claims in Safe Deposit Locker and Articles in Safe Custody by Deceased Customer": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Checklist - Settlement of Claims in Safe Deposit Locker and Articles in Safe Custody by Deceased Customer"
+  },
+  "Claims with Nominee(s)/Survivorship(s)": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Claims with Nominee(s)/Survivorship(s)"
+  },
+  "Cases without Nominee/ Survivorship clause": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Cases without Nominee/ Survivorship clause"
+  },
+  "Settlement of Claims not falling under the Simplified Procedure": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Settlement of Claims not falling under the Simplified Procedure"
+  },
+  "Claim Forms": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Claim Forms"
+  },
+  "Death Certificates": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Death Certificates"
+  },
+  "Inventory Forms": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Inventory Forms"
+  },
+  "Disclaimer/No Objection Letter": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Disclaimer/No Objection Letter"
+  },
+  "Probate of Wills": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Probate of Wills"
+  },
+  "Annexure References": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "Annexure References"
+  },
+  "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009": {
+    "chunk_ids": [
+      "doc-2d2b1e01babacd5427ea9228ee35f7f9-mm-table-008"
+    ],
+    "count": 1,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009"
+  }
+}

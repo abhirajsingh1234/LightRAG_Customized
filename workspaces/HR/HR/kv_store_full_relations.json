@@ -1,0 +1,1366 @@
+{
+  "doc-6e9c97657e05cf315dfdf575fb8d6364": {
+    "relation_pairs": [
+      [
+        "ATM Network",
+        "Bank"
+      ],
+      [
+        "Account Operations",
+        "Minor Account"
+      ],
+      [
+        "Automated Clearing House",
+        "Bank"
+      ],
+      [
+        "Bank",
+        "Basic Savings Bank Deposit Account"
+      ],
+      [
+        "Bank",
+        "Bulk Deposit"
+      ],
+      [
+        "Bank",
+        "Bulk Deposits"
+      ],
+      [
+        "Bank",
+        "Business Correspondents"
+      ],
+      [
+        "Bank",
+        "Business Facilitators"
+      ],
+      [
+        "Bank",
+        "Current Account"
+      ],
+      [
+        "Bank",
+        "Customer"
+      ],
+      [
+        "Bank",
+        "Debit Card"
+      ],
+      [
+        "Bank",
+        "Demand Deposits"
+      ],
+      [
+        "Bank",
+        "Deposit Interest Rate Card"
+      ],
+      [
+        "Bank",
+        "Depositor"
+      ],
+      [
+        "Bank",
+        "Depositors"
+      ],
+      [
+        "Bank",
+        "Direct Selling Agents"
+      ],
+      [
+        "Bank",
+        "Document Verification"
+      ],
+      [
+        "Bank",
+        "Electronic Clearing Service"
+      ],
+      [
+        "Bank",
+        "Grievance Redressal Policy"
+      ],
+      [
+        "Bank",
+        "Guardian"
+      ],
+      [
+        "Bank",
+        "Illiterate Person"
+      ],
+      [
+        "Bank",
+        "Inoperative Account"
+      ],
+      [
+        "Bank",
+        "Interest Rate"
+      ],
+      [
+        "Bank",
+        "Internet Banking"
+      ],
+      [
+        "Bank",
+        "Joint Account"
+      ],
+      [
+        "Bank",
+        "KYC"
+      ],
+      [
+        "Bank",
+        "Mandate"
+      ],
+      [
+        "Bank",
+        "Master Policy on Customer Service"
+      ],
+      [
+        "Bank",
+        "Minimum Average Balance Requirements"
+      ],
+      [
+        "Bank",
+        "Mobile Banking"
+      ],
+      [
+        "Bank",
+        "NEFT"
+      ],
+      [
+        "Bank",
+        "Nomination"
+      ],
+      [
+        "Bank",
+        "Non-callable Deposits"
+      ],
+      [
+        "Bank",
+        "PAN"
+      ],
+      [
+        "Bank",
+        "Penalty for Premature Withdrawal"
+      ],
+      [
+        "Bank",
+        "Power of Attorney"
+      ],
+      [
+        "Bank",
+        "Public Awareness Campaigns"
+      ],
+      [
+        "Bank",
+        "RTGS"
+      ],
+      [
+        "Bank",
+        "Regulator"
+      ],
+      [
+        "Bank",
+        "Reserve Bank of India"
+      ],
+      [
+        "Bank",
+        "Savings Account"
+      ],
+      [
+        "Bank",
+        "Senior Citizen"
+      ],
+      [
+        "Bank",
+        "Statement of Account"
+      ],
+      [
+        "Bank",
+        "Tax Deduction at Source (TDS)"
+      ],
+      [
+        "Bank",
+        "Term Deposit"
+      ],
+      [
+        "Bank",
+        "Term Deposits"
+      ],
+      [
+        "Bank",
+        "Time Deposits"
+      ],
+      [
+        "Bank",
+        "Transgender Person"
+      ],
+      [
+        "Bank",
+        "Unclaimed Deposits"
+      ],
+      [
+        "Bank",
+        "Visually Challenged Person"
+      ],
+      [
+        "Bank",
+        "WhatsApp Banking"
+      ],
+      [
+        "Banking Ombudsman",
+        "Customer"
+      ],
+      [
+        "Banking Ombudsman",
+        "Reserve Bank of India"
+      ],
+      [
+        "Banking Regulation Act, 1949",
+        "Depositors"
+      ],
+      [
+        "Board of Directors",
+        "NRE Deposits"
+      ],
+      [
+        "Claimants",
+        "Deceased Depositor"
+      ],
+      [
+        "Customer",
+        "Legal Heir"
+      ],
+      [
+        "Customer",
+        "Nominee"
+      ],
+      [
+        "Customer",
+        "Vikas Volunteer Vahini"
+      ],
+      [
+        "Customer Service Master Policy",
+        "DICGC"
+      ],
+      [
+        "Customer Service Master Policy",
+        "RBI"
+      ],
+      [
+        "DICGC",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Deposit Accounts",
+        "Unity Small Finance Bank Limited"
+      ],
+      [
+        "Depositor",
+        "NRE Deposit"
+      ],
+      [
+        "Depositor",
+        "NRO Deposit"
+      ],
+      [
+        "Depositor",
+        "Nominee"
+      ],
+      [
+        "Depositor",
+        "Penalty for Premature Withdrawal"
+      ],
+      [
+        "Depositor",
+        "Term Deposit"
+      ],
+      [
+        "Depositors",
+        "Unity Small Finance Bank Limited"
+      ],
+      [
+        "District Courts",
+        "Guardian"
+      ],
+      [
+        "Dormant Account",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Guardian",
+        "Local Level Committees"
+      ],
+      [
+        "Guardian",
+        "National Trust for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation and Multiple Disabilities Act, 1999"
+      ],
+      [
+        "Guardian",
+        "The Mental Health Act, 1987"
+      ],
+      [
+        "Inactive Account",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Interest Rates",
+        "Reserve Bank of India"
+      ],
+      [
+        "Joint Account Holders",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Legal Heirs",
+        "Term Deposit"
+      ],
+      [
+        "Minor",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "NRE Deposits",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "NRO Deposits",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "Nominee",
+        "Term Deposit"
+      ],
+      [
+        "RBI",
+        "Scheduled Commercial Banks"
+      ],
+      [
+        "RBI",
+        "Unclaimed Deposits"
+      ]
+    ],
+    "count": 84,
+    "create_time": 1787740420,
+    "update_time": 1787740420,
+    "_id": "doc-6e9c97657e05cf315dfdf575fb8d6364"
+  },
+  "doc-574eef8b2a231a2171cb4eadad4c29e5": {
+    "relation_pairs": [
+      [
+        "Bank Policies",
+        "Service Type Savings Limits"
+      ],
+      [
+        "Bank Policies",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Banking Correspondents",
+        "Unity Bank"
+      ],
+      [
+        "Cash Delivery",
+        "Differently Abled"
+      ],
+      [
+        "Cash Delivery",
+        "Senior Citizen"
+      ],
+      [
+        "Cash Delivery",
+        "Service Type Savings Limits"
+      ],
+      [
+        "Cash Delivery",
+        "Unity Bank"
+      ],
+      [
+        "Cash Delivery",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Cash Management Vendor",
+        "Unity Bank"
+      ],
+      [
+        "Cash Pickup",
+        "Differently Abled"
+      ],
+      [
+        "Cash Pickup",
+        "Senior Citizen"
+      ],
+      [
+        "Cash Pickup",
+        "Service Type Savings Limits"
+      ],
+      [
+        "Cash Pickup",
+        "Unity Bank"
+      ],
+      [
+        "Cash Pickup",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Current Account Customers",
+        "Service Type Savings Limits"
+      ],
+      [
+        "Current Account Customers",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Customer",
+        "Differently-Abled"
+      ],
+      [
+        "Customer",
+        "KYC Document"
+      ],
+      [
+        "Customer",
+        "Senior Citizens"
+      ],
+      [
+        "Differently Abled",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Doorstep Banking",
+        "Reserve Bank of India"
+      ],
+      [
+        "Doorstep Banking",
+        "Unity Bank"
+      ],
+      [
+        "Force Majeure",
+        "Unity Bank"
+      ],
+      [
+        "Senior Citizen",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ],
+      [
+        "Service Charges",
+        "Unity Bank"
+      ],
+      [
+        "Service Type Savings Limits",
+        "tb-574eef8b2a231a2171cb4eadad4c29e5-0001"
+      ]
+    ],
+    "count": 26,
+    "create_time": 1787740931,
+    "update_time": 1787740931,
+    "_id": "doc-574eef8b2a231a2171cb4eadad4c29e5"
+  },
+  "doc-2d2b1e01babacd5427ea9228ee35f7f9": {
+    "relation_pairs": [
+      [
+        "A",
+        "B"
+      ],
+      [
+        "A",
+        "Death"
+      ],
+      [
+        "A",
+        "Legal Heirs"
+      ],
+      [
+        "A",
+        "Legal Heirs of A"
+      ],
+      [
+        "A",
+        "Locker Access Nomination Protocols"
+      ],
+      [
+        "A",
+        "Locker Access Protocols Without Nomination"
+      ],
+      [
+        "A",
+        "X"
+      ],
+      [
+        "A",
+        "Y"
+      ],
+      [
+        "A",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0006"
+      ],
+      [
+        "A",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007"
+      ],
+      [
+        "Account A",
+        "Account B"
+      ],
+      [
+        "Account A",
+        "Legal Heirs"
+      ],
+      [
+        "Account A",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0005"
+      ],
+      [
+        "Account B",
+        "Legal Heirs"
+      ],
+      [
+        "Account B",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0005"
+      ],
+      [
+        "Account Depositor Rights Without Nomination",
+        "Depositor"
+      ],
+      [
+        "Account Depositor Rights Without Nomination",
+        "Fixed Deposit"
+      ],
+      [
+        "Account Depositor Rights Without Nomination",
+        "Joint Account"
+      ],
+      [
+        "Account Depositor Rights Without Nomination",
+        "Premature Withdrawal of Fixed Deposits"
+      ],
+      [
+        "Account Depositor Rights Without Nomination",
+        "Savings Account"
+      ],
+      [
+        "Account Depositor Rights Without Nomination",
+        "Single Account"
+      ],
+      [
+        "Account Depositor Rights Without Nomination",
+        "Term Deposit"
+      ],
+      [
+        "Account Depositor Rights Without Nomination",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004"
+      ],
+      [
+        "Account Nomination Instructions",
+        "Either or Survivor"
+      ],
+      [
+        "Account Nomination Instructions",
+        "Jointly"
+      ],
+      [
+        "Account Nomination Instructions",
+        "Nominee X"
+      ],
+      [
+        "Account Nomination Instructions",
+        "Person A"
+      ],
+      [
+        "Account Nomination Instructions",
+        "Person B"
+      ],
+      [
+        "Account Nomination Instructions",
+        "Self"
+      ],
+      [
+        "Account Nomination Instructions",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0003"
+      ],
+      [
+        "Account Payable Instructions After Death",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0005"
+      ],
+      [
+        "Accounts with Nominee/Survivorship Clause",
+        "Checklist Settlement Claims Deceased Depositor"
+      ],
+      [
+        "Accounts with Nominee/Survivorship Clause",
+        "Claim Form"
+      ],
+      [
+        "Accounts with Nominee/Survivorship Clause",
+        "Death Certificate"
+      ],
+      [
+        "Accounts with Nominee/Survivorship Clause",
+        "Indemnity Bond"
+      ],
+      [
+        "Accounts with Nominee/Survivorship Clause",
+        "Legal Heir Certificate"
+      ],
+      [
+        "Accounts with Nominee/Survivorship Clause",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Accounts without Nominee/Survivorship Clause",
+        "Checklist Settlement Claims Deceased Depositor"
+      ],
+      [
+        "Accounts without Nominee/Survivorship Clause",
+        "Claim Form"
+      ],
+      [
+        "Accounts without Nominee/Survivorship Clause",
+        "Death Certificate"
+      ],
+      [
+        "Accounts without Nominee/Survivorship Clause",
+        "Indemnity Bond"
+      ],
+      [
+        "Accounts without Nominee/Survivorship Clause",
+        "Legal Heir Certificate"
+      ],
+      [
+        "Accounts without Nominee/Survivorship Clause",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Affidavit",
+        "Legal Heir"
+      ],
+      [
+        "Annex I-A",
+        "Annex I-B"
+      ],
+      [
+        "Annex I-A",
+        "Checklist Settlement Claims Deceased Depositor"
+      ],
+      [
+        "Annex I-A",
+        "Version 4.0 Master Policy on Customer Service"
+      ],
+      [
+        "Annex I-A",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Annex I-B",
+        "Annex I-C"
+      ],
+      [
+        "Annex I-B",
+        "Annex I-D"
+      ],
+      [
+        "Annex I-B",
+        "Checklist Settlement Claims Deceased Depositor"
+      ],
+      [
+        "Annex I-B",
+        "Version 4.0 Master Policy on Customer Service"
+      ],
+      [
+        "Annex I-B",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Annex I-C",
+        "Checklist Settlement Claims Deceased Depositor"
+      ],
+      [
+        "Annex I-C",
+        "Version 4.0 Master Policy on Customer Service"
+      ],
+      [
+        "Annex I-C",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Annex I-D",
+        "Checklist Settlement Claims Deceased Depositor"
+      ],
+      [
+        "Annex I-D",
+        "Version 4.0 Master Policy on Customer Service"
+      ],
+      [
+        "Annex I-D",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Annex I-E",
+        "Checklist Settlement Claims Deceased Depositor"
+      ],
+      [
+        "Annex I-E",
+        "Version 4.0 Master Policy on Customer Service"
+      ],
+      [
+        "Annex I-E",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Annex I-F",
+        "Version 4.0 Master Policy on Customer Service"
+      ],
+      [
+        "Annexure References",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009"
+      ],
+      [
+        "B",
+        "Death"
+      ],
+      [
+        "B",
+        "Legal Heirs"
+      ],
+      [
+        "B",
+        "Legal Heirs of B"
+      ],
+      [
+        "B",
+        "Locker Access Nomination Protocols"
+      ],
+      [
+        "B",
+        "Locker Access Protocols Without Nomination"
+      ],
+      [
+        "B",
+        "X"
+      ],
+      [
+        "B",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0006"
+      ],
+      [
+        "B",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007"
+      ],
+      [
+        "Bank",
+        "Claimant"
+      ],
+      [
+        "Bank",
+        "Claimants"
+      ],
+      [
+        "Bank",
+        "Competent Court"
+      ],
+      [
+        "Bank",
+        "Court"
+      ],
+      [
+        "Bank",
+        "Court Order"
+      ],
+      [
+        "Bank",
+        "Customer Service Policy"
+      ],
+      [
+        "Bank",
+        "Guardian"
+      ],
+      [
+        "Bank",
+        "Independent Valuer"
+      ],
+      [
+        "Bank",
+        "Inventory Form"
+      ],
+      [
+        "Bank",
+        "Legal Heir"
+      ],
+      [
+        "Bank",
+        "Letter of Administration"
+      ],
+      [
+        "Bank",
+        "Mr. Gautam Chawla"
+      ],
+      [
+        "Bank",
+        "Mr. Ponnuraj P."
+      ],
+      [
+        "Bank",
+        "Mr. Surinderpal Singh"
+      ],
+      [
+        "Bank",
+        "Ms. Kawalpreet Suri"
+      ],
+      [
+        "Bank",
+        "Ms. Uma Sundar"
+      ],
+      [
+        "Bank",
+        "Nomination Facility"
+      ],
+      [
+        "Bank",
+        "Nominee"
+      ],
+      [
+        "Bank",
+        "Probate of Will"
+      ],
+      [
+        "Bank",
+        "Proof of Death Document"
+      ],
+      [
+        "Bank",
+        "Standardised Forms"
+      ],
+      [
+        "Bank",
+        "Survivor"
+      ],
+      [
+        "Bank",
+        "Survivorship Mandate"
+      ],
+      [
+        "Beneficiaries",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0005"
+      ],
+      [
+        "Bond of Indemnity",
+        "Claim Form"
+      ],
+      [
+        "Bond of Indemnity",
+        "Claimant"
+      ],
+      [
+        "Cases without Nominee/ Survivorship clause",
+        "Checklist - Settlement of Claims in Safe Deposit Locker and Articles in Safe Custody by Deceased Customer"
+      ],
+      [
+        "Cases without Nominee/ Survivorship clause",
+        "Claim Forms"
+      ],
+      [
+        "Cases without Nominee/ Survivorship clause",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009"
+      ],
+      [
+        "Checklist - Settlement of Claims in Safe Deposit Locker and Articles in Safe Custody by Deceased Customer",
+        "Claims with Nominee(s)/Survivorship(s)"
+      ],
+      [
+        "Checklist - Settlement of Claims in Safe Deposit Locker and Articles in Safe Custody by Deceased Customer",
+        "Inventory Forms"
+      ],
+      [
+        "Checklist - Settlement of Claims in Safe Deposit Locker and Articles in Safe Custody by Deceased Customer",
+        "Probate of Wills"
+      ],
+      [
+        "Checklist - Settlement of Claims in Safe Deposit Locker and Articles in Safe Custody by Deceased Customer",
+        "Settlement of Claims not falling under the Simplified Procedure"
+      ],
+      [
+        "Checklist - Settlement of Claims in Safe Deposit Locker and Articles in Safe Custody by Deceased Customer",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009"
+      ],
+      [
+        "Checklist Settlement Claims Deceased Depositor",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Claim Form",
+        "Death Certificate"
+      ],
+      [
+        "Claim Form",
+        "Letter of Disclaimer"
+      ],
+      [
+        "Claim Form",
+        "Nominee"
+      ],
+      [
+        "Claim Form",
+        "Officially Valid Document"
+      ],
+      [
+        "Claim Form",
+        "Survivor"
+      ],
+      [
+        "Claim Form",
+        "Version 4.0 Master Policy on Customer Service"
+      ],
+      [
+        "Claim Form",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Claim Forms",
+        "Claims with Nominee(s)/Survivorship(s)"
+      ],
+      [
+        "Claim Forms",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009"
+      ],
+      [
+        "Claim Settlement",
+        "Claimants"
+      ],
+      [
+        "Claim Settlement",
+        "Nomination Facility"
+      ],
+      [
+        "Claim Settlement",
+        "Survivorship Clause"
+      ],
+      [
+        "Claimant",
+        "Court Order Decree"
+      ],
+      [
+        "Claimant",
+        "Legal Heir"
+      ],
+      [
+        "Claimant",
+        "Letter of Administration"
+      ],
+      [
+        "Claimant",
+        "Probate of Will"
+      ],
+      [
+        "Claimant",
+        "Succession Certificate"
+      ],
+      [
+        "Claimant",
+        "Threshold Limit"
+      ],
+      [
+        "Claims Process",
+        "Depositor Arrangements"
+      ],
+      [
+        "Claims Process",
+        "Legal Heirs"
+      ],
+      [
+        "Claims Process",
+        "Nominees"
+      ],
+      [
+        "Claims Process",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002"
+      ],
+      [
+        "Claims Settlement",
+        "Gautam Chawla"
+      ],
+      [
+        "Claims Settlement",
+        "Kawalpreet Suri"
+      ],
+      [
+        "Claims Settlement",
+        "National Sales Head- Branch Banking"
+      ],
+      [
+        "Claims Settlement",
+        "Ponnuraj P."
+      ],
+      [
+        "Claims Settlement",
+        "Senior Vice President (SVP)"
+      ],
+      [
+        "Claims Settlement",
+        "Surinderpal Singh"
+      ],
+      [
+        "Claims Settlement",
+        "Uma Sundar"
+      ],
+      [
+        "Claims Settlement",
+        "Vice President (VP)"
+      ],
+      [
+        "Claims Settlement",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001"
+      ],
+      [
+        "Claims with Nominee(s)/Survivorship(s)",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009"
+      ],
+      [
+        "Current Account",
+        "Settlement Of Claims With Nomination"
+      ],
+      [
+        "Current Account",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002"
+      ],
+      [
+        "Customer Service Policies",
+        "Locker Access Protocols Without Nomination"
+      ],
+      [
+        "Customer Service Policies",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007"
+      ],
+      [
+        "Death",
+        "X"
+      ],
+      [
+        "Death",
+        "Y"
+      ],
+      [
+        "Death",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0006"
+      ],
+      [
+        "Death Certificate",
+        "Deceased Customer"
+      ],
+      [
+        "Death Certificate",
+        "Locker Hirer"
+      ],
+      [
+        "Death Certificate",
+        "Version 4.0 Master Policy on Customer Service"
+      ],
+      [
+        "Death Certificate",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Death Certificates",
+        "Settlement of Claims not falling under the Simplified Procedure"
+      ],
+      [
+        "Death Certificates",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009"
+      ],
+      [
+        "Deceased Customer",
+        "Will"
+      ],
+      [
+        "Deceased Depositors",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001"
+      ],
+      [
+        "Depositor",
+        "Legal Heirs"
+      ],
+      [
+        "Depositor",
+        "Nominee"
+      ],
+      [
+        "Depositor",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004"
+      ],
+      [
+        "Depositor Arrangements",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002"
+      ],
+      [
+        "Disclaimer/No Objection Letter",
+        "Settlement of Claims not falling under the Simplified Procedure"
+      ],
+      [
+        "Disclaimer/No Objection Letter",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009"
+      ],
+      [
+        "Either or Survivor",
+        "Locker Access Protocols Without Nomination"
+      ],
+      [
+        "Either or Survivor",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0003"
+      ],
+      [
+        "Either or Survivor",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007"
+      ],
+      [
+        "FIR",
+        "Missing Person"
+      ],
+      [
+        "Fixed Deposit",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004"
+      ],
+      [
+        "Gautam Chawla",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001"
+      ],
+      [
+        "Indemnity Bond",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Inventory Form",
+        "Version 4.0 Master Policy on Customer Service"
+      ],
+      [
+        "Inventory Forms",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009"
+      ],
+      [
+        "Joint Account",
+        "Settlement Of Claims With Nomination"
+      ],
+      [
+        "Joint Account",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002"
+      ],
+      [
+        "Joint Account",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004"
+      ],
+      [
+        "Joint Locker Hirer",
+        "Survivor"
+      ],
+      [
+        "Jointly",
+        "Locker Access Protocols Without Nomination"
+      ],
+      [
+        "Jointly",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0003"
+      ],
+      [
+        "Jointly",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007"
+      ],
+      [
+        "Kawalpreet Suri",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001"
+      ],
+      [
+        "Legal Heir",
+        "Legal Heir Certificate"
+      ],
+      [
+        "Legal Heir",
+        "Nominee"
+      ],
+      [
+        "Legal Heir Certificate",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008"
+      ],
+      [
+        "Legal Heirs",
+        "Locker Access Protocols Without Nomination"
+      ],
+      [
+        "Legal Heirs",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002"
+      ],
+      [
+        "Legal Heirs",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004"
+      ],
+      [
+        "Legal Heirs",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0005"
+      ],
+      [
+        "Legal Heirs",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007"
+      ],
+      [
+        "Legal Heirs of A",
+        "Legal Heirs of B"
+      ],
+      [
+        "Locker",
+        "Locker Access Protocols Without Nomination"
+      ],
+      [
+        "Locker",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007"
+      ],
+      [
+        "Locker Access Nomination Protocols",
+        "X"
+      ],
+      [
+        "Locker Access Nomination Protocols",
+        "Y"
+      ],
+      [
+        "Locker Access Nomination Protocols",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0006"
+      ],
+      [
+        "Locker Access Protocols Without Nomination",
+        "Mandated Individual"
+      ],
+      [
+        "Locker Access Protocols Without Nomination",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007"
+      ],
+      [
+        "Locker Hirer",
+        "Nominee"
+      ],
+      [
+        "Mandated Individual",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007"
+      ],
+      [
+        "Missing Person",
+        "Non-traceable Report"
+      ],
+      [
+        "National Sales Head- Branch Banking",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001"
+      ],
+      [
+        "Nominee",
+        "Officially Valid Document"
+      ],
+      [
+        "Nominee X",
+        "Person A"
+      ],
+      [
+        "Nominee X",
+        "Person B"
+      ],
+      [
+        "Nominee X",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0003"
+      ],
+      [
+        "Nominees",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002"
+      ],
+      [
+        "OVD",
+        "Version 4.0 Master Policy on Customer Service"
+      ],
+      [
+        "Person A",
+        "Person B"
+      ],
+      [
+        "Person A",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0003"
+      ],
+      [
+        "Person B",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0003"
+      ],
+      [
+        "Ponnuraj P.",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001"
+      ],
+      [
+        "Premature Withdrawal of Fixed Deposits",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004"
+      ],
+      [
+        "Probate of Wills",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009"
+      ],
+      [
+        "Savings Account",
+        "Settlement Of Claims With Nomination"
+      ],
+      [
+        "Savings Account",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002"
+      ],
+      [
+        "Savings Account",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004"
+      ],
+      [
+        "Self",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0003"
+      ],
+      [
+        "Senior Vice President (SVP)",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001"
+      ],
+      [
+        "Settlement Of Claims With Nomination",
+        "Term Deposit Account"
+      ],
+      [
+        "Settlement Of Claims With Nomination",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002"
+      ],
+      [
+        "Settlement of Claims not falling under the Simplified Procedure",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009"
+      ],
+      [
+        "Single Account",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004"
+      ],
+      [
+        "Surinderpal Singh",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001"
+      ],
+      [
+        "Term Deposit",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004"
+      ],
+      [
+        "Term Deposit Account",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002"
+      ],
+      [
+        "Uma Sundar",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001"
+      ],
+      [
+        "Vice President (VP)",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001"
+      ],
+      [
+        "X",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0006"
+      ],
+      [
+        "Y",
+        "tb-2d2b1e01babacd5427ea9228ee35f7f9-0006"
+      ]
+    ],
+    "count": 225,
+    "create_time": 1787741494,
+    "update_time": 1787741494,
+    "_id": "doc-2d2b1e01babacd5427ea9228ee35f7f9"
+  }
+}

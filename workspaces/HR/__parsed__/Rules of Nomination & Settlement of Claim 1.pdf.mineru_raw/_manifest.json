@@ -1,0 +1,106 @@
+{
+  "version": "1.0",
+  "engine": "mineru",
+  "api_mode": "local",
+  "engine_version": "",
+  "endpoint_signature": "http://127.0.0.1:8000",
+  "options_signature": "sha256:277b026335ce61369b2368b0d917ec71191e0e9d3f536344996696b9df7bf877",
+  "source_content_hash": "sha256:2bd93ebc76ef7932b04fcf96d12394e4b7c2a0f69087ece20593f5900d4e4382",
+  "source_size_bytes": 627246,
+  "source_filename_at_parse": "Rules of Nomination & Settlement of Claim 1.pdf",
+  "task_id": "b928baf0-27f2-4195-9669-a44b6874c91c",
+  "downloaded_at": "2026-08-26T10:50:19.828111+00:00",
+  "critical_file": {
+    "path": "content_list.json",
+    "size": 100086,
+    "sha256": "sha256:7bfbb27cf8c0063ad6e29a085f8ef6aa8479ae86047d6305a1478d4e2f32762c"
+  },
+  "files": [
+    {
+      "path": "images/0c8fa0d91cc654081e1c368d7545e7d474c9386ec300bc537fdb54c704b013db.jpg",
+      "size": 111549,
+      "sha256": null
+    },
+    {
+      "path": "images/317557b5320d7dc820e8272c587ab5a04f0d2bb28ff0b0394cd7269694a29096.jpg",
+      "size": 58561,
+      "sha256": null
+    },
+    {
+      "path": "images/589ef67177104a77ed1cedf0ecf1a128660319ad5b19e0a39c35ebca7202a77d.jpg",
+      "size": 94083,
+      "sha256": null
+    },
+    {
+      "path": "images/68e2067831c79cb0c3563b1f12f05301995216c0515e3ba013c2907189ef9df3.jpg",
+      "size": 82359,
+      "sha256": null
+    },
+    {
+      "path": "images/6fee0e675919f56a8b3fe2bf79237cd5232de112b7486d6e47539e12f27b4739.jpg",
+      "size": 100332,
+      "sha256": null
+    },
+    {
+      "path": "images/740267a302f51e39f6f617d6f9da82df07c59d48ff0ef4fc06a2b2cf767bbc50.jpg",
+      "size": 105773,
+      "sha256": null
+    },
+    {
+      "path": "images/8e5138b5e52f1b43e73e35cc68ee3087b940b52455b73fab0263fc196cae04f6.jpg",
+      "size": 221916,
+      "sha256": null
+    },
+    {
+      "path": "images/980f20f43911673896aba3bbb7ab89d78d5d4e2646a2dfb401091ef6386f2d05.jpg",
+      "size": 107828,
+      "sha256": null
+    },
+    {
+      "path": "images/9be51de78f34f0b07473e0f03c49218dcc6bb0fa7d1ce80c5abc0756c8ec6799.jpg",
+      "size": 121104,
+      "sha256": null
+    },
+    {
+      "path": "images/a479e17bcfb8b71e8c0b2e96945208ebffe9ac5927aa6514192ab00918a04b7b.jpg",
+      "size": 146102,
+      "sha256": null
+    },
+    {
+      "path": "images/b14441af699ead3f0f16eacb89ba597e06bee0e192d9bebdd284b2340b7ae8b7.jpg",
+      "size": 207591,
+      "sha256": null
+    },
+    {
+      "path": "images/fa7a13a34ba011a21a9b740efa74e3e2b587d19591b16d165ffd30affc1666ba.jpg",
+      "size": 26257,
+      "sha256": null
+    },
+    {
+      "path": "Rules of Nomination & Settlement of Claim 1.md",
+      "size": 45448,
+      "sha256": null
+    },
+    {
+      "path": "Rules of Nomination & Settlement of Claim 1_content_list_v2.json",
+      "size": 162520,
+      "sha256": null
+    },
+    {
+      "path": "Rules of Nomination & Settlement of Claim 1_middle.json",
+      "size": 1072446,
+      "sha256": null
+    },
+    {
+      "path": "Rules of Nomination & Settlement of Claim 1_model.json",
+      "size": 200819,
+      "sha256": null
+    },
+    {
+      "path": "Rules of Nomination & Settlement of Claim 1_origin.pdf",
+      "size": 624248,
+      "sha256": null
+    }
+  ],
+  "total_size_bytes": 3589022
+}

@@ -1,11 +1,6 @@
 """
 MySQL-based audit logging for LightRAG's query endpoints.
 
-Same schema and function signatures as the previous SQLite version —
-query_routes.py and session_routes.py do not need to change, aside from
-importing get_connection() here instead of sqlite3.connect(DB_PATH)
-directly (see session_routes.py).
-
 Requires: uv add pymysql
 
 Configuration via env vars (set in .env):
@@ -22,9 +17,8 @@ user in a bank environment. Create it once, out of band:
     CREATE DATABASE IF NOT EXISTS lightrag_audit
         CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-Tables inside that database are still self-healing, same as before —
-every write ensures its table exists first, so no separate init step
-is required for day-to-day use.
+Tables inside that database are still self-healing — every write ensures
+its table exists first, so no separate init step is required.
 
 Drop this file at: lightrag/api/audit_logger.py
 """
@@ -40,24 +34,7 @@ import pymysql
 import pymysql.cursors
 from dotenv import load_dotenv
 
-# Same convention as auth.py: load .env from the current working directory,
-# without overriding real OS environment variables if already set. Without
-# this, MYSQL_USER/MYSQL_PASSWORD/etc. below silently read as None whenever
-# nothing earlier in the import chain has already loaded .env — pymysql then
-# falls back to your OS username with no password, which fails confusingly.
 load_dotenv(dotenv_path=".env", override=False)
-
-# MYSQL_HOST = os.getenv("MYSQL_HOST", "localhost")
-# MYSQL_PORT = int(os.getenv("MYSQL_PORT", "3306"))
-# MYSQL_USER = os.getenv("MYSQL_USER")
-# MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD")
-# MYSQL_DATABASE = os.getenv("MYSQL_DATABASE", "lightrag_audit")
-
-# MYSQL_HOST = "192.168.1.170"
-# MYSQL_PORT = 3306
-# MYSQL_USER = "sahild"
-# MYSQL_PASSWORD = "Viking@@ibs2026"
-# MYSQL_DATABASE = "unity_connect"
 
 MYSQL_HOST = os.getenv("MYSQL_HOST", "localhost")
 MYSQL_PORT = int(os.getenv("MYSQL_PORT", "3306"))
@@ -68,8 +45,7 @@ MYSQL_DATABASE = os.getenv("MYSQL_DATABASE", "lightrag_audit")
 _SCHEMA_STATEMENTS = [
     """
     CREATE TABLE IF NOT EXISTS query_logs (
-        sr_no           BIGINT AUTO_INCREMENT PRIMARY KEY,
-        id              VARCHAR(36) NOT NULL UNIQUE,
+        query_id        VARCHAR(36) NOT NULL PRIMARY KEY,
         user_id         VARCHAR(255),
         thread_id       VARCHAR(255),
         thread_msg_no   INT,
@@ -81,7 +57,6 @@ _SCHEMA_STATEMENTS = [
         citations       TEXT,
         created_at      DATETIME(6) NOT NULL,
         INDEX idx_query_logs_user_id (user_id),
-        INDEX idx_query_logs_thread_id (thread_id),
         INDEX idx_query_logs_thread_msg (thread_id, thread_msg_no),
         INDEX idx_query_logs_created_at (created_at)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
@@ -104,53 +79,37 @@ _SCHEMA_STATEMENTS = [
     """,
     """
     CREATE TABLE IF NOT EXISTS guardrail_logs (
-        sr_no                   BIGINT AUTO_INCREMENT PRIMARY KEY,
-        id                      VARCHAR(36) NOT NULL UNIQUE,
-        query_log_id            VARCHAR(36),
-        user_id                 VARCHAR(255),
-        thread_id               VARCHAR(255),
-        department              VARCHAR(255),
-        user_query              TEXT,
-        llm_response            LONGTEXT,
-        input_guardrail_status  VARCHAR(10) NOT NULL,
-        input_guardrail_reason  TEXT,
-        input_guardrail_details JSON,
+        query_log_id             VARCHAR(36) NOT NULL PRIMARY KEY,
+        input_guardrail_status   VARCHAR(10) NOT NULL,
+        input_guardrail_reason   TEXT,
+        input_guardrail_details  JSON,
         output_guardrail_status  VARCHAR(10) NOT NULL DEFAULT 'not_run',
         output_guardrail_reason  TEXT,
         output_guardrail_details JSON,
-        created_at              DATETIME(6) NOT NULL,
-        updated_at              DATETIME(6) NOT NULL,
-        INDEX idx_guardrail_logs_query_log_id (query_log_id),
-        INDEX idx_guardrail_logs_user_id (user_id),
+        created_at               DATETIME(6) NOT NULL,
+        updated_at               DATETIME(6) NOT NULL,
         INDEX idx_guardrail_logs_created_at (created_at)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
     """,
-     """
+    """
     CREATE TABLE IF NOT EXISTS private_chunk_access_logs (
-        id              VARCHAR(36) NOT NULL UNIQUE,
-        user_id         VARCHAR(255),
-        thread_id       VARCHAR(255),
-        department      VARCHAR(255),
-        user_query      TEXT,
-        total_chunks    INT UNSIGNED NOT NULL,
-        private_chunks  INT UNSIGNED NOT NULL,
-        private_pct     DECIMAL(5,2) NOT NULL,
-        private_files   JSON,
-        blocked_chunk_ids JSON,
-        created_at      DATETIME(6) NOT NULL,
-        INDEX idx_pca_user_id    (user_id),
+        query_id            VARCHAR(36) NOT NULL PRIMARY KEY,
+        total_chunks        INT UNSIGNED NOT NULL,
+        private_chunks      INT UNSIGNED NOT NULL,
+        private_pct         DECIMAL(5,2) NOT NULL,
+        private_files       JSON,
+        blocked_chunk_ids   JSON,
+        created_at          DATETIME(6) NOT NULL,
         INDEX idx_pca_created_at (created_at),
         INDEX idx_pca_pct        (private_pct)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
     """,
- 
 ]
 
 
 def get_connection():
     """Open a new MySQL connection. Exposed for reuse by other custom
-    routers (e.g. session_routes.py) that need direct read access to
-    the same tables."""
+    routers that need direct read access to the same tables."""
     return pymysql.connect(
         host=MYSQL_HOST,
         port=MYSQL_PORT,
@@ -184,6 +143,18 @@ def _init_db_sync() -> None:
 
 
 def _next_thread_msg_no_sync(conn, thread_id: str) -> int:
+    """Atomically increments and returns the message number for a thread_id.
+
+    Uses MySQL's INSERT ... ON DUPLICATE KEY UPDATE ... LAST_INSERT_ID()
+    trick: a single atomic statement, so two concurrent requests for the
+    same thread_id can never receive the same number, unlike a naive
+    SELECT MAX(thread_msg_no) + 1 (a classic race condition).
+
+    Both branches wrap their value in LAST_INSERT_ID(...) explicitly —
+    the very first insert must do this too, or SELECT LAST_INSERT_ID()
+    right after returns whatever it was previously (often 0) instead of
+    the 1 we just wrote, producing the "0, then jumps to 2" bug.
+    """
     with conn.cursor() as cur:
         cur.execute(
             """
@@ -202,7 +173,7 @@ def _next_thread_msg_no_sync(conn, thread_id: str) -> int:
 def _insert_sync(row: dict) -> None:
     conn = get_connection()
     try:
-        _ensure_schema(conn)
+        _ensure_schema(conn)  # self-healing, same behavior as before
 
         thread_msg_no = None
         if row.get("thread_id"):
@@ -212,13 +183,13 @@ def _insert_sync(row: dict) -> None:
             cur.execute(
                 """
                 INSERT INTO query_logs (
-                    id, user_id, thread_id, thread_msg_no, department,
+                    query_id, user_id, thread_id, thread_msg_no, department,
                     user_query, llm_response, status, error_message,
                     citations, created_at
                 ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """,
                 (
-                    row["id"],
+                    row["query_id"],
                     row.get("user_id"),
                     row.get("thread_id"),
                     thread_msg_no,
@@ -234,7 +205,7 @@ def _insert_sync(row: dict) -> None:
         conn.commit()
     finally:
         conn.close()
-        
+
 
 async def init_audit_db() -> None:
     """Optional: call once at server startup to pre-create tables. Not
@@ -244,7 +215,7 @@ async def init_audit_db() -> None:
 
 async def log_query_event(
     *,
-    log_id: Optional[str] = None,
+    query_id: str,
     user_id: Optional[str] = None,
     thread_id: Optional[str] = None,
     department: Optional[str] = None,
@@ -254,7 +225,12 @@ async def log_query_event(
     error_message: Optional[str] = None,
     citations: Optional[List[str]] = None,
 ) -> str:
-    """Insert one audit log row. Returns the generated id (UUID).
+    """Insert one audit log row into query_logs, keyed by ``query_id``.
+
+    ``query_id`` MUST be the same UUID passed to ``log_input_guardrail``
+    for this request (generated once per request by the caller), so that
+    ``query_logs.query_id`` and ``guardrail_logs.query_log_id`` always
+    refer to the same query — no more separately-generated ids per table.
 
     Runs the actual MySQL write in a worker thread via asyncio.to_thread
     (pymysql is synchronous), so it never blocks the event loop. Failures
@@ -262,9 +238,8 @@ async def log_query_event(
     logger instead of raising — audit logging should never be able to
     break a real user request.
     """
-    # log_id = str(uuid.uuid4())
     row = {
-        "id": log_id,
+        "query_id": query_id,
         "user_id": user_id,
         "thread_id": thread_id,
         "department": department,
@@ -281,7 +256,7 @@ async def log_query_event(
         from lightrag.utils import logger as _logger
 
         _logger.error("Failed to write audit log row", exc_info=True)
-    return log_id
+    return query_id
 
 
 def _lookup_department_sync(user_id: str) -> Optional[str]:
@@ -302,10 +277,7 @@ async def get_department(user_id: Optional[str]) -> Optional[str]:
     """Look up a user's department from the local user_rbac table.
 
     TODO: once the bank's RBAC endpoint is available, replace (or
-    supplement) this with a call to that API — either on every lookup
-    with a short in-memory cache, or via a periodic sync job that keeps
-    upsert_user_rbac() populated in the background. Nothing else in the
-    audit pipeline needs to change; this is the single choke point.
+    supplement) this with a call to that API.
     """
     if not user_id:
         return None
@@ -352,14 +324,7 @@ async def upsert_user_rbac(
     role: Optional[str] = None,
     source: str = "manual",
 ) -> None:
-    """Seed or update one user's department mapping.
-
-    Use this manually for now (e.g. a small one-off script) to get real
-    department values into the logs while the bank's endpoint isn't
-    available yet. Once that endpoint exists, a background sync task can
-    call this same function per user on a schedule, passing
-    source="bank_api" instead of "manual" so you can tell the two apart.
-    """
+    """Seed or update one user's department mapping."""
     await asyncio.to_thread(_upsert_rbac_sync, user_id, department, role, source)
 
 
@@ -367,18 +332,15 @@ async def extract_user_context(http_request) -> tuple[Optional[str], Optional[st
     """Best-effort extraction of (user_id, department) from a FastAPI
     Request, using the same JWT the real auth dependency already validated.
 
-    This re-decodes the Bearer token via auth_handler.validate_token() purely
-    to read identity claims for logging — it never blocks the request.
-    combined_auth (Depends) already made the real access-control decision
-    before this route handler runs; any failure here (missing/invalid token,
-    e.g. API-key-only or guest access) just means user_id stays None rather
-    than raising.
-
     department resolution order:
       1. The JWT's metadata.department claim, if you're setting one there.
-      2. The local user_rbac table (see upsert_user_rbac / get_department) —
-         this is the interim source until the bank's RBAC endpoint exists.
+      2. The local user_rbac table.
       3. The X-Department header, as a last-resort manual override.
+
+    Note: this only reads headers/JWT, never the parsed request body. If
+    your frontend sends user_id/department as body fields instead, read
+    those directly off your request model at the call site and prefer
+    them over this function's return value (same pattern as thread_id).
     """
     user_id: Optional[str] = None
     department: Optional[str] = None
@@ -393,17 +355,11 @@ async def extract_user_context(http_request) -> tuple[Optional[str], Optional[st
             user_id = payload.get("username")
             department = (payload.get("metadata") or {}).get("department")
         except Exception:
-            # Invalid/expired token, guest token, or API-key-only auth mode
-            # (no Bearer token at all reaches here). Not an audit-logger
-            # failure — just no identity to attach.
             pass
 
-    # Fallback for user_id: explicit header, useful for API-key-only
-    # deployments where there's no JWT to decode, or for testing.
     if not user_id:
         user_id = http_request.headers.get("X-User-Id")
 
-    # department fallback chain: local RBAC table, then header override.
     if not department and user_id:
         department = await get_department(user_id)
     if not department:
@@ -413,24 +369,92 @@ async def extract_user_context(http_request) -> tuple[Optional[str], Optional[st
 
 
 def extract_thread_id(http_request) -> Optional[str]:
-    """Reads the conversation/thread id generated by the frontend Node
-    server. Expected as an 'X-Thread-Id' request header.
+    """Reads the conversation/thread id from the 'X-Thread-Id' header.
 
-    If your frontend instead sends this as a query-body field rather than
-    a header, read it from the parsed request body at the call site
-    instead — this helper only covers the header convention.
+    If your frontend instead sends thread_id as a request-body field,
+    prefer that value at the call site and use this only as a fallback —
+    e.g. `thread_id = request.thread_id or extract_thread_id(http_request)`.
     """
     return http_request.headers.get("X-Thread-Id") or http_request.headers.get(
         "X-Thread-ID"
     )
 
 
+def _insert_private_chunk_access_sync(row: dict) -> None:
+    conn = get_connection()
+    try:
+        _ensure_schema(conn)
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                INSERT INTO private_chunk_access_logs (
+                    query_id, total_chunks, private_chunks, private_pct,
+                    private_files, blocked_chunk_ids, created_at
+                ) VALUES (%s, %s, %s, %s, %s, %s, %s)
+                """,
+                (
+                    row["query_id"],
+                    row["total_chunks"],
+                    row["private_chunks"],
+                    row["private_pct"],
+                    json.dumps(row.get("private_files") or []),
+                    json.dumps(row.get("blocked_chunk_ids") or []),
+                    row["created_at"],
+                ),
+            )
+        conn.commit()
+    finally:
+        conn.close()
+
+
+async def log_private_chunk_access(
+    *,
+    query_id: str,
+    total_chunks: int,
+    private_chunks: int,
+    private_files: Optional[List[str]] = None,
+    blocked_chunk_ids: Optional[List[str]] = None,
+) -> None:
+    """Insert one private_chunk_access_logs row, keyed by ``query_id`` — the
+    SAME uuid shared with query_logs.query_id and guardrail_logs.query_log_id
+    for this request (generate it once via new_query_id() and pass it to
+    every logging call for that request).
+
+    user_id/thread_id/department/user_query are deliberately not stored
+    here — they already live on the query_logs row for this query_id;
+    join on query_id when you need them alongside these access-pattern
+    stats. private_pct is computed here so callers never have to repeat
+    that arithmetic (and risk divide-by-zero) at every call site.
+    """
+    private_pct = round((private_chunks / total_chunks) * 100, 2) if total_chunks else 0.0
+    row = {
+        "query_id": query_id,
+        "total_chunks": total_chunks,
+        "private_chunks": private_chunks,
+        "private_pct": private_pct,
+        "private_files": private_files or [],
+        "blocked_chunk_ids": blocked_chunk_ids or [],
+        "created_at": datetime.now(timezone.utc).replace(tzinfo=None),
+    }
+    try:
+        await asyncio.to_thread(_insert_private_chunk_access_sync, row)
+    except Exception:
+        from lightrag.utils import logger as _logger
+
+        _logger.error("Failed to write private chunk access log row", exc_info=True)
+
+
+def new_query_id() -> str:
+    """Generates the single UUID shared by query_logs.query_id and
+    guardrail_logs.query_log_id for one request. Call this ONCE per
+    request, at the top of the route, before calling log_input_guardrail
+    or log_query_event — then pass the same value to both."""
+    return str(uuid.uuid4())
+
+
 def extract_citations(references: Optional[List[dict]]) -> List[str]:
     """Turns a LightRAG references list (each item has a 'file_path' key)
     into a deduplicated list of source file names, in first-seen order.
-
-    e.g. [{"file_path": "/documents/Deposit Policy.pdf"}, ...]
-      -> ["Deposit Policy.pdf"]
     """
     if not references:
         return []
@@ -443,76 +467,3 @@ def extract_citations(references: Optional[List[dict]]) -> List[str]:
         if name not in seen:
             seen.append(name)
     return seen
-
-
-def _insert_private_chunk_log_sync(row: dict) -> None:
-    conn = get_connection()
-    try:
-        _ensure_schema(conn)
-        with conn.cursor() as cur:
-            cur.execute(
-                """
-                INSERT INTO private_chunk_access_logs (
-                    id, user_id, thread_id, department,
-                    user_query, total_chunks, private_chunks,
-                    private_pct, private_files, blocked_chunk_ids, created_at
-                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                """,
-                (
-                    row["id"],
-                    row.get("user_id"),
-                    row.get("thread_id"),
-                    row.get("department"),
-                    row.get("user_query"),
-                    row["total_chunks"],
-                    row["private_chunks"],
-                    row["private_pct"],
-                    json.dumps(row.get("private_files") or []),
-                    json.dumps(row.get("blocked_chunk_ids") or []),
-                    row["created_at"],
-                ),
-            )
-        conn.commit()
-    finally:
-        conn.close()
- 
- 
-async def log_private_chunk_access(
-    *,
-    id: Optional[str] = None,
-    user_id: Optional[str] = None,
-    thread_id: Optional[str] = None,
-    department: Optional[str] = None,
-    user_query: str,
-    total_chunks: int,
-    private_chunks: int,
-    private_files: Optional[List[str]] = None,
-    blocked_chunk_ids: Optional[List[str]] = None,
-) -> None:
-    """
-    Logs to private_chunk_access_logs when >40% of retrieved chunks
-    came from private documents, for user_type == 'user'.
- 
-    Mirrors the fire-and-forget pattern of log_query_event:
-    never raises, never blocks the event loop.
-    """
-    private_pct = round((private_chunks / total_chunks) * 100, 2)
-    row = {
-        "id": id,
-        "user_id": user_id,
-        "thread_id": thread_id,
-        "department": department,
-        "user_query": user_query,
-        "total_chunks": total_chunks,
-        "private_chunks": private_chunks,
-        "private_pct": private_pct,
-        "private_files": private_files or [],
-        "blocked_chunk_ids": blocked_chunk_ids or [],
-        "created_at": datetime.now(timezone.utc).replace(tzinfo=None),
-    }
-    try:
-        await asyncio.to_thread(_insert_private_chunk_log_sync, row)
-    except Exception:
-        from lightrag.utils import logger as _logger
-        _logger.error("Failed to write private_chunk_access_logs row", exc_info=True)
- 

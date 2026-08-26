@@ -1,0 +1,284 @@
+{
+  "version": "1.0",
+  "tables": {
+    "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001": {
+      "id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0001",
+      "blockid": "3af302ef1beda35ddb2cbcc3582f6b49",
+      "heading": "10. Approving Authority for settlement of claims - Applicable for Deposits/ locker without nominations / Survivors",
+      "parent_headings": [
+        "Rules of Nomination and Settlement of Claims in respect of Deceased Customers and Missing Persons"
+      ],
+      "dimension": [
+        6,
+        2
+      ],
+      "format": "html",
+      "content": "<table><tr><td>Name</td><td>Designation</td></tr><tr><td>Mr. Surinderpal Singh</td><td>National Sales Head- Branch Banking</td></tr><tr><td>Mr. Gautam Chawla</td><td>SVP-National Head Retail Branch Banking</td></tr><tr><td>Mr. Ponnuraj P.</td><td>SVP -Head Products &amp; Distribution</td></tr><tr><td>Ms. Uma Sundar</td><td>VP- Head Branch Operations and Process Control</td></tr><tr><td>Ms. Kawalpreet Suri</td><td>VP- Head Channels</td></tr></table>",
+      "caption": "",
+      "footnotes": [],
+      "self_ref": "content_list.json#/244",
+      "surrounding": {
+        "leading": "## 10. Approving Authority for settlement of claims - Applicable for Deposits/ locker without nominations / Survivors\nKeeping in view the objective of adhering to the prescribed time norms, the following officials are authorised to accord approval for settling the claims on the accounts, deposits, and /or safe deposit lockers of the deceased depositors who have not registered any nomination in their account. The claims shall be approved jointly by any two designated officials of the Bank as under:-\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n",
+        "trailing": "\nVersion 4.0 Master Policy on Customer Service\nINTERNAL"
+      },
+      "llm_analyze_result": {
+        "name": "authorized_officials_for_claims_settlement",
+        "description": "This table identifies key officials authorized to approve claims for the settlement of accounts, deposits, and safe deposit lockers of deceased depositors who did not have nominations registered. The table consists of two columns: 'Name' and 'Designation', providing the names of six officials along with their respective roles in the organization. The officials listed are Mr. Surinderpal Singh, Mr. Gautam Chawla, Mr. Ponnuraj P., Ms. Uma Sundar, and Ms. Kawalpreet Suri. The designations range from National Sales Head- Branch Banking to various senior vice president (SVP) and vice president (VP) roles related to banking operations, products, distribution, and channels. This delineation of roles highlights the structure of authority within the bank for claims settlements. The data does not include any totals or calculated values, and the table does not indicate any merged cells or complex structures. It serves a specific purpose in the context of a policy document regarding customer service and claims processing for deceased depositors.",
+        "analyze_time": 1787741423,
+        "status": "success",
+        "message": ""
+      },
+      "llm_cache_list": [
+        "default:analysis:17fd3a0a0846b4776951639979f35308"
+      ]
+    },
+    "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002": {
+      "id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0002",
+      "blockid": "9f34a503714eae737f74496731fe119a",
+      "heading": "Annexure-1",
+      "parent_headings": [
+        "Rules of Nomination and Settlement of Claims in respect of Deceased Customers and Missing Persons"
+      ],
+      "dimension": [
+        6,
+        11
+      ],
+      "format": "html",
+      "content": "<table><tr><td colspan=\"11\">1. With Nomination</td></tr><tr><td>S. No</td><td>Nature of Account</td><td>Single depositor</td><td colspan=\"2\">Joint A/c (operated jointly)</td><td colspan=\"2\">Joint A/c (Either or Survivor)</td><td colspan=\"2\">Joint A/c (Former/Latter or Survivor)</td><td colspan=\"2\">Joint Account (Anyone or Survivor/s)</td></tr><tr><td rowspan=\"2\">A</td><td rowspan=\"2\">Savings A/c and Current A/c</td><td rowspan=\"2\">On death of depositor - Nominee</td><td>I</td><td>On death of one or more depositor/s - Legal Heirs of deceased + Surviving depositors</td><td>I</td><td>On death of one depositor - Survivor</td><td>I</td><td>One death of former / Latter - Survivor</td><td>I</td><td>On death of one or more depositors - Survivor/s</td></tr><tr><td>II</td><td>On death of all depositors -Nominee</td><td>II</td><td>On death of both depositors - Nominee</td><td>II</td><td>On death of both depositors - Nominee</td><td>II</td><td>On death of all depositors - Nominee</td></tr><tr><td>B</td><td>Term Deposit Account</td><td>- As above - (on maturity of deposit)</td><td colspan=\"2\">- I &amp; II as above - (on maturity of deposit)</td><td colspan=\"2\">- I &amp; II as above - (on maturity of deposit)</td><td colspan=\"2\">- I &amp; II as above - (on maturity of deposit)</td><td colspan=\"2\">- I &amp; II as above - (on maturity of deposit)</td></tr><tr><td>C</td><td>Premature withdrawal of FD</td><td>- As above - (As per terms of contract)</td><td colspan=\"2\">- I &amp; II as above - (As per terms of contract)</td><td colspan=\"2\">- I &amp; II as above - (As per terms of contract)</td><td colspan=\"2\">- I &amp; II as above - (As per terms of contract)</td><td colspan=\"2\">- I &amp; II as above - (As per terms of contract)</td></tr></table>",
+      "caption": "In Summary - Settlement of Claims in Various types of Operational instructions Deposits with Nomination",
+      "footnotes": [],
+      "self_ref": "content_list.json#/249",
+      "surrounding": {
+        "leading": "## Annexure-1\n",
+        "trailing": "\n\nWithout Nomination\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n\n\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n"
+      },
+      "llm_analyze_result": {
+        "name": "settlement_of_claims_with_nomination",
+        "description": "This table outlines the processes and outcomes associated with various types of accounts with nomination in the context of claims settlement. It consists of 8 rows and 11 columns, detailing different scenarios based on the account nature and depositor arrangements, specifically focusing on Savings and Current Accounts, Term Deposit Accounts, and procedures for premature withdrawal. The columns are structured to show the nature of the account, the status of the depositor (single or joint), and the legal heirs or nominees involved upon death. The first column enumerates the types of accounts, while the subsequent columns differentiate the claims process based on how the accounts are operated (single depositor, joint accounts with various agreements). Merged cells indicate grouped information, for example, the joint account categories are combined under 2 or more columns. Notably, for Joint A/c operated jointly, claims can be made by legal heirs or surviving depositors in multiple scenarios, while nominations are highlighted in situations of maturity and premature withdrawal claims. The footnotes, however, are not applicable in this case, reinforcing the clarity of contents. The leading text contextualizes the table within a wider framework of operational instructions, indicating the structured overview of claims settlement for accounts with nomination, implying a categorization for clearer resolution processes as indicated in the surrounding content.",
+        "analyze_time": 1787741423,
+        "status": "success",
+        "message": ""
+      },
+      "llm_cache_list": [
+        "default:analysis:1b6ed717b630c31f1f7b21f8fbeeefc0"
+      ]
+    },
+    "tb-2d2b1e01babacd5427ea9228ee35f7f9-0003": {
+      "id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0003",
+      "blockid": "9f34a503714eae737f74496731fe119a",
+      "heading": "Annexure-1",
+      "parent_headings": [
+        "Rules of Nomination and Settlement of Claims in respect of Deceased Customers and Missing Persons"
+      ],
+      "dimension": [
+        9,
+        5
+      ],
+      "format": "html",
+      "content": "<table><tr><td>Account in the Name of</td><td>Operational Instructions</td><td>Nominee</td><td>Situation</td><td>What is to be done</td></tr><tr><td>A</td><td>Self</td><td>X</td><td>X dies</td><td>A can change the nomination</td></tr><tr><td>A</td><td>Self</td><td>X</td><td>A dies</td><td>X will receive the outstanding</td></tr><tr><td>A, B</td><td>Either or Survivor</td><td>X</td><td>A dies</td><td>Balance outstanding will be payable to B.</td></tr><tr><td>A, B</td><td>Either or Survivor</td><td>X</td><td>B dies</td><td>Balance outstanding will be payable to A.</td></tr><tr><td>A,B</td><td>Either or Survivor</td><td>X</td><td>A &amp; B dies</td><td>X will receive the outstanding</td></tr><tr><td>A,B</td><td>Jointly</td><td>X</td><td>A dies</td><td>Payable to B and legal heirs of A jointly</td></tr><tr><td>A,B</td><td>Jointly</td><td>X</td><td>B dies</td><td>Payable to A and legal heirs of B jointly</td></tr><tr><td>A,B</td><td>Jointly</td><td>X</td><td>A &amp; B dies</td><td>Payable to X</td></tr></table>",
+      "caption": "",
+      "footnotes": [],
+      "self_ref": "content_list.json#/250",
+      "surrounding": {
+        "leading": "## Annexure-1\n\n",
+        "trailing": "\nWithout Nomination\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n\n\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n"
+      },
+      "llm_analyze_result": {
+        "name": "account_nomination_instructions",
+        "description": "This table outlines the operational instructions regarding nominations for accounts held by individuals or jointly by multiple parties. There are 8 rows detailing various scenarios of account holders, with 5 columns categorizing the situation, the nominees, and the respective actions that can be taken upon the death of the account holders. The columns include 'Account in the Name of', 'Operational Instructions', 'Nominee', 'Situation', and 'What is to be done'. The table describes several cases, such as when person A dies, when person B dies, or when both account holders die. For instance, in the scenario where account A is held 'Either or Survivor' with nominee X, if A dies, the balance outstanding will be payable to B. Conversely, if both A and B die, X will receive the outstanding amount. The terms 'Self' and 'Jointly' in the operational instructions indicate provisions for individuals and joint accounts, respectively, with associated impacts on the nominees. Overall, the table captures essential guidance for managing account nominations and the implications arising from the death of account holders. It aligns with the context of customer service policies, emphasizing the importance of proper designation of nominees for account management. There are no null markers or outliers present in the data.",
+        "analyze_time": 1787741424,
+        "status": "success",
+        "message": ""
+      },
+      "llm_cache_list": [
+        "default:analysis:1763ddbc04aa7fc446a2cfb2846ba61b"
+      ]
+    },
+    "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004": {
+      "id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0004",
+      "blockid": "9f34a503714eae737f74496731fe119a",
+      "heading": "Annexure-1",
+      "parent_headings": [
+        "Rules of Nomination and Settlement of Claims in respect of Deceased Customers and Missing Persons"
+      ],
+      "dimension": [
+        6,
+        11
+      ],
+      "format": "html",
+      "content": "<table><tr><td colspan=\"11\">2. Without Nomination</td></tr><tr><td>S. No</td><td>Nature of Account</td><td>Single depositor</td><td colspan=\"2\">Joint A/c (operated jointly)</td><td colspan=\"2\">Joint A/c (Either or Survivor)</td><td colspan=\"2\">Joint A/c (Former/ Latter or Survivor)</td><td colspan=\"2\">Joint Account (Anyone or Survivor/s)</td></tr><tr><td rowspan=\"2\">A</td><td rowspan=\"2\">Savings A/c and Current A/c</td><td rowspan=\"2\">On death of depositor -Legal Heirs of person mandated by them</td><td>I</td><td>On death of one depositor - Legal Heirs of deceased + Survivor/s</td><td>I</td><td>On death of either depositor - Survivor</td><td>I</td><td>On death of either depositor - Survivor</td><td>I</td><td>On death of one or more depositor/s - Legal Heirs of deceased + Survivor/s</td></tr><tr><td>II</td><td>On death of all depositors - Legal Heirs of all the depositors</td><td>II</td><td>On death of both depositors - Legal Heirs of both the depositors</td><td>II</td><td>On death of both the depositors - Legal Heirs both the depositors</td><td>II</td><td>On death of all depositors - Legal Heirs of all the depositors</td></tr><tr><td>B</td><td>Term Deposit Account</td><td>- As above - On maturity of deposit</td><td colspan=\"2\">- I &amp; II as above - On maturity of deposit</td><td colspan=\"2\">- I &amp; II as above - On maturity of deposit</td><td colspan=\"2\">- I &amp; II as above - On maturity of deposit</td><td colspan=\"2\">- I &amp; II as above - On maturity of deposit</td></tr><tr><td>C</td><td>Premature withdrawal of FD</td><td>- As above - As per terms of contract</td><td colspan=\"2\">- I &amp; II as above - As per terms of contract</td><td colspan=\"2\">- I &amp; II as above - As per terms of contract</td><td colspan=\"2\">- I &amp; II as above - As per terms of contract</td><td colspan=\"2\">- I &amp; II as above - As per terms of contract</td></tr></table>",
+      "caption": "",
+      "footnotes": [],
+      "self_ref": "content_list.json#/255",
+      "surrounding": {
+        "leading": "## Annexure-1\n\n\nWithout Nomination\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n",
+        "trailing": "\n\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n"
+      },
+      "llm_analyze_result": {
+        "name": "account_depositor_rights_without_nomination",
+        "description": "The table provides a detailed breakdown of rights of depositors in various account types without nomination upon the death of one or more depositors. There are a total of 11 columns and 5 main rows including headers, organized into categories of account types and the conditions under which the account's funds are accessed after the death of the depositor(s). The first row serves as a title for the table, stating '2. Without Nomination'. The second row includes multi-level headers: 'Nature of Account', 'Single depositor', and several columns for types of joint accounts, all indicating how funds are distributed based on varying conditions of depositors' death. The third and fourth rows provide detailed scenarios for single and joint accounts, where each type of account has specific rights described against the death of the account holders. Notable distinctions are made between the scenario on the death of one depositor versus all depositors, with specific legal heirs designated. Each account type (Savings, Term Deposit, and Premature withdrawal of Fixed Deposits) has been detailed with either a direct description or notes indicating similar rights applicable, structured under additional columns for joint account types. The patterns in the table show consistent rights for joint accounts compared to single accounts, suggesting complexities in handling joint accounts that are influenced by specific operational stipulations on death. The table serves to clarify the legal beneficiaries in different account scenarios, which is crucial for financial institutions and customers. The presentation of content, such as using terms like 'Legal Heirs' and specific designations for joint accounts, illustrates the legal implications and considerations necessary when account holders pass away without nominations.",
+        "analyze_time": 1787741424,
+        "status": "success",
+        "message": ""
+      },
+      "llm_cache_list": [
+        "default:analysis:055bd37bc4940efba5b8486c03f01ec9"
+      ]
+    },
+    "tb-2d2b1e01babacd5427ea9228ee35f7f9-0005": {
+      "id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0005",
+      "blockid": "9f34a503714eae737f74496731fe119a",
+      "heading": "Annexure-1",
+      "parent_headings": [
+        "Rules of Nomination and Settlement of Claims in respect of Deceased Customers and Missing Persons"
+      ],
+      "dimension": [
+        8,
+        4
+      ],
+      "format": "html",
+      "content": "<table><tr><td>Account in the Name of</td><td>Operational Instructions</td><td>Situation</td><td>What is to be done</td></tr><tr><td>A</td><td>Self</td><td>A dies</td><td>Outstanding will be payable to the legal heirs or any one of them mandated by all of the legal heirs</td></tr><tr><td>A, B</td><td>Either or Survivor</td><td>A dies</td><td>Outstanding will be payable to B</td></tr><tr><td>A,B</td><td>Either or Survivor</td><td>B dies</td><td>Outstanding will be payable to A</td></tr><tr><td>A,B</td><td>Either or Survivor</td><td>A &amp; B dies</td><td>Jointly payable to legal heirs of A &amp; B (or any of them mandated by all the legal heirs)</td></tr><tr><td>A,B</td><td>Jointly</td><td>A dies</td><td>Jointly payable to B and legal heirs of the A (or any one of them mandated by all the legal heirs).</td></tr><tr><td>A,B</td><td>Jointly</td><td>B dies</td><td>Jointly payable to A and legal heirs of the B (or any one of them mandated by all the legal heirs)</td></tr><tr><td>A,B</td><td>Jointly</td><td>A &amp; B dies</td><td>Jointly payable to legal heirs of A &amp; B (or any of them mandated by all the legal heirs)</td></tr></table>",
+      "caption": "",
+      "footnotes": [],
+      "self_ref": "content_list.json#/256",
+      "surrounding": {
+        "leading": "## Annexure-1\n\n\nWithout Nomination\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n\n",
+        "trailing": "\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n"
+      },
+      "llm_analyze_result": {
+        "name": "account_payable_instructions_after_death",
+        "description": "This table outlines the operational instructions regarding account payments upon the death of account holders, detailing various scenarios based on single or joint accounts. There are four columns in the table: 'Account in the Name of,' 'Operational Instructions,' 'Situation,' and 'What is to be done.' The rows represent different cases involving either single account holders or joint account holders named A and B, each specifying the consequence upon the death of either party. For instance, if account A dies, as per the instruction 'Self,' the outstanding amount is payable to the legal heirs or any mandated individual among them. If both A and B are joint account holders and one of them dies, the outstanding is payable to the surviving joint account holder, and in the event both pass away, it is payable to their legal heirs. The table encapsulates essential protocols for handling account funds in different circumstances of account holder mortality, ensuring clarity in the claims process for beneficiaries. This information is part of a larger document related to customer service policies, as indicated by the leading and trailing context provided.",
+        "analyze_time": 1787741427,
+        "status": "success",
+        "message": ""
+      },
+      "llm_cache_list": [
+        "default:analysis:4e656fb88d51b986799e1cad05d5318c"
+      ]
+    },
+    "tb-2d2b1e01babacd5427ea9228ee35f7f9-0006": {
+      "id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0006",
+      "blockid": "9f34a503714eae737f74496731fe119a",
+      "heading": "Annexure-1",
+      "parent_headings": [
+        "Rules of Nomination and Settlement of Claims in respect of Deceased Customers and Missing Persons"
+      ],
+      "dimension": [
+        9,
+        5
+      ],
+      "format": "html",
+      "content": "<table><tr><td>Locker in the Name of</td><td>Operational Instructions</td><td>Nominee</td><td>Situation</td><td>What is to be done</td></tr><tr><td>A</td><td>Self</td><td>X</td><td>X dies</td><td>A can change the nomination</td></tr><tr><td>A</td><td>Self</td><td>X</td><td>A dies</td><td>X will be given access to the locker and liberty to remove contents</td></tr><tr><td>A,B</td><td>Jointly</td><td>X</td><td>A dies</td><td>B and X will be given access to the locker and liberty to remove contents jointly.</td></tr><tr><td>A,B</td><td>Jointly</td><td>X</td><td>B dies</td><td>A and X will be given access to the locker and liberty to remove contents jointly</td></tr><tr><td>A, B</td><td>Jointly</td><td>X</td><td>A &amp; B dies</td><td>X will be given access to the locker and liberty to remove contents.</td></tr><tr><td>A,B</td><td>Jointly</td><td>X &amp; Y</td><td>A dies</td><td>B along with X and Y will be given access to the locker and liberty to remove contents jointly</td></tr><tr><td>A, B</td><td>Jointly</td><td>X &amp; Y</td><td>B dies</td><td>A along with X and Y will be given access to the locker and liberty to remove contents jointly.</td></tr><tr><td>A,B</td><td>Jointly</td><td>X &amp; Y</td><td>A &amp; B dies</td><td>X and Y jointly will be given access to the locker and liberty to remove the contents</td></tr></table>",
+      "caption": "",
+      "footnotes": [],
+      "self_ref": "content_list.json#/260",
+      "surrounding": {
+        "leading": "## Annexure-1\n\n\nWithout Nomination\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n\n\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n",
+        "trailing": ""
+      },
+      "llm_analyze_result": {
+        "name": "locker_access_nomination_protocols",
+        "description": "This table outlines the operational instructions for accessing a locker based on different nomination scenarios. It consists of five columns: 'Locker in the Name of', 'Operational Instructions', 'Nominee', 'Situation', and 'What is to be done', with a total of eight rows of data. The first column indicates the individuals involved in the locker nomination, and it features both single and joint nominations (e.g., 'A' alone, or 'A,B' jointly). The operational instructions specify whether the locker access is conditional on the death of one or both individuals nominated. The situations listed document various scenarios such as 'X dies', 'A dies', and both 'A and B dies', which determine the access arrangements for the locker contents. Notably, whenever one of the nominators dies, the remaining nominator along with the specified nominee gains access to the locker (e.g., if 'A dies', then 'B and X' are granted access). In a scenario where both 'A and B' die, the nominees 'X and Y' share the access collectively. Each row's details clarify the actions to be undertaken under those specific circumstances, thereby establishing a clear protocol for the handling of locker contents. This structured approach ensures that locker access is managed according to the stipulated laws and agreements surrounding nominations, reflecting the internal policy of customer service management.",
+        "analyze_time": 1787741427,
+        "status": "success",
+        "message": ""
+      },
+      "llm_cache_list": [
+        "default:analysis:4041849e0d0708374764c5e01bbfd903"
+      ]
+    },
+    "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007": {
+      "id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0007",
+      "blockid": "44f544415ae6275bedc7c8e3decc359f",
+      "heading": "Lockers without Nomination",
+      "parent_headings": [
+        "Rules of Nomination and Settlement of Claims in respect of Deceased Customers and Missing Persons"
+      ],
+      "dimension": [
+        8,
+        4
+      ],
+      "format": "html",
+      "content": "<table><tr><td>Locker in the Name of</td><td>Operational Instructions</td><td>Situation</td><td>What is to be done</td></tr><tr><td>A</td><td>Self</td><td>A dies</td><td>Legal heirs of A or any of them mandated by any of them.</td></tr><tr><td>A, B</td><td>Either or Survivor</td><td>A dies</td><td>B will be given access to the locker and liberty to remove the contents.</td></tr><tr><td>A, B</td><td>Either or Survivor</td><td>B dies</td><td>A will be given access to the locker and liberty to remove the contents.</td></tr><tr><td>A,B</td><td>Either or Survivor</td><td>A &amp; B dies</td><td>Legal heirs of A and B (or any one of them mandated by all legal heirs) will be given access to the locker and liberty to remove the contents.</td></tr><tr><td>A,B</td><td>Jointly</td><td>A dies</td><td>B and legal heirs of A (or any of them mandated by all legal heirs) will be given access to locker and liberty to remove the contents jointly.</td></tr><tr><td>A,B</td><td>Jointly</td><td>B dies</td><td>A and legal heirs of B (or any one of them mandate by all legal heirs) will be given access to locker and liberty to remove the contents jointly</td></tr><tr><td>A, B</td><td>Jointly</td><td>A &amp; B dies</td><td>Legal heirs of A &amp; B (or any of them mandated by all legal heirs) will be given access to locker and liberty to remove the contents.</td></tr></table>",
+      "caption": "",
+      "footnotes": [],
+      "self_ref": "content_list.json#/262",
+      "surrounding": {
+        "leading": "## Lockers without Nomination\n",
+        "trailing": "\nLockers with Nomination\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nVersion 4.0 Master Policy on Customer Service\nINTERNAL"
+      },
+      "llm_analyze_result": {
+        "name": "locker_access_protocols_without_nomination",
+        "description": "This table outlines the access protocols for lockers in the absence of a nomination, detailing the instructions for legal heirs or loved ones based on various scenarios regarding the owners A and B. The table consists of four columns: 'Locker in the Name of', 'Operational Instructions', 'Situation', and 'What is to be done'. It lists multiple rows specifying circumstances arising from the death of one or both individuals named A and B. The operational instructions categorize the scenarios into two types: 'Either or Survivor' and 'Jointly'. For example, if A dies, the legal heirs of A or any mandated individual may access the locker. In cases where both A and B die, their legal heirs are granted access. The document does not contain any numerical data or aggregate values, focusing instead on the procedures to be followed. This table serves as a guide for managing locker contents and the access rights of heirs in various death scenarios, illustrating how ownership and access change depending on who survives. The context of the table suggests it is part of a broader discussion on customer service policies relating to locker access and inheritance issues.",
+        "analyze_time": 1787741427,
+        "status": "success",
+        "message": ""
+      },
+      "llm_cache_list": [
+        "default:analysis:201a4b30e0180d777332064544ec6d16"
+      ]
+    },
+    "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008": {
+      "id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0008",
+      "blockid": "44f544415ae6275bedc7c8e3decc359f",
+      "heading": "Lockers without Nomination",
+      "parent_headings": [
+        "Rules of Nomination and Settlement of Claims in respect of Deceased Customers and Missing Persons"
+      ],
+      "dimension": [
+        49,
+        4
+      ],
+      "format": "html",
+      "content": "<table><tr><td>Sr. No.</td><td>Particulars</td><td>Description</td><td>Annexures</td></tr><tr><td rowspan=\"3\">1</td><td rowspan=\"3\">Accounts with Nominee/Survivorship Clause</td><td>Claim Form</td><td>Annex I-A</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td>2</td><td colspan=\"3\">Accounts without Nominee/Survivorship Clause</td></tr><tr><td rowspan=\"6\">a</td><td rowspan=\"6\">Claims up to Threshold Limit of ₹15 lakh</td><td>Claim Form</td><td>Annex I-B</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>Indemnity Bond signed by claimant(s)</td><td>Annex I-C</td></tr><tr><td>Disclaimer/No Objection Letter</td><td>Annex I-D</td></tr><tr><td>Legal Heir Certificate by a competent authority OR Declaration (third Party)</td><td>Annex I-E</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"18\">b</td><td rowspan=\"18\">Claims Above Threshold Limit of ₹15 lakh</td><td>(A) Succession Certificate</td><td></td></tr><tr><td>Claim Form</td><td>Annex I-B</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>OR</td><td></td></tr><tr><td>(B)Legal Heir Certificate by a competent authority</td><td></td></tr><tr><td>Claim Form</td><td>Annex I-B</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>Indemnity Bond signed by claimant(s) &amp; Surety</td><td>Annex I-C</td></tr><tr><td>Disclaimer/No Objection Letter</td><td>Annex I-D</td></tr><tr><td>OR</td><td></td></tr><tr><td>(C)Affidavit sworn before a Notary Public/ Judge/ Judicial Magistrate</td><td>Annex I-E</td></tr><tr><td>Claim Form</td><td>Annex I-B</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>Indemnity Bond signed by claimant(s) &amp; Surety</td><td>Annex I-C</td></tr><tr><td>Disclaimer/No Objection Letter</td><td>Annex I-D</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td>c</td><td></td><td>(A) Probate of Will/ Letter of Administration</td><td></td></tr><tr><td rowspan=\"10\"></td><td rowspan=\"10\">Claims involving ‘Will’ without any dispute</td><td></td><td></td></tr><tr><td>Claim Form</td><td>Annex I-B</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>(B) Will (Without Probate) up to an amount of Rs. 15 Lakh</td><td></td></tr><tr><td>Claim Form</td><td>Annex I-B</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>Indemnity Bond</td><td>Annex I-C</td></tr><tr><td>Disclaimer/No Objection Letter</td><td>Annex I-D</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"5\">d</td><td rowspan=\"5\">Cases involving contesting claims/dispute</td><td>Probate of Will OR Letter of Administration OR Succession Certificate Or Court order/ decree, as applicable.</td><td></td></tr><tr><td>Claim Form</td><td>Annex I-B</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>Order from a Court restraining the bank then subsequent Court order to be considered</td><td></td></tr></table>",
+      "caption": "Checklist -Settlement of Claims in Deposit Accounts of Deceased Depositor",
+      "footnotes": [],
+      "self_ref": "content_list.json#/271",
+      "surrounding": {
+        "leading": "## Lockers without Nomination\n\nLockers with Nomination\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n",
+        "trailing": "\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nVersion 4.0 Master Policy on Customer Service\nINTERNAL"
+      },
+      "llm_analyze_result": {
+        "name": "checklist_settlement_claims_deceased_depositor",
+        "description": "This table provides a checklist for the settlement of claims associated with deposit accounts of deceased depositors, outlined under two main categories: accounts with and without nominee/survivorship clauses. It is structured into multiple rows and columns, totaling 36 rows and 4 columns. The first column labeled 'Sr. No.' serves to enumerate the items, while the second column 'Particulars' categorizes the type of accounts or claims, such as 'Accounts with Nominee/Survivorship Clause' and 'Accounts without Nominee/Survivorship Clause'. The third column labeled 'Description' lists the specific documents required for each claim type, such as 'Claim Form', 'Death Certificate', 'Legal Heir Certificate', and 'Indemnity Bond'. The fourth column, 'Annexures', references additional documentation required, like 'Annex I-A' to 'Annex I-E'. There are multiple merged cells used to group related information; for example, several rows are merged under the categories for claims up to ₹15 lakh and above ₹15 lakh. This indicates a structured approach to distinguish between different types of claims based on the financial threshold. The table also shows some empty cells, particularly where the annexure information is not provided, preserving these as part of the original structure. The data highlights the procedural requirements involved in filing claims after the death of an account holder, reflecting legal and administrative nuances. The table is positioned as part of an internal policy document regarding customer service, emphasizing the importance of clear guidelines for processing claims in sensitive situations involving deceased depositors.",
+        "analyze_time": 1787741429,
+        "status": "success",
+        "message": ""
+      },
+      "llm_cache_list": [
+        "default:analysis:b67d359429c2f343983d32a7fe2ab217"
+      ]
+    },
+    "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009": {
+      "id": "tb-2d2b1e01babacd5427ea9228ee35f7f9-0009",
+      "blockid": "44f544415ae6275bedc7c8e3decc359f",
+      "heading": "Lockers without Nomination",
+      "parent_headings": [
+        "Rules of Nomination and Settlement of Claims in respect of Deceased Customers and Missing Persons"
+      ],
+      "dimension": [
+        34,
+        4
+      ],
+      "format": "html",
+      "content": "<table><tr><td>Sr. No.</td><td>Particulars</td><td>Description</td><td>Annexures</td></tr><tr><td rowspan=\"4\">1</td><td rowspan=\"4\">Claims with Nominee(s)/Survivorship(s)</td><td>Claim Form</td><td>Annex I-A</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>Inventory Form</td><td>Annex I-F</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td>2</td><td colspan=\"3\">Cases without Nominee/ Survivorship clause</td></tr><tr><td rowspan=\"6\">a</td><td rowspan=\"6\">Claims falling under the simplified procedure</td><td>Claim Form</td><td>Annex I-B</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>Disclaimer/No Objection Letter</td><td>Annex I-D</td></tr><tr><td>Legal Heir Certificate by a competent authority OR Declaration (third Party)</td><td>Annex I-E</td></tr><tr><td>Legal Heir Certificate by a competent authority OR Declaration (third Party)</td><td>Annex I-E</td></tr><tr><td></td><td></td><td>Inventory Form</td><td>Annex I-F</td></tr><tr><td>3</td><td colspan=\"3\">Settlement of Claims not falling under the Simplified Procedure</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"11\">a</td><td rowspan=\"11\">Claims involving ‘Will’ without any dispute</td><td>(A) Probate of Will/ Letter of Administration</td><td></td></tr><tr><td>Claim Form</td><td>Annex I-B</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>(B) Will (Without Probate Will)</td><td></td></tr><tr><td>Claim Form</td><td>Annex I-B</td></tr><tr><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>Indemnity Bond</td><td>Annex I-C</td></tr><tr><td>Disclaimer/No Objection Letter</td><td>Annex I-D</td></tr><tr><td>Inventory Form</td><td>Annex I-F</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"2\">b</td><td rowspan=\"2\">Cases involving contesting claims/dispute</td><td>Probate of Will OR Letter of Administration OR Succession Certificate Or Court order/ decree, as applicable.</td><td></td></tr><tr><td>Claim Form</td><td>Annex I-B</td></tr><tr><td rowspan=\"4\"></td><td rowspan=\"4\"></td><td>Death certificate</td><td></td></tr><tr><td>OVD</td><td></td></tr><tr><td>Order from a Court restraining the bank then subsequent Court order to be considered</td><td></td></tr><tr><td>Inventory Form</td><td>Annex I-F</td></tr></table>",
+      "caption": "Checklist- Settlement of Claims in Safe Deposit Locker and Articles in Safe Custody by Deceased Customer",
+      "footnotes": [],
+      "self_ref": "content_list.json#/279",
+      "surrounding": {
+        "leading": "## Lockers without Nomination\n\nLockers with Nomination\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\n",
+        "trailing": "\nVersion 4.0 Master Policy on Customer Service\nINTERNAL\nVersion 4.0 Master Policy on Customer Service\nINTERNAL"
+      },
+      "llm_analyze_result": {
+        "name": "settlement_claims_checklist",
+        "description": "The table titled 'Checklist- Settlement of Claims in Safe Deposit Locker and Articles in Safe Custody by Deceased Customer' outlines the documentation required for processing claims related to safe deposit lockers and articles held in custody after the death of the customer, highlighting the distinctions between cases with and without nominees. The structure consists of several rows categorized under headings such as 'Claims with Nominee(s)/Survivorship(s)', 'Cases without Nominee/ Survivorship clause', and 'Settlement of Claims not falling under the Simplified Procedure', which are represented as broader claim categories. Each category specifies various required documents, including Claim Forms, Death Certificates, and Inventory Forms, along with designated annexure references, indicating which documents correspond to specific rules or guidelines for claims processing. For instance, the first category lists documents like the Claim Form and Death Certificate without an annexure, while the second highlights 'Claims falling under the simplified procedure' with a comprehensive breakdown into specific documents like the Disclaimer/No Objection Letter and multiple annexure references (I-B, I-D, I-E, and I-F). It also identifies claims related to probate of wills, underscoring the complexity of documentation required when legal inheritors contest claims. Patterns such as the repeated need for Claim Forms across various categories indicate the importance of this document in all claims. Notably, the table reveals several instances of missing or empty data, which might signify optional requirements or cases that do not apply, thus encouraging thorough verification of individual claim circumstances. Overall, this organized checklist serves as a critical tool for legal and administrative personnel managing claims post the demise of a customer, enhancing clarity in the documentation process while adhering to the internal policy guidelines outlined in the leading and trailing texts.",
+        "analyze_time": 1787741431,
+        "status": "success",
+        "message": ""
+      },
+      "llm_cache_list": [
+        "default:analysis:6a61a8deace798eba4a5b770a4757f46"
+      ]
+    }
+  }
+}

@@ -32,6 +32,7 @@ from lightrag.api.audit_logger import (
     extract_user_context,
     extract_thread_id,
     extract_citations,
+    new_query_id,
 )
 
 from lightrag.api.guardrails import (
@@ -642,26 +643,19 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
         extracted_user_id, extracted_department = await extract_user_context(http_request)
         user_id = request.user_id or extracted_user_id
         department = request.department or extracted_department
-        session_id = request.thread_id or extract_thread_id(http_request)
-        primary_key = str(uuid.uuid4())
+        thread_id = request.thread_id or extract_thread_id(http_request)
+
+        query_id = new_query_id()   # <-- ONE id, shared across query_logs + guardrail_logs
  
         # --- Input guardrail: runs BEFORE the LLM generates an answer ---
         input_result = await check_input(request.query)
-        guardrail_log_id = await log_input_guardrail(
-            log_id = primary_key,
-            query_log_id=None,
-            user_id=user_id,
-            thread_id=session_id,
-            department=department,
-            user_query=request.query,
-            result=input_result,
-        )
+        await log_input_guardrail(query_id=query_id, result=input_result)   # <-- no more user_id/thread_id/etc, no return value
 
         if input_result.status != "pass":
             await log_query_event(
-                log_id = primary_key,
+                query_id=query_id,              # <-- new required arg
                 user_id=user_id,
-                thread_id=session_id,
+                thread_id=thread_id,
                 department=department,
                 user_query=request.query,
                 llm_response=FALLBACK_MESSAGE,
@@ -669,12 +663,34 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                 error_message=f"Blocked by input guardrail: {input_result.reason}",
             )
             return QueryResponse(response=FALLBACK_MESSAGE, references=[])
+
+        # guardrail_log_id = await log_input_guardrail(
+        #     log_id = primary_key,
+        #     query_log_id=None,
+        #     user_id=user_id,
+        #     thread_id=session_id,
+        #     department=department,
+        #     user_query=request.query,
+        #     result=input_result,
+        # )
+
+        # if input_result.status != "pass":
+        #     await log_query_event(
+        #         log_id = primary_key,
+        #         user_id=user_id,
+        #         thread_id=session_id,
+        #         department=department,
+        #         user_query=request.query,
+        #         llm_response=FALLBACK_MESSAGE,
+        #         status="fallback",
+        #         error_message=f"Blocked by input guardrail: {input_result.reason}",
+        #     )
+        #     return QueryResponse(response=FALLBACK_MESSAGE, references=[])
  
         try:
         
             param = request.to_query_params(False)
             param.stream = False
-            param.primary_key = primary_key
  
             start_time = time.perf_counter()
             result = await rag.aquery_llm(request.query, param=param, rag=rag)
@@ -692,31 +708,49 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
             citations = extract_citations(references)
  
             # --- Output guardrail: runs AFTER the LLM generates an answer ---
-            output_result = await check_output(
-                request.query, response_content, citations
-            )
-            await log_output_guardrail(
-                guardrail_log_id=guardrail_log_id,
-                llm_response=response_content,
-                result=output_result,
-            )
+            # output_result = await check_output(
+            #     request.query, response_content, citations
+            # )
+            # await log_output_guardrail(
+            #     guardrail_log_id=guardrail_log_id,
+            #     llm_response=response_content,
+            #     result=output_result,
+            # )
+            # if output_result.status != "pass":
+            #     response_content = FALLBACK_MESSAGE
+            #     is_fallback = True
+ 
+            # await log_query_event(
+            #     log_id = primary_key,
+            #     user_id=user_id,
+            #     thread_id=session_id,
+            #     department=department,
+            #     user_query=request.query,
+            #     llm_response=response_content,
+            #     status="fallback" if is_fallback else "success",
+            #     error_message=(
+            #         f"Blocked by output guardrail: {output_result.reason}"
+            #         if output_result.status != "pass"
+            #         else None
+            #     ),
+            #     citations=citations,
+            # )
+
+            output_result = await check_output(request.query, response_content, citations)
+            await log_output_guardrail(query_id=query_id, result=output_result)   # <-- no more llm_response arg
             if output_result.status != "pass":
                 response_content = FALLBACK_MESSAGE
                 is_fallback = True
- 
+
             await log_query_event(
-                log_id = primary_key,
+                query_id=query_id,              # <-- add this
                 user_id=user_id,
-                thread_id=session_id,
+                thread_id=thread_id,
                 department=department,
                 user_query=request.query,
                 llm_response=response_content,
                 status="fallback" if is_fallback else "success",
-                error_message=(
-                    f"Blocked by output guardrail: {output_result.reason}"
-                    if output_result.status != "pass"
-                    else None
-                ),
+                error_message=(f"Blocked by output guardrail: {output_result.reason}" if output_result.status != "pass" else None),
                 citations=citations,
             )
  
@@ -756,16 +790,15 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
         except Exception as e:
             logger.error(f"Error processing query: {str(e)}", exc_info=True)
             await log_query_event(
-                log_id = primary_key,
+                query_id=query_id,              # <-- add this
                 user_id=user_id,
-                thread_id=session_id,
+                thread_id=thread_id,
                 department=department,
                 user_query=request.query,
                 status="error",
                 error_message=str(e),
             )
             raise internal_server_error(e)
- 
 
 
     def _build_stream_generator(
@@ -849,7 +882,8 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
     thread_id: Optional[str],
     department: Optional[str],
     query_text: str,
-    guardrail_log_id: Optional[str] = None,
+    query_id: Optional[str] = None,   # <-- renamed from guardrail_log_id
+    # guardrail_log_id: Optional[str] = None,
     ):
         """Wraps an NDJSON async generator, accumulating 'response' chunks
         and the 'references' line so we can write one audit log row once
@@ -878,33 +912,24 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                 raise
             finally:
                 full_response = "".join(collected)
-                is_fallback = (
-                    not full_response
-                    or full_response == "No relevant context found for the query."
-                )
+                is_fallback = (not full_response or full_response == "No relevant context found for the query.")
                 citations = extract_citations(references)
 
-                if not saw_error and guardrail_log_id and full_response:
-                    output_result = await check_output(
-                        query_text, full_response, citations
-                    )
-                    await log_output_guardrail(
-                        guardrail_log_id=guardrail_log_id,
-                        llm_response=full_response,
-                        result=output_result,
-                    )
+                if not saw_error and query_id and full_response:
+                    output_result = await check_output(query_text, full_response, citations)
+                    await log_output_guardrail(query_id=query_id, result=output_result)   # <-- new signature
                     if output_result.status != "pass":
                         saw_error = f"Output guardrail failed post-stream: {output_result.reason}"
 
+
                 await log_query_event(
+                    query_id=query_id, 
                     user_id=user_id,
                     thread_id=thread_id,
                     department=department,
                     user_query=query_text,
                     llm_response=full_response or None,
-                    status="error"
-                    if saw_error
-                    else ("fallback" if is_fallback else "success"),
+                    status="error" if saw_error else ("fallback" if is_fallback else "success"),
                     error_message=saw_error,
                     citations=citations,
                 )
@@ -991,7 +1016,7 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
             },
         },
     )
-    # async def query_text_stream(request: QueryRequest,rag: LightRAG = Depends(get_rag)):
+    
     async def query_text_stream(request: QueryRequest, http_request: Request, rag: LightRAG = Depends(get_rag)):
         """
         Advanced RAG query endpoint with flexible streaming response.
@@ -1148,21 +1173,25 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
         user_id = request.user_id or extracted_user_id
         department = request.department or extracted_department
         thread_id = request.thread_id or extract_thread_id(http_request)
+        query_id = new_query_id()
 
         from fastapi.responses import StreamingResponse
 
         # --- Input guardrail: blocks BEFORE any streaming starts ---
         input_result = await check_input(request.query)
-        guardrail_log_id = await log_input_guardrail(
-            query_log_id=None,
-            user_id=user_id,
-            thread_id=thread_id,
-            department=department,
-            user_query=request.query,
-            result=input_result,
-        )
+        await log_input_guardrail(query_id=query_id, result=input_result)
+
+        # guardrail_log_id = await log_input_guardrail(
+        #     query_log_id=None,
+        #     user_id=user_id,
+        #     thread_id=thread_id,
+        #     department=department,
+        #     user_query=request.query,
+        #     result=input_result,
+        # )
         if input_result.status != "pass":
             await log_query_event(
+                query_id=query_id,
                 user_id=user_id,
                 thread_id=thread_id,
                 department=department,
@@ -1306,24 +1335,20 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
 
                 return StreamingResponse(
                     _wrap_stream_for_audit(
-                        stream_gen(),
+                        merged_generator(),   # or stream_gen() in the non-progress branch
                         user_id=user_id,
                         thread_id=thread_id,
                         department=department,
                         query_text=request.query,
-                        guardrail_log_id=guardrail_log_id,
+                        query_id=query_id,        # <-- renamed from guardrail_log_id
                     ),
                     media_type="application/x-ndjson",
-                    headers={
-                        "Cache-Control": "no-cache",
-                        "Connection": "keep-alive",
-                        "Content-Type": "application/x-ndjson",
-                        "X-Accel-Buffering": "no",
-                    },
+                    headers={...},
                 )
         except Exception as e:
             logger.error(f"Error processing streaming query: {str(e)}", exc_info=True)
             await log_query_event(
+                query_id=query_id,
                 user_id=user_id,
                 thread_id=thread_id,
                 department=department,
@@ -1740,21 +1765,41 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
         user_id = request.user_id or extracted_user_id
         department = request.department or extracted_department
         thread_id = request.thread_id or extract_thread_id(http_request)
+        query_id = new_query_id()
  
         # --- Input guardrail only: no LLM-generated answer text here, so
         # the output guardrail (groundedness, citation check, etc.) does
         # not apply. ---
         input_result = await check_input(request.query)
-        await log_input_guardrail(
-            query_log_id=None,
-            user_id=user_id,
-            thread_id=thread_id,
-            department=department,
-            user_query=request.query,
-            result=input_result,
-        )
+        # await log_input_guardrail(
+        #     query_log_id=None,
+        #     user_id=user_id,
+        #     thread_id=thread_id,
+        #     department=department,
+        #     user_query=request.query,
+        #     result=input_result,
+        # )
+        await log_input_guardrail(query_id=query_id, result=input_result)   # <-- no output guardrail here, same as before
+
+        # if input_result.status != "pass":
+        #     await log_query_event(
+        #         user_id=user_id,
+        #         thread_id=thread_id,
+        #         department=department,
+        #         user_query=request.query,
+        #         status="fallback",
+        #         error_message=f"Blocked by input guardrail: {input_result.reason}",
+        #     )
+        #     return QueryDataResponse(
+        #         status="blocked",
+        #         message=FALLBACK_MESSAGE,
+        #         data={},
+        #         metadata={"guardrail_reason": input_result.reason},
+        #     )
+
         if input_result.status != "pass":
             await log_query_event(
+                query_id=query_id,
                 user_id=user_id,
                 thread_id=thread_id,
                 department=department,
@@ -1762,25 +1807,19 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                 status="fallback",
                 error_message=f"Blocked by input guardrail: {input_result.reason}",
             )
-            return QueryDataResponse(
-                status="blocked",
-                message=FALLBACK_MESSAGE,
-                data={},
-                metadata={"guardrail_reason": input_result.reason},
-            )
- 
+            return QueryDataResponse(status="blocked", message=FALLBACK_MESSAGE, data={}, metadata={"guardrail_reason": input_result.reason})
+
+
+        
         try:
             param = request.to_query_params(False)
             response = await rag.aquery_data(request.query, param=param)
  
             if isinstance(response, dict):
                 data = response.get("data", {})
-                is_fallback = (
-                    not data.get("entities")
-                    and not data.get("relationships")
-                    and not data.get("chunks")
-                )
+                is_fallback = not data.get("entities") and not data.get("relationships") and not data.get("chunks")
                 await log_query_event(
+                    query_id=query_id,          # <-- add this
                     user_id=user_id,
                     thread_id=thread_id,
                     department=department,
@@ -1792,6 +1831,7 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                 return QueryDataResponse(**response)
             else:
                 await log_query_event(
+                    query_id=query_id,          # <-- add this
                     user_id=user_id,
                     thread_id=thread_id,
                     department=department,
@@ -1799,15 +1839,12 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                     status="fallback",
                     error_message="Invalid response type from aquery_data",
                 )
-                return QueryDataResponse(
-                    status="failure",
-                    message="Invalid response type",
-                    data={},
-                    metadata={},
-                )
+                return QueryDataResponse(status="failure", message="Invalid response type", data={}, metadata={})
+
         except Exception as e:
             logger.error(f"Error processing data query: {str(e)}", exc_info=True)
             await log_query_event(
+                query_id=query_id,              # <-- add this
                 user_id=user_id,
                 thread_id=thread_id,
                 department=department,
@@ -1816,6 +1853,5 @@ def create_query_routes(get_rag: Callable, api_key: Optional[str] = None, top_k:
                 error_message=str(e),
             )
             raise internal_server_error(e)
- 
     return router
  
