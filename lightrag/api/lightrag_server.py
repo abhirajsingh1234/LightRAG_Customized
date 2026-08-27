@@ -2462,6 +2462,39 @@ def create_app(args):
         return registry[workspace]
 
 
+    # @app.get(
+    #     "/get_available_workspaces",
+    #     response_model=AvailableWrokspaceResponse,
+    # )
+    # async def get_available_workspaces() -> AvailableWrokspaceResponse:
+    #     """
+    #     Return the list of currently active workspaces.
+
+    #     Derives the workspace list from the in-memory registry, which is the
+    #     source of truth for workspaces that have been fully initialized and are
+    #     ready to serve requests. Falls back to ["default"] if the registry is
+    #     unavailable or an unexpected error occurs, so the WebUI never breaks.
+
+    #     Returns:
+    #         AvailableWrokspaceResponse: Sorted list of available workspace names.
+    #     """
+    #     try:
+    #         workspaces = set(list_databases())
+
+    #         return AvailableWrokspaceResponse(workspaces=sorted(list(workspaces)))
+
+    #     except Exception as e:
+    #         logger.error(f"Error GET /documents/get_available_workspaces: {str(e)}")
+    #         logger.error(traceback.format_exc())
+    #         # Return fallback default workspace so WebUI never breaks
+    #         return AvailableWrokspaceResponse(workspaces=["default"])
+
+    #     except Exception as e:
+    #         logger.error(f"Error GET /documents/get_available_workspaces: {str(e)}")
+    #         logger.error(traceback.format_exc())
+    #         # Return fallback workspace instead of crashing the UI
+    #         return AvailableWrokspaceResponse(workspaces=["default"])
+
     @app.get(
         "/get_available_workspaces",
         response_model=AvailableWrokspaceResponse,
@@ -2469,31 +2502,40 @@ def create_app(args):
     async def get_available_workspaces() -> AvailableWrokspaceResponse:
         """
         Return the list of currently active workspaces.
-
+ 
         Derives the workspace list from the in-memory registry, which is the
         source of truth for workspaces that have been fully initialized and are
         ready to serve requests. Falls back to ["default"] if the registry is
         unavailable or an unexpected error occurs, so the WebUI never breaks.
-
+ 
         Returns:
             AvailableWrokspaceResponse: Sorted list of available workspace names.
         """
         try:
             workspaces = set(list_databases())
-
-            return AvailableWrokspaceResponse(workspaces=sorted(list(workspaces)))
-
+            available_valid_workspace = []
+            input_dir = os.listdir(Path(f"./workspaces/"))
+            print(f"Available workspaces on disk: {input_dir}")
+            print(f"Available workspaces in Milvus: {workspaces}")
+            for workspace in workspaces:
+                if workspace in input_dir:
+                    available_valid_workspace.append(workspace)
+ 
+            return AvailableWrokspaceResponse(workspaces=sorted(available_valid_workspace))
+ 
         except Exception as e:
             logger.error(f"Error GET /documents/get_available_workspaces: {str(e)}")
             logger.error(traceback.format_exc())
             # Return fallback default workspace so WebUI never breaks
             return AvailableWrokspaceResponse(workspaces=["default"])
-
+ 
         except Exception as e:
             logger.error(f"Error GET /documents/get_available_workspaces: {str(e)}")
             logger.error(traceback.format_exc())
             # Return fallback workspace instead of crashing the UI
             return AvailableWrokspaceResponse(workspaces=["default"])
+ 
+ 
 
     @app.post("/workspaces/{name}", status_code=201, response_model=WorkspaceCreateResponse)
     async def create_workspace(name: str) -> WorkspaceCreateResponse:

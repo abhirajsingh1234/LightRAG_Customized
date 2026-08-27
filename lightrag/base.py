@@ -171,6 +171,14 @@ class QueryParam:
 
     thread_id: Optional[str] = None
     """Unique identifier for the chat conversation/thread."""
+
+    user_id: Optional[str] = None
+    """Unique identifier for the chat going on."""
+
+    department: Optional[str] = None
+    """"""
+
+
  
 
 
